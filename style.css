@@ -587,3 +587,21 @@ a:hover {
     color: #fff;
     text-shadow: 0 0 5px #f5d7a1;
 }
+.btn {
+    display: inline-block;
+    background: #f5d7a1;
+    color: #1a1a1a;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #d8b87f;
+    color: #000;
+}
+   section {
+    padding: 60px 0;
+   }
