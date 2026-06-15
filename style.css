@@ -412,3 +412,38 @@ footer {
     color: #fff;
     text-shadow: 0 0 5px #f5d7a1;
 }
+/* TITRES MODERNES */
+h1, h2, h3 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #f5d7a1;
+    text-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* TEXTES */
+p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/* ESPACEMENT DES SECTIONS */
+section {
+    padding: 40px 0;
+}
