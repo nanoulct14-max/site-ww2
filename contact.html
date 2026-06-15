@@ -1,138 +1,38 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-<link rel="stylesheet" href="style.css">
-  <title>Contact – Musée HOP WW2</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <style>
-    body {
-      margin: 0;
-      font-family: system-ui, sans-serif;
-      background: #0f1113;
-      color: #e5e5e5;
-    }
-
-    header, section, footer {
-      padding: 40px;
-    }
-
-    header {
-      background: #1b1f23;
-      border-bottom: 2px solid #f0c96a;
-    }
-
-    .logo {
-      font-weight: 700;
-      font-size: 1.4rem;
-      color: #f0c96a;
-    }
-
-    nav a {
-      margin: 0 10px;
-      color: #f0c96a;
-      text-decoration: none;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    h1 {
-      color: #f0c96a;
-      margin-bottom: 10px;
-    }
-
-    .block {
-      background: #1b1f23;
-      padding: 20px;
-      border-left: 4px solid #f0c96a;
-      border-radius: 4px;
-      margin: 20px 0;
-    }
-
-    label {
-      display: block;
-      margin: 10px 0 5px;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      border-radius: 4px;
-      border: none;
-      margin-bottom: 15px;
-      background: #262a2e;
-      color: #e5e5e5;
-    }
-
-    button {
-      background: #f0c96a;
-      color: #000;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 4px;
-      font-weight: 700;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #d8b25e;
-    }
-
-    footer {
-      background: #1b1f23;
-      text-align: center;
-      border-top: 2px solid #f0c96a;
-      margin-top: 40px;
-      padding: 20px;
-      font-size: 0.9rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Contact – Musée HOP WW2</title>
+    <link rel="stylesheet" href="/site-ww2/style.css">
 </head>
 
 <body>
 
-  <header>
-    <div class="logo">Musée HOP WW2</div>
+<header>
+    <h1>Musée HOP WW2</h1>
     <nav>
-      <a href="index.html">Accueil</a>
-      <a href="guides/index.html">Guides</a>
-      <a href="collections/index.html">Collections</a>
-      <a href="contact.html">Contact</a>
+        <a href="/site-ww2/index.html">Accueil</a>
+        <a href="/site-ww2/collections/index.html">Collections</a>
+        <a href="/site-ww2/guides/index.html">Guides</a>
+        <a href="/site-ww2/contact.html">Contact</a>
     </nav>
-  </header>
+</header>
 
-  <section>
-    <h1>Contact</h1>
-    <p>Pour toute question, demande d’information ou proposition, vous pouvez utiliser le formulaire ci‑dessous.</p>
+<section>
+    <h2>Contact</h2>
+    <p>Pour toute question ou demande, contactez-nous :</p>
 
-    <div class="block">
-      <label>Nom :</label>
-      <input type="text" placeholder="Votre nom">
+    <form>
+        <input type="text" placeholder="Votre nom">
+        <input type="email" placeholder="Votre email">
+        <textarea placeholder="Votre message"></textarea>
+        <button type="submit">Envoyer</button>
+    </form>
+</section>
 
-      <label>Email :</label>
-      <input type="email" placeholder="Votre email">
-
-      <label>Message :</label>
-      <textarea rows="5" placeholder="Votre message"></textarea>
-
-      <button>Envoyer</button>
-    </div>
-
-    <h2>📬 Autres moyens de contact</h2>
-    <div class="block">
-      • Email : contact@musee-hop-ww2.fr (exemple)  
-      • Instagram : @musee_hop_ww2  
-      • Facebook : Musée HOP WW2  
-    </div>
-
-  </section>
-
-  <footer>
+<footer>
     © 2026 – Musée HOP WW2. Tous droits réservés.
-  </footer>
+</footer>
 
 </body>
 </html>
