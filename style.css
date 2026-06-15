@@ -388,3 +388,27 @@ footer {
 .btn:hover {
     background: #d8b87f;
 }
+/* FOOTER MODERNE */
+.footer-modern {
+    background: #111;
+    color: #bbb;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 40px;
+    border-top: 2px solid #333;
+}
+
+.footer-modern p {
+    margin: 5px 0;
+}
+
+.footer-modern a {
+    color: #f5d7a1;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-modern a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #f5d7a1;
+}
