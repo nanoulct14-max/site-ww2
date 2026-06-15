@@ -483,3 +483,107 @@ img {
     margin: 20px 0;
     display: block;
 }
+/* MENU MOBILE MODERNE */
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 15px;
+    }
+
+    nav a {
+        font-size: 18px;
+        padding: 10px 0;
+        border-bottom: 1px solid #333;
+    }
+
+    nav a:last-child {
+        border-bottom: none;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+/* HERO MODERNE */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #1a1a1a, #111);
+    border-bottom: 2px solid #333;
+}
+
+.hero h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+    color: #f5d7a1;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+    color: #ddd;
+}
+
+.hero .btn {
+    font-size: 18px;
+    padding: 12px 22px;
+/* LISTES DE GUIDES / COLLECTIONS */
+.grid-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.grid-item {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.4);
+    border: 1px solid #333;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 18px rgba(0,0,0,0.6);
+}
+
+.grid-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.grid-item h3 {
+    margin-bottom: 10px;
+}
+
+.grid-item p {
+    color: #ccc;
+   }
+   /* LIENS GLOBAUX */
+a {
+    color: #f5d7a1;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #f5d7a1;
+}
