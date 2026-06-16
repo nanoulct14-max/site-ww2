@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Casques - Musée HOP WW2</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header>
+    <h1 class="logo">Musée HOP WW2</h1>
+    <nav>
+        <a href="../index.html">Accueil</a>
+        <a href="index.html">Collections</a>
+        <a href="../guides/index.html">Guides</a>
+        <a href="../contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="page-container">
+    <h2>Collection : Casques</h2>
+    <p>Découvrez les différents modèles de casques utilisés durant la Seconde Guerre mondiale : US, allemands, britanniques, soviétiques et autres variantes.</p>
+
+    <div class="grid-list">
+
+        <div class="grid-item">
+            <img src="../images/casque-us-m1.jpg" alt="Casque US M1">
+            <h3>Casque US M1</h3>
+            <p>Le casque emblématique des forces américaines, utilisé de 1941 à 1985.</p>
+        </div>
+
+        <div class="grid-item">
