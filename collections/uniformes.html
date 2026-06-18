@@ -2,112 +2,55 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uniformes – Musée HOP WW2</title>
+    <title>Uniformes WW2</title>
     <link rel="stylesheet" href="../style.css">
-
-    <style>
-        body { margin:0; background:#111; color:#eee; font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-
-        header { background:#1fb183; padding:25px 5vw; border-bottom:2px solid #333; }
-        .logo { font-weight:900; font-size:1.4rem; letter-spacing:2px; text-transform:uppercase; }
-        nav a { margin:0 12px; color:#fff; text-transform:uppercase; font-size:0.95rem; }
-
-        h2 { font-size:1.8rem; text-transform:uppercase; letter-spacing:2px; margin-bottom:20px; }
-
-        .section { padding:50px 5vw; max-width:1100px; margin:auto; }
-
-        .grid {
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-            gap:30px;
-            margin-top:30px;
-        }
-
-        .card {
-            background:#1fb183;
-            border-radius:8px;
-            border:1px solid #333;
-            overflow:hidden;
-            color:#000;
-            text-align:center;
-            transition:0.2s;
-        }
-
-        .card:hover { transform:scale(1.03); background:#22cfa0; }
-
-        .card img {
-            width:100%;
-            height:220px;
-            object-fit:cover;
-            border-bottom:1px solid #333;
-        }
-
-        .card-title {
-            padding:15px;
-            font-weight:700;
-            text-transform:uppercase;
-            letter-spacing:1px;
-        }
-
-        footer {
-            background:#0d0b0c;
-            padding:30px 5vw;
-            text-align:center;
-            border-top:2px solid #333;
-            color:#aaa;
-            font-size:0.85rem;
-        }
-    </style>
 </head>
 
 <body>
 
 <header>
-    <div class="logo">Musée HOP WW2</div>
-    <nav>
-        <a href="../index.html">Accueil</a>
-        <a href="index.html">Collections</a>
-        <a href="../guides/index.html">Guides</a>
-        <a href="../contact.html">Contact</a>
-    </nav>
+    <h1>🎖️ Uniformes de la Seconde Guerre mondiale</h1>
+    <p>Découvrez les uniformes emblématiques portés par les soldats des différentes nations durant le conflit.</p>
 </header>
 
-<section class="section">
-    <h2>Uniformes WW2</h2>
-    <p>Découvrez les uniformes authentiques, restaurés ou étudiés par le Musée HOP WW2.</p>
+<section class="collection-grid">
 
-    <div class="grid">
-
-        <!-- US -->
-        <div class="card">
-            <img src="../images/image_1781785942652.jpeg" alt="Uniforme US WW2">
-            <div class="card-title">Uniforme US</div>
-        </div>
-
-        <!-- Allemand -->
-        <div class="card">
-            <img src="../images/image_1781786232363.jpeg" alt="Uniforme allemand WW2">
-            <div class="card-title">Uniforme allemand</div>
-        </div>
-
-        <!-- Britannique -->
-        <div class="card">
-            <img src="../images/image_1781786329691.jpeg" alt="Uniforme britannique WW2">
-            <div class="card-title">Uniforme britannique</div>
-        </div>
-
-        <!-- Soviétique -->
-        <div class="card">
-            <img src="../images/image_1781786438720.jpeg" alt="Uniforme soviétique WW2">
-            <div class="card-title">Uniforme soviétique</div>
-        </div>
-
+    <!-- Uniforme US -->
+    <div class="card">
+        <img src="../images/uniforme_us.jpg" alt="Uniforme US">
+        <h3>Uniforme US</h3>
+        <p>Tenue standard des forces américaines.</p>
+        <a href="../guides/guide-uniforme-us.html" class="btn">Voir la fiche</a>
     </div>
+
+    <!-- Uniforme Allemand -->
+    <div class="card">
+        <img src="../images/uniforme_allemand.jpg" alt="Uniforme Allemand">
+        <h3>Uniforme Allemand</h3>
+        <p>Tenue de la Wehrmacht et des unités allemandes.</p>
+        <a href="../guides/guide-uniforme-allemand.html" class="btn">Voir la fiche</a>
+    </div>
+
+    <!-- Uniforme Britannique -->
+    <div class="card">
+        <img src="../images/uniforme_britannique.jpg" alt="Uniforme Britannique">
+        <h3>Uniforme Britannique</h3>
+        <p>Tenue des forces britanniques et du Commonwealth.</p>
+        <a href="../guides/guide-uniforme-britannique.html" class="btn">Voir la fiche</a>
+    </div>
+
+    <!-- Uniforme Soviétique -->
+    <div class="card">
+        <img src="../images/uniforme_sovietique.jpg" alt="Uniforme Soviétique">
+        <h3>Uniforme Soviétique</h3>
+        <p>Tenue standard de l’Armée Rouge.</p>
+        <a href="../guides/guide-uniforme-sovietique.html" class="btn">Voir la fiche</a>
+    </div>
+
 </section>
 
 <footer>
-    © 2026 – Musée HOP WW2 • Collections officielles
+    <a href="../collections/index.html" class="btn">⬅ Retour aux collections</a>
 </footer>
 
 </body>
