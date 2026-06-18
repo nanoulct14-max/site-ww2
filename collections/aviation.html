@@ -2,69 +2,71 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aviation – Musée HOP WW2</title>
+    <title>Aviation WW2</title>
     <link rel="stylesheet" href="../style.css">
-
-    <style>
-        body { margin:0; background:#111; color:#eee; font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-        header { background:#1fb183; padding:25px 5vw; border-bottom:2px solid #333; }
-        .logo { font-weight:900; font-size:1.4rem; letter-spacing:2px; text-transform:uppercase; }
-        nav a { margin:0 12px; color:#fff; text-transform:uppercase; font-size:0.95rem; }
-        h2 { font-size:1.8rem; text-transform:uppercase; letter-spacing:2px; margin-bottom:20px; }
-        .section { padding:50px 5vw; max-width:1100px; margin:auto; }
-        .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:30px; margin-top:30px; }
-        .card { background:#1fb183; border-radius:8px; border:1px solid #333; overflow:hidden; color:#000; text-align:center; transition:0.2s; }
-        .card:hover { transform:scale(1.03); background:#22cfa0; }
-        .card img { width:100%; height:220px; object-fit:cover; border-bottom:1px solid #333; }
-        .card-title { padding:15px; font-weight:700; text-transform:uppercase; letter-spacing:1px; }
-        footer { background:#0d0b0c; padding:30px 5vw; text-align:center; border-top:2px solid #333; color:#aaa; font-size:0.85rem; }
-    </style>
 </head>
 
 <body>
 
 <header>
-    <div class="logo">Musée HOP WW2</div>
-    <nav>
-        <a href="../index.html">Accueil</a>
-        <a href="index.html">Collections</a>
-        <a href="../guides/index.html">Guides</a>
-        <a href="../contact.html">Contact</a>
-    </nav>
+    <h1>✈️ Aviation de la Seconde Guerre mondiale</h1>
+    <p>Découvrez les avions emblématiques utilisés par les différentes forces aériennes durant le conflit.</p>
 </header>
 
-<section class="section">
-    <h2>Aviation WW2</h2>
-    <p>Découvrez les avions emblématiques de la Seconde Guerre mondiale.</p>
+<section class="collection-grid">
 
-    <div class="grid">
-
-        <div class="card">
-            <img src="../images/avion_spitfire.jpeg" alt="Spitfire">
-            <div class="card-title">Spitfire</div>
-        </div>
-
-        <div class="card">
-            <img src="../images/avion_bf109.jpeg" alt="Messerschmitt Bf 109">
-            <div class="card-title">Bf 109</div>
-        </div>
-
-        <div class="card">
-            <img src="../images/avion_p51.jpeg" alt="P-51 Mustang">
-            <div class="card-title">P‑51 Mustang</div>
-        </div>
-
-        <div class="card">
-            <img src="../images/avion_stuka.jpeg" alt="Junkers Ju 87 Stuka">
-            <div class="card-title">Ju‑87 Stuka</div>
-        </div>
-
+    <!-- P-51 Mustang -->
+    <div class="card">
+        <img src="../images/avion_p51_mustang.jpg" alt="P-51 Mustang">
+        <h3>P-51 Mustang</h3>
+        <p>Chasseur américain réputé pour son autonomie et ses performances.</p>
+        <a href="../guides/guide-p51.html" class="btn">Voir la fiche</a>
     </div>
+
+    <!-- Spitfire -->
+    <div class="card">
+        <img src="../images/avion_spitfire.jpg" alt="Spitfire">
+        <h3>Supermarine Spitfire</h3>
+        <p>Chasseur britannique emblématique de la Bataille d’Angleterre.</p>
+        <a href="../guides/guide-spitfire.html" class="btn">Voir la fiche</a>
+    </div>
+
+    <!-- Bf 109 -->
+    <div class="card">
+        <img src="../images/avion_bf109.jpg" alt="Messerschmitt Bf 109">
+        <h3>Messerschmitt Bf 109</h3>
+        <p>Chasseur principal de la Luftwaffe, produit à plus de 30 000 exemplaires.</p>
+        <a href="../guides/guide-bf109.html" class="btn">Voir la fiche</a>
+    </div>
+
+    <!-- Fw 190 -->
+    <div class="card">
+        <img src="../images/avion_fw190.jpg" alt="Focke-Wulf Fw 190">
+        <h3>Focke-Wulf Fw 190</h3>
+        <p>Chasseur allemand polyvalent, très apprécié des pilotes.</p>
+        <a href="../guides/guide-fw190.html" class="btn">Voir la fiche</a>
+    </div>
+
+    <!-- Yak-3 -->
+    <div class="card">
+        <img src="../images/avion_yak3.jpg" alt="Yak-3">
+        <h3>Yak-3</h3>
+        <p>Chasseur soviétique léger, extrêmement maniable et performant.</p>
+        <a href="../guides/guide-yak3.html" class="btn">Voir la fiche</a>
+    </div>
+
+    <!-- Zero A6M -->
+    <div class="card">
+        <img src="../images/avion_zero_a6m.jpg" alt="Mitsubishi A6M Zero">
+        <h3>Mitsubishi A6M Zero</h3>
+        <p>Chasseur japonais célèbre pour sa maniabilité exceptionnelle.</p>
+        <a href="../guides/guide-zero.html" class="btn">Voir la fiche</a>
+    </div>
+
 </section>
 
 <footer>
-    © 2026 – Musée HOP WW2 • Collections officielles
+    <a href="../collections/index.html" class="btn">⬅ Retour aux collections</a>
 </footer>
 
 </body>
