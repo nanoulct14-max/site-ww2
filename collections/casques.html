@@ -2,112 +2,55 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casques – Musée HOP WW2</title>
+    <title>Collections – Casques</title>
     <link rel="stylesheet" href="../style.css">
-
-    <style>
-        body { margin:0; background:#111; color:#eee; font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
-
-        header { background:#1fb183; padding:25px 5vw; border-bottom:2px solid #333; }
-        .logo { font-weight:900; font-size:1.4rem; letter-spacing:2px; text-transform:uppercase; }
-        nav a { margin:0 12px; color:#fff; text-transform:uppercase; font-size:0.95rem; }
-
-        h2 { font-size:1.8rem; text-transform:uppercase; letter-spacing:2px; margin-bottom:20px; }
-
-        .section { padding:50px 5vw; max-width:1100px; margin:auto; }
-
-        .grid {
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-            gap:30px;
-            margin-top:30px;
-        }
-
-        .card {
-            background:#1fb183;
-            border-radius:8px;
-            border:1px solid #333;
-            overflow:hidden;
-            color:#000;
-            text-align:center;
-            transition:0.2s;
-        }
-
-        .card:hover { transform:scale(1.03); background:#22cfa0; }
-
-        .card img {
-            width:100%;
-            height:220px;
-            object-fit:cover;
-            border-bottom:1px solid #333;
-        }
-
-        .card-title {
-            padding:15px;
-            font-weight:700;
-            text-transform:uppercase;
-            letter-spacing:1px;
-        }
-
-        footer {
-            background:#0d0b0c;
-            padding:30px 5vw;
-            text-align:center;
-            border-top:2px solid #333;
-            color:#aaa;
-            font-size:0.85rem;
-        }
-    </style>
 </head>
 
 <body>
 
 <header>
-    <div class="logo">Musée HOP WW2</div>
-    <nav>
-        <a href="../index.html">Accueil</a>
-        <a href="index.html">Collections</a>
-        <a href="../guides/index.html">Guides</a>
-        <a href="../contact.html">Contact</a>
-    </nav>
+    <h1>🪖 Collection des Casques WW2</h1>
+    <p>Découvrez les casques emblématiques des armées engagées durant la Seconde Guerre mondiale.</p>
 </header>
 
-<section class="section">
-    <h2>Casques WW2</h2>
-    <p>Découvrez les casques authentiques et les reproductions étudiées par le Musée HOP WW2.</p>
+<section class="collection-grid">
 
-    <div class="grid">
-
-        <!-- M1 -->
-        <a class="card" href="../guide-casque-us.html">
-            <img src="../images/image_1781785942652.jpeg" alt="Casque US M1">
-            <div class="card-title">Casque US M1</div>
-        </a>
-
-        <!-- M35 -->
-        <a class="card" href="../guide-copies-allemandes.html">
-            <img src="../images/image_1781786232363.jpeg" alt="Casque allemand M35">
-            <div class="card-title">Casque allemand M35</div>
-        </a>
-
-        <!-- MK2 -->
-        <div class="card">
-            <img src="../images/image_1781786329691.jpeg" alt="Casque britannique MK2">
-            <div class="card-title">Casque britannique MK2</div>
-        </div>
-
-        <!-- SSH40 -->
-        <div class="card">
-            <img src="../images/image_1781786438720.jpeg" alt="Casque soviétique SSH40">
-            <div class="card-title">Casque soviétique SSH40</div>
-        </div>
-
+    <!-- Casque US M1 -->
+    <div class="card">
+        <img src="../images/casque_us_m1.jpg" alt="Casque US M1">
+        <h3>Casque US M1</h3>
+        <p>Utilisé par l’armée américaine dès 1941.</p>
+        <a href="../guides/guide-casque-us.html" class="btn">Voir la fiche</a>
     </div>
+
+    <!-- Casque Allemand M35 -->
+    <div class="card">
+        <img src="../images/casque_allemand_m35.jpg" alt="Casque Allemand M35">
+        <h3>Casque Allemand M35</h3>
+        <p>Casque emblématique de la Wehrmacht et des Waffen-SS.</p>
+        <a href="../guides/guide-casque-allemand.html" class="btn">Voir la fiche</a>
+    </div>
+
+    <!-- Casque Britannique MK2 -->
+    <div class="card">
+        <img src="../images/casque_britannique_mk2.jpg" alt="Casque Britannique MK2">
+        <h3>Casque Britannique MK2</h3>
+        <p>Porté par les forces britanniques et du Commonwealth.</p>
+        <a href="../guides/guide-casque-britannique.html" class="btn">Voir la fiche</a>
+    </div>
+
+    <!-- Casque Soviétique SSH40 -->
+    <div class="card">
+        <img src="../images/casque_sovietique_ssh40.jpg" alt="Casque Soviétique SSH40">
+        <h3>Casque Soviétique SSH40</h3>
+        <p>Casque standard de l’Armée Rouge à partir de 1940.</p>
+        <a href="../guides/guide-casque-sovietique.html" class="btn">Voir la fiche</a>
+    </div>
+
 </section>
 
 <footer>
-    © 2026 – Musée HOP WW2 • Collections officielles
+    <a href="../collections/index.html" class="btn">⬅ Retour aux collections</a>
 </footer>
 
 </body>
