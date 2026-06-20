@@ -213,3 +213,29 @@ nav a:hover {
     letter-spacing: 1px;
 }
 /site-ww2/style.css
+.uniformes-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+.pays {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.pays img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.pays h2 {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
