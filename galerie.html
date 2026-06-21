@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Galerie des Opérations</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+/* STYLE GALERIE PREMIUM */
+
+.gallery-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    filter: brightness(70%);
+    transition: 0.3s;
+}
+
+.gallery-item:hover img {
+    filter: brightness(50%);
+    transform: scale(1.05);
+}
+
+.gallery-item-title {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 0 10px black;
+}
+</style>
+
+</head>
+<body>
+
+<h1 class="gallery-title">Galerie des Opérations Militaires</h1>
+
+<div class="gallery-grid">
+
+    <a href="overlord.html" class="gallery-item">
+        <img src="overlord.jpg" alt="Overlord">
+        <div class="gallery-item-title">Overlord</div>
+    </a>
+
+    <a href="neptune.html" class="gallery-item">
+        <img src="neptune.jpg" alt="Neptune">
+        <div class="gallery-item-title">Neptune</div>
+    </a>
+
+    <a href="torch.html" class="gallery-item">
+        <img src="torch.jpg" alt="Torch">
+        <div class="gallery-item-title">Torch</div>
+    </a>
+
+    <a href="avalanche.html" class="gallery-item">
+        <img src="avalanche.jpg" alt="Avalanche">
+        <div class="gallery-item-title">Avalanche</div>
+    </a>
+
+    <a href="dragoon.html" class="gallery-item">
+        <img src="dragoon.jpg" alt="Dragoon">
+        <div class="gallery-item-title">Dragoon</div>
+    </a>
+
+    <a href="stalingrad.html" class="gallery-item">
+        <img src="stalingrad.jpg" alt="Stalingrad">
+        <div class="gallery-item-title">Stalingrad</div>
+    </a>
+
+    <a href="koursk.html" class="gallery-item">
+        <img src="koursk.jpg" alt="Koursk">
+        <div class="gallery-item-title">Koursk</div>
+    </a>
+
+    <a href="ardennes.html" class="gallery-item">
+        <img src="ardennes.jpg" alt="Ardennes">
+        <div class="gallery-item-title">Ardennes</div>
+    </a>
+
+    <a href="bataille-france.html" class="gallery-item">
+        <img src="bataille-france.jpg" alt="Bataille de France">
+        <div class="gallery-item-title">Bataille de France</div>
+    </a>
+
+    <a href="el-alamein.html" class="gallery-item">
+        <img src="el-alamein.jpg" alt="El-Alamein">
+        <div class="gallery-item-title">El-Alamein</div>
+    </a>
+
+    <a href="dynamo.html" class="gallery-item">
+        <img src="dynamo.jpg" alt="Dynamo">
+        <div class="gallery-item-title">Dynamo</div>
+    </a>
+
+    <a href="market-garden.html" class="gallery-item">
+        <img src="market-garden.jpg" alt="Market Garden">
+        <div class="gallery-item-title">Market Garden</div>
+    </a>
+
+    <a href="barbarossa.html" class="gallery-item">
+        <img src="barbarossa.jpg" alt="Barbarossa">
+        <div class="gallery-item-title">Barbarossa</div>
+    </a>
+
+    <a href="typhon.html" class="gallery-item">
+        <img src="typhon.jpg" alt="Typhon">
+        <div class="gallery-item-title">Typhon</div>
+    </a>
+
+    <a href="bagration.html" class="gallery-item">
+        <img src="bagration.jpg" alt="Bagration">
+        <div class="gallery-item-title">Bagration</div>
+    </a>
+
+    <a href="dresde.html" class="gallery-item">
+        <img src="dresde.jpg" alt="Dresde">
+        <div class="gallery-item-title">Dresde</div>
+    </a>
+
+    <a href="raid-tokyo.html" class="gallery-item">
+        <img src="raid-tokyo.jpg" alt="Raid Tokyo">
+        <div class="gallery-item-title">Raid sur Tokyo</div>
+    </a>
+
+    <a href="blitz-londres.html" class="gallery-item">
+        <img src="blitz-londres.jpg" alt="Blitz Londres">
+        <div class="gallery-item-title">Blitz Londres</div>
+    </a>
+
+    <a href="gomorrhe.html" class="gallery-item">
+        <img src="gomorrhe.jpg" alt="Gomorrhe">
+        <div class="gallery-item-title">Gomorrhe</div>
+    </a>
+
+    <a href="pearl-harbor.html" class="gallery-item">
+        <img src="pearl-harbor.jpg" alt="Pearl Harbor">
+        <div class="gallery-item-title">Pearl Harbor</div>
+    </a>
+
+</div>
+
+</body>
+</html>
