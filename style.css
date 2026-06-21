@@ -191,3 +191,61 @@ footer {
     color: white;
     font-weight: bold;
 }
+/* --- Mise en colonne verticale des boutons --- */
+.cards.vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+/* --- Boutons plus grands --- */
+.cards.vertical .card {
+    width: 90%;
+    max-width: 450px;
+    height: 120px;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-weight: bold;
+    text-shadow: 0 0 8px black;
+}
+
+/* --- Boutons drapeaux graffiti --- */
+
+.card.france {
+    background-image: url("images/image_1781939961968.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.card.usa {
+    background-image: url("images/image_1781940089614.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.card.uk {
+    background-image: url("images/image_1781939815790.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.card.allemagne {
+    background-image: url("images/image_1781940468403.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.card.urss {
+    background-image: url("images/image_1781940479889.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
