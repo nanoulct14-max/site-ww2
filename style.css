@@ -249,3 +249,25 @@ footer {
     background-position: center;
     color: white;
 }
+/* --- Mise en colonne verticale des boutons --- */
+.cards.vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    width: 100%;
+}
+
+/* --- Boutons plus grands --- */
+.cards.vertical .card {
+    width: 90%;
+    max-width: 450px;
+    height: 130px;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-weight: bold;
+    text-shadow: 0 0 8px black;
+}
