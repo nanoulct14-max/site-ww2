@@ -301,3 +301,54 @@ footer {
     color: white;
     font-weight: bold;
 }
+/* STYLE DES FICHES WW2 */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #222;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #34495e;
+    border-left: 4px solid #34495e;
+    padding-left: 10px;
+    margin-top: 25px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Mise en page centrée */
+body {
+    max-width: 900px;
+    margin: auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
