@@ -150,3 +150,44 @@ footer {
     color: #aaa;
     font-size: 0.85rem;
 }
+/* --- Boutons drapeaux graffiti pour l'accueil --- */
+
+.card.france {
+    background-image: url("images/image_1781939961968.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-weight: bold;
+}
+
+.card.usa {
+    background-image: url("images/image_1781940089614.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-weight: bold;
+}
+
+.card.uk {
+    background-image: url("images/image_1781939815790.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-weight: bold;
+}
+
+.card.allemagne {
+    background-image: url("images/image_1781940468403.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-weight: bold;
+}
+
+.card.urss {
+    background-image: url("images/image_1781940479889.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-weight: bold;
+}
