@@ -294,3 +294,10 @@ footer {
     border-radius: 8px;
     margin: 10px;
 }
+.card.operations {
+    background-image: url("images/operations-militaires.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-weight: bold;
+}
