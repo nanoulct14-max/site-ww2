@@ -279,3 +279,11 @@ footer {
     margin: 0 auto 30px auto;
     text-align: center;
 }
+.helmet-display img {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 8px;
+}
