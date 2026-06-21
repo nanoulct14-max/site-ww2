@@ -287,3 +287,10 @@ footer {
     margin: 0 auto 20px auto;
     border-radius: 8px;
 }
+.helmet-images img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px;
+}
