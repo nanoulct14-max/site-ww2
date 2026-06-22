@@ -161,3 +161,28 @@ nav a:hover {
 }
 
 .nation-button {
+/* MENU US (et autres nations) */
+.nation-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.nation-button {
+    display: block;
+    padding: 15px;
+    background: #1b1f23;   /* NOIR */
+    color: #f0c96a;        /* JAUNE OR */
+    border: 1px solid #333;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nation-button:hover {
+    background: #333;
+    color: white;
+}
