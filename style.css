@@ -194,3 +194,91 @@ footer {
     color: #aaa;
     font-size: 0.85rem;
 }
+/* ============================================================
+   CORRECTIONS FINALES — DRAPEAUX + OPÉRATIONS + CASQUES
+   À COLLER À LA FIN DU STYLE.CSS
+   ============================================================ */
+
+/* ------------------------------
+   DRAPEAUX GRAFFITI (VERSION FINALE)
+------------------------------ */
+
+.card.france {
+    background-image: url("images/image_1781939961968.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 8px black;
+}
+
+.card.usa {
+    background-image: url("images/image_1781940089614.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 8px black;
+}
+
+.card.uk {
+    background-image: url("images/image_1781939815790.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 8px black;
+}
+
+.card.allemagne {
+    background-image: url("images/image_1781940468403.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 8px black;
+}
+
+.card.urss {
+    background-image: url("images/image_1781940479889.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 8px black;
+}
+
+/* ------------------------------
+   BOUTON OPÉRATIONS MILITAIRES
+------------------------------ */
+
+.card.operations {
+    background-image: url("images/operations-militaires.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 8px black;
+    border-radius: 12px;
+}
+
+/* ------------------------------
+   CORRECTION TAILLE IMAGES CASQUES
+------------------------------ */
+
+.helmet-display img {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 8px;
+}
+
+.helmet-images img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px;
+}
