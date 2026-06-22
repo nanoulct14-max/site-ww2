@@ -67,7 +67,7 @@ nav a:hover {
 }
 
 /* ------------------------------
-   CARDS (BOUTONS DRAPEAUX)
+   CARDS (BOUTONS)
 ------------------------------ */
 
 .cards {
@@ -84,46 +84,80 @@ nav a:hover {
     align-items: center;
 }
 
+/* Base de TOUS les boutons : NOIR */
 .card {
+    background: #1b1f23;          /* NOIR */
     padding: 20px;
     border-radius: 12px;
-    color: white;
+    color: #f0c96a;
+    border: 1px solid #333;
     text-align: center;
-    font-weight: bold;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: 0.35s;
-    background-size: cover;
-    background-position: center;
-    text-shadow: 0 0 8px black;
 }
 
 .card:hover {
+    background: #333;
     transform: translateY(-3px);
 }
 
+/* Boutons verticaux plus grands */
+.cards.vertical .card {
+    width: 90%;
+    max-width: 450px;
+    height: 120px;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
 /* ------------------------------
-   DRAPEAUX (NE PAS TOUCHER)
+   DRAPEAUX (GARDENT LEUR IMAGE)
 ------------------------------ */
 
 .card.france {
   background-image: url("images/image_1781939961968.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 0 0 8px black;
 }
 
 .card.usa {
   background-image: url("images/image_1781940089614.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 0 0 8px black;
 }
 
 .card.uk {
   background-image: url("images/image_1781939815790.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 0 0 8px black;
 }
 
 .card.allemagne {
   background-image: url("images/image_1781940468403.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 0 0 8px black;
 }
 
 .card.urss {
   background-image: url("images/image_1781940479889.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 0 0 8px black;
 }
 
 /* ------------------------------
@@ -132,11 +166,14 @@ nav a:hover {
 
 .card.operations {
     background-image: url("images/operations-militaires.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 0 0 8px black;
 }
 
 /* ------------------------------
    MENU INTERNE (UNIFORMES / ARMES / OBJETS / ETC.)
-   — NE TOUCHE PAS AUX DRAPEAUX
 ------------------------------ */
 
 .nation-menu {
@@ -150,7 +187,7 @@ nav a:hover {
 .nation-button {
     display: block;
     padding: 15px;
-    background: #1b1f23;
+    background: #1b1f23;      /* NOIR */
     color: #f0c96a;
     text-align: center;
     border: 1px solid #333;
