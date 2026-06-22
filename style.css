@@ -282,3 +282,32 @@ footer {
     border-radius: 8px;
     margin: 10px;
 }
+/* ============================================================
+   CORRECTION DÉFINITIVE — TAILLE DES IMAGES DE CASQUES
+   ============================================================ */
+
+/* Image principale d’un casque (photo du haut) */
+.helmet-display img {
+    max-width: 320px;      /* Taille contrôlée */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 25px auto;
+    border-radius: 8px;
+}
+
+/* Galerie de plusieurs photos */
+.helmet-images img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px;
+    display: inline-block;
+}
+
+/* Sécurité : empêche TOUTE image de dépasser */
+img {
+    max-width: 100%;
+    height: auto;
+}
