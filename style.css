@@ -1,5 +1,5 @@
 /* ------------------------------
-   STYLE GLOBAL (FOND NOIR)
+   STYLE GLOBAL
 ------------------------------ */
 
 body {
@@ -9,8 +9,17 @@ body {
     color: #e5e5e5;
 }
 
+a {
+    color: #f0c96a;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
 /* ------------------------------
-   HEADER + MENU
+   HEADER
 ------------------------------ */
 
 header {
@@ -31,7 +40,6 @@ header {
 nav a {
     margin: 0 12px;
     color: #f0c96a;
-    text-decoration: none;
     font-weight: 500;
     transition: 0.3s;
 }
@@ -60,12 +68,6 @@ nav a:hover {
     letter-spacing: 2px;
 }
 
-.section p {
-    font-size: 1.2rem;
-    text-align: center;
-    color: #ddd;
-}
-
 /* ------------------------------
    CARDS (BOUTONS)
 ------------------------------ */
@@ -84,18 +86,19 @@ nav a:hover {
     align-items: center;
 }
 
-/* Base de TOUS les boutons : NOIR */
+/* Base des boutons = NOIR */
 .card {
-    background: #1b1f23;          /* NOIR */
+    display: block;
     padding: 20px;
     border-radius: 12px;
-    color: #f0c96a;
-    border: 1px solid #333;
     text-align: center;
-    font-weight: 600;
+    font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
-    transition: 0.35s;
+    background: #1b1f23;
+    color: #f0c96a;
+    border: 1px solid #333;
+    transition: 0.3s;
 }
 
 .card:hover {
@@ -103,147 +106,9 @@ nav a:hover {
     transform: translateY(-3px);
 }
 
-/* Boutons verticaux plus grands */
-.cards.vertical .card {
-    width: 90%;
-    max-width: 450px;
-    height: 120px;
-    font-size: 1.6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12px;
-    font-weight: bold;
-}
-
 /* ------------------------------
-   DRAPEAUX (GARDENT LEUR IMAGE)
+   DRAPEAUX (NE PAS TOUCHER)
 ------------------------------ */
-
-.card.france {
-  background-image: url("images/image_1781939961968.jpeg");
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-shadow: 0 0 8px black;
-}
-
-.card.usa {
-  background-image: url("images/image_1781940089614.jpeg");
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-shadow: 0 0 8px black;
-}
-
-.card.uk {
-  background-image: url("images/image_1781939815790.jpeg");
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-shadow: 0 0 8px black;
-}
-
-.card.allemagne {
-  background-image: url("images/image_1781940468403.jpeg");
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-shadow: 0 0 8px black;
-}
-
-.card.urss {
-  background-image: url("images/image_1781940479889.jpeg");
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-shadow: 0 0 8px black;
-}
-
-/* ------------------------------
-   BOUTON OPÉRATIONS MILITAIRES
------------------------------- */
-
-.card.operations {
-    background-image: url("images/operations-militaires.jpg");
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-shadow: 0 0 8px black;
-}
-
-/* ------------------------------
-   MENU INTERNE (UNIFORMES / ARMES / OBJETS / ETC.)
------------------------------- */
-
-.nation-menu {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 20px;
-    margin-top: 25px;
-    width: 100%;
-}
-
-.nation-button {
-    display: block;
-    padding: 15px;
-    background: #1b1f23;      /* NOIR */
-    color: #f0c96a;
-    text-align: center;
-    border: 1px solid #333;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.nation-button:hover {
-    background: #333;
-    color: white;
-}
-
-/* ------------------------------
-   IMAGES CASQUES
------------------------------- */
-
-.helmet-display img {
-    max-width: 320px;
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto 25px auto;
-    border-radius: 8px;
-}
-
-.helmet-images img {
-    width: 260px;
-    height: 260px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin: 10px;
-    display: inline-block;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* ------------------------------
-   FOOTER
------------------------------- */
-
-footer {
-  background: #d00b0c;
-  padding: 30px 20px;
-  text-align: center;
-  border-top: 2px solid #333;
-  color: #aaa;
-  font-size: 0.85rem;
-}
-/* ----------------------------------------------
-   CORRECTION : NE PAS CHANGER LA TAILLE DES DRAPEAUX
----------------------------------------------- */
 
 .card.france,
 .card.usa,
@@ -251,17 +116,48 @@ footer {
 .card.allemagne,
 .card.urss,
 .card.operations {
-    width: 100%;
-    height: 180px;      /* Mets la hauteur EXACTE que tu avais avant */
-    max-width: 450px;
+    height: 180px;                 /* Taille uniforme */
     background-size: cover;
     background-position: center;
+    color: white;
+    text-shadow: 0 0 8px black;
 }
-.cards.vertical .card.france,
-.cards.vertical .card.usa,
-.cards.vertical .card.uk,
-.cards.vertical .card.allemagne,
-.cards.vertical .card.urss,
-.cards.vertical .card.operations {
-    height: auto;   /* On annule la hauteur forcée */
+
+/* Images drapeaux */
+.card.france {
+    background-image: url("images/image_1781939961968.jpeg");
 }
+
+.card.usa {
+    background-image: url("images/image_1781940089614.jpeg");
+}
+
+.card.uk {
+    background-image: url("images/image_1781939815790.jpeg");
+}
+
+.card.allemagne {
+    background-image: url("images/image_1781940468403.jpeg");
+}
+
+.card.urss {
+    background-image: url("images/image_1781940479889.jpeg");
+}
+
+/* Opérations militaires */
+.card.operations {
+    background-image: url("images/operations-militaires.jpg");
+}
+
+/* ------------------------------
+   MENUS INTERNES (UNIFORMES / ARMES / OBJETS / ETC.)
+------------------------------ */
+
+.nation-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.nation-button {
