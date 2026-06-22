@@ -460,3 +460,12 @@ a:hover {
     font-weight: bold;
     text-shadow: 0 0 10px rgba(0,0,0,0.8);
 }
+/* LISTES PLUS GRANDES ET PLUS LISIBLES */
+ul {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
