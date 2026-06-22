@@ -239,3 +239,21 @@ footer {
     color: white;
     text-shadow: 0 0 8px black;
 }
+/* FORCE LA TAILLE IDENTIQUE POUR TOUS LES DRAPEAUX */
+.card.france,
+.card.usa,
+.card.uk,
+.card.allemagne,
+.card.urss,
+.card.operations {
+    height: 180px !important;
+    width: 100% !important;
+    max-width: 450px;
+    background-size: cover !important;
+    background-position: center !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0 0 8px black;
+}
