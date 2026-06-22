@@ -221,3 +221,21 @@ footer {
     background-size: cover !important;
     background-position: center !important;
 }
+/* TAILLE FIXE POUR TOUS LES DRAPEAUX */
+.card.france,
+.card.usa,
+.card.uk,
+.card.allemagne,
+.card.urss,
+.card.operations {
+    height: 180px;        /* même hauteur pour tous */
+    width: 100%;          /* même largeur */
+    max-width: 450px;     /* limite propre */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0 0 8px black;
+}
