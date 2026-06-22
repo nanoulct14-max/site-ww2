@@ -257,3 +257,11 @@ footer {
     background-size: cover;
     background-position: center;
 }
+.cards.vertical .card.france,
+.cards.vertical .card.usa,
+.cards.vertical .card.uk,
+.cards.vertical .card.allemagne,
+.cards.vertical .card.urss,
+.cards.vertical .card.operations {
+    height: auto;   /* On annule la hauteur forcée */
+}
