@@ -223,3 +223,6 @@ footer {
   color: #aaa;
   font-size: 0.85rem;
 }
+footer {
+    background: #000000 !important; /* fond noir */
+}
