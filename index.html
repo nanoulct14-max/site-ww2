@@ -2,32 +2,112 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Musée HOP WW2</title>
+    <title>Musée HOP WW2 – Accueil</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #111;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 40px;
+            font-size: 36px;
+            letter-spacing: 2px;
+        }
+
+        .menu-container {
+            width: 90%;
+            max-width: 900px;
+            margin: 40px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .menu-button {
+            position: relative;
+            height: 140px;
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+            font-size: 26px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            background-size: cover;
+            background-position: center;
+            transition: 0.3s;
+        }
+
+        .menu-button:hover {
+            transform: scale(1.03);
+            filter: brightness(1.15);
+        }
+
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.55);
+        }
+
+        .menu-button span {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
 </head>
 
 <body>
 
-<header>
-    <div class="logo">Musée HOP WW2</div>
-</header>
+    <h1>Musée HOP WW2</h1>
+    <p>Exploration historique de la Seconde Guerre mondiale</p>
 
-<main class="home-container">
+    <div class="menu-container">
 
-    <h1 class="home-title">Bienvenue au Musée HOP WW2</h1>
+        <a href="operations-militaires.html" class="menu-button" style="background-image: url('images/operations.jpg');">
+            <div class="overlay"></div>
+            <span>Opérations militaires</span>
+        </a>
 
-    <div class="button-grid">
+        <a href="visages-menu.html" class="menu-button" style="background-image: url('images/visages.jpg');">
+            <div class="overlay"></div>
+            <span>Visages de la 2e Guerre</span>
+        </a>
 
-        <a href="france.html" class="home-button">France</a>
-        <a href="operations.html" class="home-button">Opérations militaires</a>
-        <a href="visages.html" class="home-button">Visages de la Seconde Guerre</a>
-        <a href="collections.html" class="home-button">Collections</a>
-        <a href="guides.html" class="home-button">Guides</a>
-        <a href="contact.html" class="home-button">Contact</a>
+        <a href="france-menu.html" class="menu-button" style="background-image: url('images/france.jpg');">
+            <div class="overlay"></div>
+            <span>France</span>
+        </a>
+
+        <a href="uk-menu.html" class="menu-button" style="background-image: url('images/uk.jpg');">
+            <div class="overlay"></div>
+            <span>Royaume‑Uni</span>
+        </a>
+
+        <a href="us-menu.html" class="menu-button" style="background-image: url('images/us.jpg');">
+            <div class="overlay"></div>
+            <span>États‑Unis</span>
+        </a>
+
+        <a href="urss-menu.html" class="menu-button" style="background-image: url('images/urss.jpg');">
+            <div class="overlay"></div>
+            <span>URSS</span>
+        </a>
+
+        <a href="allemagne-menu.html" class="menu-button" style="background-image: url('images/allemagne.jpg');">
+            <div class="overlay"></div>
+            <span>Allemagne</span>
+        </a>
 
     </div>
-
-</main>
 
 </body>
 </html>
