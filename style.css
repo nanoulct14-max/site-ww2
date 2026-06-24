@@ -303,3 +303,29 @@ footer {
     background-color: #444;
     border-color: #888;
 }
+/* Bloc titre accueil */
+.header-title {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px 30px;
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* Titre principal */
+.header-title h1 {
+    font-size: 42px;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(0,0,0,0.8);
+    margin-bottom: 10px;
+}
+
+/* Sous-titre */
+.header-title p {
+    font-size: 20px;
+    color: #e0e0e0;
+    text-shadow: 0 0 6px rgba(0,0,0,0.7);
+    margin: 0;
+}
