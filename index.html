@@ -2,8 +2,9 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Musée HOP WW2 – Accueil</title>
+    <title>Musée HOP WW2 - Accueil</title>
     <link rel="stylesheet" href="style.css">
+
     <style>
         body {
             background-color: #111;
@@ -14,10 +15,29 @@
             text-align: center;
         }
 
-        h1 {
+        /* Bloc titre accueil */
+        .header-title {
+            text-align: center;
             margin-top: 40px;
-            font-size: 36px;
-            letter-spacing: 2px;
+            margin-bottom: 40px;
+            padding: 20px 30px;
+            background: rgba(0, 0, 0, 0.55);
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        .header-title h1 {
+            font-size: 42px;
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(0,0,0,0.8);
+            margin-bottom: 10px;
+        }
+
+        .header-title p {
+            font-size: 20px;
+            color: #e0e0e0;
+            text-shadow: 0 0 6px rgba(0,0,0,0.7);
+            margin: 0;
         }
 
         .menu-container {
@@ -67,8 +87,10 @@
 
 <body>
 
-    <h1>Musée HOP WW2</h1>
-    <p>Exploration historique de la Seconde Guerre mondiale</p>
+    <div class="header-title">
+        <h1>Musée HOP WW2</h1>
+        <p>Exploration historique de la Seconde Guerre mondiale</p>
+    </div>
 
     <div class="menu-container">
 
@@ -89,12 +111,12 @@
 
         <a href="uk-menu.html" class="menu-button" style="background-image: url('images/uk.jpg');">
             <div class="overlay"></div>
-            <span>Royaume‑Uni</span>
+            <span>Royaume-Uni</span>
         </a>
 
         <a href="us-menu.html" class="menu-button" style="background-image: url('images/us.jpg');">
             <div class="overlay"></div>
-            <span>États‑Unis</span>
+            <span>États-Unis</span>
         </a>
 
         <a href="urss-menu.html" class="menu-button" style="background-image: url('images/urss.jpg');">
