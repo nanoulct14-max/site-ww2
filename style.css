@@ -285,10 +285,12 @@ footer {
     max-width: 900px;
 }
 
-/* Boutons identiques */
-..menu-button {
+.menu-button {
     position: relative;
     height: 110px;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
     border-radius: 12px;
     overflow: hidden;
     display: flex;
@@ -303,6 +305,7 @@ footer {
     background-position: center;
     transition: 0.3s;
 }
+
 
 .home-button:hover {
     background-color: #444;
