@@ -267,11 +267,13 @@ footer {
 }
 
 /* Conteneur principal */
-.home-container {
-    width: 100%;
+.menu-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 40px auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 20px;
 }
 
 /* Grille des boutons */
@@ -284,19 +286,22 @@ footer {
 }
 
 /* Boutons identiques */
-.home-button {
+..menu-button {
+    position: relative;
+    height: 110px;
+    border-radius: 12px;
+    overflow: hidden;
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: #222;
-    color: white;
-    padding: 22px 0;
+    justify-content: center;
     text-decoration: none;
-    font-size: 1.3rem;
-    border: 2px solid #555;
-    border-radius: 8px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-size: cover;
+    background-position: center;
     transition: 0.3s;
-    height: 70px;
 }
 
 .home-button:hover {
