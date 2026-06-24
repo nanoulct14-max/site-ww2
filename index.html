@@ -4,97 +4,32 @@
     <meta charset="UTF-8">
     <title>Musée HOP WW2 - Accueil</title>
     <link rel="stylesheet" href="style.css">
-
-    <style>
-        body {
-            background-color: #111;
-            color: white;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-
-        /* Bloc titre accueil */
-        .header-title {
-            text-align: center;
-            margin-top: 40px;
-            margin-bottom: 40px;
-            padding: 20px 30px;
-            background: rgba(0, 0, 0, 0.55);
-            border-radius: 10px;
-            display: inline-block;
-        }
-
-        .header-title h1 {
-            font-size: 42px;
-            color: #ffffff;
-            text-shadow: 0 0 10px rgba(0,0,0,0.8);
-            margin-bottom: 10px;
-        }
-
-        .header-title p {
-            font-size: 20px;
-            color: #e0e0e0;
-            text-shadow: 0 0 6px rgba(0,0,0,0.7);
-            margin: 0;
-        }
-
-        .menu-container {
-            width: 90%;
-            max-width: 900px;
-            margin: 40px auto;
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-        }
-
-        .menu-button {
-            position: relative;
-            height: 140px;
-            border-radius: 12px;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            color: white;
-            font-size: 26px;
-            font-weight: bold;
-            letter-spacing: 1px;
-            background-size: cover;
-            background-position: center;
-            transition: 0.3s;
-        }
-
-        .menu-button:hover {
-            transform: scale(1.03);
-            filter: brightness(1.15);
-        }
-
-        .overlay {
-            position: absolute;
-            inset: 0;
-            background: rgba(0,0,0,0.55);
-        }
-
-        .menu-button span {
-            position: relative;
-            z-index: 2;
-        }
-    </style>
 </head>
 
 <body>
 
+    <!-- MENU DE NAVIGATION -->
+    <header>
+        <div class="logo">Musée HOP WW2</div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="collections/index.html">Collections</a>
+            <a href="guides/index.html">Guides</a>
+            <a href="contact.html">Contact</a>
+            <a href="mentions-legales.html">Mentions légales</a>
+        </nav>
+    </header>
+
+    <!-- TITRE ACCUEIL -->
     <div class="header-title">
-    <h1>Musée HOP WW2</h1>
-    <p>Exploration historique de la Seconde Guerre mondiale</p>
+        <h1>Musée HOP WW2</h1>
+        <p>Exploration historique de la Seconde Guerre mondiale</p>
     </div>
 
+    <!-- MENU PRINCIPAL -->
     <div class="menu-container">
 
-        <a href="operations-militaires.html" class="menu-button" style="background-image: url('images/operations.jpg');">
+        <a href="operations-militaires.html" class="menu-button" style="background-image: url('images/operations-militaires.jpg');">
             <div class="overlay"></div>
             <span>Opérations militaires</span>
         </a>
@@ -114,7 +49,7 @@
             <span>Royaume-Uni</span>
         </a>
 
-        <a href="us-menu.html" class="menu-button" style="background-image: url('images/us.jpg');">
+        <a href="usa-menu.html" class="menu-button" style="background-image: url('images/usa.jpg');">
             <div class="overlay"></div>
             <span>États-Unis</span>
         </a>
