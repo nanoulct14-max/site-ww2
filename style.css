@@ -1,201 +1,87 @@
-/* ------------------------------
-   STYLE GLOBAL
------------------------------- */
-
+/* --- GLOBAL --- */
 body {
     margin: 0;
-    font-family: system-ui, sans-serif;
-    background: #0f1113;
-    color: #e5e5e5;
-    text-align: center;
-}
-
-a {
-    color: #f0c96a;
-    text-decoration: none;
-}
-
-a:hover {
+    font-family: Arial, sans-serif;
     color: white;
+    background: url('images/fond_dday.jpg') no-repeat center center/cover;
 }
 
-/* ------------------------------
-   HEADER (MENU DE NAVIGATION)
------------------------------- */
-
+/* --- HEADER --- */
 header {
-    background: #1b1f23;
-    border-bottom: 2px solid #f0c96a;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    text-align: center;
+    padding: 20px 10px;
+    background: rgba(0, 0, 0, 0.55);
 }
 
-.logo {
-    font-weight: 700;
-    font-size: 1.6rem;
-    color: #f0c96a;
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+
+nav {
+    margin-top: 10px;
 }
 
 nav a {
-    margin: 0 12px;
-    color: #f0c96a;
-    font-weight: 500;
-    transition: 0.3s;
+    margin: 0 10px;
+    color: #ffd27f;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 nav a:hover {
-    color: #fff;
-    text-shadow: 0 0 5px #f0c96a;
+    color: white;
 }
 
-/* ------------------------------
-   TITRE ACCUEIL
------------------------------- */
-
-.header-title {
+/* --- HERO --- */
+.hero {
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding: 20px 30px;
-    background: rgba(0, 0, 0, 0.55);
-    border-radius: 10px;
-    display: inline-block;
+    padding: 40px 20px;
+    background: rgba(0, 0, 0, 0.45);
 }
 
-.header-title h1 {
-    font-size: 42px;
-    color: #ffffff;
-    text-shadow: 0 0 10px rgba(0,0,0,0.8);
-    margin-bottom: 10px;
-}
-
-.header-title p {
-    font-size: 20px;
-    color: #e0e0e0;
-    text-shadow: 0 0 6px rgba(0,0,0,0.7);
+.hero h2 {
+    font-size: 1.6rem;
     margin: 0;
 }
 
-/* ------------------------------
-   MENU ACCUEIL (BOUTONS)
------------------------------- */
-
-.menu-container {
-    width: 65%;
-    max-width: 480px;
-    margin: 40px auto;
-    display: flex;
-    flex-direction: column;
+/* --- GRID --- */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
+    padding: 30px;
 }
 
-.menu-button {
+/* --- CARDS --- */
+.card {
     position: relative;
-    height: 110px;
-    width: 100%;
-    max-width: 420px;
-    margin: 0 auto;
-    border-radius: 12px;
+    display: block;
+    border-radius: 10px;
     overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-decoration: none;
     color: white;
-    font-size: 22px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    background-size: cover;
-    background-position: center;
-    transition: 0.3s;
+    background: rgba(0, 0, 0, 0.55);
+    transition: transform 0.2s ease;
 }
 
-.menu-button:hover {
-    transform: scale(1.03);
-    filter: brightness(1.15);
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    opacity: 0.85;
 }
 
-.overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.55);
-}
-
-.menu-button span {
-    position: relative;
-    z-index: 2;
-}
-
-/* ------------------------------
-   CARTES INTERNES (DRAPEAUX)
------------------------------- */
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    margin-top: 30px;
-}
-
-.cards.vertical {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    align-items: center;
-}
-
-.card {
+.card span {
     display: block;
-    padding: 20px;
-    border-radius: 12px;
-    text-align: center;
+    padding: 15px;
+    font-size: 1.2rem;
     font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    background: #1b1f23;
-    color: #f0f6ea;
-    border: 1px solid #333;
-    transition: 0.3s;
+    text-align: center;
 }
 
 .card:hover {
-    background: #333;
-    transform: translateY(-3px);
-}
-
-/* DRAPEAUX (IMAGES) */
-.card.france,
-.card.usa,
-.card.uk,
-.card.allemagne,
-.card.urss,
-.card.operations {
-    height: 180px !important;
-    width: 100% !important;
-    max-width: 450px !important;
-    background-size: cover !important;
-    background-position: center !important;
-    color: white !important;
-    text-shadow: 0 0 8px black !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-}
-
-/* ------------------------------
-   FOOTER
------------------------------- */
-
-footer {
-    background: #000000;
-    padding: 30px 20px;
-    text-align: center;
-    border-top: 2px solid #333;
-    color: #aaa;
-    font-size: 0.85rem;
+    transform: scale(1.03);
+    background: rgba(0, 0, 0, 0.75);
 }
