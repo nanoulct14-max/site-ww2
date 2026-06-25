@@ -1,67 +1,87 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Musée HOP WW2</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+/* --- GLOBAL --- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background: url('images/fond_dday.jpg') no-repeat center center/cover;
+}
 
-<body>
+/* --- HEADER --- */
+header {
+    text-align: center;
+    padding: 20px 10px;
+    background: rgba(0, 0, 0, 0.55);
+}
 
-    <header>
-        <h1>Musée HOP WW2</h1>
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="collections.html">Collections</a>
-            <a href="guides.html">Guides</a>
-            <a href="contact.html">Contact</a>
-            <a href="mentions.html">Mentions légales</a>
-        </nav>
-    </header>
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
 
-    <section class="hero">
-        <h2>Exploration historique de la Seconde Guerre mondiale</h2>
-    </section>
+nav {
+    margin-top: 10px;
+}
 
-    <section class="grid">
+nav a {
+    margin: 0 10px;
+    color: #ffd27f;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        <a class="card" href="operations.html">
-            <img src="images/operations.jpg" alt="">
-            <span>Opérations militaires</span>
-        </a>
+nav a:hover {
+    color: white;
+}
 
-        <a class="card" href="visages.html">
-            <img src="images/visages.jpg" alt="">
-            <span>Visages de la 2e Guerre</span>
-        </a>
+/* --- HERO --- */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(0, 0, 0, 0.45);
+}
 
-        <a class="card" href="france.html">
-            <img src="images/france.jpg" alt="">
-            <span>France</span>
-        </a>
+.hero h2 {
+    font-size: 1.6rem;
+    margin: 0;
+}
 
-        <a class="card" href="uk.html">
-            <img src="images/uk.jpg" alt="">
-            <span>Royaume-Uni</span>
-        </a>
+/* --- GRID --- */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
 
-        <a class="card" href="usa.html">
-            <img src="images/usa.jpg" alt="">
-            <span>États-Unis</span>
-        </a>
+/* --- CARDS --- */
+.card {
+    position: relative;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    background: rgba(0, 0, 0, 0.55);
+    transition: transform 0.2s ease;
+}
 
-        <a class="card" href="urss.html">
-            <img src="images/urss.jpg" alt="">
-            <span>URSS</span>
-        </a>
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    opacity: 0.85;
+}
 
-        <a class="card" href="allemagne.html">
-            <img src="images/allemagne.jpg" alt="">
-            <span>Allemagne</span>
-        </a>
+.card span {
+    display: block;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
 
-    </section>
-
-</body>
-</html>
+.card:hover {
+    transform: scale(1.03);
+    background: rgba(0, 0, 0, 0.75);
+}
