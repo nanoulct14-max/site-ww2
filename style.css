@@ -229,3 +229,79 @@ nav a:hover {
     padding: 10px;
     text-align: center;
 }
+/* FOND MUSEE */
+.museum-bg {
+    background-image: url('images/fond_dday.jpg'); /* ton image noir & blanc */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(2px);
+}
+
+/* TITRE NACRÉ */
+.museum-title {
+    color: #f2efe7;
+    text-align: center;
+    font-size: 2.8em;
+    margin-top: 20px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.6);
+    font-weight: 700;
+}
+
+/* SOUS-TITRE */
+.museum-subtitle h2 {
+    color: #e8e4d9;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.4em;
+    opacity: 0.9;
+}
+
+/* BOUTONS PREMIUM */
+.museum-buttons {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.museum-card {
+    display: flex;
+    height: 130px;
+    background: rgba(240, 236, 225, 0.92); /* nacre translucide */
+    border-radius: 14px;
+    overflow: hidden;
+    margin: 15px 0;
+    text-decoration: none;
+    color: #1a1a1a;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+    transition: 0.2s ease;
+}
+
+.museum-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.45);
+}
+
+.card-img {
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-text {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+}
+
+/* FOOTER */
+.museum-footer {
+    text-align: center;
+    color: #e8e4d9;
+    margin: 30px 0;
+    font-size: 0.9em;
+}
