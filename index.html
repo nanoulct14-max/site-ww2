@@ -1,75 +1,495 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Musée HOP WW2</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>WWII Cinematic Grunge Museum Interface</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #1a1a1a;
+      --bg-dark2: #2b2b2b;
+      --steel-gray: #4b4f55;
+      --off-white: #e5e5e0;
+      --burnt-brown: #5a3b2b;
+      --sepia: #7a5a3a;
+      --flag-blue: #0b2b4f;
+      --flag-red-worn: #7b1f24;
+      --flag-red-soviet: #b30000;
+      --flag-white-dirty: #d0d0c5;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #333 0%, #000 55%, #000 100%);
+      color: var(--off-white);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 30px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Background war photo + smoke + grain */
+    .page::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background:
+        url("background-debarquement.jpg") center/cover no-repeat;
+      filter: grayscale(100%) contrast(1.2) brightness(0.7);
+      opacity: 0.45;
+      z-index: -3;
+    }
+
+    .page::after {
+      content: "";
+      position: fixed;
+      inset: -50px;
+      background:
+        radial-gradient(circle at bottom, rgba(0,0,0,0.9) 0%, transparent 40%),
+        radial-gradient(circle at top, rgba(255,255,255,0.05) 0%, transparent 45%),
+        url("https://grainy-gradients.vercel.app/grain.png");
+      mix-blend-mode: soft-light;
+      opacity: 0.7;
+      z-index: -2;
+      pointer-events: none;
+    }
+
+    .smoke-layer {
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(circle at bottom, rgba(0,0,0,0.8) 0%, transparent 40%),
+        radial-gradient(circle at top, rgba(255,255,255,0.03) 0%, transparent 45%);
+      opacity: 0.8;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    /* Vignette */
+    .vignette {
+      position: fixed;
+      inset: 0;
+      box-shadow: inset 0 0 200px rgba(0,0,0,0.9);
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    /* Navigation */
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      color: var(--off-white);
+    }
+
+    .nav-left,
+    .nav-right {
+      display: flex;
+      gap: 24px;
+    }
+
+    .nav a {
+      color: var(--off-white);
+      text-decoration: none;
+      opacity: 0.8;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .nav a:hover {
+      opacity: 1;
+      transform: translateY(-1px);
+    }
+
+    .nav-logo {
+      font-family: "Oswald", sans-serif;
+      font-size: 0.9rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      opacity: 0.9;
+    }
+
+    /* Hero section */
+    .hero {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .hero-title {
+      font-family: "Oswald", sans-serif;
+      font-size: 3.2rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--off-white);
+      text-shadow:
+        0 0 12px rgba(255,255,255,0.15),
+        0 4px 18px rgba(0,0,0,0.9);
+      position: relative;
+      display: inline-block;
+      padding: 10px 40px;
+    }
+
+    .hero-title::before {
+      content: "";
+      position: absolute;
+      inset: -12px -40px;
+      border: 1px solid rgba(255,255,255,0.18);
+      border-radius: 4px;
+      background:
+        linear-gradient(145deg, rgba(255,255,255,0.03), rgba(0,0,0,0.6));
+      box-shadow:
+        0 0 40px rgba(0,0,0,0.9),
+        0 0 2px rgba(255,255,255,0.2);
+      opacity: 0.9;
+      z-index: -1;
+    }
+
+    .hero-subtitle {
+      margin-top: 18px;
+      font-size: 0.95rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(229,229,224,0.85);
+      opacity: 0.9;
+    }
+
+    .hero-tagline {
+      margin-top: 16px;
+      font-size: 0.85rem;
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+      color: rgba(229,229,224,0.8);
+    }
+
+    /* Cards container */
+    .cards-grid {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    @media (min-width: 900px) {
+      .cards-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .cards-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    /* Card base style */
+    .country-card {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding: 18px 22px;
+      border-radius: 10px;
+      border: 2px solid rgba(255,255,255,0.35);
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.04), rgba(0,0,0,0.85)),
+        radial-gradient(circle at top left, rgba(255,255,255,0.04), transparent 55%),
+        radial-gradient(circle at bottom right, rgba(0,0,0,0.9), transparent 55%);
+      box-shadow:
+        0 12px 30px rgba(0,0,0,0.9),
+        0 0 2px rgba(255,255,255,0.25);
+      overflow: hidden;
+      backdrop-filter: blur(4px);
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+
+    .country-card::before {
+      content: "";
+      position: absolute;
+      inset: -40px;
+      background-image:
+        linear-gradient(135deg, rgba(255,255,255,0.02) 0%, transparent 40%),
+        url("https://grainy-gradients.vercel.app/grain.png");
+      mix-blend-mode: soft-light;
+      opacity: 0.7;
+      pointer-events: none;
+    }
+
+    .country-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at bottom, rgba(0,0,0,0.85) 0%, transparent 40%),
+        radial-gradient(circle at top, rgba(0,0,0,0.6) 0%, transparent 45%);
+      opacity: 0.7;
+      pointer-events: none;
+    }
+
+    .country-card:hover {
+      transform: translateY(-4px);
+      box-shadow:
+        0 18px 40px rgba(0,0,0,0.95),
+        0 0 3px rgba(255,255,255,0.35);
+      border-color: rgba(255,255,255,0.6);
+    }
+
+    .country-flag {
+      position: relative;
+      width: 90px;
+      height: 60px;
+      flex-shrink: 0;
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow:
+        0 0 0 1px rgba(0,0,0,0.8),
+        0 8px 18px rgba(0,0,0,0.9);
+      background: #222;
+    }
+
+    .country-flag::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        url("https://grainy-gradients.vercel.app/grain.png");
+      mix-blend-mode: soft-light;
+      opacity: 0.7;
+    }
+
+    .country-flag::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(145deg, rgba(0,0,0,0.6), transparent 40%),
+        radial-gradient(circle at top, rgba(255,255,255,0.08), transparent 55%);
+      opacity: 0.9;
+    }
+
+    /* Flag variations */
+    .flag-usa {
+      background:
+        linear-gradient(to right,
+          var(--flag-blue) 0 35%,
+          var(--flag-white-dirty) 35% 100%);
+    }
+
+    .flag-uk {
+      background:
+        linear-gradient(135deg,
+          var(--flag-blue) 0%,
+          var(--flag-red-worn) 50%,
+          var(--flag-white-dirty) 100%);
+    }
+
+    .flag-canada {
+      background:
+        linear-gradient(to right,
+          var(--flag-red-worn) 0 30%,
+          var(--flag-white-dirty) 30% 70%,
+          var(--flag-red-worn) 70% 100%);
+    }
+
+    .flag-soviet {
+      background:
+        linear-gradient(135deg,
+          var(--flag-red-soviet) 0%,
+          #5a0000 60%,
+          #200000 100%);
+    }
+
+    .country-content {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .country-name {
+      font-family: "Oswald", sans-serif;
+      font-size: 1.1rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--off-white);
+    }
+
+    .country-role {
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(229,229,224,0.75);
+    }
+
+    .country-desc {
+      font-size: 0.8rem;
+      color: rgba(229,229,224,0.78);
+      max-width: 420px;
+    }
+
+    .country-meta {
+      margin-top: 6px;
+      font-size: 0.7rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: rgba(229,229,224,0.6);
+    }
+
+    /* Footer / info bar */
+    .info-bar {
+      margin-top: 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.75rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: rgba(229,229,224,0.6);
+    }
+
+    .info-bar span {
+      opacity: 0.8;
+    }
+
+    .info-bar strong {
+      font-weight: 700;
+      opacity: 0.9;
+    }
+
+    /* Small immersive indicator */
+    .timeline-indicator {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .timeline-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.6);
+      background: radial-gradient(circle, rgba(255,255,255,0.7) 0%, transparent 60%);
+      box-shadow: 0 0 12px rgba(255,255,255,0.5);
+    }
+  </style>
 </head>
-
 <body>
+  <div class="smoke-layer"></div>
+  <div class="vignette"></div>
 
-    <!-- HEADER -->
-    <header>
-        <h1>Musée HOP WW2</h1>
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="collections.html">Collections</a>
-            <a href="guides.html">Guides</a>
-            <a href="contact.html">Contact</a>
-            <a href="mentions.html">Mentions légales</a>
-        </nav>
+  <main class="page">
+    <!-- Navigation -->
+    <header class="nav">
+      <div class="nav-left">
+        <span class="nav-logo">WWII ARCHIVES</span>
+      </div>
+      <div class="nav-right">
+        <a href="#">Exposition</a>
+        <a href="#">Chronologie</a>
+        <a href="#">Forces en présence</a>
+        <a href="#">Documents</a>
+      </div>
     </header>
 
-    <!-- TITRE PRINCIPAL -->
-    <section class="intro">
-        <h2>Exploration historique de la Seconde Guerre mondiale</h2>
+    <!-- Hero -->
+    <section class="hero">
+      <h1 class="hero-title">D-DAY EXPERIENCE</h1>
+      <p class="hero-subtitle">Interface immersive – musée numérique – cinéma historique</p>
+      <p class="hero-tagline">
+        Une interface narrative qui plonge le visiteur au cœur du débarquement allié,
+        entre archives restaurées, textures de guerre et mise en scène cinématographique.
+      </p>
     </section>
 
-    <!-- BOUTONS STYLE IMAGE GAUCHE / TEXTE DROITE -->
-    <section class="menu-buttons">
+    <!-- Cards -->
+    <section class="cards-grid">
+      <!-- USA -->
+      <article class="country-card">
+        <div class="country-flag flag-usa"></div>
+        <div class="country-content">
+          <h2 class="country-name">États-Unis</h2>
+          <p class="country-role">Force principale – Secteurs Omaha & Utah</p>
+          <p class="country-desc">
+            Troupes d’assaut, blindés, aviation et logistique massifs. Les États-Unis portent
+            une part décisive de l’effort militaire et humain lors du débarquement.
+          </p>
+          <p class="country-meta">Drapeau vieilli – cicatrices de guerre – archives restaurées</p>
+        </div>
+      </article>
 
-        <a class="ww2-box" href="operations.html">
-            <div class="box-img" style="background-image: url('images/operations-militaires.jpg');"></div>
-            <div class="box-text">Opérations militaires</div>
-        </a>
+      <!-- Royaume-Uni -->
+      <article class="country-card">
+        <div class="country-flag flag-uk"></div>
+        <div class="country-content">
+          <h2 class="country-name">Royaume-Uni</h2>
+          <p class="country-role">Commandement allié – Secteurs Gold & Sword</p>
+          <p class="country-desc">
+            Pilier stratégique et historique, le Royaume-Uni coordonne une partie majeure
+            des opérations navales, aériennes et terrestres sur les plages normandes.
+          </p>
+          <p class="country-meta">Tradition militaire – résilience – mémoire vivante</p>
+        </div>
+      </article>
 
-        <a class="ww2-box" href="visages.html">
-            <div class="box-img" style="background-image: url('images/visages.jpg');"></div>
-            <div class="box-text">Visages de la 2e Guerre</div>
-        </a>
+      <!-- Canada -->
+      <article class="country-card">
+        <div class="country-flag flag-canada"></div>
+        <div class="country-content">
+          <h2 class="country-name">Canada</h2>
+          <p class="country-role">Secteur Juno – engagement déterminé</p>
+          <p class="country-desc">
+            Les forces canadiennes jouent un rôle clé dans la prise de Juno Beach,
+            avec un engagement intense et des pertes significatives dès les premières heures.
+          </p>
+          <p class="country-meta">Contribution souvent méconnue – impact majeur</p>
+        </div>
+      </article>
 
-        <a class="ww2-box" href="france.html">
-            <div class="box-img" style="background-image: url('images/france.jpg');"></div>
-            <div class="box-text">France</div>
-        </a>
-
-        <a class="ww2-box" href="uk.html">
-            <div class="box-img" style="background-image: url('images/uk.jpg');"></div>
-            <div class="box-text">Royaume-Uni</div>
-        </a>
-
-        <a class="ww2-box" href="usa.html">
-            <div class="box-img" style="background-image: url('images/usa.jpg');"></div>
-            <div class="box-text">États-Unis</div>
-        </a>
-
-        <a class="ww2-box" href="urss.html">
-            <div class="box-img" style="background-image: url('images/urss.jpg');"></div>
-            <div class="box-text">URSS</div>
-        </a>
-
-        <a class="ww2-box" href="allemagne.html">
-            <div class="box-img" style="background-image: url('images/allemagne.jpg');"></div>
-            <div class="box-text">Allemagne</div>
-        </a>
-
+      <!-- URSS -->
+      <article class="country-card">
+        <div class="country-flag flag-soviet"></div>
+        <div class="country-content">
+          <h2 class="country-name">Union soviétique</h2>
+          <p class="country-role">Front Est – pression stratégique</p>
+          <p class="country-desc">
+            Si l’URSS n’est pas présente sur les plages normandes, son rôle sur le front Est
+            est déterminant, épuisant une grande partie des forces allemandes.
+          </p>
+          <p class="country-meta">Rouge saturé – symbole d’un front brutal et décisif</p>
+        </div>
+      </article>
     </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2024 Musée HOP WW2 — Tous droits réservés.</p>
+    <!-- Info bar -->
+    <footer class="info-bar">
+      <span>
+        <strong>WWII Cinematic Grunge Museum Interface</strong> – Muséographie numérique, cinéma historique, UI immersive.
+      </span>
+      <span class="timeline-indicator">
+        <span class="timeline-dot"></span>
+        Ligne temporelle interactive – 6 juin 1944
+      </span>
     </footer>
-
+  </main>
 </body>
 </html>
