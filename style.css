@@ -305,3 +305,50 @@ nav a:hover {
     margin: 30px 0;
     font-size: 0.9em;
 }
+.menu-buttons {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Bouton image pleine */
+.ww2-fullcard {
+    position: relative;
+    height: 120px; /* bouton plus court */
+    border-radius: 14px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+    transition: 0.2s ease;
+}
+
+/* Overlay sombre pour lisibilité */
+.ww2-fullcard::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+}
+
+/* Texte centré */
+.ww2-fullcard span {
+    position: relative;
+    color: #f2efe7; /* blanc nacré */
+    font-size: 1.4em;
+    font-weight: 700;
+    text-align: center;
+    z-index: 2;
+}
+
+/* Effet hover */
+.ww2-fullcard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.45);
+}
