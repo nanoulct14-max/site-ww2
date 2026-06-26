@@ -1,322 +1,76 @@
-/* --- GLOBAL --- */
+/* RESET SIMPLE */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* BODY */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: white;
-    background: url('images/fond_dday.jpg') no-repeat center center/cover;
-    background-attachment: fixed;
-}
-
-/* --- HEADER --- */
-header {
-    text-align: center;
-    padding: 25px 10px;
-    background: rgba(0, 0, 0, 0.65);
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.6rem;
-    color: #f3e7c9; /* NACRE */
-    letter-spacing: 2px;
-}
-
-/* --- NAVIGATION --- */
-nav {
-    margin-top: 12px;
-}
-
-nav a {
-    margin: 0 12px;
-    color: #d8c79a;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-nav a:hover {
-    color: white;
-}
-
-/* --- HERO --- */
-.hero {
-    text-align: center;
-    padding: 35px 20px;
-    background: rgba(0, 0, 0, 0.45);
-}
-
-.hero h2 {
-    font-size: 1.4rem;
-    margin: 0;
-}
-
-/* --- BOUTONS XXL EN COLONNE --- */
-.grid {
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-    padding: 25px;
-}
-
-/* --- CARTES XXL --- */
-.card {
-    display: block;
-    width: 100%;
-    border-radius: 14px;
-    overflow: hidden;
-    text-decoration: none;
-    color: white;
-    background: rgba(0, 0, 0, 0.55);
-    transition: transform 0.2s ease;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    filter: contrast(0.85) brightness(0.9);
-}
-
-.card span {
-    display: block;
-    padding: 20px;
-    font-size: 1.35rem;
-    font-weight: bold;
-    text-align: center;
-}
-
-.card:hover {
-    transform: scale(1.02);
-    background: rgba(0, 0, 0, 0.75);
-}
-.ww2-card {
-    display: block;
-    width: 100%;
-    height: 140px;
-    margin: 12px 0;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 6px;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.ww2-card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.45);
-}
-
-.ww2-card span {
-    position: absolute;
-    bottom: 10px;
-    left: 15px;
-    color: white;
-    font-size: 1.4rem;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px black;
-    z-index: 2;
-}
-
-.ww2-card:hover {
-    transform: scale(1.02);
-    box-shadow: 0 6px 14px rgba(0,0,0,0.8);
-}
-.ww2-small-button {
-    display: flex;
-    align-items: center;
-    background: #e8e4d9; /* nacre clair */
-    border: 1px solid #cfc9b8; /* nacre plus foncé */
-    border-radius: 10px;
-    padding: 8px 12px;
-    margin: 10px 0;
-    text-decoration: none;
-    color: #2a2a2a;
-    font-size: 1.1em;
-    font-weight: 600;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-.ww2-small-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.35);
-}
-
-.ww2-small-button img {
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-    border-radius: 6px;
-    margin-right: 12px;
-}
-
-.ww2-small-button span {
-    flex: 1;
-}
-.ww2-box {
-    display: flex;
-    width: 100%;
-    height: 120px;
-    background: #f2efe7; /* nacre */
-    border-radius: 12px;
-    overflow: hidden;
-    margin: 12px 0;
-    text-decoration: none;
-    color: #1a1a1a;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.25);
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-.ww2-box:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 14px rgba(0,0,0,0.35);
-}
-
-.box-img {
-    width: 50%; /* moitié du bouton */
-    background-size: cover;
-    background-position: center;
-}
-
-.box-text {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.3em;
-    font-weight: 700;
-    padding: 10px;
-    text-align: center;
-}
-.ww2-box {
-    display: flex;
-    width: 100%;
-    height: 120px;
-    background: #f2efe7; /* nacre */
-    border-radius: 12px;
-    overflow: hidden;
-    margin: 12px 0;
-    text-decoration: none;
-    color: #1a1a1a;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.25);
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-.ww2-box:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 14px rgba(0,0,0,0.35);
-}
-
-.box-img {
-    width: 50%;
-    background-size: cover;
-    background-position: center;
-}
-
-.box-text {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.3em;
-    font-weight: 700;
-    padding: 10px;
-    text-align: center;
-}
-/* FOND MUSEE */
-.museum-bg {
-    background-image: url('images/fond_dday.jpg'); /* ton image noir & blanc */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    backdrop-filter: blur(2px);
-}
-
-/* TITRE NACRÉ */
-.museum-title {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-color: #111;
     color: #f2efe7;
+}
+
+/* HEADER */
+.site-header {
+    background: #222;
+    padding: 15px 10px;
     text-align: center;
-    font-size: 2.8em;
-    margin-top: 20px;
-    text-shadow: 0 0 10px rgba(0,0,0,0.6);
-    font-weight: 700;
+    border-bottom: 1px solid #444;
 }
 
-/* SOUS-TITRE */
-.museum-subtitle h2 {
-    color: #e8e4d9;
-    text-align: center;
-    margin-top: 10px;
-    font-size: 1.4em;
-    opacity: 0.9;
+.site-header h1 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    color: #f2efe7;
 }
 
-/* BOUTONS PREMIUM */
-.museum-buttons {
-    width: 90%;
-    margin: 20px auto;
-}
-
-.museum-card {
-    display: flex;
-    height: 130px;
-    background: rgba(240, 236, 225, 0.92); /* nacre translucide */
-    border-radius: 14px;
-    overflow: hidden;
-    margin: 15px 0;
-    text-decoration: none;
-    color: #1a1a1a;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.35);
-    transition: 0.2s ease;
-}
-
-.museum-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.45);
-}
-
-.card-img {
-    width: 50%;
-    background-size: cover;
-    background-position: center;
-}
-
-.card-text {
-    width: 50%;
+.site-header nav {
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 1.4em;
-    font-weight: 700;
-    padding: 10px;
-    text-align: center;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
-/* FOOTER */
-.museum-footer {
-    text-align: center;
+.site-header nav a {
     color: #e8e4d9;
-    margin: 30px 0;
-    font-size: 0.9em;
+    text-decoration: none;
+    font-size: 0.95em;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: background 0.15s ease;
 }
+
+.site-header nav a:hover {
+    background: #333;
+}
+
+/* INTRO */
+.intro {
+    text-align: center;
+    padding: 18px 10px;
+}
+
+.intro h2 {
+    font-size: 1.3em;
+    color: #e8e4d9;
+}
+
+/* SECTION BOUTONS */
 .menu-buttons {
     width: 90%;
+    max-width: 600px;
     margin: 20px auto;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-/* Bouton image pleine */
+/* BOUTON IMAGE PLEINE + TEXTE CENTRÉ */
 .ww2-fullcard {
     position: relative;
-    height: 120px; /* bouton plus court */
+    height: 120px;              /* bouton plus court */
     border-radius: 14px;
     overflow: hidden;
     background-size: cover;
@@ -326,7 +80,7 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 12px rgba(0,0,0,0.35);
-    transition: 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 /* Overlay sombre pour lisibilité */
@@ -340,10 +94,11 @@ nav a:hover {
 /* Texte centré */
 .ww2-fullcard span {
     position: relative;
-    color: #f2efe7; /* blanc nacré */
-    font-size: 1.4em;
+    color: #f2efe7;             /* blanc nacré */
+    font-size: 1.3em;
     font-weight: 700;
     text-align: center;
+    padding: 0 10px;
     z-index: 2;
 }
 
@@ -351,4 +106,12 @@ nav a:hover {
 .ww2-fullcard:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 18px rgba(0,0,0,0.45);
+}
+
+/* FOOTER */
+.site-footer {
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.85em;
+    color: #cfc9b8;
 }
