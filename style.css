@@ -120,3 +120,10 @@ body {
     font-size: 0.85em;
     color: #cfc9b8;
 }
+.titre-nacre {
+    width: 80%;
+    max-width: 650px;
+    display: block;
+    margin: 25px auto 40px auto;
+    filter: drop-shadow(0 0 6px rgba(0,0,0,0.6));
+}
