@@ -70,15 +70,17 @@ body {
 /* BOUTONS IMAGE PLEINE + TEXTE CENTRÉ */
 .ww2-fullcard {
     position: relative;
-    height: 85px; /* BOUTONS PLUS COURTS */
-    border-radius: 12px;
+    height: 80px; /* BOUTONS PLUS COURTS */
+    border-radius: 10px;
     overflow: hidden;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid rgba(255,255,255,0.15); /* contour musée */
     box-shadow: 0 3px 10px rgba(0,0,0,0.35);
     transition: 0.2s ease;
 }
@@ -88,7 +90,10 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.45);
+    background: linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.55)
+    );
 }
 
 /* Texte centré */
