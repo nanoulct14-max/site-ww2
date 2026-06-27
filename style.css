@@ -103,18 +103,18 @@ body {
     inset: 0;
     background: rgba(0,0,0,0.35);
 }
-
 .ww2-fullcard span {
-    position: relative;
-    z-index: 2;
-    font-size: 1.4rem;
-    font-weight: bold;
+    font-family: "Cinzel", serif;
+    font-weight: 500;
+    font-size: 1.35rem;
+    letter-spacing: 2px;
     text-transform: uppercase;
-    text-align: center;
-    color: #fff;
-    text-shadow: 0 0 8px rgba(0,0,0,0.8);
-}
+    color: #f0f0f0;
 
+    text-shadow:
+        0 0 10px rgba(0,0,0,1),
+        0 0 25px rgba(0,0,0,0.9);
+}
 /* FOOTER */
 .site-footer {
     text-align: center;
