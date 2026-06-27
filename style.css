@@ -51,15 +51,16 @@ body {
     background-color: rgba(0,0,0,0.45);
 }
 .hero-title {
-    font-size: 4.8rem; /* plus grand */
+    font-family: "Cinzel", serif; /* typographie muséale */
+    font-size: 5.2rem; /* grande présence */
+    letter-spacing: 8px; /* institutionnel */
+    font-weight: 600; /* plus noble, plus solide */
     text-transform: uppercase;
-    letter-spacing: 12px;
-    font-weight: 400;
-    color: #f3f3f7;
+    color: #eaeaea;
     text-shadow:
-        0 0 14px rgba(0,0,0,0.9),
-        0 0 30px rgba(255,255,255,0.28),
-        0 0 55px rgba(220,220,240,0.40);
+        0 0 18px rgba(0,0,0,1),
+        0 0 35px rgba(255,255,255,0.25),
+        0 0 60px rgba(220,220,240,0.40);
 }
 
 .hero-subtitle {
