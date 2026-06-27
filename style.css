@@ -5,153 +5,109 @@
     box-sizing: border-box;
 }
 
-/* BODY */
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background-color: #111; /* fond sombre musée */
-    color: #f2efe7;
+    background: #000;
+    font-family: Arial, sans-serif;
+    color: #e5e5e5;
 }
 
 /* HEADER */
 .site-header {
-    background: #1a1a1a;
-    padding: 15px 10px;
+    width: 100%;
+    padding: 12px 0;
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(6px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
     text-align: center;
-    border-bottom: 1px solid #333;
-}
-
-.site-header h1 {
-    font-size: 2.2em;
-    color: #f2efe7;
-    margin-bottom: 10px;
-}
-
-.site-header nav {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    flex-wrap: wrap;
 }
 
 .site-header nav a {
-    color: #e8e4d9;
+    margin: 0 15px;
+    color: #e5e5e5;
     text-decoration: none;
-    font-size: 0.95em;
-    padding: 4px 8px;
-    border-radius: 6px;
-    transition: 0.15s ease;
+    font-size: 1rem;
+    opacity: 0.9;
+    transition: 0.3s;
 }
 
 .site-header nav a:hover {
-    background: #333;
+    opacity: 1;
 }
 
-/* INTRO */
-.intro {
-    text-align: center;
-    padding: 18px 10px;
-}
-
-.intro h2 {
-    font-size: 1.3em;
-    color: #e8e4d9;
-}
-
-/* SECTION BOUTONS */
-.menu-buttons {
-    width: 90%;
-    max-width: 600px;
-    margin: 20px auto;
+/* HERO */
+.hero {
+    width: 100%;
+    height: 260px;
+    background: url('images/hero.jpg') center/cover no-repeat;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    justify-content: center;
+    text-align: center;
+    padding-top: 80px;
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0,0.45);
 }
 
-/* BOUTONS IMAGE PLEINE + TEXTE CENTRÉ */
+.hero-title {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 0 0 12px rgba(0,0,0,0.8);
+}
+
+.hero-subtitle {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    opacity: 0.85;
+}
+
+/* BOUTONS WW2 */
+.menu-buttons {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
 .ww2-fullcard {
-    position: relative;
-    height: 80px; /* BOUTONS PLUS COURTS */
-    border-radius: 10px;
-    overflow: hidden;
+    height: 180px;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    text-decoration: none;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
     display: flex;
-    align-items: center;
     justify-content: center;
-    border: 1px solid rgba(255,255,255,0.15); /* contour musée */
-    box-shadow: 0 3px 10px rgba(0,0,0,0.35);
-    transition: 0.2s ease;
+    align-items: center;
 }
 
-/* Overlay sombre */
 .ww2-fullcard::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        rgba(0,0,0,0.55),
-        rgba(0,0,0,0.55)
-    );
+    background: rgba(0,0,0,0.35);
 }
 
-/* Texte centré */
 .ww2-fullcard span {
     position: relative;
-    color: #f2efe7; /* blanc nacré */
-    font-size: 1.1em;
-    font-weight: 700;
-    text-align: center;
-    padding: 0 8px;
     z-index: 2;
-}
-
-/* Effet hover */
-.ww2-fullcard:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.45);
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 8px rgba(0,0,0,0.8);
 }
 
 /* FOOTER */
 .site-footer {
     text-align: center;
-    padding: 20px 10px;
-    font-size: 0.85em;
-    color: #cfc9b8;
-}
-.titre-nacre {
-    width: 80%;
-    max-width: 650px;
-    display: block;
-    margin: 25px auto 40px auto;
-    filter: drop-shadow(0 0 6px rgba(0,0,0,0.6));
-}
-/* HEADER plus fin */
-.site-header {
-    padding: 10px 0;
-    text-align: center;
-    background: rgba(0,0,0,0.4);
-    backdrop-filter: blur(4px);
-}
-
-/* NAVIGATION plus élégante */
-.site-header nav a {
-    margin: 0 12px;
-    font-size: 1rem;
-    opacity: 0.9;
-}
-
-/* TITRE NACRÉ PRINCIPAL */
-.titre-nacre {
-    width: 85%;
-    max-width: 700px;
-    display: block;
-    margin: 40px auto 50px auto;
-    filter: drop-shadow(0 0 8px rgba(0,0,0,0.7));
-}
-
-/* ESPACE ENTRE HEADER ET TITRE */
-.intro {
-    margin-top: 20px;
+    padding: 30px 0;
+    opacity: 0.7;
+    font-size: 0.9rem;
 }
