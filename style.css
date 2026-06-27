@@ -97,7 +97,7 @@ body {
 }
 
 .ww2-fullcard {
-    height: 180px;
+    height: 260px;
     background-size: cover;
     background-position: center;
     border-radius: 6px;
@@ -168,4 +168,33 @@ body {
     opacity: 0.85;
     letter-spacing: 2px;
     color: #dcdcdc;
+}
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.hero {
+    padding-top: 140px !important;
+    padding-bottom: 80px !important;
+}
+.menu-buttons {
+    margin-top: 40px;
+}
+/* FOOTER PREMIUM WW2 */
+.site-footer {
+    background: #0d0d0d;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 60px;
+    color: #cfcfcf;
+    font-family: "Cinzel", serif;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+.footer-line {
+    width: 90%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #777, transparent);
+    margin: 0 auto 25px auto;
 }
