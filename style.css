@@ -14,21 +14,30 @@ body {
 /* HEADER */
 .site-header {
     width: 100%;
-    padding: 12px 0;
+    height: 70px; /* hauteur muséale */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     background: rgba(0,0,0,0.45);
     backdrop-filter: blur(6px);
+
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
-    text-align: center;
 }
 
 .site-header nav a {
-    margin: 0 15px;
+    margin: 0 18px;
     color: #e5e5e5;
     text-decoration: none;
-    font-size: 1rem;
+
+    font-family: "Cinzel", serif;
+    font-size: 1.22rem; /* taille muséale */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
     opacity: 0.9;
     transition: 0.3s;
 }
