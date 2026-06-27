@@ -103,6 +103,17 @@ body {
     inset: 0;
     background: rgba(0,0,0,0.35);
 }
+/* Effet grain WW2 */
+.ww2-fullcard::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+    opacity: 0.22; /* intensité du grain */
+    mix-blend-mode: overlay; /* effet argentique */
+    z-index: 3;
+}
 .ww2-fullcard span {
     font-family: "Cinzel", serif;
     font-weight: 500;
