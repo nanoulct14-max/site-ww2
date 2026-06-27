@@ -52,10 +52,26 @@ body {
 }
 
 .hero-title {
-    font-size: 3rem;
-    letter-spacing: 3px;
+    font-size: 4rem;
     text-transform: uppercase;
-    text-shadow: 0 0 12px rgba(0,0,0,0.8);
+    letter-spacing: 12px;
+    font-weight: 300;
+    color: #f3f3f7; /* nacré perle */
+    text-shadow:
+        0 0 14px rgba(0,0,0,0.9),
+        0 0 30px rgba(255,255,255,0.25),
+        0 0 55px rgba(220,220,240,0.35);
+}
+.hero-subtitle {
+    margin-top: 16px;
+    font-size: 1.25rem;
+    letter-spacing: 4px;
+    font-weight: 300;
+    color: #e6e6eb;
+    opacity: 0.95;
+    text-shadow:
+        0 0 12px rgba(0,0,0,0.75),
+        0 0 25px rgba(255,255,255,0.15);
 }
 
 .hero-subtitle {
