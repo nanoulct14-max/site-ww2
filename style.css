@@ -51,16 +51,16 @@ body {
     background-color: rgba(0,0,0,0.45);
 }
 
-.hero-title {
+;.hero-title {
     font-size: 4rem;
     text-transform: uppercase;
     letter-spacing: 12px;
-    font-weight: 300;
+    font-weight: 400; /* plus gras qu'avant */
     color: #f3f3f7; /* nacré perle */
     text-shadow:
         0 0 14px rgba(0,0,0,0.9),
-        0 0 30px rgba(255,255,255,0.25),
-        0 0 55px rgba(220,220,240,0.35);
+        0 0 30px rgba(255,255,255,0.28),
+        0 0 55px rgba(220,220,240,0.40);
 }
 .hero-subtitle {
     margin-top: 16px;
