@@ -198,3 +198,61 @@ section {
     background: linear-gradient(to right, transparent, #777, transparent);
     margin: 0 auto 25px auto;
 }
+/* --- GRILLE DES CARTES WW2 --- */
+.menu-buttons {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* --- CARTE WW2 --- */
+.ww2-fullcard {
+    height: 260px; /* hauteur uniforme premium */
+    background-size: cover;
+    background-position: center;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- OVERLAY SOMBRE PREMIUM --- */
+.ww2-fullcard::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+}
+
+/* --- EFFET GRAIN WW2 --- */
+.ww2-fullcard::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('images/grain.png');
+    opacity: 0.08;
+    pointer-events: none;
+}
+
+/* --- TEXTE DES CARTES --- */
+.ww2-fullcard span {
+    position: relative;
+    z-index: 2;
+
+    font-family: "Cinzel", serif;
+    font-weight: 500;
+    font-size: 1.35rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #f0f0f0;
+
+    text-shadow:
+        0 0 10px rgba(0,0,0,1),
+        0 0 25px rgba(0,0,0,0.9);
+}
