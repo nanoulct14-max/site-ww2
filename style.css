@@ -281,13 +281,6 @@ nav {
 .fiche-container .hero-subtitle {
     font-size: 16px;
 }
-.hero .hero-title {
-    font-size: 32px;
-}
-
-.hero .hero-subtitle {
-    font-size: 16px;
-}
 /* HERO plus petit UNIQUEMENT pour les fiches */
 .fiche-container .hero {
     padding-top: 60px;
