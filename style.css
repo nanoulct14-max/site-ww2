@@ -269,8 +269,17 @@ nav {
     font-size: 18px;
 }
 /* HERO plus petit pour les fiches */
-.hero {
+/* HERO plus petit UNIQUEMENT pour les fiches */
+.fiche-container .hero {
     padding: 40px 20px;
+}
+
+.fiche-container .hero-title {
+    font-size: 32px;
+}
+
+.fiche-container .hero-subtitle {
+    font-size: 16px;
 }
 .hero .hero-title {
     font-size: 32px;
