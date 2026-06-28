@@ -13,6 +13,12 @@ header {
     border-bottom: 2px solid #333;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
 /* MENU NACRÉ PREMIUM */
 nav a {
     font-family: "Cinzel", serif;
@@ -38,7 +44,7 @@ nav a:hover {
         0 0 18px rgba(0,0,0,0.8);
 }
 
-/* ——— HERO ——— */
+/* ——— HERO (ACCUEIL) ——— */
 .hero {
     padding-top: 160px;
     padding-bottom: 120px;
@@ -56,7 +62,7 @@ nav a:hover {
     background: rgba(0,0,0,0.55);
 }
 
-/* TITRE NACRÉ INTENSE (VERSION FINALE) */
+/* TITRE NACRÉ INTENSE (ACCUEIL) */
 .hero-title {
     position: relative;
     z-index: 2;
@@ -76,7 +82,7 @@ nav a:hover {
         0 0 70px rgba(0,0,0,0.7);
 }
 
-/* SOUS-TITRE HERO */
+/* SOUS-TITRE HERO ACCUEIL */
 .hero-subtitle {
     position: relative;
     z-index: 2;
@@ -174,42 +180,8 @@ nav a:hover {
     background: linear-gradient(to right, transparent, #777, transparent);
     margin: 0 auto 25px;
 }
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-}
-.operation-link {
-    display: block;
-    width: 90%;
-    max-width: 900px;
-    margin: 18px auto;
-    padding: 22px 28px;
 
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(255,255,255,0.12);
-    border-radius: 6px;
-
-    font-family: "Cinzel", serif;
-    font-size: 1.45rem;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #f3f0e9;
-    text-decoration: none;
-
-    text-shadow:
-        0 0 6px rgba(255,255,255,0.4),
-        0 0 12px rgba(0,0,0,0.9);
-
-    transition: 0.35s ease;
-}
-
-.operation-link:hover {
-    background: rgba(255,255,255,0.08);
-    border-color: rgba(255,255,255,0.25);
-    transform: translateX(10px);
-    color: #ffffff;
-}
+/* ——— FICHES PERSONNAGES ——— */
 .fiche-container {
     width: 90%;
     max-width: 900px;
@@ -257,31 +229,8 @@ nav {
     content: "• ";
     color: #c9b27e;
 }
-/* Ajustement du HERO pour les fiches */
-.fiche-container .hero-title,
-.hero .hero-title {
-    font-size: 36px;
-    letter-spacing: 2px;
-}
 
-.fiche-container .hero-subtitle,
-.hero .hero-subtitle {
-    font-size: 18px;
-}
-/* HERO plus petit pour les fiches */
-/* HERO plus petit UNIQUEMENT pour les fiches */
-.fiche-container .hero {
-    padding: 40px 20px;
-}
-
-.fiche-container .hero-title {
-    font-size: 32px;
-}
-
-.fiche-container .hero-subtitle {
-    font-size: 16px;
-}
-/* HERO plus petit UNIQUEMENT pour les fiches */
+/* ——— HERO SPÉCIAL FICHES ——— */
 .fiche-container .hero {
     padding-top: 60px;
     padding-bottom: 40px;
@@ -301,19 +250,4 @@ nav {
     font-size: 1rem;
     letter-spacing: 2px;
     opacity: 0.85;
-}
-/* HERO plus petit UNIQUEMENT pour les fiches */
-.fiche-container .hero {
-    padding-top: 60px;
-    padding-bottom: 40px;
-}
-
-.fiche-container .hero-title {
-    font-size: 2.4rem;
-    letter-spacing: 3px;
-}
-
-.fiche-container .hero-subtitle {
-    font-size: 1rem;
-    letter-spacing: 2px;
 }
