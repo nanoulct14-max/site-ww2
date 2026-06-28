@@ -174,3 +174,8 @@ nav a:hover {
     background: linear-gradient(to right, transparent, #777, transparent);
     margin: 0 auto 25px;
 }
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
