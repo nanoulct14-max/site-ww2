@@ -241,3 +241,22 @@ nav a:hover {
         0 0 22px rgba(0,0,0,0.9),
         0 0 40px rgba(0,0,0,0.7);
 }
+/* —— TITRE NACRÉ INTENSE —— */
+
+.hero-title {
+    position: relative;
+    z-index: 2;
+    font-family: "Cinzel", serif;
+    font-size: 4.8rem; /* Grandeur muséale */
+    font-weight: 700;
+    letter-spacing: 6px;
+    color: #f7f4ef; /* Nacre claire */
+
+    /* Effet nacré intense + profondeur WW2 */
+    text-shadow:
+        0 0 6px rgba(255,255,255,0.7),
+        0 0 14px rgba(255,255,255,0.5),
+        0 0 28px rgba(200,200,200,0.35),
+        0 0 45px rgba(0,0,0,0.9),
+        0 0 70px rgba(0,0,0,0.7);
+}
