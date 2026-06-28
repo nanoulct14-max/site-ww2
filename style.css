@@ -268,3 +268,7 @@ nav {
 .hero .hero-subtitle {
     font-size: 18px;
 }
+/* HERO plus petit pour les fiches */
+.hero {
+    padding: 40px 20px;
+}
