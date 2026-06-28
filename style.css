@@ -272,3 +272,10 @@ nav {
 .hero {
     padding: 40px 20px;
 }
+.hero .hero-title {
+    font-size: 32px;
+}
+
+.hero .hero-subtitle {
+    font-size: 16px;
+}
