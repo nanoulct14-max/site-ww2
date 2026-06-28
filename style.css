@@ -234,3 +234,27 @@ nav a:hover {
     color: #ffffff;
     text-shadow: 0 0 8px rgba(255,255,255,0.5);
 }
+/* ——— MENU NACRÉ PREMIUM ——— */
+
+nav a {
+    font-family: "Cinzel", serif;
+    font-size: 1.05rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: 0.3s;
+
+    /* Couleur nacrée */
+    color: #f3f0e9;
+    text-shadow:
+        0 0 4px rgba(255,255,255,0.4),
+        0 0 8px rgba(200,200,200,0.25),
+        0 0 12px rgba(0,0,0,0.6);
+}
+
+nav a:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 6px rgba(255,255,255,0.6),
+        0 0 12px rgba(255,255,255,0.4),
+        0 0 18px rgba(0,0,0,0.8);
+}
