@@ -257,3 +257,14 @@ nav {
     content: "• ";
     color: #c9b27e;
 }
+/* Ajustement du HERO pour les fiches */
+.fiche-container .hero-title,
+.hero .hero-title {
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+.fiche-container .hero-subtitle,
+.hero .hero-subtitle {
+    font-size: 18px;
+}
