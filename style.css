@@ -251,3 +251,33 @@ nav a:hover {
     letter-spacing: 2px;
     opacity: 0.85;
 }
+/* STYLE SPÉCIAL POUR LES LISTES DE PERSONNAGES */
+.operation-link {
+    display: block;
+    width: 90%;
+    max-width: 900px;
+    margin: 12px auto;
+    padding: 18px 24px;
+
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 4px;
+
+    font-family: "Cinzel", serif;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+
+    text-shadow: 0 0 6px rgba(0,0,0,0.8);
+
+    transition: 0.3s ease;
+}
+
+.operation-link:hover {
+    background: rgba(255,255,255,0.10);
+    border-color: rgba(255,255,255,0.25);
+    transform: translateX(8px);
+    color: #ffffff;
+}
