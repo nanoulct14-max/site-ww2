@@ -202,3 +202,35 @@ nav a {
     text-shadow: 0 0 8px rgba(0,0,0,0.8);
     margin-top: 10px;
 }
+/* ——— MENU MUSÉAL PREMIUM ——— */
+
+header {
+    width: 100%;
+    background: rgba(0,0,0,0.75);
+    padding: 18px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    backdrop-filter: blur(4px);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav a {
+    font-family: "Cinzel", serif;
+    font-size: 1.05rem;
+    letter-spacing: 2px;
+    color: #f2f2f2;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 8px rgba(255,255,255,0.5);
+}
