@@ -210,3 +210,50 @@ nav {
     transform: translateX(10px);
     color: #ffffff;
 }
+.fiche-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 60px auto;
+    color: #e8e8e8;
+    font-family: "Cinzel", serif;
+    font-size: 1.2rem;
+}
+
+.fiche-photo img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 0 auto 40px;
+    border: 1px solid rgba(255,255,255,0.15);
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+
+.fiche-section {
+    margin-bottom: 50px;
+    padding: 20px 25px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 6px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.6);
+}
+
+.fiche-title {
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    text-shadow: 0 0 8px rgba(0,0,0,0.9);
+    color: #ffffff;
+}
+
+.fiche-list {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.fiche-list li::before {
+    content: "• ";
+    color: #c9b27e;
+}
