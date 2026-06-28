@@ -302,3 +302,18 @@ nav {
     letter-spacing: 2px;
     opacity: 0.85;
 }
+/* HERO plus petit UNIQUEMENT pour les fiches */
+.fiche-container .hero {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.fiche-container .hero-title {
+    font-size: 2.4rem;
+    letter-spacing: 3px;
+}
+
+.fiche-container .hero-subtitle {
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
