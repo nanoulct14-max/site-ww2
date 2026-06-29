@@ -251,3 +251,19 @@ footer {
     color: #ffffff;               /* Nacré plus lumineux au survol */
     transform: translateX(6px);   /* Petit mouvement cinématique */
 }
+.operation-link {
+    display: block;               /* L’un en dessous des autres */
+    margin: 14px 0;               /* Espacement vertical premium */
+    font-size: 22px;              /* Taille élégante */
+    font-family: 'Cinzel', serif; /* Style muséal institutionnel */
+    color: #e8e6e3;               /* Blanc nacré (plus doux que blanc pur) */
+    text-decoration: none;        /* Pas de soulignement */
+    letter-spacing: 1px;          /* Style gravure WW2 */
+    font-weight: 500;             /* Légère présence */
+    transition: 0.3s ease;
+}
+
+.operation-link:hover {
+    color: #ffffff;               /* Nacré lumineux au survol */
+    transform: translateX(6px);   /* Effet cinématique */
+}
