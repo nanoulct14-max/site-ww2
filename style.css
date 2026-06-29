@@ -333,3 +333,72 @@ footer {
     margin: 0 auto !important;
     border-radius: 6px !important;
 }
+/* ——— FICHES WW2 ——— */
+
+/* IMAGE DOCUMENTAIRE */
+.fiche-image {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 30px auto !important;
+    border-radius: 6px !important;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    opacity: 0.95;
+}
+
+/* BLOCS MUSÉAUX */
+.fiche-block {
+    background: rgba(0,0,0,0.45);
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 30px;
+    margin: 35px 0;
+    border-radius: 6px;
+}
+
+/* TITRES INTERNES */
+.section-title {
+    font-family: "Cinzel", serif;
+    font-size: 2.4rem !important;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 18px !important;
+    color: #f2f2f2;
+    text-align: center;
+}
+
+/* TEXTE DES BLOCS */
+.fiche-block p {
+    font-size: 1.55rem !important;
+    line-height: 1.8 !important;
+    margin: 12px 0;
+}
+
+/* BOUTON BLANC PREMIUM */
+.menu-button {
+    display: inline-block;
+    padding: 16px 32px !important;
+    background: rgba(255,255,255,0.15) !important;
+    border: 2px solid white !important;
+    border-radius: 6px !important;
+    color: white !important;
+    text-decoration: none;
+    font-size: 1.4rem !important;
+    letter-spacing: 1px;
+    margin-top: 40px !important;
+    transition: 0.3s;
+}
+
+.menu-button:hover {
+    background: rgba(255,255,255,0.35) !important;
+    border-color: white !important;
+}
+
+/* TITRES DU HERO */
+.hero-title-line1 {
+    font-size: 4rem !important;
+}
+
+.hero-title-line2 {
+    font-size: 1.8rem !important;
+}
