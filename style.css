@@ -325,3 +325,11 @@ footer {
 .hero-title-line2 {
     font-size: 1.8rem !important;
 }
+.fiche-image {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    border-radius: 6px !important;
+}
