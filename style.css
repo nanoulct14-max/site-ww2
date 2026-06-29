@@ -205,3 +205,34 @@ footer {
     background: linear-gradient(to right, transparent, #777, transparent);
     margin: 0 auto 25px;
 }
+.hero-title-block {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #f7f4ef;
+}
+
+.hero-title-line1 {
+    font-family: "Cinzel", serif;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin: 0;
+    text-shadow:
+        0 0 6px rgba(255,255,255,0.7),
+        0 0 14px rgba(255,255,255,0.5),
+        0 0 28px rgba(200,200,200,0.35),
+        0 0 45px rgba(0,0,0,0.9);
+}
+
+.hero-title-line2 {
+    font-family: "Cinzel", serif;
+    font-size: 1.9rem;
+    font-weight: 400;
+    margin-top: 18px;
+    letter-spacing: 1px;
+    opacity: 0.9;
+    text-shadow:
+        0 0 8px rgba(0,0,0,0.9),
+        0 0 14px rgba(0,0,0,0.7);
+}
