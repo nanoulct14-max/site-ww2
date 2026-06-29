@@ -237,3 +237,32 @@ footer {
     color: #ffffff;
     transform: translateX(6px);
 }
+.fiche-image {
+    width: 100%;
+    border-radius: 6px;
+    margin: 25px 0;
+    opacity: 0.95;
+}
+
+.fiche-block {
+    background: rgba(0,0,0,0.45);
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 6px;
+}
+
+.menu-button {
+    display: inline-block;
+    padding: 12px 22px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    margin-top: 30px;
+    transition: 0.3s;
+}
+.menu-button:hover {
+    background: rgba(255,255,255,0.2);
+}
