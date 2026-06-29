@@ -27,7 +27,6 @@ nav a {
     margin: 0 12px;
     text-transform: uppercase;
     transition: 0.3s;
-
     color: #f3f0e9;
     text-shadow:
         0 0 4px rgba(255,255,255,0.4),
@@ -60,23 +59,40 @@ nav a:hover {
     background: rgba(0,0,0,0.55);
 }
 
-.hero-title {
+.hero-title-block {
     position: relative;
     z-index: 2;
-    font-family: "Cinzel", serif;
-    font-size: 4.8rem;
-    font-weight: 700;
-    letter-spacing: 6px;
     text-align: center;
-    width: 100%;
     color: #f7f4ef;
+}
 
+.hero-title-line1 {
+    font-family: "Cinzel", serif;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin: 0;
     text-shadow:
         0 0 6px rgba(255,255,255,0.7),
         0 0 14px rgba(255,255,255,0.5),
         0 0 28px rgba(200,200,200,0.35),
-        0 0 45px rgba(0,0,0,0.9),
-        0 0 70px rgba(0,0,0,0.7);
+        0 0 45px rgba(0,0,0,0.9);
+}
+
+.hero-title-line1 br {
+    line-height: 1.2;
+}
+
+.hero-title-line2 {
+    font-family: "Cinzel", serif;
+    font-size: 1.9rem;
+    font-weight: 400;
+    margin-top: 18px;
+    letter-spacing: 1px;
+    opacity: 0.9;
+    text-shadow:
+        0 0 8px rgba(0,0,0,0.9),
+        0 0 14px rgba(0,0,0,0.7);
 }
 
 /* ——— TITRES DE SECTION ——— */
@@ -89,7 +105,6 @@ nav a:hover {
     margin-top: 40px;
     margin-bottom: 35px;
     color: #f2f2f2;
-
     text-shadow:
         0 0 10px rgba(255,255,255,0.15),
         0 0 18px rgba(0,0,0,0.9);
@@ -143,7 +158,6 @@ nav a:hover {
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #ffffff;
-
     text-shadow:
         0 0 8px rgba(0,0,0,0.9),
         0 0 14px rgba(0,0,0,0.7);
@@ -205,34 +219,21 @@ footer {
     background: linear-gradient(to right, transparent, #777, transparent);
     margin: 0 auto 25px;
 }
-.hero-title-block {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    color: #f7f4ef;
-}
 
-.hero-title-line1 {
-    font-family: "Cinzel", serif;
-    font-size: 4rem;
-    font-weight: 700;
-    letter-spacing: 5px;
-    margin: 0;
-    text-shadow:
-        0 0 6px rgba(255,255,255,0.7),
-        0 0 14px rgba(255,255,255,0.5),
-        0 0 28px rgba(200,200,200,0.35),
-        0 0 45px rgba(0,0,0,0.9);
-}
-
-.hero-title-line2 {
-    font-family: "Cinzel", serif;
-    font-size: 1.9rem;
-    font-weight: 400;
-    margin-top: 18px;
+/* ——— LIENS NACRÉS MUSÉAUX ——— */
+.operation-link {
+    display: block;
+    margin: 14px 0;
+    font-size: 22px;
+    font-family: 'Cinzel', serif;
+    color: #e8e6e3;        /* Blanc nacré */
+    text-decoration: none;
     letter-spacing: 1px;
-    opacity: 0.9;
-    text-shadow:
-        0 0 8px rgba(0,0,0,0.9),
-        0 0 14px rgba(0,0,0,0.7);
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.operation-link:hover {
+    color: #ffffff;
+    transform: translateX(6px);
 }
