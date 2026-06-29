@@ -13,13 +13,13 @@ header {
     border-bottom: 2px solid #333;
 }
 
+/* MENU NACRÉ PREMIUM */
 nav {
     display: flex;
     justify-content: center;
     gap: 40px;
 }
 
-/* MENU NACRÉ PREMIUM */
 nav a {
     font-family: "Cinzel", serif;
     font-size: 1.05rem;
@@ -44,7 +44,7 @@ nav a:hover {
         0 0 18px rgba(0,0,0,0.8);
 }
 
-/* ——— HERO (ACCUEIL) ——— */
+/* ——— HERO ——— */
 .hero {
     padding-top: 160px;
     padding-bottom: 120px;
@@ -62,7 +62,7 @@ nav a:hover {
     background: rgba(0,0,0,0.55);
 }
 
-/* TITRE NACRÉ INTENSE (ACCUEIL) */
+/* TITRE NACRÉ INTENSE */
 .hero-title {
     position: relative;
     z-index: 2;
@@ -82,7 +82,7 @@ nav a:hover {
         0 0 70px rgba(0,0,0,0.7);
 }
 
-/* SOUS-TITRE HERO ACCUEIL */
+/* SOUS-TITRE HERO */
 .hero-subtitle {
     position: relative;
     z-index: 2;
@@ -179,152 +179,4 @@ nav a:hover {
     height: 1px;
     background: linear-gradient(to right, transparent, #777, transparent);
     margin: 0 auto 25px;
-}
-
-/* ——— FICHES PERSONNAGES ——— */
-.fiche-container {
-    width: 90%;
-    max-width: 900px;
-    margin: 60px auto;
-    color: #e8e8e8;
-    font-family: "Cinzel", serif;
-    font-size: 1.2rem;
-}
-
-.fiche-photo img {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-    display: block;
-    margin: 0 auto 40px;
-    border: 1px solid rgba(255,255,255,0.15);
-    box-shadow: 0 0 20px rgba(0,0,0,0.7);
-}
-
-.fiche-section {
-    margin-bottom: 50px;
-    padding: 20px 25px;
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(255,255,255,0.12);
-    border-radius: 6px;
-    box-shadow: 0 0 12px rgba(0,0,0,0.6);
-}
-
-.fiche-title {
-    font-size: 1.8rem;
-    letter-spacing: 3px;
-    margin-bottom: 15px;
-    text-shadow: 0 0 8px rgba(0,0,0,0.9);
-    color: #ffffff;
-}
-
-.fiche-list {
-    list-style: none;
-    padding-left: 0;
-    font-size: 1.2rem;
-    line-height: 2rem;
-}
-
-.fiche-list li::before {
-    content: "• ";
-    color: #c9b27e;
-}
-
-/* ——— HERO SPÉCIAL FICHES ——— */
-.fiche-container .hero {
-    padding-top: 60px;
-    padding-bottom: 40px;
-    background-size: cover;
-    background-position: center;
-}
-
-.fiche-container .hero-title {
-    font-size: 2.4rem;
-    letter-spacing: 3px;
-    text-shadow:
-        0 0 6px rgba(0,0,0,0.8),
-        0 0 12px rgba(0,0,0,0.6);
-}
-
-.fiche-container .hero-subtitle {
-    font-size: 1rem;
-    letter-spacing: 2px;
-    opacity: 0.85;
-}
-/* STYLE SPÉCIAL POUR LES LISTES DE PERSONNAGES */
-.operation-link {
-    display: block;
-    width: 90%;
-    max-width: 900px;
-    margin: 12px auto;
-    padding: 18px 24px;
-
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.15);
-    border-radius: 4px;
-
-    font-family: "Cinzel", serif;
-    font-size: 1.3rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #ffffff;
-    text-decoration: none;
-
-    text-shadow: 0 0 6px rgba(0,0,0,0.8);
-
-    transition: 0.3s ease;
-}
-
-.operation-link:hover {
-    background: rgba(255,255,255,0.10);
-    border-color: rgba(255,255,255,0.25);
-    transform: translateX(8px);
-    color: #ffffff;
-}
-.fiche-container {
-    width: 90%;
-    max-width: 900px;
-    margin: 60px auto;
-    color: #e8e8e8;
-    font-family: "Cinzel", serif;
-    font-size: 1.2rem;
-}
-
-.fiche-photo img {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-    display: block;
-    margin: 0 auto 40px;
-    border: 1px solid rgba(255,255,255,0.15);
-    box-shadow: 0 0 20px rgba(0,0,0,0.7);
-}
-
-.fiche-section {
-    margin-bottom: 50px;
-    padding: 20px 25px;
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(255,255,255,0.12);
-    border-radius: 6px;
-    box-shadow: 0 0 12px rgba(0,0,0,0.6);
-}
-
-.fiche-title {
-    font-size: 1.8rem;
-    letter-spacing: 3px;
-    margin-bottom: 15px;
-    text-shadow: 0 0 8px rgba(0,0,0,0.9);
-    color: #ffffff;
-}
-
-.fiche-list {
-    list-style: none;
-    padding-left: 0;
-    font-size: 1.2rem;
-    line-height: 2rem;
-}
-
-.fiche-list li::before {
-    content: "• ";
-    color: #c9b27e;
 }
