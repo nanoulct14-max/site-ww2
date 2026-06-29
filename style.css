@@ -236,3 +236,18 @@ footer {
         0 0 8px rgba(0,0,0,0.9),
         0 0 14px rgba(0,0,0,0.7);
 }
+.operation-link {
+    display: block;               /* L’un en dessous des autres */
+    margin: 12px 0;               /* Espacement vertical */
+    font-size: 22px;              /* Taille premium */
+    font-family: 'Cinzel', serif; /* Style muséal */
+    color: #e2e2e2;               /* Nacré clair */
+    text-decoration: none;        /* Pas de soulignement */
+    letter-spacing: 1px;          /* Style gravure */
+    transition: 0.3s ease;
+}
+
+.operation-link:hover {
+    color: #ffffff;               /* Nacré plus lumineux au survol */
+    transform: translateX(6px);   /* Petit mouvement cinématique */
+}
