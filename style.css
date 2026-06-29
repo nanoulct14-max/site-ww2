@@ -251,15 +251,20 @@ footer {
 
 .menu-button {
     display: inline-block;
-    padding: 12px 22px;
-    background: rgba(255,255,255,0.1);
-    border: 1px solid rgba(255,255,255,0.2);
+    padding: 14px 26px;
+    background: rgba(255,255,255,0.15); /* léger blanc transparent */
+    border: 1px solid rgba(255,255,255,0.8); /* bordure blanche */
     border-radius: 6px;
-    color: white;
+    color: white; /* texte blanc */
     text-decoration: none;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
     margin-top: 30px;
     transition: 0.3s;
 }
+
 .menu-button:hover {
-    background: rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.35); /* plus clair au survol */
+    border-color: white; /* bordure blanche nette */
+    color: white;
 }
