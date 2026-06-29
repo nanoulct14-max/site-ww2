@@ -267,3 +267,23 @@ footer {
     color: #ffffff;               /* Nacré lumineux au survol */
     transform: translateX(6px);   /* Effet cinématique */
 }
+.operation-link {
+    display: block;
+    margin: 14px 0;
+    font-size: 22px;
+    font-family: 'Cinzel', serif;
+    color: #e8e6e3;        /* Blanc nacré */
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.operation-link:hover {
+    color: #ffffff;
+    transform: translateX(6px);
+}
+
+.hero-title-line1 br {
+    line-height: 1.2;
+}
