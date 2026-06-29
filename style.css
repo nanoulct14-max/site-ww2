@@ -13,7 +13,6 @@ header {
     border-bottom: 2px solid #333;
 }
 
-/* MENU NACRÉ PREMIUM */
 nav {
     display: flex;
     justify-content: center;
@@ -45,7 +44,7 @@ nav a:hover {
 }
 
 /* ——— HERO ——— */
-.hero {
+.hero-section {
     padding-top: 160px;
     padding-bottom: 120px;
     text-align: center;
@@ -55,14 +54,12 @@ nav a:hover {
     position: relative;
 }
 
-.hero::before {
-    content: "";
+.hero-overlay {
     position: absolute;
     inset: 0;
     background: rgba(0,0,0,0.55);
 }
 
-/* TITRE NACRÉ INTENSE */
 .hero-title {
     position: relative;
     z-index: 2;
@@ -80,21 +77,6 @@ nav a:hover {
         0 0 28px rgba(200,200,200,0.35),
         0 0 45px rgba(0,0,0,0.9),
         0 0 70px rgba(0,0,0,0.7);
-}
-
-/* SOUS-TITRE HERO */
-.hero-subtitle {
-    position: relative;
-    z-index: 2;
-    font-family: "Cinzel", serif;
-    font-size: 1.35rem;
-    letter-spacing: 3px;
-    opacity: 0.95;
-    color: #e8e8e8;
-    margin-top: 10px;
-
-    text-shadow:
-        0 0 8px rgba(0,0,0,0.8);
 }
 
 /* ——— TITRES DE SECTION ——— */
@@ -142,6 +124,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 
 .ww2-fullcard::before {
@@ -166,8 +149,50 @@ nav a:hover {
         0 0 14px rgba(0,0,0,0.7);
 }
 
+/* ——— FICHES ——— */
+.fiche-hero {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.fiche-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+}
+
+.fiche-hero-title {
+    position: relative;
+    z-index: 2;
+    font-family: "Cinzel", serif;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 120px;
+    color: #f7f4ef;
+}
+
+.fiche-content {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    font-size: 1.15rem;
+    line-height: 1.7;
+}
+
+.fiche-image {
+    width: 100%;
+    max-width: 600px;
+    margin: 25px auto;
+    display: block;
+    border-radius: 6px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
 /* ——— FOOTER ——— */
-.site-footer {
+.site-footer,
+footer {
     background: #0d0d0d;
     text-align: center;
     padding: 40px 0;
