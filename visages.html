@@ -2,60 +2,557 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <title>Visages de la Seconde Guerre mondiale</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sauvegarde – Visages de la Seconde Guerre</title>
-    <link rel="stylesheet" href="../style.css">
+
+    <!-- Typo Cinzel + sans-serif sobre -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        /* ---------- RESET ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #050608;
+            color: #f5f5f5;
+            font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* ---------- LAYOUT GLOBAL ---------- */
+        .page {
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            min-height: 100vh;
+            background:
+                radial-gradient(circle at top left, rgba(255,255,255,0.06), transparent 55%),
+                radial-gradient(circle at bottom right, rgba(255,255,255,0.04), transparent 55%),
+                linear-gradient(135deg, #050608 0%, #0b0d10 40%, #050608 100%);
+        }
+
+        /* ---------- MENU LATÉRAL ---------- */
+        .sidebar {
+            border-right: 1px solid rgba(255,255,255,0.08);
+            padding: 32px 24px;
+            background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(0,0,0,0.8));
+            backdrop-filter: blur(6px);
+        }
+
+        .logo-block {
+            margin-bottom: 32px;
+        }
+
+        .site-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1.4rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #f5f5f5;
+        }
+
+        .site-subtitle {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            color: rgba(255,255,255,0.55);
+            margin-top: 6px;
+        }
+
+        .nav-section-title {
+            font-family: 'Cinzel', serif;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            color: rgba(255,255,255,0.65);
+            margin: 24px 0 10px;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .nav-link {
+            font-size: 0.9rem;
+            padding: 6px 0;
+            color: rgba(255,255,255,0.75);
+            position: relative;
+        }
+
+        .nav-link::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 1px;
+            background: linear-gradient(90deg, #f5f5f5, transparent);
+            transition: width 0.25s ease;
+        }
+
+        .nav-link:hover::before {
+            width: 100%;
+        }
+
+        .nav-link--active {
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+        .nav-link--active::before {
+            width: 100%;
+        }
+
+        .sidebar-footer {
+            margin-top: 40px;
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.45);
+        }
+
+        /* ---------- CONTENU PRINCIPAL ---------- */
+        .main {
+            padding: 32px 40px 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        /* ---------- HERO ---------- */
+        .hero {
+            position: relative;
+            border-radius: 18px;
+            overflow: hidden;
+            background:
+                linear-gradient(135deg, rgba(0,0,0,0.85), rgba(0,0,0,0.4)),
+                url("images/visages/hero-visages.jpg") center/cover no-repeat;
+            min-height: 260px;
+            display: flex;
+            align-items: flex-end;
+            padding: 28px 28px 26px;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(circle at 10% 0%, rgba(255,255,255,0.12), transparent 55%),
+                radial-gradient(circle at 90% 100%, rgba(0,0,0,0.9), transparent 60%);
+            mix-blend-mode: soft-light;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            max-width: 620px;
+        }
+
+        .hero-kicker {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.22em;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 8px;
+        }
+
+        .hero-title {
+            font-family: 'Cinzel', serif;
+            font-size: 2.1rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .hero-subtitle {
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.78);
+            max-width: 520px;
+        }
+
+        .hero-meta {
+            margin-top: 16px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            color: rgba(255,255,255,0.6);
+        }
+
+        /* ---------- SECTION INTRO ---------- */
+        .section-intro {
+            display: grid;
+            grid-template-columns: minmax(0, 2.2fr) minmax(0, 1.3fr);
+            gap: 32px;
+        }
+
+        .section-intro-text h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            margin-bottom: 10px;
+        }
+
+        .section-intro-text p {
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.78);
+        }
+
+        .section-intro-aside {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.65);
+            border-left: 1px solid rgba(255,255,255,0.12);
+            padding-left: 18px;
+        }
+
+        .section-intro-aside span {
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            font-size: 0.75rem;
+            margin-bottom: 6px;
+            color: rgba(255,255,255,0.55);
+        }
+
+        /* ---------- GRILLE VISAGES ---------- */
+        .faces-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+        .face-card {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            background: #0b0d10;
+            border: 1px solid rgba(255,255,255,0.06);
+            box-shadow:
+                0 18px 40px rgba(0,0,0,0.85),
+                0 0 1px rgba(255,255,255,0.08);
+            cursor: pointer;
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+        }
+
+        .face-card:hover {
+            transform: translateY(-4px);
+            box-shadow:
+                0 26px 60px rgba(0,0,0,0.95),
+                0 0 1px rgba(255,255,255,0.16);
+            border-color: rgba(255,255,255,0.18);
+        }
+
+        .face-image-wrapper {
+            position: relative;
+            height: 220px;
+            overflow: hidden;
+        }
+
+        .face-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: contrast(1.05) saturate(0.75);
+            transform: scale(1.02);
+        }
+
+        .face-image-grain {
+            position: absolute;
+            inset: 0;
+            background:
+                url("images/textures/grain.png") repeat,
+                radial-gradient(circle at 0% 0%, rgba(255,255,255,0.12), transparent 55%),
+                radial-gradient(circle at 100% 100%, rgba(0,0,0,0.9), transparent 60%);
+            mix-blend-mode: soft-light;
+            opacity: 0.65;
+            pointer-events: none;
+        }
+
+        .face-tag {
+            position: absolute;
+            left: 14px;
+            bottom: 14px;
+            padding: 4px 10px;
+            border-radius: 999px;
+            border: 1px solid rgba(255,255,255,0.35);
+            background: rgba(0,0,0,0.65);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            color: rgba(255,255,255,0.85);
+        }
+
+        .face-body {
+            padding: 14px 14px 12px;
+        }
+
+        .face-name {
+            font-family: 'Cinzel', serif;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            margin-bottom: 4px;
+        }
+
+        .face-role {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            color: rgba(255,255,255,0.6);
+            margin-bottom: 8px;
+        }
+
+        .face-desc {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.75);
+        }
+
+        .face-meta {
+            margin-top: 10px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            color: rgba(255,255,255,0.5);
+        }
+
+        /* ---------- SECTION BAS DE PAGE ---------- */
+        .bottom-section {
+            margin-top: 10px;
+            padding-top: 18px;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            display: flex;
+            justify-content: space-between;
+            gap: 18px;
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.65);
+        }
+
+        .bottom-section span.label {
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.55);
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        /* ---------- RESPONSIVE ---------- */
+        @media (max-width: 1024px) {
+            .page {
+                grid-template-columns: 220px 1fr;
+            }
+
+            .faces-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .page {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                border-right: none;
+                border-bottom: 1px solid rgba(255,255,255,0.08);
+            }
+
+            .main {
+                padding: 24px 18px 28px;
+            }
+
+            .hero {
+                min-height: 220px;
+                padding: 22px 18px 20px;
+            }
+
+            .section-intro {
+                grid-template-columns: 1fr;
+            }
+
+            .faces-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
-
 <body>
+<div class="page">
 
-<header>
-    <nav>
-        <a href="../index.html">ACCUEIL</a>
-        <a href="../collections.html">COLLECTIONS</a>
-        <a href="../guides.html">GUIDES</a>
-        <a href="../contact.html">CONTACT</a>
-        <a href="../mentions.html">MENTIONS LÉGALES</a>
-    </nav>
-</header>
+    <!-- ---------- MENU LATÉRAL ---------- -->
+    <aside class="sidebar">
+        <div class="logo-block">
+            <div class="site-title">Archives 1939‑1945</div>
+            <div class="site-subtitle">Musée numérique de la Seconde Guerre mondiale</div>
+        </div>
 
-<section class="hero">
-    <h1 class="hero-title">VISAGES DE LA SECONDE GUERRE</h1>
-    <p class="hero-subtitle">Les figures majeures du conflit mondial</p>
-</section>
+        <div>
+            <div class="nav-section-title">Navigation</div>
+            <ul class="nav-list">
+                <li><a href="../index.html" class="nav-link">Accueil</a></li>
+                <li><a href="../france/index.html" class="nav-link">France</a></li>
+                <li><a href="../uk/index.html" class="nav-link">Royaume‑Uni</a></li>
+                <li><a href="../us/index.html" class="nav-link">États‑Unis</a></li>
+                <li><a href="../urss/index.html" class="nav-link">URSS</a></li>
+                <li><a href="../allemagne/index.html" class="nav-link">Allemagne</a></li>
+            </ul>
+        </div>
 
-<h2 class="section-title">Alliés</h2>
-<a class="operation-link" href="../churchill.html">Winston Churchill</a>
-<a class="operation-link" href="../roosevelt.html">Franklin D. Roosevelt</a>
-<a class="operation-link" href="../degaulle.html">Charles de Gaulle</a>
-<a class="operation-link" href="../staline.html">Joseph Staline</a>
-<a class="operation-link" href="../eisenhower.html">Dwight D. Eisenhower</a>
+        <div>
+            <div class="nav-section-title">Collections</div>
+            <ul class="nav-list">
+                <li><a href="visage.html" class="nav-link nav-link--active">Visages</a></li>
+                <li><a href="../collections/index.html" class="nav-link">Objets & archives</a></li>
+                <li><a href="../operations/index.html" class="nav-link">Opérations militaires</a></li>
+            </ul>
+        </div>
 
-<h2 class="section-title">Axe</h2>
-<a class="operation-link" href="../hitler.html">Adolf Hitler</a>
-<a class="operation-link" href="../himmler.html">Heinrich Himmler</a>
-<a class="operation-link" href="../goering.html">Hermann Göring</a>
-<a class="operation-link" href="../rommel.html">Erwin Rommel</a>
-<a class="operation-link" href="../tojo.html">Hideki Tōjō</a>
+        <div class="sidebar-footer">
+            © Archives 1939‑1945  
+            Musée numérique — Coudekerque‑Branche  
+        </div>
+    </aside>
 
-<h2 class="section-title">Résistance</h2>
-<a class="operation-link" href="../moulin.html">Jean Moulin</a>
-<a class="operation-link" href="../turing.html">Alan Turing</a>
-<a class="operation-link" href="../szpilman.html">Władysław Szpilman</a>
-<a class="operation-link" href="../annefrank.html">Anne Frank</a>
-<a class="operation-link" href="../gers.html">Nancy Wake</a>
+    <!-- ---------- CONTENU PRINCIPAL ---------- -->
+    <main class="main">
 
-<h2 class="section-title">Commandants & Stratèges</h2>
-<a class="operation-link" href="../patton.html">George S. Patton</a>
-<a class="operation-link" href="../montgomery.html">Bernard Montgomery</a>
-<a class="operation-link" href="../manstein.html">Erich von Manstein</a>
-<a class="operation-link" href="../zhukov.html">Georgi Joukov</a>
-<a class="operation-link" href="../yama.html">Isoroku Yamamoto</a>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-kicker">Collection thématique</div>
+                <h1 class="hero-title">Visages de la guerre</h1>
+                <p class="hero-subtitle">
+                    Derrière chaque uniforme, chaque décision, il y a un visage.  
+                    Cette collection rassemble des portraits de figures militaires, politiques et civiles
+                    qui ont marqué la Seconde Guerre mondiale, des chefs d’État aux résistants anonymes.
+                </p>
+                <div class="hero-meta">
+                    Sélection curatoriale · 1939‑1945 · Europe & monde
+                </div>
+            </div>
+        </section>
 
-<footer class="site-footer">
-    <div class="footer-line"></div>
-    <p>© 2026 Musée HOP WW2 – Tous droits réservés.</p>
-</footer>
+        <!-- INTRO -->
+        <section class="section-intro">
+            <div class="section-intro-text">
+                <h2>Une galerie de destins</h2>
+                <p>
+                    Les visages présentés ici ne sont pas seulement des images figées : ce sont des trajectoires,
+                    des choix, des responsabilités. Certains ont dirigé des nations, d’autres ont combattu dans l’ombre,
+                    d’autres encore ont subi la guerre sans jamais la choisir.  
+                    <br><br>
+                    Chaque portrait est accompagné d’un court texte contextualisant le rôle de la personne,
+                    son impact sur le conflit et la mémoire qu’elle laisse derrière elle.
+                </p>
+            </div>
+            <aside class="section-intro-aside">
+                <span>Note curatoriale</span>
+                Les portraits sont présentés dans une approche muséale, sans glorification ni simplification.
+                L’objectif est de donner des repères visuels et historiques, tout en rappelant la complexité
+                des responsabilités individuelles dans un conflit mondial.
+            </aside>
+        </section>
 
+        <!-- GRILLE VISAGES -->
+        <section class="faces-grid">
+
+            <!-- EXEMPLE 1 : Chef d'État -->
+            <article class="face-card">
+                <div class="face-image-wrapper">
+                    <img src="images/visages/chef-etat-01.jpg" alt="Portrait d'un chef d'État de la Seconde Guerre mondiale" class="face-image">
+                    <div class="face-image-grain"></div>
+                    <div class="face-tag">Chef d'État</div>
+                </div>
+                <div class="face-body">
+                    <h3 class="face-name">Figure gouvernementale</h3>
+                    <div class="face-role">Direction politique · Alliés</div>
+                    <p class="face-desc">
+                        Chef d’État engagé dans la lutte contre les puissances de l’Axe, symbole de résistance
+                        politique et morale. Son image est associée aux discours radiophoniques, aux visites
+                        sur le front et à la coordination diplomatique avec les autres nations alliées.
+                    </p>
+                    <div class="face-meta">
+                        Fronts concernés : Europe occidentale · Atlantique · Méditerranée
+                    </div>
+                </div>
+            </article>
+
+            <!-- EXEMPLE 2 : Résistant -->
+            <article class="face-card">
+                <div class="face-image-wrapper">
+                    <img src="images/visages/resistant-01.jpg" alt="Portrait d'un résistant de la Seconde Guerre mondiale" class="face-image">
+                    <div class="face-image-grain"></div>
+                    <div class="face-tag">Résistance</div>
+                </div>
+                <div class="face-body">
+                    <h3 class="face-name">Résistant anonyme</h3>
+                    <div class="face-role">Réseaux clandestins · Europe occupée</div>
+                    <p class="face-desc">
+                        Membre d’un réseau de résistance, engagé dans la transmission de renseignements,
+                        la diffusion de tracts et l’organisation de filières d’évasion.  
+                        Son visage représente les milliers d’anonymes qui ont pris des risques considérables
+                        pour refuser l’occupation et la collaboration.
+                    </p>
+                    <div class="face-meta">
+                        Activités : renseignement · sabotage · aide aux fugitifs
+                    </div>
+                </div>
+            </article>
+
+            <!-- EXEMPLE 3 : Civil -->
+            <article class="face-card">
+                <div class="face-image-wrapper">
+                    <img src="images/visages/civil-01.jpg" alt="Portrait d'une civile durant la Seconde Guerre mondiale" class="face-image">
+                    <div class="face-image-grain"></div>
+                    <div class="face-tag">Population civile</div>
+                </div>
+                <div class="face-body">
+                    <h3 class="face-name">Témoin du bombardement</h3>
+                    <div class="face-role">Ville bombardée · Europe</div>
+                    <p class="face-desc">
+                        Civile ayant survécu à plusieurs bombardements, confrontée à la destruction de son quartier,
+                        aux déplacements forcés et aux pénuries.  
+                        Son témoignage rappelle que la guerre ne se limite pas aux lignes de front, mais touche
+                        directement les villes, les familles et le quotidien.
+                    </p>
+                    <div class="face-meta">
+                        Thèmes : bombardements stratégiques · exode · reconstruction
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- BAS DE PAGE -->
+        <section class="bottom-section">
+            <div>
+                <span class="label">Parcours conseillé</span>
+                Commencer par les visages politiques, puis les résistants, avant de découvrir les portraits civils
+                permet de saisir la chaîne des décisions et des conséquences.
+            </div>
+            <div>
+                <span class="label">Prochaine étape</span>
+                Explorer la collection « Opérations militaires » pour relier ces visages aux grandes offensives
+                et aux batailles majeures du conflit.
+            </div>
+        </section>
+
+    </main>
+</div>
 </body>
 </html>
