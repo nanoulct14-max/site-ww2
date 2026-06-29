@@ -268,3 +268,60 @@ footer {
     border-color: white; /* bordure blanche nette */
     color: white;
 }
+/* IMAGE DOCUMENTAIRE */
+.fiche-image {
+    width: 100%;
+    border-radius: 6px;
+    margin: 30px 0;
+    opacity: 0.95;
+}
+
+/* BLOCS MUSÉAUX */
+.fiche-block {
+    background: rgba(0,0,0,0.45);
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 6px;
+    font-size: 1.3rem !important;
+}
+
+/* TITRES INTERNES */
+.section-title {
+    font-size: 2.2rem !important;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+}
+
+/* TEXTE DES BLOCS */
+.fiche-block p {
+    font-size: 1.45rem !important;
+    line-height: 1.75 !important;
+}
+
+/* BOUTON BLANC PREMIUM */
+.menu-button {
+    display: inline-block;
+    padding: 16px 30px;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.8);
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem !important;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    transition: 0.3s;
+}
+.menu-button:hover {
+    background: rgba(255,255,255,0.35);
+    border-color: white;
+}
+
+/* HERO TITRES */
+.hero-title-line1 {
+    font-size: 4rem !important;
+}
+.hero-title-line2 {
+    font-size: 1.8rem !important;
+}
