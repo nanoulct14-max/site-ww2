@@ -2,150 +2,53 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Visages de la Seconde Guerre mondiale</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css">
+    <title>Visages – Musée HOP WW2</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<div class="page">
 
-    <!-- MENU -->
-    <aside class="sidebar">
-        <div class="logo-block">
-            <div class="site-title">Archives 1939‑1945</div>
-            <div class="site-subtitle">Musée numérique</div>
-        </div>
+<header>
+    <nav>
+        <a href="index.html">ACCUEIL</a>
+        <a href="collections.html">COLLECTIONS</a>
+        <a href="guides.html">GUIDES</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="mentions.html">MENTIONS LÉGALES</a>
+    </nav>
+</header>
 
-        <div>
-            <div class="nav-section-title">Navigation</div>
-            <ul class="nav-list">
-                <li><a href="../index.html" class="nav-link">Accueil</a></li>
-                <li><a href="../france/index.html" class="nav-link">France</a></li>
-                <li><a href="../uk/index.html" class="nav-link">Royaume‑Uni</a></li>
-                <li><a href="../us/index.html" class="nav-link">États‑Unis</a></li>
-                <li><a href="../urss/index.html" class="nav-link">URSS</a></li>
-                <li><a href="../allemagne/index.html" class="nav-link">Allemagne</a></li>
-            </ul>
-        </div>
+<!-- HERO IDENTIQUE À L’ACCUEIL -->
+<section class="hero-section" style="background-image:url('images/hero.jpg');">
+    <div class="hero-overlay"></div>
 
-        <div>
-            <div class="nav-section-title">Collections</div>
-            <ul class="nav-list">
-                <li><a href="visage.html" class="nav-link nav-link--active">Visages</a></li>
-                <li><a href="../collections/index.html" class="nav-link">Objets & archives</a></li>
-                <li><a href="../operations/index.html" class="nav-link">Opérations militaires</a></li>
-            </ul>
-        </div>
+    <div class="hero-title-block">
+        <h2 class="hero-title-line1">
+            VISAGES<br>DE LA GUERRE
+        </h2>
+        <h3 class="hero-title-line2">Figures marquantes de la Seconde Guerre mondiale</h3>
+    </div>
+</section>
 
-        <div class="sidebar-footer">
-            © Archives 1939‑1945 — Coudekerque‑Branche
-        </div>
-    </aside>
+<!-- LISTE NACRÉE MUSÉALE -->
+<h2 class="section-title">Figures emblématiques</h2>
 
-    <!-- CONTENU -->
-    <main class="main">
+<a class="operation-link" href="jean-moulin.html">Jean Moulin</a>
+<a class="operation-link" href="nancy-wake.html">Nancy Wake</a>
+<a class="operation-link" href="rommel.html">Erwin Rommel</a>
+<a class="operation-link" href="staline.html">Joseph Staline</a>
+<a class="operation-link" href="churchill.html">Winston Churchill</a>
+<a class="operation-link" href="hirohito.html">Empereur Hirohito</a>
+<a class="operation-link" href="patton.html">George S. Patton</a>
+<a class="operation-link" href="anne-frank.html">Anne Frank</a>
+<a class="operation-link" href="eisenhower.html">Dwight D. Eisenhower</a>
+<a class="operation-link" href="joukov.html">Guéorgui Joukov</a>
 
-        <!-- HERO -->
-        <section class="hero hero-visages">
-            <div class="hero-overlay"></div>
-            <div class="hero-content">
-                <div class="hero-kicker">Collection thématique</div>
-                <h1 class="hero-title">Visages de la guerre</h1>
-                <p class="hero-subtitle">
-                    Portraits des figures militaires et politiques qui ont marqué le conflit mondial.
-                </p>
-                <div class="hero-meta">1939‑1945 · Europe & Monde</div>
-            </div>
-        </section>
+<footer class="site-footer">
+    <div class="footer-line"></div>
+    <p>© 2026 Musée HOP WW2 – Tous droits réservés.</p>
+</footer>
 
-        <!-- GRILLE DES FICHES -->
-        <section class="faces-grid">
-
-            <!-- CHURCHILL -->
-            <article class="face-card" onclick="location.href='churchill.html'">
-                <div class="face-image-wrapper">
-                    <img src="images/churchill.jpg" class="face-image">
-                    <div class="face-image-grain"></div>
-                    <div class="face-tag">Royaume‑Uni</div>
-                </div>
-                <div class="face-body">
-                    <h3 class="face-name">Winston Churchill</h3>
-                    <div class="face-role">Premier ministre</div>
-                    <p class="face-desc">
-                        Figure emblématique de la résistance britannique, symbole de détermination face à l’Axe.
-                    </p>
-                </div>
-            </article>
-
-            <!-- DE GAULLE -->
-            <article class="face-card" onclick="location.href='degaulle.html'">
-                <div class="face-image-wrapper">
-                    <img src="images/degaulle.jpg" class="face-image">
-                    <div class="face-image-grain"></div>
-                    <div class="face-tag">France</div>
-                </div>
-                <div class="face-body">
-                    <h3 class="face-name">Charles de Gaulle</h3>
-                    <div class="face-role">Chef de la France libre</div>
-                    <p class="face-desc">
-                        Porte‑voix de la résistance française, architecte de la libération et de la reconstruction.
-                    </p>
-                </div>
-            </article>
-
-            <!-- ROMMEL -->
-            <article class="face-card" onclick="location.href='rommel.html'">
-                <div class="face-image-wrapper">
-                    <img src="images/rommel.jpg" class="face-image">
-                    <div class="face-image-grain"></div>
-                    <div class="face-tag">Allemagne</div>
-                </div>
-                <div class="face-body">
-                    <h3 class="face-name">Erwin Rommel</h3>
-                    <div class="face-role">Maréchal — Afrika Korps</div>
-                    <p class="face-desc">
-                        Stratège du désert, respecté pour ses tactiques rapides et son code d’honneur militaire.
-                    </p>
-                </div>
-            </article>
-
-            <!-- PATTON -->
-            <article class="face-card" onclick="location.href='patton.html'">
-                <div class="face-image-wrapper">
-                    <img src="images/patton.jpg" class="face-image">
-                    <div class="face-image-grain"></div>
-                    <div class="face-tag">États‑Unis</div>
-                </div>
-                <div class="face-body">
-                    <h3 class="face-name">George S. Patton</h3>
-                    <div class="face-role">Général — 3e Armée</div>
-                    <p class="face-desc">
-                        Commandant charismatique, connu pour ses offensives rapides et son leadership agressif.
-                    </p>
-                </div>
-            </article>
-
-            <!-- JOUKOV -->
-            <article class="face-card" onclick="location.href='joukov.html'">
-                <div class="face-image-wrapper">
-                    <img src="images/joukov.jpg" class="face-image">
-                    <div class="face-image-grain"></div>
-                    <div class="face-tag">URSS</div>
-                </div>
-                <div class="face-body">
-                    <h3 class="face-name">Guéorgui Joukov</h3>
-                    <div class="face-role">Maréchal de l’URSS</div>
-                    <p class="face-desc">
-                        Artisan des victoires soviétiques majeures, notamment Moscou, Stalingrad et Berlin.
-                    </p>
-                </div>
-            </article>
-
-        </section>
-
-    </main>
-</div>
 </body>
 </html>
