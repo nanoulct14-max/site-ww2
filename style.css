@@ -244,12 +244,9 @@ footer {
     opacity: 0.95;
 }
 
-.fiche-block {
-    background: rgba(0,0,0,0.45);
-    border: 1px solid rgba(255,255,255,0.15);
-    padding: 20px;
-    margin: 25px 0;
-    border-radius: 6px;
+.fiche-block p {
+    font-size: 1.35rem;   /* GRAND et lisible */
+    line-height: 1.7;     /* Aéré, muséal */
 }
 
 .menu-button {
