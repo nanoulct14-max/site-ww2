@@ -359,3 +359,11 @@ footer {
     font-size: 1rem;
     line-height: 1.6;
 }
+/* Correction : les listes doivent avoir EXACTEMENT la même taille que le texte normal */
+.fiche-block ul,
+.fiche-block li {
+    font-size: inherit !important;      /* reprend la taille du parent */
+    line-height: inherit !important;    /* reprend la hauteur du parent */
+    color: inherit !important;          /* même couleur */
+    margin-bottom: 10px;
+}
