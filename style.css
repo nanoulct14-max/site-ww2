@@ -332,38 +332,3 @@ footer {
     background: rgba(255,255,255,0.35);
     border-color: white;
 }
-/* Correction taille des listes dans les fiches */
-.fiche-block ul,
-.fiche-block li {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 8px;
-}
-/* Uniformisation des listes dans les fiches (même style que le reste) */
-.fiche-block ul,
-.fiche-block li {
-    font-size: 1rem;        /* même taille que les paragraphes */
-    line-height: 1.6;       /* lisible, muséal */
-    margin-bottom: 8px;     /* espacement propre */
-    color: #fff;            /* même couleur que le texte normal */
-}
-/* LISTES : même taille que le texte normal */
-.fiche-block ul,
-.fiche-block li {
-    font-size: inherit;     /* EXACTEMENT la même taille que le reste */
-    line-height: inherit;   /* même hauteur de ligne */
-    color: inherit;         /* même couleur */
-    margin-bottom: 10px;    /* espacement propre */
-}
-.fiche-block p {
-    font-size: 1rem;
-    line-height: 1.6;
-}
-/* Correction : les listes doivent avoir EXACTEMENT la même taille que le texte normal */
-.fiche-block ul,
-.fiche-block li {
-    font-size: inherit !important;      /* reprend la taille du parent */
-    line-height: inherit !important;    /* reprend la hauteur du parent */
-    color: inherit !important;          /* même couleur */
-    margin-bottom: 10px;
-}
