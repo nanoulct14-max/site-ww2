@@ -367,3 +367,15 @@ footer {
     color: inherit !important;          /* même couleur */
     margin-bottom: 10px;
 }
+/* ——— AGRANDIR TOUT LE TEXTE DU SITE ——— */
+body,
+.fiche-block,
+.fiche-block p,
+.fiche-block ul,
+.fiche-block li,
+.operation-link,
+.menu-buttons,
+.ww2-fullcard span {
+    font-size: 1.55rem !important;
+    line-height: 1.8 !important;
+}
