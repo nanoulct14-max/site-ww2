@@ -47,6 +47,7 @@ nav a:hover {
     padding-top: 160px;
     padding-bottom: 120px;
     text-align: center;
+    background-image: url('images/hero.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -76,6 +77,10 @@ nav a:hover {
         0 0 14px rgba(255,255,255,0.5),
         0 0 28px rgba(200,200,200,0.35),
         0 0 45px rgba(0,0,0,0.9);
+}
+
+.hero-title-line1 br {
+    line-height: 1.2;
 }
 
 .hero-title-line2 {
@@ -158,6 +163,119 @@ nav a:hover {
         0 0 14px rgba(0,0,0,0.7);
 }
 
+/* ——— FICHES ——— */
+.fiche-hero {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.fiche-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+}
+
+.fiche-hero-title {
+    position: relative;
+    z-index: 2;
+    font-family: "Cinzel", serif;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 120px;
+    color: #f7f4ef;
+}
+
+.fiche-content {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    font-size: 1.15rem;
+    line-height: 1.7;
+}
+
+.fiche-image {
+    width: 100%;
+    max-width: 600px;
+    margin: 25px auto;
+    display: block;
+    border-radius: 6px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+/* ——— FOOTER ——— */
+.site-footer,
+footer {
+    background: #0d0d0d;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 60px;
+}
+
+.footer-line {
+    width: 90%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #777, transparent);
+    margin: 0 auto 25px;
+}
+
+/* ——— LIENS NACRÉS MUSÉAUX ——— */
+.operation-link {
+    display: block;
+    margin: 14px 0;
+    font-size: 22px;
+    font-family: 'Cinzel', serif;
+    color: #e8e6e3;        /* Blanc nacré */
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.operation-link:hover {
+    color: #ffffff;
+    transform: translateX(6px);
+}
+/* ——— MENUS PREMIUM ——— */
+
+/* Boutons blancs */
+.menu-button {
+    display: inline-block;
+    padding: 16px 32px;
+    background: rgba(255,255,255,0.15);
+    border: 2px solid white;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    transition: 0.3s;
+}
+
+.menu-button:hover {
+    background: rgba(255,255,255,0.35);
+    border-color: white;
+}
+
+/* Liens nacrés muséaux */
+.operation-link {
+    display: block;
+    margin: 14px 0;
+    font-size: 22px;
+    font-family: 'Cinzel', serif;
+    color: #e8e6e3;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.operation-link:hover {
+    color: #ffffff;
+    transform: translateX(6px);
+}
 /* ——— FICHES WW2 PREMIUM ——— */
 
 /* IMAGE DOCUMENTAIRE */
@@ -195,32 +313,7 @@ nav a:hover {
     margin: 12px 0;
 }
 
-/* LISTES — même taille que le texte */
-.fiche-block ul,
-.fiche-block li {
-    font-size: 1.55rem;
-    line-height: 1.8;
-    margin-bottom: 12px;
-    color: #e5e5e5;
-}
-
-/* ——— FOOTER ——— */
-.site-footer,
-footer {
-    background: #0d0d0d;
-    text-align: center;
-    padding: 40px 0;
-    margin-top: 60px;
-}
-
-.footer-line {
-    width: 90%;
-    height: 1px;
-    background: linear-gradient(to right, transparent, #777, transparent);
-    margin: 0 auto 25px;
-}
-
-/* ——— MENUS PREMIUM ——— */
+/* BOUTON BLANC PREMIUM */
 .menu-button {
     display: inline-block;
     padding: 16px 32px;
@@ -238,4 +331,39 @@ footer {
 .menu-button:hover {
     background: rgba(255,255,255,0.35);
     border-color: white;
+}
+/* Correction taille des listes dans les fiches */
+.fiche-block ul,
+.fiche-block li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+/* Uniformisation des listes dans les fiches (même style que le reste) */
+.fiche-block ul,
+.fiche-block li {
+    font-size: 1rem;        /* même taille que les paragraphes */
+    line-height: 1.6;       /* lisible, muséal */
+    margin-bottom: 8px;     /* espacement propre */
+    color: #fff;            /* même couleur que le texte normal */
+}
+/* LISTES : même taille que le texte normal */
+.fiche-block ul,
+.fiche-block li {
+    font-size: inherit;     /* EXACTEMENT la même taille que le reste */
+    line-height: inherit;   /* même hauteur de ligne */
+    color: inherit;         /* même couleur */
+    margin-bottom: 10px;    /* espacement propre */
+}
+.fiche-block p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+/* Correction : les listes doivent avoir EXACTEMENT la même taille que le texte normal */
+.fiche-block ul,
+.fiche-block li {
+    font-size: inherit !important;      /* reprend la taille du parent */
+    line-height: inherit !important;    /* reprend la hauteur du parent */
+    color: inherit !important;          /* même couleur */
+    margin-bottom: 10px;
 }
