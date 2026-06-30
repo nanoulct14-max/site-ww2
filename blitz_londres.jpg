@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blitz sur Londres – Musée HOP WW2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">ACCUEIL</a>
+        <a href="collections.html">COLLECTIONS</a>
+        <a href="guides.html">GUIDES</a>
+        <a href="operations-militaires.html">OPÉRATIONS MILITAIRES</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero-section" style="background-image:url('images/blitz_londres.jpg');">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-title-block">
+        <h2 class="hero-title-line1">
+            LONDRES<br>1940–1941
+        </h2>
+        <h3 class="hero-title-line2">
+            Le Blitz allemand
+        </h3>
+    </div>
+</section>
+
+<!-- IMAGE DOCUMENTAIRE -->
+<img src="images/blitz_londres.jpg" class="fiche-image" alt="Blitz sur Londres 1940–1941">
+
+<!-- FICHE MUSÉALE -->
+<div class="fiche-block">
+    <h2 class="section-title">Dates</h2>
+    <p>7 septembre 1940 – 11 mai 1941</p>
+</div>
+
+<div class="fiche-block">
+    <h2 class="section-title">Lieu</h2>
+    <p>Londres et plusieurs villes britanniques – Royaume-Uni</p>
+</div>
+
+<div class="fiche-block">
+    <h2 class="section-title">Forces en présence</h2>
+    <p><strong>Axe :</strong> Allemagne – Luftwaffe (Heinkel He 111, Dornier Do 17, Junkers Ju 88).</p>
+    <p><strong>Alliés :</strong> Royaume-Uni – Royal Air Force (RAF), défense civile, radars Chain Home.</p>
+</div>
+
+<div class="fiche-block">
+    <h2 class="section-title">Résumé</h2>
+    <p>
+        Le Blitz est la campagne de bombardements stratégiques menée par l’Allemagne contre le Royaume-Uni.
+        Londres est frappée nuit après nuit, visant à briser le moral britannique et à affaiblir l’industrie
+        et les infrastructures du pays.
+    </p>
+</div>
+
+<div class="fiche-block">
+    <h2 class="section-title">Déroulement</h2>
+    <p>
+        À partir du 7 septembre 1940, la Luftwaffe concentre ses attaques sur Londres. Les bombardements
+        nocturnes deviennent quotidiens : docks, gares, quartiers résidentiels et bâtiments publics sont
+        touchés. La population se réfugie dans les stations de métro, les abris Anderson et les caves.
+    </p>
+</div>
+
+<div class="fiche-block">
+    <h2 class="section-title">Issue</h2>
+    <p>
+        Malgré les destructions massives, le Blitz échoue à briser la résistance britannique. La RAF maintient
+        la supériorité aérienne et les radars permettent d’anticiper les raids. En mai 1941, l’Allemagne réduit
+        ses bombardements pour se concentrer sur l’invasion de l’URSS.
+    </p>
+</div>
+
+<div class="fiche-block">
+    <h2 class="section-title">Importance historique</h2>
+    <p>
+        Le Blitz devient un symbole de résilience. La population londonienne, malgré les pertes et les ruines,
+        continue de vivre, travailler et soutenir l’effort de guerre. Cette résistance contribue à empêcher
+        toute invasion allemande du Royaume-Uni.
+    </p>
+</div>
+
+<!-- RETOUR -->
+<a href="operations-militaires.html" class="menu-button">⬅ Retour aux opérations</a>
+
+<footer class="site-footer">
+    <div class="footer-line"></div>
+    <p>© 2026 Musée HOP WW2 – Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
