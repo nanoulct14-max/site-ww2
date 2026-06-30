@@ -339,3 +339,11 @@ footer {
     line-height: 1.6;
     margin-bottom: 8px;
 }
+/* Uniformisation des listes dans les fiches (même style que le reste) */
+.fiche-block ul,
+.fiche-block li {
+    font-size: 1rem;        /* même taille que les paragraphes */
+    line-height: 1.6;       /* lisible, muséal */
+    margin-bottom: 8px;     /* espacement propre */
+    color: #fff;            /* même couleur que le texte normal */
+}
