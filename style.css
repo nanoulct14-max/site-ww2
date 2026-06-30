@@ -239,12 +239,3 @@ footer {
     background: rgba(255,255,255,0.35);
     border-color: white;
 }
-/* ——— CORRECTION GLOBALE TAILLE DU TEXTE ——— */
-.fiche-content,
-.fiche-block,
-.operation-link,
-.menu-buttons,
-.ww2-fullcard span {
-    font-size: 1.55rem !important;
-    line-height: 1.8 !important;
-}
