@@ -355,3 +355,7 @@ footer {
     color: inherit;         /* même couleur */
     margin-bottom: 10px;    /* espacement propre */
 }
+.fiche-block p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
