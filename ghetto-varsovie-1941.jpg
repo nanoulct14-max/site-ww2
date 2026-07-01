@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghetto de Varsovie – Musée HOP WW2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">ACCUEIL</a>
+        <a href="collections.html">COLLECTIONS</a>
+        <a href="guides.html">GUIDES</a>
+        <a href="operations-militaires.html">OPÉRATIONS MILITAIRES</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero-section" style="background-image:url('images/ghetto-varsovie-1941.jpg');">
+    <div class="hero-overlay"></div>
+    <div class="hero-title-block">
+        <h2 class="hero-title-line1">
+            GHETTO DE VARSOVIE
+        </h2>
+        <h3 class="hero-title-line2">
+            Enfermement • Famine • Résistance • Destruction
+        </h3>
+    </div>
+</section>
+
+<!-- IMAGE DOCUMENTAIRE -->
+<img src="images/ghetto-varsovie-1941.jpg" class="fiche-image" alt="Ghetto de Varsovie – 1941">
+
+<!-- BLOCS MUSÉAUX -->
+
+<div class="fiche-block">
+    <h2 class="section-title">Présentation générale</h2>
+    <p>
+        Le ghetto de Varsovie, créé en octobre 1940 par les autorités nazies, est le plus grand ghetto juif
+        d’Europe. Plus de 450 000 personnes y sont enfermées dans quelques kilomètres carrés. Les conditions
+        de vie y sont catastrophiques : famine, maladies, surpopulation, absence de soins, travail forcé.
+    </p>
+    <p>
+        Ce lieu devient le symbole de l’oppression nazie, mais aussi de la résistance juive face à
+        l’extermination programmée.
+    </p>
+</div>
+
+<div class="fiche-block">
+    <h2 class="section-title">Création du ghetto</h2>
+    <p>
+        Après l’invasion de la Pologne en 1939, les nazis mettent en place une politique de ségrégation
+        stricte. Les Juifs de Varsovie sont progressivement isolés, puis forcés de vivre dans une zone
+        fermée entourée de murs et de barbelés.
+    </p>
+    <p>
+        Le ghetto est totalement coupé du reste de la ville : les portes sont gardées, les passages
+        surveillés, et toute tentative de sortie est punie de mort.
+    </p>
+</div>
+
+<div class="fiche-block">
+    <h2 class="section-title">Conditions de vie</h2>
+    <p>
+        Les conditions dans le ghetto sont inhumaines. La population est entassée dans des logements
+        insalubres, souvent sans chauffage ni eau potable. La ration alimentaire officielle est si faible
+        qu’elle ne permet pas de survivre.
+    </p>
+    <p>
+        Les maladies se propagent rapidement : typhus, dysenterie, infections respiratoires. Les enfants
+        sont les premières victimes de la famine.
+    </p>
+</div>
+
+<div class="fiche-block">
+    <h2 class="section-title">Organisation interne</h2>
+    <p>
+        Malgré les conditions extrêmes, les habitants du ghetto tentent de maintenir une vie sociale :
+        écoles clandestines, hôpitaux improvisés, réseaux de solidarité, orphelinats, ateliers de travail.
+    </p>
+    <p>
+        Des archives clandestines, comme celles du groupe Oyneg Shabbos, documentent la vie quotidienne
+        et les crimes nazis pour les générations futures.
+    </p>
+</div>
+
+<div class="fiche-block">
+    <h2 class="section-title">Déportations</h2>
+    <p>
+        À partir de juillet 1942, les nazis commencent la déportation massive des habitants du ghetto vers
+        le centre d’extermination de Treblinka. En quelques semaines, plus de 250 000 personnes sont
+        assassinées.
+    </p>
+    <p>
+        Les convois partent de l’Umschlagplatz, un lieu devenu symbole de la tragédie du ghetto.
+    </p>
+</div>
+
+<div class="fiche-block">
+    <h2 class="section-title">Soulèvement du ghetto (1943)</h2>
+    <p>
+        En avril 1943, les derniers habitants du ghetto se soulèvent contre les nazis. Mal armés mais
+        déterminés, ils résistent pendant plusieurs semaines face à une armée bien équipée.
+    </p>
+    <p>
+        Le soulèvement du ghetto de Varsovie est l’un des actes de résistance les plus emblématiques de la
+        Seconde Guerre mondiale. Il témoigne du courage et de la dignité d’une population condamnée.
+    </p>
+</div>
+
+<div class="fiche-block">
+    <h2 class="section-title">Destruction du ghetto</h2>
+    <p>
+        Après la répression du soulèvement, les nazis détruisent entièrement le ghetto. Les bâtiments sont
+        incendiés ou dynamités. Le quartier est rasé, ne laissant que des ruines.
+    </p>
+    <p>
+        Aujourd’hui, seuls quelques fragments de murs subsistent, préservés comme lieux de mémoire.
+    </p>
+</div>
+
+<div class="fiche-block">
+    <h2 class="section-title">Mémoire</h2>
+    <p>
+        Le ghetto de Varsovie est devenu un symbole mondial de la Shoah. Des monuments, musées et
+        commémorations rappellent l’histoire de ses habitants et de leur résistance.
+    </p>
+    <p>
+        La mémoire du ghetto est essentielle pour comprendre la mécanique du génocide et les conséquences
+        de la haine raciale institutionnalisée.
+    </p>
+</div>
+
+<!-- BOUTON RETOUR — CELUI QUI FONCTIONNE -->
+<a href="histoire-memoire.html" class="menu-button">⬅ Retour à Histoire & Mémoire</a>
+
+<footer class="site-footer">
+    <div class="footer-line"></div>
+    <p>© 2026 Musée HOP WW2 – Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
