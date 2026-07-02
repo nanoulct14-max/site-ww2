@@ -3,79 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <title>Casques Français – Musée HOP WW2</title>
-    <link rel="stylesheet" href="france.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .operation-link {
+            font-size: 26px;
+            font-weight: 600;
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- HEADER FRANCE -->
-<header class="fr-header">
-    <nav class="fr-menu">
+<header>
+    <nav>
         <a href="index.html">ACCUEIL</a>
         <a href="collections.html">COLLECTIONS</a>
         <a href="guides.html">GUIDES</a>
         <a href="contact.html">CONTACT</a>
+        <a href="mentions.html">MENTIONS LÉGALES</a>
     </nav>
 </header>
 
-<!-- HERO FRANCE -->
-<section class="fr-hero" style="background-image:url('images/france-casques.jpg');">
-    <div class="fr-hero-overlay"></div>
-    <div class="fr-hero-title">
-        <h2>Casques Français</h2>
-        <h3>Modèles utilisés de 1915 à 1945</h3>
+<!-- HERO -->
+<section class="hero-section" style="background-image:url('images/france-casques.jpg');">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-title-block">
+        <h2 class="hero-title-line1">
+            Casques Français<br>1915–1945
+        </h2>
+        <h3 class="hero-title-line2">
+            Les modèles emblématiques de l’armée française
+        </h3>
     </div>
 </section>
 
-<!-- TITRE SECTION -->
-<h2 class="fr-section-title">Modèles disponibles</h2>
-<p class="fr-intro">Sélectionnez un casque pour afficher sa fiche détaillée.</p>
+<!-- TITRE -->
+<h2 class="section-title">Modèles disponibles</h2>
 
-<!-- GRID FRANCE -->
-<div class="fr-grid">
+<!-- MENU DES CASQUES -->
+<div class="menu-buttons">
 
-    <div class="fr-item">
-        <h2>Adrian M15 – Infanterie</h2>
-        <p>Le casque emblématique de la Première Guerre mondiale, encore utilisé en 1940.</p>
-        <a class="fr-btn" href="adrian-m15-infanterie.html">Voir le modèle</a>
-    </div>
+    <a class="ww2-fullcard" href="adrian-m15-infanterie.html"
+       style="background-image:url('images/adrian-m15.jpg');">
+        <span>Adrian M15 – Infanterie</span>
+    </a>
 
-    <div class="fr-item">
-        <h2>Adrian M15 – Artillerie</h2>
-        <p>Version avec insigne de l’artillerie, très répandue en 1939‑1940.</p>
-        <a class="fr-btn" href="adrian-m15-artillerie.html">Voir le modèle</a>
-    </div>
+    <a class="ww2-fullcard" href="adrian-m15-artillerie.html"
+       style="background-image:url('images/adrian-m15-artillerie.jpg');">
+        <span>Adrian M15 – Artillerie</span>
+    </a>
 
-    <div class="fr-item">
-        <h2>Adrian M26 – Infanterie</h2>
-        <p>Le casque standard de l’armée française durant la campagne de 1940.</p>
-        <a class="fr-btn" href="adrian-m26-infanterie.html">Voir le modèle</a>
-    </div>
+    <a class="ww2-fullcard" href="adrian-m26-infanterie.html"
+       style="background-image:url('images/adrian-m26.jpg');">
+        <span>Adrian M26 – Infanterie</span>
+    </a>
 
-    <div class="fr-item">
-        <h2>Adrian M26 – Gendarmerie</h2>
-        <p>Version spécifique avec insigne de la gendarmerie nationale.</p>
-        <a class="fr-btn" href="adrian-m26-gendarmerie.html">Voir le modèle</a>
-    </div>
+    <a class="ww2-fullcard" href="adrian-m26-gendarmerie.html"
+       style="background-image:url('images/adrian-m26-gendarmerie.jpg');">
+        <span>Adrian M26 – Gendarmerie</span>
+    </a>
 
-    <div class="fr-item">
-        <h2>Casque Motorisé Français</h2>
-        <p>Casque utilisé par les unités motorisées et motocyclistes.</p>
-        <a class="fr-btn" href="casque-motorise-fr.html">Voir le modèle</a>
-    </div>
+    <a class="ww2-fullcard" href="casque-motorise-fr.html"
+       style="background-image:url('images/casque-motorise.jpg');">
+        <span>Casque Motorisé Français</span>
+    </a>
 
-    <div class="fr-item">
-        <h2>Casque Tankiste Français</h2>
-        <p>Casque utilisé par les équipages de chars français avant et pendant 1940.</p>
-        <a class="fr-btn" href="casque-tankiste-fr.html">Voir le modèle</a>
-    </div>
+    <a class="ww2-fullcard" href="casque-tankiste-fr.html"
+       style="background-image:url('images/casque-tankiste-fr.jpg');">
+        <span>Casque Tankiste Français</span>
+    </a>
 
 </div>
 
-<!-- FOOTER FRANCE -->
-<footer class="fr-footer">
-    <div class="fr-footer-line"></div>
-    © 2026 - Musée HOP WW2 : Tous droits réservés.
+<footer class="site-footer">
+    <div class="footer-line"></div>
+    <p>© 2026 Musée HOP WW2 – Tous droits réservés.</p>
 </footer>
 
 </body>
