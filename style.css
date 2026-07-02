@@ -392,3 +392,6 @@ body {
     font-size: 1.55rem !important;
     line-height: 1.8 !important;
 }
+body {
+    background: #220000;
+}
