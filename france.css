@@ -1,48 +1,14 @@
-/* ===========================
-   HEADER FRANCE (style Opérations militaires)
-   =========================== */
-
-.fr-header {
-    background: #0b0b0b;
-    padding: 18px 0;
-    border-bottom: 1px solid #1a1a1a;
-}
-
-.fr-menu {
-    display: flex;
-    justify-content: center;
-    gap: 28px;
-}
-
-.fr-menu a {
-    color: #d0d0d0;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 15px;
-    letter-spacing: 1px;
-    transition: 0.2s;
-}
-
-.fr-menu a:hover,
-.fr-menu a.active {
-    color: #ffffff;
-}
-
-
-/* ===========================
-   HERO FRANCE (style Opérations militaires)
-   =========================== */
-
-.fr-hero {
+/* ——— HERO ——— */
+.hero-section {
     width: 100%;
-    height: 300px;
+    height: 260px;
     background-size: cover;
     background-position: center;
     position: relative;
-    border-bottom: 1px solid #1a1a1a;
+    margin-bottom: 40px;
 }
 
-.fr-hero-overlay {
+.hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -51,64 +17,58 @@
     background: rgba(0,0,0,0.55);
 }
 
-.fr-hero-title {
+.hero-title-block {
     position: absolute;
-    bottom: 30px;
-    left: 50px;
+    bottom: 25px;
+    left: 40px;
     color: white;
 }
 
-.fr-hero-title h2 {
-    font-size: 46px;
+.hero-title-line1 {
+    font-size: 42px;
     font-weight: 700;
     letter-spacing: 2px;
-    margin: 0;
+    line-height: 1.2;
 }
 
-.fr-hero-title h3 {
-    font-size: 22px;
+.hero-title-line2 {
+    font-size: 20px;
     opacity: 0.85;
-    margin: 5px 0 0 0;
+    margin-top: 10px;
 }
 
-
-/* ===========================
-   TITRES & INTRO (style Opérations militaires)
-   =========================== */
-
-.fr-section-title {
-    font-size: 34px;
+/* ——— TITRES ——— */
+.section-title {
+    font-size: 32px;
     font-weight: 700;
-    color: #e6e6e6;
-    margin: 40px 0 15px 0;
-    letter-spacing: 1px;
+    margin: 40px 0 20px;
+    color: #eee;
 }
 
-.fr-intro {
+/* ——— LIENS ——— */
+.operation-link {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin: 8px 0;
     font-size: 18px;
-    color: #c0c0c0;
-    margin-bottom: 40px;
-    max-width: 900px;
 }
 
-
-/* ===========================
-   GRID COLLECTIONS (style Opérations militaires)
-   =========================== */
-
-.fr-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 35px;
+.operation-link:hover {
+    color: #fff;
 }
 
-.fr-item {
-    background: #111;
-    padding: 22px;
-    border: 1px solid #1f1f1f;
-    border-radius: 6px;
-    transition: 0.2s;
+/* ——— FOOTER ——— */
+.site-footer {
+    margin-top: 60px;
+    text-align: center;
+    color: #aaa;
+    padding-bottom: 30px;
 }
 
-.fr-item:hover {
-    background
+.footer-line {
+    width: 100%;
+    height: 1px;
+    background: #333;
+    margin-bottom: 15px;
+}
