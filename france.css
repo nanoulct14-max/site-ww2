@@ -1,17 +1,12 @@
-/* ——— FOND NOIR SPÉCIFIQUE À FRANCE ——— */
-body {
-    background-color: #000;
-    color: #fff;
-}
-
-/* ——— HERO ——— */
 .hero-section {
     width: 100%;
     height: 260px;
     background-size: cover;
     background-position: center;
     position: relative;
-    margin-bottom: 40px;
+    display: flex;
+    align-items: center;      /* CENTRE LE TEXTE VERTICALEMENT */
+    justify-content: center;  /* CENTRE LE TEXTE HORIZONTALEMENT */
 }
 
 .hero-overlay {
@@ -20,13 +15,12 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.55);
+    background: rgba(0,0,0,0.35);   /* VOILE TRÈS LÉGER */
 }
 
 .hero-title-block {
-    position: absolute;
-    bottom: 25px;
-    left: 40px;
+    position: relative;   /* IMPORTANT : pour être au-dessus de l’overlay */
+    text-align: center;
     color: white;
 }
 
@@ -34,47 +28,10 @@ body {
     font-size: 42px;
     font-weight: 700;
     letter-spacing: 2px;
-    line-height: 1.2;
 }
 
 .hero-title-line2 {
     font-size: 20px;
     opacity: 0.85;
     margin-top: 10px;
-}
-
-/* ——— TITRES ——— */
-.section-title {
-    font-size: 32px;
-    font-weight: 700;
-    margin: 40px 0 20px;
-    color: #eee;
-}
-
-/* ——— LIENS ——— */
-.operation-link {
-    display: block;
-    color: #ccc;
-    text-decoration: none;
-    margin: 8px 0;
-    font-size: 18px;
-}
-
-.operation-link:hover {
-    color: #fff;
-}
-
-/* ——— FOOTER ——— */
-.site-footer {
-    margin-top: 60px;
-    text-align: center;
-    color: #aaa;
-    padding-bottom: 30px;
-}
-
-.footer-line {
-    width: 100%;
-    height: 1px;
-    background: #333;
-    margin-bottom: 15px;
 }
