@@ -422,3 +422,56 @@ body {
     font-size: 1.4rem !important;
     padding: 16px 30px;
 }
+/* ——— MODE MOBILE FORCÉ ——— */
+@media (max-width: 600px) {
+
+    /* Texte global plus grand */
+    body {
+        font-size: 1.45rem !important;
+        line-height: 1.85 !important;
+    }
+
+    /* Titres */
+    .hero-title-line1 {
+        font-size: 2.8rem !important;
+    }
+
+    .hero-title-line2 {
+        font-size: 2.2rem !important;
+    }
+
+    .section-title {
+        font-size: 2.4rem !important;
+        margin-top: 40px;
+    }
+
+    /* Grille des boutons (ACCUEIL) */
+    .menu-grid,
+    .museum-grid {
+        display: grid;
+        grid-template-columns: 1fr !important; /* UNE COLONNE */
+        gap: 35px !important;
+        width: 100% !important;
+    }
+
+    /* Cartes */
+    .menu-card,
+    .museum-card {
+        width: 100% !important;
+        margin: 0 auto !important;
+    }
+
+    /* Images */
+    .museum-image,
+    .menu-card img,
+    .museum-card img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    /* Bouton retour */
+    .menu-button {
+        font-size: 1.5rem !important;
+        padding: 18px 32px !important;
+    }
+}
