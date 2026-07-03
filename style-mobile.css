@@ -1,0 +1,68 @@
+/* ——— MODE MOBILE SÉCURISÉ ——— */
+@media (max-width: 600px) {
+
+    /* Texte normal */
+    body {
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+    }
+
+    /* HERO */
+    .hero-title-line1 {
+        font-size: 2.4rem !important;
+        letter-spacing: 3px !important;
+    }
+
+    .hero-title-line2 {
+        font-size: 1.4rem !important;
+    }
+
+    /* Titres de section */
+    .section-title {
+        font-size: 1.8rem !important;
+        margin-top: 35px !important;
+        margin-bottom: 25px !important;
+    }
+
+    /* Grille en UNE colonne (comme ta photo) */
+    .menu-buttons,
+    .museum-grid {
+        grid-template-columns: 1fr !important;
+        gap: 25px !important;
+        width: 100% !important;
+    }
+
+    /* Cartes WW2 grandes */
+    .ww2-fullcard,
+    .museum-card {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    /* Images pleine largeur */
+    .museum-image,
+    .ww2-fullcard img,
+    .museum-card img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    /* Fiches */
+    .fiche-content {
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+    }
+
+    .fiche-block p,
+    .fiche-block ul,
+    .fiche-block li {
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+    }
+
+    /* Bouton retour */
+    .menu-button {
+        font-size: 1.2rem !important;
+        padding: 14px 26px !important;
+    }
+}
