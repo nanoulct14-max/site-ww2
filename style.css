@@ -482,4 +482,71 @@ body,
         font-size: 1.5rem !important;
         padding: 18px 32px !important;
     }
+/* ——— MODE MOBILE FORCÉ (TEXTE NORMAL) ——— */
+@media (max-width: 600px) {
+
+    /* Texte global normal */
+    body {
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+    }
+
+    /* Titres HERO */
+    .hero-title-line1 {
+        font-size: 2.4rem !important;
+        letter-spacing: 3px !important;
+    }
+
+    .hero-title-line2 {
+        font-size: 1.4rem !important;
+    }
+
+    /* Titres de section */
+    .section-title {
+        font-size: 1.8rem !important;
+        margin-top: 35px !important;
+        margin-bottom: 25px !important;
+    }
+
+    /* Grille des cartes (ACCUEIL + UNIFORMES + COLLECTIONS) */
+    .menu-buttons,
+    .museum-grid {
+        grid-template-columns: 1fr !important; /* UNE COLONNE */
+        gap: 25px !important;
+        width: 100% !important;
+    }
+
+    /* Cartes WW2 */
+    .ww2-fullcard,
+    .museum-card {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    /* Images */
+    .museum-image,
+    .ww2-fullcard img,
+    .museum-card img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    /* Fiches (casques, uniformes, etc.) */
+    .fiche-content {
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+    }
+
+    .fiche-block p,
+    .fiche-block ul,
+    .fiche-block li {
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+    }
+
+    /* Bouton retour */
+    .menu-button {
+        font-size: 1.2rem !important;
+        padding: 14px 26px !important;
+    }
 }
