@@ -380,65 +380,6 @@ body,
     line-height: 1.8 !important;
 }
 /* ——— AGRANDIR TOUT LE TEXTE DU SITE ——— */
-body {
-    font-size: 1.45rem !important;
-}
-
-.fiche-block p,
-.fiche-block ul,
-.fiche-block li,
-.operation-link,
-.ww2-fullcard span {
-    font-size: 1.55rem !important;
-    line-height: 1.8 !important;
-}
-body {
-    background: #0f0f0f;
-}
-/* ——— AGRANDIR TOUT LE TEXTE DU SITE ——— */
-body {
-    font-size: 1.35rem !important;
-    line-height: 1.8 !important;
-}
-
-/* Textes des fiches */
-.museum-block,
-.museum-block p,
-.museum-block ul,
-.museum-block li {
-    font-size: 1.45rem !important;
-    line-height: 1.85 !important;
-}
-
-/* Titres internes */
-.section-title,
-.museum-block h3 {
-    font-size: 2.3rem !important;
-    letter-spacing: 1px;
-}
-
-/* Bouton retour */
-.menu-button {
-    font-size: 1.4rem !important;
-    padding: 16px 30px;
-}
-/* ——— MODE MOBILE FORCÉ ——— */
-@media (max-width: 600px) {
-
-    /* Texte global plus grand */
-    body {
-        font-size: 1.45rem !important;
-        line-height: 1.85 !important;
-    }
-
-    /* Titres */
-    .hero-title-line1 {
-        font-size: 2.8rem !important;
-    }
-
-    .hero-title-line2 {
-        font-size: 2.2rem !important;
-    }
 
     .section-title {
         font-size: 2.4rem !important;
@@ -467,6 +408,73 @@ body {
     .museum-card img {
         width: 100% !important;
         height: auto !important;
+    }
+
+    /* Bouton retour */
+    .menu-button {
+        font-size: 1.5rem !important;
+        padding: 18px 32px !important;
+    }
+/* ——— MODE MOBILE FORCÉ ——— */
+@media (max-width: 600px) {
+
+    /* Texte global */
+    body {
+        font-size: 1.45rem !important;
+        line-height: 1.85 !important;
+    }
+
+    /* Titres HERO */
+    .hero-title-line1 {
+        font-size: 2.8rem !important;
+        letter-spacing: 4px !important;
+    }
+
+    .hero-title-line2 {
+        font-size: 2.2rem !important;
+    }
+
+    /* Titres de section */
+    .section-title {
+        font-size: 2.4rem !important;
+        margin-top: 40px !important;
+        margin-bottom: 30px !important;
+    }
+
+    /* Grille des cartes (ACCUEIL + UNIFORMES + COLLECTIONS) */
+    .menu-buttons,
+    .museum-grid {
+        grid-template-columns: 1fr !important;
+        gap: 35px !important;
+        width: 100% !important;
+    }
+
+    /* Cartes */
+    .ww2-fullcard,
+    .museum-card {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    /* Images */
+    .museum-image,
+    .ww2-fullcard img,
+    .museum-card img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    /* Fiches (casques, uniformes, etc.) */
+    .fiche-content {
+        font-size: 1.45rem !important;
+        line-height: 1.85 !important;
+    }
+
+    .fiche-block p,
+    .fiche-block ul,
+    .fiche-block li {
+        font-size: 1.45rem !important;
+        line-height: 1.85 !important;
     }
 
     /* Bouton retour */
