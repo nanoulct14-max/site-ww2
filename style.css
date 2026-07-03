@@ -395,3 +395,30 @@ body {
 body {
     background: #0f0f0f;
 }
+/* ——— AGRANDIR TOUT LE TEXTE DU SITE ——— */
+body {
+    font-size: 1.35rem !important;
+    line-height: 1.8 !important;
+}
+
+/* Textes des fiches */
+.museum-block,
+.museum-block p,
+.museum-block ul,
+.museum-block li {
+    font-size: 1.45rem !important;
+    line-height: 1.85 !important;
+}
+
+/* Titres internes */
+.section-title,
+.museum-block h3 {
+    font-size: 2.3rem !important;
+    letter-spacing: 1px;
+}
+
+/* Bouton retour */
+.menu-button {
+    font-size: 1.4rem !important;
+    padding: 16px 30px;
+}
