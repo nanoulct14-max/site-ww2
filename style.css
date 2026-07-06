@@ -562,15 +562,13 @@ body,
 }
 .planche-container {
     width: 100%;
-    text-align: center !important;
-    margin: 40px 0 !important;
+    text-align: center;
+    margin: 40px 0;
 }
 
-.planche-container img {
-    display: block !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    max-width: 900px !important;
-    width: 100% !important;
-    height: auto !important;
+.planche-img {
+    display: inline-block;
+    max-width: 900px;
+    width: 100%;
+    height: auto;
 }
