@@ -562,18 +562,17 @@ body,
 }
 .planche-container {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 40px 0;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 40px 0 !important;
 }
 
 .planche-img {
-    max-width: 900px;
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 8px;
-    box-shadow: 0 0 12px rgba(0,0,0,0.6);
+    max-width: 900px !important;
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
