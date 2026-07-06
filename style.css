@@ -560,3 +560,16 @@ body,
 .operation-link {
     color: #e8e6e3 !important;   /* blanc nacré muséal */
 }
+.planche-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.planche-img {
+    max-width: 900px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.6);
+}
