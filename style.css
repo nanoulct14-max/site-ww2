@@ -564,12 +564,16 @@ body,
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 40px 0;
 }
 
 .planche-img {
     max-width: 900px;
     width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
     border-radius: 8px;
     box-shadow: 0 0 12px rgba(0,0,0,0.6);
 }
