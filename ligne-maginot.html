@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Ligne Maginot – Fiche complète</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #05070b;
+      color: #e5e5e5;
+      line-height: 1.6;
+    }
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+    .hero {
+      position: relative;
+      margin: 0 -16px 24px;
+      background: #111;
+      overflow: hidden;
+    }
+    .hero img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      max-height: 320px;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.55), rgba(0,0,0,0.9));
+    }
+    .hero-content {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 24px 20px 28px;
+    }
+    .hero-title {
+      font-family: "Cinzel", "Times New Roman", serif;
+      font-size: 1.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .hero-sub {
+      font-size: 0.95rem;
+      opacity: 0.85;
+      margin-top: 6px;
+    }
+
+    h2 {
+      font-family: "Cinzel", "Times New Roman", serif;
+      font-size: 1.3rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin: 28px 0 10px;
+    }
+    h3 {
+      font-size: 1.05rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin: 18px 0 6px;
+    }
+
+    .block {
+      background: #0c0f16;
+      border-radius: 10px;
+      padding: 14px 14px 12px;
+      margin-bottom: 14px;
+      border: 1px solid #1b2230;
+    }
+    .block-header {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: #9fb4ff;
+      margin-bottom: 6px;
+    }
+    .block p {
+      margin: 4px 0 6px;
+      font-size: 0.95rem;
+    }
+
+    .media-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 8px;
+    }
+    .media {
+      flex: 1 1 180px;
+      background: #05070b;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid #222a3a;
+    }
+    .media img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      max-height: 180px;
+    }
+    .media-caption {
+      font-size: 0.8rem;
+      padding: 6px 8px 7px;
+      border-top: 1px solid #222a3a;
+      opacity: 0.85;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: minmax(0,1.2fr) minmax(0,1fr);
+      gap: 14px;
+    }
+    @media (max-width: 800px) {
+      .two-col {
+        grid-template-columns: minmax(0,1fr);
+      }
+      .hero {
+        margin: 0 -8px 20px;
+      }
+      .page {
+        padding: 10px;
+      }
+    }
+
+    .timeline {
+      border-left: 2px solid #39445c;
+      padding-left: 12px;
+      margin-top: 8px;
+    }
+    .timeline-item {
+      margin-bottom: 6px;
+      font-size: 0.9rem;
+    }
+    .timeline-year {
+      color: #9fb4ff;
+      font-weight: 600;
+      margin-right: 6px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .gallery-item {
+      background: #05070b;
+      border-radius: 8px;
+      border: 1px solid #222a3a;
+      overflow: hidden;
+    }
+    .gallery-item img {
+      width: 100%;
+      display: block;
+      max-height: 150px;
+      object-fit: cover;
+    }
+    .gallery-caption {
+      font-size: 0.8rem;
+      padding: 6px 8px 7px;
+      opacity: 0.85;
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HERO -->
+  <section class="hero">
+    <!-- Remplace src par ton vrai chemin -->
+    <img src="carte_fortifications_france_1939.jpg" alt="Carte des fortifications françaises et de la Ligne Maginot">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-title">Ligne Maginot</div>
+      <div class="hero-sub">Fortifications françaises – Origine, fonctionnement, vie intérieure, héritage</div>
+    </div>
+  </section>
+
+  <!-- ORIGINE -->
+  <section class="block">
+    <div class="block-header">Origine et contexte</div>
+    <p>
+      À la fin de la Première Guerre mondiale, la France sort exsangue : plus d’un million de morts, un territoire
+      envahi en 1914, et la nécessité de protéger durablement l’Alsace-Lorraine et les régions industrielles de l’Est.
+      Dès les années 1920, l’idée d’une ligne de fortifications modernes s’impose pour empêcher une nouvelle invasion
+      éclair venue d’Allemagne.
+    </p>
+    <p>
+      En 1928, le ministre de la Guerre André Maginot valide la construction d’un système fortifié continu, enterré,
+      autonome, capable de tenir seul plusieurs semaines : la future « Ligne Maginot ».
+    </p>
+    <div class="timeline">
+      <div class="timeline-item"><span class="timeline-year">1922</span>Premières réflexions sur une défense fortifiée moderne.</div>
+      <div class="timeline-item"><span class="timeline-year">1928</span>Approbation politique du projet par André Maginot.</div>
+      <div class="timeline-item"><span class="timeline-year">1928–1940</span>Construction progressive des ouvrages, blocs et casemates.</div>
+    </div>
+  </section>
+
+  <!-- CONCEPTION -->
+  <section class="block">
+    <div class="block-header">Conception et philosophie</div>
+    <p>
+      La Ligne Maginot n’est pas un simple mur : c’est un réseau de villes souterraines militaires. Chaque ouvrage
+      est conçu comme une forteresse enterrée, reliée par des galeries, dotée de blocs de combat, de tourelles
+      rétractables, de cloches d’observation, d’entrées fortifiées et d’une véritable « usine » interne
+      (électricité, ventilation, eau, vivres).
+    </p>
+    <p>
+      L’objectif est double : ralentir l’ennemi, le canaliser, et donner à l’armée française le temps de se mobiliser
+      tout en protégeant les zones vitales du pays.
+    </p>
+  </section>
+
+  <!-- ARCHITECTURE + PLANS -->
+  <section class="block">
+    <div class="block-header">Architecture d’un ouvrage Maginot</div>
+    <div class="two-col">
+      <div>
+        <p>
+          Un ouvrage Maginot se compose généralement :
+        </p>
+        <ul>
+          <li>de <strong>blocs de combat</strong> (artillerie, antichar, observation) ;</li>
+          <li>de <strong>galeries souterraines</strong> reliant les blocs, les magasins et le casernement ;</li>
+          <li>d’<strong>entrées fortifiées</strong> protégées par des caponnières et des armes automatiques ;</li>
+          <li>d’une <strong>usine interne</strong> (groupes électrogènes, ventilation, filtres anti‑gaz) ;</li>
+          <li>de <strong>casernements</strong> pour la vie quotidienne des soldats.</li>
+        </ul>
+        <p>
+          Les plans en coupe montrent la superposition des niveaux, la profondeur des galeries et la position des
+          tourelles et cloches cuirassées dans le relief.
+        </p>
+      </div>
+      <div class="media-row">
+        <div class="media">
+          <img src="plan_coupe_ouvrage_maginot.jpg" alt="Plan en coupe d’un ouvrage Maginot">
+          <div class="media-caption">Plan en coupe – organisation interne d’un ouvrage.</div>
+        </div>
+        <div class="media">
+          <img src="plan_coupe_souterraine_maginot.jpg" alt="Plan souterrain d’un ouvrage Maginot">
+          <div class="media-caption">Plan souterrain – niveaux, galeries, salles techniques.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ZONES STRATÉGIQUES / ARMEMENT / VIE INTÉRIEURE -->
+  <section class="block">
+    <div class="block-header">Postes stratégiques et armement</div>
+
+    <h3>Blocs de combat et tourelles</h3>
+    <p>
+      Les blocs de combat concentrent la puissance de feu de l’ouvrage : canons antichars, pièces d’artillerie,
+      mitrailleuses, cloches d’observation et tourelles rétractables. Les mécanismes de pointage et de rotation
+      permettent de couvrir des secteurs précis, en coordination avec les autres ouvrages.
+    </p>
+    <div class="media-row">
+      <div class="media">
+        <img src="mecanisme_tourelle_maginot.jpg" alt="Mécanisme de tourelle Maginot">
+        <div class="media-caption">Mécanisme de tourelle – poste de pointage.</div>
+      </div>
+      <div class="media">
+        <img src="canon_anticar_47mm_1934.jpg" alt="Canon antichar 47 mm">
+        <div class="media-caption">Canon antichar de 47 mm modèle 1934.</div>
+      </div>
+      <div class="media">
+        <img src="culasse_canon_maginot.jpg" alt="Culasse de canon">
+        <div class="media-caption">Culasse de canon – système de chargement.</div>
+      </div>
+    </div>
+
+    <h3>Défense des entrées et caponnières</h3>
+    <p>
+      Les entrées sont des points vitaux : si l’ennemi parvient à les prendre, l’ouvrage est menacé. Elles sont
+      protégées par des caponnières armées de fusils‑mitrailleurs, de créneaux de tir et de portes blindées.
+    </p>
+    <div class="media-row">
+      <div class="media">
+        <img src="caponniere_fm2429_maginot.jpg" alt="FM 24/29 en caponnière">
+        <div class="media-caption">Caponnière de défense – FM 24/29.</div>
+      </div>
+      <div class="media">
+        <img src="entree_ouvrage_pont_casemate.jpg" alt="Entrée fortifiée avec pont et casemate">
+        <div class="media-caption">Entrée d’ouvrage – pont et casemate.</div>
+      </div>
+      <div class="media">
+        <img src="entree_principale_ouvrage_maginot.jpg" alt="Entrée principale d’un ouvrage Maginot">
+        <div class="media-caption">Entrée principale – bloc d’accès.</div>
+      </div>
+    </div>
+
+    <h3>Galeries armées et défense interne</h3>
+    <p>
+      Les galeries ne sont pas de simples couloirs : certaines sont armées pour empêcher toute progression ennemie
+      à l’intérieur de l’ouvrage. Des postes de tir internes couvrent les axes de circulation.
+    </p>
+    <div class="media-row">
+      <div class="media">
+        <img src="soldats_galerie_souterraine.jpg" alt="Colonne de soldats dans une galerie">
+        <div class="media-caption">Colonne de soldats – galerie souterraine.</div>
+      </div>
+      <div class="media">
+        <img src="galerie_poste_tir_maginot.jpg" alt="Poste de tir dans une galerie">
+        <div class="media-caption">Galerie de défense – poste de tir.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIE INTÉRIEURE -->
+  <section class="block">
+    <div class="block-header">Vie quotidienne à l’intérieur</div>
+    <p>
+      Les ouvrages sont conçus pour permettre une vie en autarcie pendant plusieurs semaines : dortoirs, cuisine,
+      infirmerie, postes de commandement, ateliers et magasins de stockage. La vie des soldats se déroule dans un
+      environnement souterrain, discipliné, rythmé par les tours de garde, l’entretien des armes et les exercices
+      d’alerte.
+    </p>
+    <div class="media-row">
+      <div class="media">
+        <img src="dortoir_couchettes_maginot.jpg" alt="Dortoir de troupe">
+        <div class="media-caption">Chambre de troupe – couches métalliques.</div>
+      </div>
+      <div class="media">
+        <img src="lampe_service_ventilation_maginot.jpg" alt="Lampe de service et ventilation">
+        <div class="media-caption">Lampe de service – circuit de ventilation.</div>
+      </div>
+      <div class="media">
+        <img src="magasin_stockage_industriel.jpg" alt="Magasin de stockage">
+        <div class="media-caption">Magasin de stockage – atelier logistique.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXTÉRIEURS / CASemate RHIN / BLOCS -->
+  <section class="block">
+    <div class="block-header">Implantation dans le paysage et casemates du Rhin</div>
+    <p>
+      Les blocs de combat et casemates sont intégrés dans le relief, souvent semi‑enterrés, camouflés, et orientés
+      vers les axes jugés menacés. Sur le Rhin, des casemates spécifiques protègent les berges et les ponts, certaines
+      étant aujourd’hui transformées en monuments commémoratifs.
+    </p>
+    <div class="media-row">
+      <div class="media">
+        <img src="bloc_combat_cloches_maginot.jpg" alt="Bloc de combat avec cloches cuirassées">
+        <div class="media-caption">Bloc de combat – cloches cuirassées.</div>
+      </div>
+      <div class="media">
+        <img src="bloc_artillerie_embrasures.jpg" alt="Bloc d’artillerie avec embrasures">
+        <div class="media-caption">Bloc d’artillerie – embrasures de tir.</div>
+      </div>
+      <div class="media">
+        <img src="casemate_rhin_monument.jpg" alt="Casemate du Rhin devenue monument">
+        <div class="media-caption">Casemate du Rhin – monument historique.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRATÉGIE / 1940 / HÉRITAGE -->
+  <section class="block">
+    <div class="block-header">Rôle en 1940 et limites stratégiques</div>
+    <p>
+      La Ligne Maginot n’a pratiquement jamais été percée là où elle existait : les ouvrages ont tenu face aux
+      attaques directes. La défaite de 1940 vient du contournement par la Belgique et les Ardennes, zones jugées
+      moins menacées et moins fortifiées.
+    </p>
+    <p>
+      Le problème n’est donc pas la solidité de la ligne, mais la stratégie globale : une défense trop statique,
+      une confiance excessive dans l’infranchissabilité des Ardennes, et une réaction tardive aux manœuvres
+      rapides allemandes.
+    </p>
+  </section>
+
+  <section class="block">
+    <div class="block-header">La Ligne Maginot après 1945 et aujourd’hui</div>
+    <p>
+      Certains ouvrages sont réutilisés par les Allemands pendant la guerre, puis repris par les Alliés. Après 1945,
+      une partie de la Ligne Maginot est abandonnée, une autre est réemployée ou transformée. Aujourd’hui, plusieurs
+      sites sont restaurés, ouverts au public et entretenus par des associations, devenant des lieux de mémoire
+      et de pédagogie sur la défense du territoire.
+    </p>
+  </section>
+
+  <!-- GALERIE FINALE -->
+  <section class="block">
+    <div class="block-header">Galerie – Ligne Maginot (sélection des 18 visuels)</div>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="carte_fortifications_france_1939.jpg" alt="Carte des fortifications françaises">
+        <div class="gallery-caption">Carte stratégique – fortifications françaises 1939.</div>
+      </div>
+      <div class="gallery-item">
+        <img src="plan_coupe_ouvrage_maginot.jpg" alt="Plan en coupe d’ouvrage">
+        <div class="gallery-caption">Plan en coupe – organisation interne.</div>
+      </div>
+      <div class="gallery-item">
+        <img src="plan_coupe_souterraine_maginot.jpg" alt="Plan souterrain">
+        <div class="gallery-caption">Plan souterrain – niveaux et galeries.</div>
+      </div>
+      <div class="gallery-item">
+        <img src="mecanisme_tourelle_maginot.jpg" alt="Mécanisme de tourelle">
+        <div class="gallery-caption">Mécanisme de tourelle – poste de pointage.</div>
+      </div>
+      <div class="gallery-item">
+        <img src="canon_anticar_47mm_1934.jpg" alt="Canon antichar 47 mm">
+        <div class="gallery-caption">Canon antichar de 47 mm.</div>
+      </div>
+      <div class="gallery-item">
+        <img src="culasse_canon_maginot.jpg" alt="Culasse de canon">
+        <div class="gallery-caption">Culasse – système de chargement.</div>
+      </div>
+      <div class="gallery-item">
+        <img src="caponniere_fm2429_maginot.jpg" alt="FM 24/29 en caponnière">
+        <div class="gallery-caption">Caponnière – défense d’entrée.</div>
+      </div>
+      <div class="gallery-item">
+        <img src="soldats_galerie_souterraine.jpg" alt="Soldats en galerie">
+        <div class="gallery-caption">Colonne de soldats – galerie souterraine.</div>
+      </div>
+      <div class="gallery-item">
+        <img src="dortoir_couchettes_maginot.jpg" alt="Dortoir de troupe">
+        <div class="gallery-caption">Chambre de troupe – couches métalliques.</div>
+      </div>
+      <div class="gallery-item">
+        <img src="lampe_service_ventilation_maginot.jpg" alt="Lampe de service">
+        <div class="gallery-caption">Lampe de service – ventilation.</div>
+      </div>
+      <div class="gallery-item">
+        <img src="magasin_stockage_industriel.jpg" alt="Magasin de stockage">
+        <div class="gallery-caption">Magasin de stockage – atelier logistique.</div>
+      </div>
+      <div class="gallery-item">
+        <img src="entree_ouvrage_pont_casemate.jpg" alt="Entrée fortifiée">
+        <div class="gallery-caption">Entrée d’ouvrage – pont et casemate.</div>
+      </div>
+      <div class="gallery-item">
+        <img src="entree_principale_ouvrage_maginot.jpg" alt="Entrée principale">
+        <div class="gallery-caption">Entrée principale – bloc d’accès.</div>
+      </div>
+      <div class="gallery-item">
+        <img src="bloc_combat_cloches_maginot.jpg" alt="Bloc de combat">
+        <div class="gallery-caption">Bloc de combat – cloches cuirassées.</div>
+      </div>
+      <div class="gallery-item">
+        <img src="bloc_artillerie_embrasures.jpg" alt="Bloc d’artillerie">
+        <div class="gallery-caption">Bloc d’artillerie – embrasures de tir.</div>
+      </div>
+      <div class="gallery-item">
+        <img src="casemate_rhin_monument.jpg" alt="Casemate du Rhin">
+        <div class="gallery-caption">Casemate du Rhin – monument historique.</div>
+      </div>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>
