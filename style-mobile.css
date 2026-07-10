@@ -3,8 +3,9 @@
 
     /* Largeur identique sur tous les téléphones */
     html, body {
-        max-width: 480px;
-        margin: 0 auto !important;
+        max-width: 100% !important;   /* CORRECTION IMPORTANTE */
+        margin: 0 !important;
+        padding: 0 !important;
         overflow-x: hidden !important;
         -webkit-text-size-adjust: 100% !important;
     }
@@ -13,7 +14,6 @@
     body {
         font-size: 1rem !important;
         line-height: 1.6 !important;
-        padding: 0 !important;
     }
 
     /* HERO */
