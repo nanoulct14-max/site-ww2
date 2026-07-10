@@ -104,3 +104,78 @@
         margin-top: 30px !important;
     }
 }
+/* ——— MODE MOBILE CORRIGÉ ——— */
+@media (max-width: 600px) {
+
+    /* MENU MOBILE */
+    nav {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 18px !important;
+        width: 100% !important;
+        padding: 20px 0 !important;
+    }
+
+    nav a {
+        font-size: 1.4rem !important;
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+        padding: 8px 0 !important;
+    }
+
+    /* HERO MOBILE */
+    .fiche-hero,
+    .hero-section {
+        height: 260px !important;
+        background-size: cover !important;
+        background-position: center !important;
+        width: 100% !important;
+    }
+
+    .hero-title-line1 {
+        font-size: 2.4rem !important;
+        letter-spacing: 3px !important;
+        text-align: center !important;
+    }
+
+    .hero-title-line2 {
+        font-size: 1.4rem !important;
+        text-align: center !important;
+    }
+
+    /* CONTENU MOBILE */
+    .fiche-content {
+        width: 100% !important;
+        padding: 0 12px !important;
+    }
+
+    .fiche-block {
+        padding: 20px !important;
+        margin: 25px 0 !important;
+    }
+
+    .fiche-block p,
+    .fiche-block ul,
+    .fiche-block li {
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+    }
+
+    /* IMAGES MOBILE */
+    .fiche-image,
+    .museum-image,
+    .ww2-fullcard img,
+    .museum-card img {
+        width: 100% !important;
+        height: auto !important;
+        margin: 20px auto !important;
+    }
+
+    /* BOUTON RETOUR */
+    .menu-button {
+        font-size: 1.2rem !important;
+        padding: 14px 26px !important;
+    }
+}
