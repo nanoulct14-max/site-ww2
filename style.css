@@ -43,7 +43,22 @@ nav a:hover {
         0 0 12px rgba(255,255,255,0.4),
         0 0 18px rgba(0,0,0,0.8);
 }
+/* ——— ALIGNEMENT EXACT DU HEADER AVEC LE RESTE ——— */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #0d0d0d;
+}
 
+/* Conteneur interne qui limite la largeur du header */
+header nav {
+    width: 90%;
+    max-width: 900px; /* même largeur que fiche-content */
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
 /* ——— HERO ——— */
 .hero-section {
     padding-top: 160px;
