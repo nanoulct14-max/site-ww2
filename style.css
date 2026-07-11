@@ -245,14 +245,21 @@ footer {
     width: 80%;
     max-width: 600px;
     margin: 40px auto;
-    padding: 25px 30px; /* ← plus grand */
+    padding: 25px 30px;
+
     background-color: #1a1a1a;
     color: white;
     text-align: center;
-    font-size: 26px; /* ← plus grand */
+
+    font-size: 26px;
     font-weight: 600;
-    border-radius: 12px; /* ← arrondi plus premium */
+
+    border-radius: 12px;
+
+    /* ⭐ Encadré visible */
+    border: 3px solid #d4d4d4; /* couleur nacrée */
+    box-shadow: 0 0 25px rgba(0,0,0,0.6);
+
     text-decoration: none;
-    box-shadow: 0 0 25px rgba(0,0,0,0.6); /* ← ombre plus forte */
     transition: 0.3s ease;
 }
