@@ -311,3 +311,23 @@ footer {
     font-size: 3.2rem !important;
     letter-spacing: 4px !important;
 }
+/* ——— AGRANDIR TOUTES LES FICHES ——— */
+.fiche-block,
+.fiche-block p,
+.fiche-block ul,
+.fiche-block li {
+    font-size: 1.65rem !important;
+    line-height: 2.2rem !important;
+}
+
+/* ——— TITRE PRINCIPAL DES FICHES ——— */
+.fiche-hero-title {
+    font-size: 4.2rem !important;
+    letter-spacing: 3px !important;
+}
+
+/* ——— TITRES DE SECTIONS ——— */
+.section-title {
+    font-size: 3.2rem !important;
+    letter-spacing: 4px !important;
+}
