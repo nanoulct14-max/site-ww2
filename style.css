@@ -8,19 +8,18 @@ body {
 
 /* ——— HEADER ——— */
 header {
-    width: 100%;               /* le header suit la largeur de la page */
+    width: 100%;
     display: flex;
-    justify-content: center;   /* centre le nav à l’intérieur */
+    justify-content: center;
     background: #0f0f0f;
-    padding: 45px 0;           /* hauteur du header */
+    padding: 45px 0;
     border-bottom: 2px solid #333;
 
-    max-width: 900px;          /* largeur contrôlée, comme fiche-content */
-    margin: 0 auto;            /* centré dans la page */
-    border-radius: 12px;       /* bandeau premium */
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 12px;
 }
 
-/* Conteneur interne qui limite la largeur du menu */
 header nav {
     width: 90%;
     max-width: 900px;
@@ -89,10 +88,6 @@ nav a:hover {
         0 0 45px rgba(0,0,0,0.9);
 }
 
-.hero-title-line1 br {
-    line-height: 1.2;
-}
-
 .hero-title-line2 {
     font-family: "Cinzel", serif;
     font-size: 1.9rem;
@@ -108,9 +103,9 @@ nav a:hover {
 /* ——— TITRES DE SECTION ——— */
 .section-title {
     font-family: "Cinzel", serif;
-    font-size: 2.6rem;
+    font-size: 3rem !important;
     font-weight: 700;
-    letter-spacing: 3px;
+    letter-spacing: 4px !important;
     text-align: center;
     margin-top: 40px;
     margin-bottom: 35px;
@@ -191,18 +186,30 @@ nav a:hover {
     position: relative;
     z-index: 2;
     font-family: "Cinzel", serif;
-    font-size: 3rem;
+    font-size: 4rem !important;
     text-align: center;
     padding-top: 120px;
     color: #f7f4ef;
+    letter-spacing: 3px !important;
 }
 
 .fiche-content {
     width: 90%;
     max-width: 900px;
     margin: 40px auto;
-    font-size: 1.15rem;
-    line-height: 1.7;
+    font-size: 1.55rem !important;
+    line-height: 2.05 !important;
+}
+
+.fiche-content p {
+    font-size: 1.55rem !important;
+    line-height: 2.05 !important;
+}
+
+.fiche-content ul,
+.fiche-content li {
+    font-size: 1.55rem !important;
+    line-height: 2.05 !important;
 }
 
 .fiche-image {
@@ -212,6 +219,20 @@ nav a:hover {
     display: block;
     border-radius: 6px;
     box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+/* ——— TITRES AXE (Commandement allemand / italien / japonais) ——— */
+.axe-title {
+    text-align: center;
+    font-size: 2.8rem !important;
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin: 55px 0 30px !important;
+    color: #f2f2f2;
+    text-shadow:
+        0 0 12px rgba(255,255,255,0.18),
+        0 0 20px rgba(0,0,0,0.9);
 }
 
 /* ——— FOOTER ——— */
@@ -236,7 +257,7 @@ footer {
     margin: 14px 0;
     font-size: 22px;
     font-family: 'Cinzel', serif;
-    color: #e8e6e3;        /* Blanc nacré */
+    color: #e8e6e3;
     text-decoration: none;
     letter-spacing: 1px;
     font-weight: 500;
@@ -269,87 +290,4 @@ footer {
 
     text-decoration: none;
     transition: 0.3s ease;
-}
-
-/* Titres des blocs Axe */
-.axe-title {
-    text-align: center;
-}
-.axe-title {
-    text-align: center;
-    font-size: 2.2rem;      /* ← plus grand */
-    font-family: "Cinzel", serif;
-    font-weight: 700;
-    letter-spacing: 3px;
-    margin: 40px 0 20px;
-    color: #f2f2f2;
-    text-shadow:
-        0 0 10px rgba(255,255,255,0.15),
-        0 0 18px rgba(0,0,0,0.9);
-}
-/* ——— AGRANDIR LES TEXTES DES FICHES ——— */
-.fiche-content {
-    font-size: 1.35rem !important;   /* ← plus grand */
-    line-height: 1.85 !important;    /* ← plus aéré */
-}
-
-.fiche-content p,
-.fiche-content ul,
-.fiche-content li {
-    font-size: 1.35rem !important;   /* uniformité */
-    line-height: 1.85 !important;
-}
-
-/* Titres internes des fiches */
-.fiche-hero-title {
-    font-size: 3.4rem !important;    /* ← plus massif */
-    letter-spacing: 2px;
-}
-
-/* Titres de sections dans les fiches */
-.section-title {
-    font-size: 2.9rem !important;    /* ← plus grand */
-    letter-spacing: 3px;
-}
-/* ——— TITRES AXE (Commandement allemand / italien / japonais) ——— */
-.axe-title {
-    text-align: center;
-    font-size: 2.6rem !important;   /* ← plus grand */
-    font-family: "Cinzel", serif;
-    font-weight: 700;
-    letter-spacing: 3px;
-    margin: 50px 0 25px !important;
-    color: #f2f2f2;
-    text-shadow:
-        0 0 10px rgba(255,255,255,0.15),
-        0 0 18px rgba(0,0,0,0.9);
-}
-
-/* ——— AGRANDIR TOUTES LES FICHES ——— */
-.fiche-content {
-    font-size: 1.45rem !important;   /* ← plus grand */
-    line-height: 1.9 !important;
-}
-
-.fiche-content p {
-    font-size: 1.45rem !important;
-    line-height: 1.9 !important;
-}
-
-.fiche-content ul,
-.fiche-content li {
-    font-size: 1.45rem !important;
-    line-height: 1.9 !important;
-}
-
-/* ——— TITRE PRINCIPAL DES FICHES ——— */
-.fiche-hero-title {
-    font-size: 3.8rem !important;    /* ← plus massif */
-    letter-spacing: 2px !important;
-}
-
-/* ——— TITRES DE SECTIONS DANS LES FICHES ——— */
-.section-title {
-    font-size: 3rem !important;      /* ← plus grand */
-    letter-spacing: 3px !important;
 }
