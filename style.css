@@ -287,3 +287,27 @@ footer {
         0 0 10px rgba(255,255,255,0.15),
         0 0 18px rgba(0,0,0,0.9);
 }
+/* ——— AGRANDIR LES TEXTES DES FICHES ——— */
+.fiche-content {
+    font-size: 1.35rem !important;   /* ← plus grand */
+    line-height: 1.85 !important;    /* ← plus aéré */
+}
+
+.fiche-content p,
+.fiche-content ul,
+.fiche-content li {
+    font-size: 1.35rem !important;   /* uniformité */
+    line-height: 1.85 !important;
+}
+
+/* Titres internes des fiches */
+.fiche-hero-title {
+    font-size: 3.4rem !important;    /* ← plus massif */
+    letter-spacing: 2px;
+}
+
+/* Titres de sections dans les fiches */
+.section-title {
+    font-size: 2.9rem !important;    /* ← plus grand */
+    letter-spacing: 3px;
+}
