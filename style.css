@@ -4,6 +4,8 @@ body {
     background: #0f0f0f;
     color: #e5e5e5;
     font-family: system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 /* ——— HEADER ——— */
@@ -47,7 +49,6 @@ nav a:hover {
     padding-top: 160px;
     padding-bottom: 120px;
     text-align: center;
-    background-image: url('images/hero.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -68,9 +69,9 @@ nav a:hover {
 
 .hero-title-line1 {
     font-family: "Cinzel", serif;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     margin: 0;
     text-shadow:
         0 0 6px rgba(255,255,255,0.7),
@@ -79,16 +80,10 @@ nav a:hover {
         0 0 45px rgba(0,0,0,0.9);
 }
 
-.hero-title-line1 br {
-    line-height: 1.2;
-}
-
 .hero-title-line2 {
     font-family: "Cinzel", serif;
-    font-size: 1.9rem;
-    font-weight: 400;
+    font-size: 1.4rem;
     margin-top: 18px;
-    letter-spacing: 1px;
     opacity: 0.9;
     text-shadow:
         0 0 8px rgba(0,0,0,0.9),
@@ -98,12 +93,12 @@ nav a:hover {
 /* ——— TITRES DE SECTION ——— */
 .section-title {
     font-family: "Cinzel", serif;
-    font-size: 2.6rem;
+    font-size: 1.8rem;
     font-weight: 700;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 35px;
+    margin-top: 35px;
+    margin-bottom: 25px;
     color: #f2f2f2;
     text-shadow:
         0 0 10px rgba(255,255,255,0.15),
@@ -121,8 +116,7 @@ nav a:hover {
 
 /* ——— CARTES WW2 ——— */
 .menu-buttons {
-    width: 90%;
-    max-width: 1200px;
+    width: 100%;
     margin: 40px auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -153,7 +147,7 @@ nav a:hover {
     position: relative;
     z-index: 2;
     font-family: "Cinzel", serif;
-    font-size: 1.55rem;
+    font-size: 1.3rem;
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -181,30 +175,47 @@ nav a:hover {
     position: relative;
     z-index: 2;
     font-family: "Cinzel", serif;
-    font-size: 3rem;
+    font-size: 2.4rem;
     text-align: center;
     padding-top: 120px;
     color: #f7f4ef;
 }
 
+/* ——— FICHES 100% LARGEUR ——— */
 .fiche-content {
-  width: 100% !important;
-  max-width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .fiche-image {
     width: 100%;
-    max-width: 600px;
-    margin: 25px auto;
+    max-width: 100%;
+    margin: 0;
+    border-radius: 0;
     display: block;
-    border-radius: 6px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+/* BLOCS MUSÉAUX */
+.fiche-block {
+    width: 100%;
+    margin: 0;
+    padding: 28px;
+    background: rgba(0,0,0,0.35);
+    border: none;
+    border-radius: 0;
+}
+
+.fiche-block p,
+.fiche-block ul,
+.fiche-block li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
 }
 
 /* ——— FOOTER ——— */
-.site-footer,
 footer {
     background: #0d0d0d;
     text-align: center;
@@ -219,35 +230,16 @@ footer {
     margin: 0 auto 25px;
 }
 
-/* ——— LIENS NACRÉS MUSÉAUX ——— */
-.operation-link {
-    display: block;
-    margin: 14px 0;
-    font-size: 22px;
-    font-family: 'Cinzel', serif;
-    color: #e8e6e3;        /* Blanc nacré */
-    text-decoration: none;
-    letter-spacing: 1px;
-    font-weight: 500;
-    transition: 0.3s ease;
-}
-
-.operation-link:hover {
-    color: #ffffff;
-    transform: translateX(6px);
-}
-/* ——— MENUS PREMIUM ——— */
-
-/* Boutons blancs */
+/* ——— BOUTON RETOUR ——— */
 .menu-button {
     display: inline-block;
-    padding: 16px 32px;
+    padding: 14px 26px;
     background: rgba(255,255,255,0.15);
     border: 2px solid white;
     border-radius: 6px;
     color: white;
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     letter-spacing: 1px;
     margin-top: 40px;
     transition: 0.3s;
@@ -255,322 +247,42 @@ footer {
 
 .menu-button:hover {
     background: rgba(255,255,255,0.35);
-    border-color: white;
 }
 
-/* Liens nacrés muséaux */
-.operation-link {
-    display: block;
-    margin: 14px 0;
-    font-size: 22px;
-    font-family: 'Cinzel', serif;
-    color: #e8e6e3;
-    text-decoration: none;
-    letter-spacing: 1px;
-    font-weight: 500;
-    transition: 0.3s ease;
-}
-
-.operation-link:hover {
-    color: #ffffff;
-    transform: translateX(6px);
-}
-/* ——— FICHES WW2 PREMIUM ——— */
-
-/* IMAGE DOCUMENTAIRE */
-.fiche-image {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    margin: 30px auto;
-    border-radius: 6px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.6);
-    opacity: 0.95;
-}
-
-/* BLOCS MUSÉAUX */
-.fiche-block {
-    background: rgba(0,0,0,0.45);
-    border: 1px solid rgba(255,255,255,0.15);
-    padding: 30px;
-    margin: 35px 0;
-    border-radius: 6px;
-}
-
-/* TITRES INTERNES */
-.section-title {
-    font-size: 2.4rem !important;
-    letter-spacing: 2px !important;
-    margin-bottom: 18px !important;
-}
-
-/* TEXTE DES BLOCS */
-.fiche-block p {
-    font-size: 1.55rem;
-    line-height: 1.8;
-    margin: 12px 0;
-}
-
-/* BOUTON BLANC PREMIUM */
-.menu-button {
-    display: inline-block;
-    padding: 16px 32px;
-    background: rgba(255,255,255,0.15);
-    border: 2px solid white;
-    border-radius: 6px;
-    color: white;
-    text-decoration: none;
-    font-size: 1.4rem;
-    letter-spacing: 1px;
-    margin-top: 40px;
-    transition: 0.3s;
-}
-
-.menu-button:hover {
-    background: rgba(255,255,255,0.35);
-    border-color: white;
-}
-/* Correction taille des listes dans les fiches */
-.fiche-block ul,
-.fiche-block li {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 8px;
-}
-/* Uniformisation des listes dans les fiches (même style que le reste) */
-.fiche-block ul,
-.fiche-block li {
-    font-size: 1rem;        /* même taille que les paragraphes */
-    line-height: 1.6;       /* lisible, muséal */
-    margin-bottom: 8px;     /* espacement propre */
-    color: #fff;            /* même couleur que le texte normal */
-}
-/* LISTES : même taille que le texte normal */
-.fiche-block ul,
-.fiche-block li {
-    font-size: inherit;     /* EXACTEMENT la même taille que le reste */
-    line-height: inherit;   /* même hauteur de ligne */
-    color: inherit;         /* même couleur */
-    margin-bottom: 10px;    /* espacement propre */
-}
-.fiche-block p {
-    font-size: 1rem;
-    line-height: 1.6;
-}
-/* Correction : les listes doivent avoir EXACTEMENT la même taille que le texte normal */
-.fiche-block ul,
-.fiche-block li {
-    font-size: inherit !important;      /* reprend la taille du parent */
-    line-height: inherit !important;    /* reprend la hauteur du parent */
-    color: inherit !important;          /* même couleur */
-    margin-bottom: 10px;
-}
-/* ——— AGRANDIR TOUT LE TEXTE DU SITE ——— */
-body,
-.fiche-block,
-.fiche-block p,
-.fiche-block ul,
-.fiche-block li,
-.operation-link,
-.menu-buttons,
-.ww2-fullcard span {
-    font-size: 1.55rem !important;
-    line-height: 1.8 !important;
-}
-/* ——— AGRANDIR TOUT LE TEXTE DU SITE ——— */
-
-    .section-title {
-        font-size: 2.4rem !important;
-        margin-top: 40px;
-    }
-
-    /* Grille des boutons (ACCUEIL) */
-    .menu-grid,
-    .museum-grid {
-        display: grid;
-        grid-template-columns: 1fr !important; /* UNE COLONNE */
-        gap: 35px !important;
-        width: 100% !important;
-    }
-
-    /* Cartes */
-    .menu-card,
-    .museum-card {
-        width: 100% !important;
-        margin: 0 auto !important;
-    }
-
-    /* Images */
-    .museum-image,
-    .menu-card img,
-    .museum-card img {
-        width: 100% !important;
-        height: auto !important;
-    }
-
-    /* Bouton retour */
-    .menu-button {
-        font-size: 1.5rem !important;
-        padding: 18px 32px !important;
-    }
-/* ——— MODE MOBILE FORCÉ ——— */
+/* ——— RESPONSIVE ——— */
 @media (max-width: 600px) {
 
-    /* Texte global */
     body {
-        font-size: 1.45rem !important;
-        line-height: 1.85 !important;
+        font-size: 1rem;
+        line-height: 1.6;
     }
 
-    /* Titres HERO */
     .hero-title-line1 {
-        font-size: 2.8rem !important;
-        letter-spacing: 4px !important;
+        font-size: 2.4rem;
+        letter-spacing: 3px;
     }
 
     .hero-title-line2 {
-        font-size: 2.2rem !important;
+        font-size: 1.2rem;
     }
 
-    /* Titres de section */
     .section-title {
-        font-size: 2.4rem !important;
-        margin-top: 40px !important;
-        margin-bottom: 30px !important;
+        font-size: 1.6rem;
+        margin-top: 30px;
+        margin-bottom: 20px;
     }
 
-    /* Grille des cartes (ACCUEIL + UNIFORMES + COLLECTIONS) */
-    .menu-buttons,
-    .museum-grid {
-        grid-template-columns: 1fr !important;
-        gap: 35px !important;
-        width: 100% !important;
+    .menu-buttons {
+        grid-template-columns: 1fr;
+        gap: 25px;
     }
 
-    /* Cartes */
-    .ww2-fullcard,
-    .museum-card {
-        width: 100% !important;
-        height: auto !important;
+    .fiche-block {
+        padding: 22px;
     }
 
-    /* Images */
-    .museum-image,
-    .ww2-fullcard img,
-    .museum-card img {
-        width: 100% !important;
-        height: auto !important;
-    }
-
-    /* Fiches (casques, uniformes, etc.) */
-    .fiche-content {
-        font-size: 1.45rem !important;
-        line-height: 1.85 !important;
-    }
-
-    .fiche-block p,
-    .fiche-block ul,
-    .fiche-block li {
-        font-size: 1.45rem !important;
-        line-height: 1.85 !important;
-    }
-
-    /* Bouton retour */
     .menu-button {
-        font-size: 1.5rem !important;
-        padding: 18px 32px !important;
+        font-size: 1.2rem;
+        padding: 14px 26px;
     }
-/* ——— MODE MOBILE FORCÉ (TEXTE NORMAL) ——— */
-@media (max-width: 600px) {
-
-    /* Texte global normal */
-    body {
-        font-size: 1rem !important;
-        line-height: 1.6 !important;
-    }
-
-    /* Titres HERO */
-    .hero-title-line1 {
-        font-size: 2.4rem !important;
-        letter-spacing: 3px !important;
-    }
-
-    .hero-title-line2 {
-        font-size: 1.4rem !important;
-    }
-
-    /* Titres de section */
-    .section-title {
-        font-size: 1.8rem !important;
-        margin-top: 35px !important;
-        margin-bottom: 25px !important;
-    }
-
-    /* Grille des cartes (ACCUEIL + UNIFORMES + COLLECTIONS) */
-    .menu-buttons,
-    .museum-grid {
-        grid-template-columns: 1fr !important; /* UNE COLONNE */
-        gap: 25px !important;
-        width: 100% !important;
-    }
-
-    /* Cartes WW2 */
-    .ww2-fullcard,
-    .museum-card {
-        width: 100% !important;
-        height: auto !important;
-    }
-
-    /* Images */
-    .museum-image,
-    .ww2-fullcard img,
-    .museum-card img {
-        width: 100% !important;
-        height: auto !important;
-    }
-
-    /* Fiches (casques, uniformes, etc.) */
-    .fiche-content {
-        font-size: 1rem !important;
-        line-height: 1.6 !important;
-    }
-
-    .fiche-block p,
-    .fiche-block ul,
-    .fiche-block li {
-        font-size: 1rem !important;
-        line-height: 1.6 !important;
-    }
-
-    /* Bouton retour */
-    .menu-button {
-        font-size: 1.2rem !important;
-        padding: 14px 26px !important;
-    }
-}
-/* Correction : ne pas hériter la couleur globale */
-.menu-buttons,
-.ww2-fullcard span {
-    color: inherit !important;
-}
-
-/* Liens Uniformes / Casques / Armes / Objets */
-.operation-link {
-    color: #e8e6e3 !important;   /* blanc nacré muséal */
-}
-.planche-container {
-    width: 100%;
-    text-align: center;
-    margin: 40px 0;
-}
-
-.planche-img {
-    display: inline-block;
-    max-width: 900px;
-    width: 100%;
-    height: auto;
-}
-a:visited {
-    color: white !important;
 }
