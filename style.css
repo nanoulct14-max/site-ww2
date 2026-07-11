@@ -266,3 +266,13 @@ footer {
 .axe-title {
     text-align: center;
 }
+header {
+    background: #0f0f0f;
+    padding: 45px 0; /* ← plus haut */
+    border-bottom: 2px solid #333;
+
+    /* ⭐ largeur contrôlée */
+    max-width: 900px; 
+    margin: 0 auto; /* ← centré */
+    border-radius: 12px; /* option premium */
+}
