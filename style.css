@@ -311,3 +311,45 @@ footer {
     font-size: 2.9rem !important;    /* ← plus grand */
     letter-spacing: 3px;
 }
+/* ——— TITRES AXE (Commandement allemand / italien / japonais) ——— */
+.axe-title {
+    text-align: center;
+    font-size: 2.6rem !important;   /* ← plus grand */
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin: 50px 0 25px !important;
+    color: #f2f2f2;
+    text-shadow:
+        0 0 10px rgba(255,255,255,0.15),
+        0 0 18px rgba(0,0,0,0.9);
+}
+
+/* ——— AGRANDIR TOUTES LES FICHES ——— */
+.fiche-content {
+    font-size: 1.45rem !important;   /* ← plus grand */
+    line-height: 1.9 !important;
+}
+
+.fiche-content p {
+    font-size: 1.45rem !important;
+    line-height: 1.9 !important;
+}
+
+.fiche-content ul,
+.fiche-content li {
+    font-size: 1.45rem !important;
+    line-height: 1.9 !important;
+}
+
+/* ——— TITRE PRINCIPAL DES FICHES ——— */
+.fiche-hero-title {
+    font-size: 3.8rem !important;    /* ← plus massif */
+    letter-spacing: 2px !important;
+}
+
+/* ——— TITRES DE SECTIONS DANS LES FICHES ——— */
+.section-title {
+    font-size: 3rem !important;      /* ← plus grand */
+    letter-spacing: 3px !important;
+}
