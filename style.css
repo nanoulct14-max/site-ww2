@@ -5,22 +5,23 @@ body {
     color: #e5e5e5;
     font-family: system-ui, sans-serif;
 }
-
 /* ——— HEADER ——— */
 header {
     width: 100%;
     display: flex;
-    justify-content: center; /* centre le contenu */
+    justify-content: center;
     background-color: #0d0d0d;
 }
 
-nav {
+/* Conteneur interne qui limite la largeur du header */
+header nav {
+    width: 90%;
+    max-width: 900px; /* même largeur que fiche-content */
     display: flex;
-    gap: 30px;
-    max-width: 900px; /* même largeur que le reste du site */
-    width: 100%;
     justify-content: center;
+    gap: 30px;
 }
+
 nav a {
     font-family: "Cinzel", serif;
     font-size: 1.05rem;
@@ -43,22 +44,7 @@ nav a:hover {
         0 0 12px rgba(255,255,255,0.4),
         0 0 18px rgba(0,0,0,0.8);
 }
-/* ——— ALIGNEMENT EXACT DU HEADER AVEC LE RESTE ——— */
-header {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: #0d0d0d;
-}
 
-/* Conteneur interne qui limite la largeur du header */
-header nav {
-    width: 90%;
-    max-width: 900px; /* même largeur que fiche-content */
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
 /* ——— HERO ——— */
 .hero-section {
     padding-top: 160px;
