@@ -188,11 +188,10 @@ nav a:hover {
 }
 
 .fiche-content {
-    width: 90%;
-    max-width: 900px;
-    margin: 40px auto;
-    font-size: 1.15rem;
-    line-height: 1.7;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .fiche-image {
