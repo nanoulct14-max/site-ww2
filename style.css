@@ -1,288 +1,229 @@
-/* ——— GLOBAL ——— */
-body {
-    margin: 0;
-    background: #0f0f0f;
-    color: #e5e5e5;
-    font-family: system-ui, sans-serif;
-    font-size: 1rem;
-    line-height: 1.6;
+/* ——— STYLE GLOBAL ——— */
+
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #0d0d0d !important;
+    color: #e6e6e6 !important;
+    font-family: 'Cinzel', serif !important;
+    overflow-x: hidden !important;
 }
 
-/* ——— HEADER ——— */
-header {
-    background: #1b1f23;
-    padding: 25px 5vw;
-    border-bottom: 2px solid #333;
-}
-
+/* MENU */
 nav {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+    display: flex !important;
+    justify-content: center !important;
+    gap: 40px !important;
+    padding: 30px 0 !important;
 }
 
 nav a {
-    font-family: "Cinzel", serif;
-    font-size: 1.05rem;
-    letter-spacing: 2px;
-    text-decoration: none;
-    margin: 0 12px;
-    text-transform: uppercase;
-    transition: 0.3s;
-    color: #f3f0e9;
-    text-shadow:
-        0 0 4px rgba(255,255,255,0.4),
-        0 0 8px rgba(200,200,200,0.25),
-        0 0 12px rgba(0,0,0,0.6);
+    color: #e6e6e6 !important;
+    text-decoration: none !important;
+    font-size: 1.3rem !important;
+    letter-spacing: 2px !important;
 }
 
-nav a:hover {
-    color: #ffffff;
-    text-shadow:
-        0 0 6px rgba(255,255,255,0.6),
-        0 0 12px rgba(255,255,255,0.4),
-        0 0 18px rgba(0,0,0,0.8);
-}
-
-/* ——— HERO ——— */
-.hero-section {
-    padding-top: 160px;
-    padding-bottom: 120px;
-    text-align: center;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-.hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.55);
-}
-
-.hero-title-block {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    color: #f7f4ef;
+/* HERO */
+.hero-section,
+.fiche-hero {
+    width: 100% !important;
+    height: 380px !important;
+    background-size: cover !important;
+    background-position: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 .hero-title-line1 {
-    font-family: "Cinzel", serif;
-    font-size: 3rem;
-    font-weight: 700;
-    letter-spacing: 4px;
-    margin: 0;
-    text-shadow:
-        0 0 6px rgba(255,255,255,0.7),
-        0 0 14px rgba(255,255,255,0.5),
-        0 0 28px rgba(200,200,200,0.35),
-        0 0 45px rgba(0,0,0,0.9);
+    font-size: 3rem !important;
+    letter-spacing: 4px !important;
+    text-align: center !important;
 }
 
 .hero-title-line2 {
-    font-family: "Cinzel", serif;
-    font-size: 1.4rem;
-    margin-top: 18px;
-    opacity: 0.9;
-    text-shadow:
-        0 0 8px rgba(0,0,0,0.9),
-        0 0 14px rgba(0,0,0,0.7);
+    font-size: 1.4rem !important;
+    text-align: center !important;
+    margin-top: 10px !important;
 }
 
-/* ——— TITRES DE SECTION ——— */
+/* TITRES */
 .section-title {
-    font-family: "Cinzel", serif;
-    font-size: 1.8rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-align: center;
-    margin-top: 35px;
-    margin-bottom: 25px;
-    color: #f2f2f2;
-    text-shadow:
-        0 0 10px rgba(255,255,255,0.15),
-        0 0 18px rgba(0,0,0,0.9);
+    font-size: 2rem !important;
+    text-align: center !important;
+    margin-top: 40px !important;
+    margin-bottom: 25px !important;
 }
 
-.section-title::after {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 2px;
-    background: linear-gradient(to right, transparent, #888, transparent);
-    margin: 12px auto 0;
-}
-
-/* ——— CARTES WW2 ——— */
-.menu-buttons {
-    width: 100%;
-    margin: 40px auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-}
-
-.ww2-fullcard {
-    height: 260px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 6px;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-}
-
-.ww2-fullcard::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.35);
-}
-
-.ww2-fullcard span {
-    position: relative;
-    z-index: 2;
-    font-family: "Cinzel", serif;
-    font-size: 1.3rem;
-    font-weight: 600;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #ffffff;
-    text-shadow:
-        0 0 8px rgba(0,0,0,0.9),
-        0 0 14px rgba(0,0,0,0.7);
-}
-
-/* ——— FICHES ——— */
-.fiche-hero {
-    height: 300px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-.fiche-hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.55);
-}
-
-.fiche-hero-title {
-    position: relative;
-    z-index: 2;
-    font-family: "Cinzel", serif;
-    font-size: 2.4rem;
-    text-align: center;
-    padding-top: 120px;
-    color: #f7f4ef;
-}
-
-/* ——— FICHES 100% LARGEUR ——— */
+/* FICHES */
 .fiche-content {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
+    width: 100% !important;
+    margin: 0 auto !important;
+    font-size: 1.1rem !important;
+    line-height: 1.7 !important;
 }
 
-.fiche-image {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    border-radius: 0;
-    display: block;
-}
-
-/* BLOCS MUSÉAUX */
 .fiche-block {
-    width: 100%;
-    margin: 0;
-    padding: 28px;
-    background: rgba(0,0,0,0.35);
-    border: none;
-    border-radius: 0;
+    background-color: #1a1a1a !important;
+    padding: 30px !important;
+    margin-bottom: 40px !important;
+    border-radius: 6px !important;
 }
 
 .fiche-block p,
 .fiche-block ul,
 .fiche-block li {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 10px;
+    font-size: 1.1rem !important;
+    line-height: 1.7 !important;
 }
 
-/* ——— FOOTER ——— */
-footer {
-    background: #0d0d0d;
-    text-align: center;
-    padding: 40px 0;
-    margin-top: 60px;
+/* IMAGES */
+.fiche-image,
+.museum-image,
+.ww2-fullcard img,
+.museum-card img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 30px auto !important;
 }
 
-.footer-line {
-    width: 90%;
-    height: 1px;
-    background: linear-gradient(to right, transparent, #777, transparent);
-    margin: 0 auto 25px;
+/* GRILLES */
+.menu-buttons,
+.museum-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 35px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
 }
 
-/* ——— BOUTON RETOUR ——— */
+/* CARTES */
+.ww2-fullcard,
+.museum-card {
+    background-color: #1a1a1a !important;
+    padding: 20px !important;
+    border-radius: 6px !important;
+}
+
+/* BOUTON RETOUR */
 .menu-button {
-    display: inline-block;
-    padding: 14px 26px;
-    background: rgba(255,255,255,0.15);
-    border: 2px solid white;
-    border-radius: 6px;
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-    margin-top: 40px;
-    transition: 0.3s;
+    display: inline-block !important;
+    padding: 16px 32px !important;
+    font-size: 1.3rem !important;
+    margin-top: 40px !important;
+    background-color: #333 !important;
+    color: #e6e6e6 !important;
+    text-decoration: none !important;
+    border-radius: 6px !important;
 }
 
-.menu-button:hover {
-    background: rgba(255,255,255,0.35);
-}
+/* ——— MODE MOBILE ——— */
 
-/* ——— RESPONSIVE ——— */
 @media (max-width: 600px) {
 
+    html, body {
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow-x: hidden !important;
+        -webkit-text-size-adjust: 100% !important;
+    }
+
     body {
-        font-size: 1rem;
-        line-height: 1.6;
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+    }
+
+    nav {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 18px !important;
+        width: 100% !important;
+        padding: 20px 0 !important;
+    }
+
+    nav a {
+        font-size: 1.4rem !important;
+        width: 100% !important;
+        text-align: center !important;
+        padding: 8px 0 !important;
+    }
+
+    .hero-section,
+    .fiche-hero {
+        height: 260px !important;
+        background-size: cover !important;
+        background-position: center !important;
+        width: 100% !important;
     }
 
     .hero-title-line1 {
-        font-size: 2.4rem;
-        letter-spacing: 3px;
+        font-size: 2.2rem !important;
+        letter-spacing: 2px !important;
+        text-align: center !important;
     }
 
     .hero-title-line2 {
-        font-size: 1.2rem;
+        font-size: 1.3rem !important;
+        text-align: center !important;
     }
 
     .section-title {
-        font-size: 1.6rem;
-        margin-top: 30px;
-        margin-bottom: 20px;
+        font-size: 1.6rem !important;
+        margin-top: 30px !important;
+        margin-bottom: 20px !important;
+        text-align: center !important;
     }
 
-    .menu-buttons {
-        grid-template-columns: 1fr;
-        gap: 25px;
+    .fiche-content {
+        padding: 0 12px !important;
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+        width: 100% !important;
     }
 
     .fiche-block {
-        padding: 22px;
+        margin-bottom: 35px !important;
+        padding: 20px !important;
+    }
+
+    .fiche-block p,
+    .fiche-block ul,
+    .fiche-block li {
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+        text-align: center !important;
+    }
+
+    .fiche-image,
+    .museum-image,
+    .ww2-fullcard img,
+    .museum-card img {
+        width: 100% !important;
+        height: auto !important;
+        display: block !important;
+        margin: 0 auto !important;
+    }
+
+    .menu-buttons,
+    .museum-grid {
+        grid-template-columns: 1fr !important;
+        gap: 25px !important;
+        width: 100% !important;
+    }
+
+    .ww2-fullcard,
+    .museum-card {
+        width: 100% !important;
+        height: auto !important;
     }
 
     .menu-button {
-        font-size: 1.2rem;
-        padding: 14px 26px;
+        font-size: 1.2rem !important;
+        padding: 14px 26px !important;
+        margin-top: 30px !important;
     }
 }
