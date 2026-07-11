@@ -14,7 +14,6 @@ header {
     background: #0f0f0f;
     padding: 45px 0;
     border-bottom: 2px solid #333;
-
     max-width: 900px;
     margin: 0 auto;
     border-radius: 12px;
@@ -56,7 +55,6 @@ nav a:hover {
     padding-top: 160px;
     padding-bottom: 120px;
     text-align: center;
-    background-image: url('images/hero.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -103,12 +101,12 @@ nav a:hover {
 /* ——— TITRES DE SECTION ——— */
 .section-title {
     font-family: "Cinzel", serif;
-    font-size: 3rem !important;
+    font-size: 3.2rem !important;
     font-weight: 700;
     letter-spacing: 4px !important;
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 35px;
+    margin-top: 50px !important;
+    margin-bottom: 30px !important;
     color: #f2f2f2;
     text-shadow:
         0 0 10px rgba(255,255,255,0.15),
@@ -186,30 +184,14 @@ nav a:hover {
     position: relative;
     z-index: 2;
     font-family: "Cinzel", serif;
-    font-size: 4rem !important;
+    font-size: 4.2rem !important;
     text-align: center;
     padding-top: 120px;
     color: #f7f4ef;
     letter-spacing: 3px !important;
-}
-
-.fiche-content {
-    width: 90%;
-    max-width: 900px;
-    margin: 40px auto;
-    font-size: 1.55rem !important;
-    line-height: 2.05 !important;
-}
-
-.fiche-content p {
-    font-size: 1.55rem !important;
-    line-height: 2.05 !important;
-}
-
-.fiche-content ul,
-.fiche-content li {
-    font-size: 1.55rem !important;
-    line-height: 2.05 !important;
+    text-shadow:
+        0 0 10px rgba(255,255,255,0.15),
+        0 0 20px rgba(0,0,0,0.9);
 }
 
 .fiche-image {
@@ -221,18 +203,14 @@ nav a:hover {
     box-shadow: 0 0 20px rgba(0,0,0,0.6);
 }
 
-/* ——— TITRES AXE (Commandement allemand / italien / japonais) ——— */
-.axe-title {
-    text-align: center;
-    font-size: 2.8rem !important;
-    font-family: "Cinzel", serif;
-    font-weight: 700;
-    letter-spacing: 4px;
-    margin: 55px 0 30px !important;
-    color: #f2f2f2;
-    text-shadow:
-        0 0 12px rgba(255,255,255,0.18),
-        0 0 20px rgba(0,0,0,0.9);
+/* ——— TEXTES DES FICHES ——— */
+.fiche-block,
+.fiche-block p,
+.fiche-block ul,
+.fiche-block li {
+    font-size: 1.65rem !important;
+    line-height: 2.2rem !important;
+    color: #e5e5e5;
 }
 
 /* ——— FOOTER ——— */
@@ -269,65 +247,21 @@ footer {
     transform: translateX(6px);
 }
 
-/* Bouton retour encadré premium */
+/* ——— BOUTON RETOUR ——— */
 .menu-button {
     display: block;
     width: 80%;
     max-width: 600px;
     margin: 40px auto;
     padding: 25px 30px;
-
     background-color: #1a1a1a;
     color: white;
     text-align: center;
-
     font-size: 26px;
     font-weight: 600;
-
     border-radius: 12px;
     border: 3px solid #d4d4d4;
     box-shadow: 0 0 25px rgba(0,0,0,0.6);
-
     text-decoration: none;
     transition: 0.3s ease;
-}
-/* ——— FORCE LA TAILLE DES TEXTES DES FICHES ——— */
-.fiche-content,
-.fiche-content p,
-.fiche-content ul,
-.fiche-content li {
-    font-size: 1.65rem !important;   /* ← enfin grand */
-    line-height: 2.15rem !important; /* ← lisible, muséal */
-}
-
-/* ——— TITRE PRINCIPAL DES FICHES ——— */
-.fiche-hero-title {
-    font-size: 4.2rem !important;
-    letter-spacing: 3px !important;
-}
-
-/* ——— TITRES DE SECTIONS ——— */
-.section-title {
-    font-size: 3.2rem !important;
-    letter-spacing: 4px !important;
-}
-/* ——— AGRANDIR TOUTES LES FICHES ——— */
-.fiche-block,
-.fiche-block p,
-.fiche-block ul,
-.fiche-block li {
-    font-size: 1.65rem !important;
-    line-height: 2.2rem !important;
-}
-
-/* ——— TITRE PRINCIPAL DES FICHES ——— */
-.fiche-hero-title {
-    font-size: 4.2rem !important;
-    letter-spacing: 3px !important;
-}
-
-/* ——— TITRES DE SECTIONS ——— */
-.section-title {
-    font-size: 3.2rem !important;
-    letter-spacing: 4px !important;
 }
