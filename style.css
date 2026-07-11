@@ -291,3 +291,23 @@ footer {
     text-decoration: none;
     transition: 0.3s ease;
 }
+/* ——— FORCE LA TAILLE DES TEXTES DES FICHES ——— */
+.fiche-content,
+.fiche-content p,
+.fiche-content ul,
+.fiche-content li {
+    font-size: 1.65rem !important;   /* ← enfin grand */
+    line-height: 2.15rem !important; /* ← lisible, muséal */
+}
+
+/* ——— TITRE PRINCIPAL DES FICHES ——— */
+.fiche-hero-title {
+    font-size: 4.2rem !important;
+    letter-spacing: 3px !important;
+}
+
+/* ——— TITRES DE SECTIONS ——— */
+.section-title {
+    font-size: 3.2rem !important;
+    letter-spacing: 4px !important;
+}
