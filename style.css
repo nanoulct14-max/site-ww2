@@ -265,3 +265,15 @@ footer {
     text-decoration: none;
     transition: 0.3s ease;
 }
+.commandement-title {
+    text-align: center;
+    font-size: 1.8rem;      /* plus grand que ta liste */
+    font-weight: 700;
+    font-family: "Cinzel", serif;
+    letter-spacing: 2px;
+    margin: 30px 0 15px;
+    color: #f2f2f2;
+    text-shadow:
+        0 0 8px rgba(255,255,255,0.15),
+        0 0 12px rgba(0,0,0,0.9);
+}
