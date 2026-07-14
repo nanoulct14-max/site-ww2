@@ -2,70 +2,101 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Alan Turing - Royaume-Uni</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan Turing – Musée HOP WW2</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
 <header>
-    <h1>Alan Turing</h1>
-    <h2>Mathématicien – Briseur du code Enigma</h2>
+    <div class="logo">Musée HOP WW2</div>
+    <nav>
+        <a href="../index.html">Accueil</a>
+        <a href="../visages.html">Visages</a>
+        <a href="../collections.html">Collections</a>
+        <a href="../guides.html">Guides</a>
+        <a href="../contact.html">Contact</a>
+    </nav>
 </header>
+
+<section class="hero">
+    <h1 class="hero-title">Alan Turing</h1>
+    <p class="hero-subtitle">1912 – 1954 • Mathématicien • Briseur d’Enigma • Père de l’informatique</p>
+</section>
 
 <section class="fiche-container">
 
-    <div class="portrait">
-        <img src="../images/personnages/alan-turing.jpg" alt="Alan Turing">
+    <!-- PHOTO 1 : Portrait -->
+    <div class="fiche-photo">
+        <img src="../images/alan-turing-portrait-bletchley-park-1940.jpg" alt="Alan Turing portrait 1940">
     </div>
 
-    <div class="fiche-texte">
-
-        <h3>Identité</h3>
-        <p><strong>Nom complet :</strong> Alan Mathison Turing</p>
-        <p><strong>Nationalité :</strong> Britannique</p>
-        <p><strong>Profession :</strong> Mathématicien, cryptanalyste, pionnier de l’informatique</p>
-        <p><strong>Naissance :</strong> 23 juin 1912</p>
-        <p><strong>Décès :</strong> 7 juin 1954</p>
-
-        <h3>Rôle dans la Seconde Guerre mondiale</h3>
+    <div class="fiche-section">
+        <h2 class="fiche-title">Présentation</h2>
         <p>
-            Alan Turing travaille au centre de cryptanalyse de Bletchley Park.
-            Il joue un rôle essentiel dans le déchiffrement du code <strong>Enigma</strong>,
-            utilisé par la marine allemande pour coordonner ses opérations.
+            Alan Mathison Turing est l’un des esprits les plus brillants du XXe siècle. 
+            Mathématicien britannique, pionnier de l’informatique, il joue un rôle majeur 
+            dans le décryptage des communications allemandes durant la Seconde Guerre mondiale.
         </p>
+    </div>
+
+    <div class="fiche-section">
+        <h2 class="fiche-title">Rôle durant la Seconde Guerre mondiale</h2>
         <p>
-            Son travail permet aux Alliés d’intercepter et de comprendre les communications
-            allemandes, notamment celles des U-Boote, contribuant directement à la victoire
-            dans la bataille de l’Atlantique.
+            À Bletchley Park, Turing conçoit la machine <strong>Bombe</strong>, capable de casser 
+            les clés de la machine Enigma utilisée par la Wehrmacht.  
+            Son travail permet aux Alliés de lire des milliers de messages ennemis, 
+            influençant directement la bataille de l’Atlantique et les opérations stratégiques.
         </p>
+    </div>
 
-        <h3>Contributions majeures</h3>
+    <!-- PHOTO 2 : Colossus -->
+    <div class="fiche-photo">
+        <img src="../images/colossus-computer-bletchley-park-1943.jpg" alt="Machine Colossus Bletchley Park 1943">
+    </div>
+
+    <div class="fiche-section">
+        <h2 class="fiche-title">Colossus et l’informatique moderne</h2>
         <p>
-            Turing conçoit la machine électromécanique <strong>Bombe</strong>, capable de tester
-            automatiquement des milliers de configurations d’Enigma.  
-            Il pose également les bases de l’informatique moderne avec le concept de
-            <strong>machine de Turing</strong>.
+            Après Enigma, Turing contribue au développement de <strong>Colossus</strong>, 
+            l’un des premiers ordinateurs électroniques programmables.  
+            Ses travaux posent les bases de l’informatique moderne et de l’intelligence artificielle.
         </p>
+    </div>
 
-        <h3>Importance historique</h3>
+    <div class="fiche-section">
+        <h2 class="fiche-title">Éléments historiques notables</h2>
+        <ul class="fiche-list">
+            <li>Concepteur de la machine Bombe (décryptage Enigma)</li>
+            <li>Travaux sur Colossus (code Lorenz)</li>
+            <li>Créateur du <strong>Test de Turing</strong></li>
+            <li>Pionnier de l’informatique théorique</li>
+            <li>Persécuté en 1952 pour homosexualité (illégale à l’époque)</li>
+            <li>Pardon royal en 2013</li>
+        </ul>
+    </div>
+
+    <div class="fiche-section">
+        <h2 class="fiche-title">Importance historique</h2>
         <p>
-            Alan Turing est considéré comme l’un des pères de l’informatique.
-            Son travail a raccourci la guerre de plusieurs années et sauvé des millions de vies.
-            Son génie et son destin tragique en font une figure majeure du XXe siècle.
+            Les historiens estiment que les travaux de Turing ont raccourci la guerre 
+            de deux à quatre ans.  
+            Son héritage scientifique influence encore aujourd’hui l’informatique, 
+            la cryptanalyse et l’intelligence artificielle.
         </p>
-
-        <h3>Catégorie</h3>
-        <p><strong>Pays :</strong> Royaume-Uni</p>
-        <p><strong>Section :</strong> Visages de la Seconde Guerre</p>
-        <p><strong>Type :</strong> Cryptanalyse / Sciences</p>
-
     </div>
 
 </section>
 
-<footer>
-    <a href="../visages/visages-uk.html" class="retour">← Retour au Royaume-Uni</a>
+<!-- Bouton retour -->
+<div class="retour-container">
+    <a class="retour-bouton" href="../visages.html">← Retour aux visages</a>
+</div>
+
+<footer class="site-footer">
+    <div class="footer-line"></div>
+    <p>© 2026 - Musée HOP WW2 : Tous droits réservés.</p>
 </footer>
 
 </body>
