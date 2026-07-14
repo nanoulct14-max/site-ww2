@@ -9,7 +9,6 @@
       --bg: #050608;
       --bg-alt: #0b0d10;
       --accent: #b89b5b;
-      --accent-soft: #8a7444;
       --text: #f5f5f5;
       --muted: #b3b3b3;
       --border: #1b1e22;
@@ -27,7 +26,6 @@
       padding: 2rem 1.5rem 4rem;
     }
 
-    /* HERO */
     .hero {
       border: 1px solid var(--border);
       background: linear-gradient(145deg, #090b0f 0, #050608 40%, #0b0d10 100%);
@@ -47,20 +45,6 @@
       font-size: 0.95rem;
     }
 
-    /* RETOUR */
-    .menu-button {
-      display: inline-block;
-      margin-bottom: 2rem;
-      padding: 0.6rem 1rem;
-      background: #0b0d10;
-      border: 1px solid var(--border);
-      color: var(--accent);
-      text-decoration: none;
-      font-size: 0.9rem;
-      letter-spacing: 0.05em;
-    }
-
-    /* SECTION */
     .section {
       border: 1px solid var(--border);
       background: var(--bg-alt);
@@ -76,28 +60,17 @@
       margin-bottom: 0.75rem;
     }
     .section-body p {
-      margin-bottom: 0.6rem;
+      margin-bottom: 0.8rem;
       font-size: 0.95rem;
     }
 
-    /* PHOTOS */
-    .photos {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-    @media (min-width: 640px) {
-      .photos {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-    .photo-card {
+    .photo {
+      margin: 1rem 0;
       border: 1px solid var(--border);
       background: #06070a;
       padding: 0.75rem;
     }
-    .photo-card img {
+    .photo img {
       width: 100%;
       display: block;
       margin-bottom: 0.5rem;
@@ -110,6 +83,18 @@
     .photo-caption {
       font-size: 0.8rem;
       color: var(--muted);
+    }
+
+    .menu-button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.6rem 1rem;
+      background: #0b0d10;
+      border: 1px solid var(--border);
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
     }
   </style>
 </head>
@@ -126,68 +111,87 @@
       </div>
     </section>
 
-    <!-- RETOUR -->
-    <a href="histoire-memoire.html" class="menu-button">⬅ Retour à Histoire & Mémoire</a>
-
-    <!-- CONTEXTE -->
+    <!-- SECTION 1 -->
     <section class="section">
       <h2 class="section-title">Dunkerque sous l’Occupation</h2>
       <div class="section-body">
+
+        <div class="photo">
+          <img src="barbeles-cotiers-dunkerque-occupation-1940.jpg" alt="">
+          <div class="photo-title">Barbelés Côtiers — Dunkerque (1940)</div>
+          <div class="photo-caption">Le littoral transformé en zone interdite.</div>
+        </div>
+
         <p>Dunkerque est une ville brisée : destructions massives, rationnement extrême, patrouilles allemandes dans les rues et les dunes.</p>
+
+        <div class="photo">
+          <img src="defenses-littorales-dunkerque-1940.jpg" alt="">
+          <div class="photo-title">Défenses Littorales — Dunes de Dunkerque (1940)</div>
+          <div class="photo-caption">Barbelés et bunker dans les dunes.</div>
+        </div>
+
         <p>Les civils manquent de tout. Les enfants, eux, passent plus facilement : ils deviennent les « Enfants des Dunes ».</p>
+
       </div>
     </section>
 
-    <!-- PHOTOS -->
+    <!-- SECTION 2 -->
     <section class="section">
-      <h2 class="section-title">Photographies d’époque</h2>
+      <h2 class="section-title">Le trajet dans les dunes</h2>
+      <div class="section-body">
 
-      <div class="photos">
-
-        <div class="photo-card">
-          <img src="barbeles-cotiers-dunkerque-occupation-1940.jpg" alt="">
-          <div class="photo-title">Barbelés Côtiers — Dunkerque (1940)</div>
-          <div class="photo-caption">Barbelés sur le littoral, symbole de l’Occupation allemande.</div>
-        </div>
-
-        <div class="photo-card">
-          <img src="defenses-littorales-dunkerque-1940.jpg" alt="">
-          <div class="photo-title">Défenses Littorales — Dunes de Dunkerque (1940)</div>
-          <div class="photo-caption">Barbelés et bunker dans les dunes, secteur fortifié.</div>
-        </div>
-
-        <div class="photo-card">
+        <div class="photo">
           <img src="dunes-de-front-malo-leffrinckoucke.jpg" alt="">
           <div class="photo-title">Dunes de Front — Malo‑Leffrinckoucke</div>
-          <div class="photo-caption">Terrain sec et abîmé, zone de passage des enfants.</div>
+          <div class="photo-caption">Terrain sec, abîmé, surveillé.</div>
         </div>
 
-        <div class="photo-card">
-          <img src="positions-fortifiees-littoral-dunkerquois.jpg" alt="">
-          <div class="photo-title">Positions Fortifiées — Littoral Dunkerquois</div>
-          <div class="photo-caption">Vue aérienne des bunkers du littoral.</div>
-        </div>
+        <p>Les dunes deviennent un passage discret vers la Belgique. Les enfants y circulent pour contourner les contrôles.</p>
 
-        <div class="photo-card">
+        <div class="photo">
           <img src="dunes-du-perroquet-couloir-de-passage.jpg" alt="">
           <div class="photo-title">Dunes du Perroquet — Couloir de Passage</div>
-          <div class="photo-caption">Les dunes empruntées pour rejoindre la Belgique.</div>
+          <div class="photo-caption">Le chemin le plus utilisé.</div>
         </div>
 
-        <div class="photo-card">
+        <p>Le sable, les creux, les blockhaus enfouis offrent des zones d’ombre pour se cacher.</p>
+
+        <div class="photo">
           <img src="blockhaus-enfoui-dunes-du-nord-1940.jpg" alt="">
           <div class="photo-title">Blockhaus Enfoui — Dunes du Nord (1940)</div>
           <div class="photo-caption">Fortification allemande partiellement ensevelie.</div>
         </div>
 
-        <div class="photo-card">
+      </div>
+    </section>
+
+    <!-- SECTION 3 -->
+    <section class="section">
+      <h2 class="section-title">Léa Le Comte</h2>
+      <div class="section-body">
+
+        <div class="photo">
           <img src="le-comte-lea-enfant-des-dunes.jpg" alt="">
           <div class="photo-title">Léa Le Comte — Enfant des Dunes (1932)</div>
-          <div class="photo-caption">Portrait de Léa, enfant dunkerquoise ayant traversé les dunes.</div>
+          <div class="photo-caption">Portrait d’époque.</div>
         </div>
+
+        <p>Enfant dunkerquoise née en 1932, Léa traverse les dunes pour ramener des vivres à sa famille.  
+        Elle connaît les chemins, les creux, les zones où l’on peut passer sans être vu.</p>
+
+        <div class="photo">
+          <img src="positions-fortifiees-littoral-dunkerquois.jpg" alt="">
+          <div class="photo-title">Positions Fortifiées — Littoral Dunkerquois</div>
+          <div class="photo-caption">Vue aérienne des défenses.</div>
+        </div>
+
+        <p>Son rôle est discret, essentiel, et typique des enfants du secteur pendant l’Occupation.</p>
 
       </div>
     </section>
+
+    <!-- BOUTON RETOUR À LA FIN -->
+    <a href="histoire-memoire.html" class="menu-button">⬅ Retour à Histoire & Mémoire</a>
 
   </main>
 </body>
