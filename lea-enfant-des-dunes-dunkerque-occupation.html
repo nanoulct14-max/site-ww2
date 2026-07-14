@@ -1,1 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Léa, l’Enfant des Dunes — Dunkerque sous l’Occupation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --bg: #050608;
+      --bg-alt: #0b0d10;
+      --accent: #b89b5b;
+      --accent-soft: #8a7444;
+      --text: #f5f5f5;
+      --muted: #b3b3b3;
+      --border: #1b1e22;
+    }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #151820 0, #050608 55%, #020305 100%);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+    }
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
 
+    /* HERO */
+    .hero {
+      border: 1px solid var(--border);
+      background: linear-gradient(145deg, #090b0f 0, #050608 40%, #0b0d10 100%);
+      padding: 2rem 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .hero-title {
+      font-family: "Cinzel", serif;
+      font-size: 1.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .hero-sub {
+      margin-top: 0.5rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    /* RETOUR */
+    .menu-button {
+      display: inline-block;
+      margin-bottom: 2rem;
+      padding: 0.6rem 1rem;
+      background: #0b0d10;
+      border: 1px solid var(--border);
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+    }
+
+    /* SECTION */
+    .section {
+      border: 1px solid var(--border);
+      background: var(--bg-alt);
+      margin-bottom: 1.5rem;
+      padding: 1.5rem;
+    }
+    .section-title {
+      font-family: "Cinzel", serif;
+      font-size: 1.2rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+    .section-body p {
+      margin-bottom: 0.6rem;
+      font-size: 0.95rem;
+    }
+
+    /* PHOTOS */
+    .photos {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    @media (min-width: 640px) {
+      .photos {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    .photo-card {
+      border: 1px solid var(--border);
+      background: #06070a;
+      padding: 0.75rem;
+    }
+    .photo-card img {
+      width: 100%;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .photo-title {
+      font-size: 0.9rem;
+      color: var(--text);
+      margin-bottom: 0.25rem;
+    }
+    .photo-caption {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1 class="hero-title">Léa, l’Enfant des Dunes — Dunkerque sous l’Occupation</h1>
+      <div class="hero-sub">
+        Née le 13 décembre 1932 — Rue des Passerelles, Dunkerque.<br>
+        Enfant ayant traversé les dunes pour ramener des vivres pendant l’Occupation allemande.
+      </div>
+    </section>
+
+    <!-- RETOUR -->
+    <a href="histoire-memoire.html" class="menu-button">⬅ Retour à Histoire & Mémoire</a>
+
+    <!-- CONTEXTE -->
+    <section class="section">
+      <h2 class="section-title">Dunkerque sous l’Occupation</h2>
+      <div class="section-body">
+        <p>Dunkerque est une ville brisée : destructions massives, rationnement extrême, patrouilles allemandes dans les rues et les dunes.</p>
+        <p>Les civils manquent de tout. Les enfants, eux, passent plus facilement : ils deviennent les « Enfants des Dunes ».</p>
+      </div>
+    </section>
+
+    <!-- PHOTOS -->
+    <section class="section">
+      <h2 class="section-title">Photographies d’époque</h2>
+
+      <div class="photos">
+
+        <div class="photo-card">
+          <img src="barbeles-cotiers-dunkerque-occupation-1940.jpg" alt="">
+          <div class="photo-title">Barbelés Côtiers — Dunkerque (1940)</div>
+          <div class="photo-caption">Barbelés sur le littoral, symbole de l’Occupation allemande.</div>
+        </div>
+
+        <div class="photo-card">
+          <img src="defenses-littorales-dunkerque-1940.jpg" alt="">
+          <div class="photo-title">Défenses Littorales — Dunes de Dunkerque (1940)</div>
+          <div class="photo-caption">Barbelés et bunker dans les dunes, secteur fortifié.</div>
+        </div>
+
+        <div class="photo-card">
+          <img src="dunes-de-front-malo-leffrinckoucke.jpg" alt="">
+          <div class="photo-title">Dunes de Front — Malo‑Leffrinckoucke</div>
+          <div class="photo-caption">Terrain sec et abîmé, zone de passage des enfants.</div>
+        </div>
+
+        <div class="photo-card">
+          <img src="positions-fortifiees-littoral-dunkerquois.jpg" alt="">
+          <div class="photo-title">Positions Fortifiées — Littoral Dunkerquois</div>
+          <div class="photo-caption">Vue aérienne des bunkers du littoral.</div>
+        </div>
+
+        <div class="photo-card">
+          <img src="dunes-du-perroquet-couloir-de-passage.jpg" alt="">
+          <div class="photo-title">Dunes du Perroquet — Couloir de Passage</div>
+          <div class="photo-caption">Les dunes empruntées pour rejoindre la Belgique.</div>
+        </div>
+
+        <div class="photo-card">
+          <img src="blockhaus-enfoui-dunes-du-nord-1940.jpg" alt="">
+          <div class="photo-title">Blockhaus Enfoui — Dunes du Nord (1940)</div>
+          <div class="photo-caption">Fortification allemande partiellement ensevelie.</div>
+        </div>
+
+        <div class="photo-card">
+          <img src="le-comte-lea-enfant-des-dunes.jpg" alt="">
+          <div class="photo-title">Léa Le Comte — Enfant des Dunes (1932)</div>
+          <div class="photo-caption">Portrait de Léa, enfant dunkerquoise ayant traversé les dunes.</div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
