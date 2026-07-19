@@ -4,34 +4,55 @@
     <meta charset="UTF-8">
     <title>Contact – Musée HOP WW2</title>
     <link rel="stylesheet" href="/site-ww2/style.css">
+
+    <!-- Police Cinzel -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <header>
-    <h1>Musée HOP WW2</h1>
+    <h1 class="site-title">Musée HOP WW2</h1>
     <nav>
         <a href="/site-ww2/index.html">Accueil</a>
         <a href="/site-ww2/collections/index.html">Collections</a>
         <a href="/site-ww2/guides/index.html">Guides</a>
-        <a href="/site-ww2/contact.html">Contact</a>
+        <a href="/site-ww2/contact.html" class="active">Contact</a>
     </nav>
 </header>
 
-<section>
-    <h2>Contact</h2>
-    <p>Pour toute question ou demande, contactez-nous :</p>
-
-    <form>
-        <input type="text" placeholder="Votre nom">
-        <input type="email" placeholder="Votre email">
-        <textarea placeholder="Votre message"></textarea>
-        <button type="submit">Envoyer</button>
-    </form>
+<!-- HERO sombre -->
+<section class="hero-section" style="background-image:url('/site-ww2/images/hero_dark.jpg');">
+    <div class="hero-overlay"></div>
+    <div class="hero-title-block">
+        <h2 class="hero-title-line1">CONTACT</h2>
+        <h3 class="hero-title-line2">Musée HOP WW2 – Formulaire sécurisé</h3>
+    </div>
 </section>
 
-<footer>
-    © 2026 – Musée HOP WW2. Tous droits réservés.
+<!-- Bloc principal -->
+<div class="fiche-block">
+    <h2 class="section-title">Envoyer un message</h2>
+    <p class="section-desc">
+        Pour toute question, demande ou proposition, vous pouvez nous écrire via ce formulaire sécurisé.
+    </p>
+
+    <!-- FORMULAIRE FORMSpree -->
+    <form action="https://formspree.io/f/xwvgbpol" method="POST" class="contact-form">
+        <input type="text" name="nom" placeholder="Votre nom" required>
+        <input type="email" name="email" placeholder="Votre email" required>
+        <textarea name="message" placeholder="Votre message" required></textarea>
+        <button type="submit">Envoyer</button>
+    </form>
+
+    <p class="form-info">
+        Vos messages sont transmis directement au responsable du site.
+    </p>
+</div>
+
+<footer class="site-footer">
+    <div class="footer-line"></div>
+    <p>© 2026 Musée HOP WW2 – Tous droits réservés.</p>
 </footer>
 
 </body>
