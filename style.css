@@ -413,3 +413,35 @@ body, h1, h2, h3, .section-title {
     background: #333;
     margin-bottom: 15px;
 }
+/* --- Bouton bunker élargi --- */
+.wide-thin-button {
+    width: 100%;
+    max-width: 900px; /* bouton plus large */
+    height: 85px;     /* plus haut */
+    margin: 40px auto;
+    background-image: url('images/fond-bunker.png'); /* UNIQUE */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #666;
+    border-radius: 8px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.7);
+}
+
+.wide-thin-button a {
+    font-family: 'Cinzel', serif;
+    font-size: 28px;
+    letter-spacing: 3px;
+    color: #f3f0e9;
+    text-decoration: none;
+    background-color: rgba(0,0,0,0.55);
+    padding: 14px 50px;
+    transition: 0.3s;
+    border-radius: 6px;
+}
+
+.wide-thin-button a:hover {
+    background-color: rgba(0,0,0,0.75);
+}
