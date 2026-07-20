@@ -413,3 +413,30 @@ body, h1, h2, h3, .section-title {
     background: #333;
     margin-bottom: 15px;
 }
+/* --- Bouton bunker POURQUOI CE MUSÉE --- */
+.wide-thin-button {
+    width: 100%;
+    max-width: 600px;
+    height: 60px;
+    margin: 20px auto;
+    background-image: url('images/fond-bunker.png'); /* ton image du fond bunker */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #555;
+}
+
+.wide-thin-button a {
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #e5e5e5;
+    text-decoration: none;
+    background-color: rgba(0,0,0,0.55);
+    padding: 10px 30px;
+    transition: 0.3s;
+}
+
+.wide-thin
