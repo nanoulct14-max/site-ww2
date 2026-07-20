@@ -440,3 +440,63 @@ body, h1, h2, h3, .section-title {
 }
 
 .wide-thin
+/* ===== HERO ===== */
+.hero-pourquoi {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(45%);
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title {
+    font-family: 'Cinzel', serif;
+    font-size: 48px;
+    color: #e5e5e5;
+    letter-spacing: 3px;
+}
+
+/* ===== SECTIONS ===== */
+.intro-pourquoi,
+.ancien-section,
+.conclusion-pourquoi {
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+    color: #ddd;
+}
+
+.intro-pourquoi h2,
+.ancien-section h2,
+.conclusion-pourquoi h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* ===== IMAGE ANCIEN ===== */
+.ancien-img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 4px;
+    filter: brightness(85%);
+}
