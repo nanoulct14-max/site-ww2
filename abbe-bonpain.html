@@ -1,192 +1,125 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Abbé René Bonpain – Résistance Dunkerque</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background: #0b0c10;
-      color: #f5f5f5;
-      font-family: "Roboto", sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    .hero {
-      background: linear-gradient(135deg, #0b0c10 0%, #050509 60%);
-      padding: 40px 20px;
-      text-align: center;
-      border-bottom: 1px solid #1f1f1f;
-    }
-    .hero h1 {
-      font-family: "Cinzel", serif;
-      font-size: 2.6rem;
-      letter-spacing: 0.08em;
-      margin: 0;
-      text-transform: uppercase;
-    }
-    .hero h2 {
-      font-family: "Cinzel", serif;
-      font-size: 1rem;
-      letter-spacing: 0.25em;
-      color: #c49b3f;
-      margin-top: 10px;
-      text-transform: uppercase;
-    }
-    .hero p {
-      margin-top: 12px;
-      font-style: italic;
-      color: #b3b3b3;
-    }
-    .btn-top {
-      margin-top: 25px;
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-    }
-    .btn {
-      padding: 10px 20px;
-      border-radius: 999px;
-      background: #101118;
-      border: 1px solid #2b2d3a;
-      color: #f5f5f5;
-      text-decoration: none;
-      font-family: "Cinzel", serif;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      font-size: 0.85rem;
-    }
-    .container {
-      max-width: 1100px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    .panel {
-      background: #14151c;
-      border: 1px solid #2b2d3a;
-      padding: 20px;
-      margin-bottom: 30px;
-    }
-    .panel h3 {
-      font-family: "Cinzel", serif;
-      font-size: 1.2rem;
-      letter-spacing: 0.12em;
-      color: #c49b3f;
-      text-transform: uppercase;
-      margin-bottom: 12px;
-    }
-    .panel p {
-      color: #e0e0e0;
-      line-height: 1.6;
-      margin-bottom: 12px;
-    }
-    .gallery img {
-      width: 100%;
-      border: 1px solid #2b2d3a;
-      margin-bottom: 12px;
-    }
-    .return-bottom {
-      text-align: center;
-      margin: 50px 0 30px;
-    }
-    .return-bottom a {
-      padding: 12px 26px;
-      border-radius: 999px;
-      background: #0f1017;
-      border: 1px solid #2b2d3a;
-      color: #f5f5f5;
-      font-family: "Cinzel", serif;
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      font-size: 0.9rem;
-      text-decoration: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abbé René Bonpain – Musée HOP WW2</title>
+    <link rel="stylesheet" href="style.css?v=2">
 </head>
 
 <body>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>Abbé René Bonpain</h1>
-    <h2>Dunkerque – Rosendaël – Bondues</h2>
-    <p>« Bien volontiers, je dépenserai et je me dépenserai moi-même tout entier pour vos âmes. »</p>
+<header>
+    <nav>
+        <a href="index.html">ACCUEIL</a>
+        <a href="visages.html">VISAGES</a>
+        <a href="collections.html">COLLECTIONS</a>
+        <a href="guides.html">GUIDES</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+</header>
 
-    <div class="btn-top">
-      <a href="dunkerque.html" class="btn">← Retour Dunkerque</a>
-      <a href="visages.html" class="btn">Visages</a>
+<!-- HERO -->
+<section class="hero-section" style="background-image:url('images/dunkerque/portrait-ancien-bonpain-rene.jpg');">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-title-block">
+        <h2 class="hero-title-line1">
+            ABBÉ RENÉ BONPAIN<br>1908–1943
+        </h2>
+        <h3 class="hero-title-line2">
+            Résistant • Réseaux Alliance & Zéro‑France • Fusillé au Fort de Bondues
+        </h3>
     </div>
-  </section>
+</section>
 
-  <div class="container">
+<!-- IMAGE DOCUMENTAIRE PRINCIPALE -->
+<img src="images/dunkerque/portrait-ancien-bonpain-rene.jpg" class="fiche-image" alt="Abbé René Bonpain">
 
-    <!-- BIO -->
-    <div class="panel">
-      <h3>Biographie</h3>
-      <p>
-        Né le 15 octobre 1908 à Dunkerque, ordonné prêtre le 29 juin 1932 à Saint‑Sulpice (Paris), René Bonpain devient vicaire à Notre‑Dame de Rosendaël. Très proche de ses paroissiens, il anime patronage, chorale et œuvres de jeunesse.
-      </p>
-      <p>
-        Dès 1940, il entre en Résistance : réseaux <strong>Alliance</strong> et <strong>Zéro‑France</strong>, poste clandestine avec son frère Paul grâce à la mallette à double fond « Paulinette », aide aux jeunes pour éviter le STO, faux papiers, exfiltrations vers la zone libre.
-      </p>
-      <p>
-        Il devient l’adjoint de <strong>Louis Herbeaux (dit Tigre)</strong> dans Alliance, fournissant des plans côtiers et des renseignements sur la région de Dunkerque.
-      </p>
-    </div>
+<!-- FICHE MUSÉALE -->
 
-    <!-- ARRESTATION -->
-    <div class="panel">
-      <h3>Arrestation & Procès</h3>
-      <p>
-        Arrêté le 19 novembre 1942 à Rosendaël par la <strong>Geheimefeldpolizei</strong>, il est interné à Loos‑lès‑Lille.  
-        Le 19 mars 1943, le tribunal militaire allemand de Lille le condamne à mort pour « avoir favorisé l’ennemi » et pour participation à une organisation préparant l’insurrection armée.
-      </p>
-    </div>
+<div class="fiche-block">
+    <h2 class="section-title">Identité</h2>
+    <p><strong>Nom :</strong> René Bonpain</p>
+    <p><strong>Dates :</strong> 15 octobre 1908 – 30 mars 1943</p>
+    <p><strong>Origine :</strong> Dunkerque (Nord)</p>
+    <p><strong>Fonction :</strong> Prêtre catholique – Vicaire à Notre‑Dame de Rosendaël</p>
+</div>
 
-    <!-- EXECUTION -->
-    <div class="panel">
-      <h3>Exécution</h3>
-      <p>
-        L’avis officiel de l’<strong>Oberfeldkommandantur (V) 670</strong> liste René Bonpain parmi les condamnés à mort : Lanery, Herbeaux, Bonpain, Rousseau.
-      </p>
-      <p>
-        Le document allemand conclut : <strong>« Les jugements ont été exécutés »</strong>.  
-        René Bonpain est <strong>fusillé par les Allemands</strong> au <strong>Fort de Bondues</strong> le <strong>30 mars 1943</strong>.
-      </p>
-      <p>
-        En septembre 1944, sa tombe est retrouvée parmi celles des 68 fusillés du fort.
-      </p>
-    </div>
+<div class="fiche-block">
+    <h2 class="section-title">Présentation</h2>
+    <p>
+        L’abbé René Bonpain est l’une des figures les plus marquantes de la Résistance dans le Dunkerquois.
+        Prêtre profondément engagé auprès des jeunes, il entre dès 1940 dans les réseaux 
+        <strong>Alliance</strong> et <strong>Zéro‑France</strong>, spécialisés dans le renseignement militaire.
+    </p>
+    <p>
+        Avec son frère Paul, il met en place une poste clandestine grâce à une mallette à double fond 
+        surnommée « Paulinette », dissimulée dans des convois de charbon.  
+        Il aide également de nombreux jeunes à échapper au STO en leur procurant de faux papiers ou en les exfiltrant vers la zone libre.
+    </p>
+</div>
 
-    <!-- MEMOIRE -->
-    <div class="panel">
-      <h3>Mémoire</h3>
-      <p>
-        Après la Libération, Bonpain est honoré à Rosendaël, Bondues et Grande‑Synthe : bustes, écoles, timbre commémoratif.
-      </p>
-      <p>
-        À Bondues, la place entre la mairie et l’église devient officiellement <strong>Place de l’Abbé Bonpain</strong> par arrêté préfectoral du 20 septembre 1946.
-      </p>
-    </div>
+<div class="fiche-block">
+    <h2 class="section-title">Rôle dans la Résistance</h2>
+    <p>
+        Recruté dans le réseau Alliance comme adjoint de <strong>Louis Herbeaux (dit Tigre)</strong>, 
+        il fournit des plans côtiers, des informations sur les installations allemandes et des renseignements 
+        sur la région de Dunkerque.
+    </p>
+    <p>
+        Malgré le démantèlement progressif de son réseau, il refuse de fuir pour ne pas compromettre 
+        d’autres résistants. Son engagement est total, discret, mais déterminé.
+    </p>
+</div>
 
-    <!-- GALERIE -->
-    <div class="panel gallery">
-      <h3>Photographies & Documents</h3>
+<div class="fiche-block">
+    <h2 class="section-title">Arrestation et exécution</h2>
+    <p>
+        Arrêté le 19 novembre 1942 à Rosendaël par la <strong>Geheimefeldpolizei</strong>, 
+        il est interné à Loos‑lès‑Lille.  
+        Le 19 mars 1943, il est condamné à mort par le tribunal militaire allemand de Lille.
+    </p>
+    <p>
+        L’avis officiel de l’<strong>Oberfeldkommandantur (V) 670</strong> confirme sa condamnation 
+        aux côtés de Lanery, Herbeaux et Rousseau, et se conclut par la mention :  
+        <strong>« Les jugements ont été exécutés »</strong>.
+    </p>
+    <p>
+        René Bonpain est <strong>fusillé par les Allemands</strong> au <strong>Fort de Bondues</strong> 
+        le <strong>30 mars 1943</strong>.  
+        Sa tombe est retrouvée en 1944 parmi celles des 68 fusillés du fort.
+    </p>
+</div>
 
-      <img src="/site-ww2/images/dunkerque/portrait-ancien-bonpain-rene.jpg" alt="Portrait ancien Bonpain René">
-      <img src="/site-ww2/images/dunkerque/portrait-cadre-bonpain-rene.jpg" alt="Portrait encadré Bonpain René">
-      <img src="/site-ww2/images/dunkerque/1943-bondues-carte-mortuaire-bonpain-rene.jpg" alt="Carte mortuaire Bonpain René">
-      <img src="/site-ww2/images/dunkerque/1943-lille-oberfeldkommandantur-avis-condamnation-bonpain-rene.jpg" alt="Avis allemand Bonpain René">
-      <img src="/site-ww2/images/dunkerque/illustration-abbe-bonpain-rene-kommandantur.jpg" alt="Illustration Abbé Bonpain Kommandantur">
+<div class="fiche-block">
+    <h2 class="section-title">Mémoire</h2>
+    <p>
+        Après la Libération, sa mémoire est honorée à Rosendaël, Bondues et Grande‑Synthe : 
+        bustes, écoles, timbre commémoratif.
+    </p>
+    <p>
+        À Bondues, la place entre la mairie et l’église devient officiellement 
+        <strong>Place de l’Abbé Bonpain</strong> par arrêté préfectoral du 20 septembre 1946.
+    </p>
+</div>
 
-    </div>
+<!-- GALERIE PHOTOS RÉPARTIES COMME CHURCHILL -->
+<img src="images/dunkerque/portrait-cadre-bonpain-rene.jpg" class="fiche-image" alt="Portrait encadré Bonpain René">
 
-    <!-- BOUTON RETOUR VISAGES -->
-    <div class="return-bottom">
-      <a href="visages.html">← Retour visages</a>
-    </div>
+<img src="images/dunkerque/1943-bondues-carte-mortuaire-bonpain-rene.jpg" class="fiche-image" alt="Carte mortuaire Bonpain René">
 
-  </div>
+<img src="images/dunkerque/1943-lille-oberfeldkommandantur-avis-condamnation-bonpain-rene.jpg" class="fiche-image" alt="Avis allemand Bonpain René">
+
+<img src="images/dunkerque/illustration-abbe-bonpain-rene-kommandantur.jpg" class="fiche-image" alt="Illustration Abbé Bonpain devant la Kommandantur">
+
+<!-- RETOUR -->
+<a href="visages.html" class="menu-button">⬅ Retour aux visages</a>
+
+<footer class="site-footer">
+    <div class="footer-line"></div>
+    <p>© 2026 Musée HOP WW2 – Tous droits réservés.</p>
+</footer>
 
 </body>
 </html>
