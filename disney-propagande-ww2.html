@@ -11,7 +11,10 @@
 
 <body>
 
-<header>
+<header class="ww2-header">
+    <h1 class="site-title">MUSÉE HOP WW2</h1>
+    <p class="site-subtitle">Exploration historique de la Seconde Guerre mondiale</p>
+
     <nav>
         <a href="index.html">ACCUEIL</a>
         <a href="collections.html">COLLECTIONS</a>
@@ -19,114 +22,111 @@
         <a href="contact.html">CONTACT</a>
         <a href="mentions.html">MENTIONS LÉGALES</a>
     </nav>
+
+    <!-- PHOTO DISNEY DANS LE HEADER -->
+    <img src="images/disney/disney-der-fuehrers-face-poster-1943.jpg" 
+         alt="Disney WW2 Propagande" 
+         class="fiche-image">
 </header>
 
-<!-- HERO -->
-<section class="hero-section" style="background-image:url('images/hero.jpg');">
-    <div class="hero-overlay"></div>
+<main>
 
-    <div class="hero-title-block">
-        <h2 class="hero-title-line1">
-            DISNEY<br>& PROPAGANDE
-        </h2>
-        <h3 class="hero-title-line2">
-            Quand l’animation devient un outil politique (1942–1945)
-        </h3>
-    </div>
-</section>
+    <!-- INTRO -->
+    <section class="section">
+        <h2 class="section-title">Disney dans l’effort de guerre</h2>
+        <p class="section-intro">
+            Pendant la Seconde Guerre mondiale, les studios Disney deviennent un outil de communication stratégique.
+            Mickey, Donald et Goofy sont utilisés pour transmettre des messages patriotiques, financiers et anti-nazis.
+        </p>
+    </section>
 
-<!-- INTRO -->
-<h2 class="section-title">Contexte historique</h2>
-<p class="section-intro">
-    Pendant la Seconde Guerre mondiale, les studios Disney sont sollicités par le gouvernement américain pour produire 
-    des films, affiches et supports de propagande. Mickey, Donald et Goofy deviennent des vecteurs de patriotisme, 
-    d’humour stratégique et de critique des régimes totalitaires.
-</p>
+    <!-- GALERIE 1 -->
+    <section class="section">
+        <h2 class="section-title">Affiches & documents de propagande</h2>
 
-<!-- SECTION 1 -->
-<h2 class="section-title">Affiches & documents de propagande</h2>
+        <div class="gallery">
 
-<div class="gallery">
+            <figure>
+                <img src="images/disney/disney-der-fuehrers-face-poster-1943.jpg" alt="Der Fuehrer's Face">
+                <figcaption>
+                    <strong>Der Fuehrer's Face</strong> (1943). Satire violente du régime nazi avec Donald Duck.
+                    <div class="tag">Anti-nazisme · Satire</div>
+                </figcaption>
+            </figure>
 
-    <figure>
-        <img src="images/dis/disney-der-fuehrers-face-poster-1943.jpg" alt="Der Fuehrer's Face 1943">
-        <figcaption>
-            <strong>Der Fuehrer's Face</strong> (1943). Donald Duck plongé dans une satire anti-nazie dénonçant 
-            l’absurdité du totalitarisme.
-            <div class="tag">Anti-nazisme · Satire</div>
-        </figcaption>
-    </figure>
+            <figure>
+                <img src="images/disney/disney-mickey-defense-bonds-poster-1942.jpg" alt="Mickey Defense Bonds">
+                <figcaption>
+                    Affiche patriotique encourageant l’achat des <em>Defense Bonds</em>.
+                    <div class="tag">Patriotisme · Bonds</div>
+                </figcaption>
+            </figure>
 
-    <figure>
-        <img src="images/dis/disney-mickey-defense-bonds-poster-1942.jpg" alt="Mickey Defense Bonds 1942">
-        <figcaption>
-            Affiche patriotique où <strong>Mickey</strong> encourage l’achat des <em>Defense Bonds</em>. 
-            Mobilisation financière du public américain.
-            <div class="tag">Patriotisme · Bonds</div>
-        </figcaption>
-    </figure>
+        </div>
+    </section>
 
-    <figure>
-        <img src="images/dis/disney-donald-nazi-propaganda-frame.jpg" alt="Donald propagande nazie">
-        <figcaption>
-            Donald confronté à l’iconographie nazie : drapeaux, slogans, symboles. Une critique directe de l’endoctrinement.
-            <div class="tag">Caricature · Iconographie</div>
-        </figcaption>
-    </figure>
+    <!-- GALERIE 2 -->
+    <section class="section">
+        <h2 class="section-title">Iconographie & caricature</h2>
 
-    <figure>
-        <img src="images/dis/disney-comics-stories-july-1942-cover.jpg" alt="Comics Disney 1942">
-        <figcaption>
-            <strong>Walt Disney’s Comics and Stories</strong> (juillet 1942). Donald en uniforme, drapeau américain, 
-            mobilisation populaire.
-            <div class="tag">Comics · Mobilisation</div>
-        </figcaption>
-    </figure>
+        <div class="gallery">
 
-</div>
+            <figure>
+                <img src="images/disney/disney-donald-nazi-propaganda-frame.jpg" alt="Donald propagande nazie">
+                <figcaption>
+                    Donald confronté à l’iconographie nazie : drapeaux, slogans, symboles.
+                    <div class="tag">Caricature · Iconographie</div>
+                </figcaption>
+            </figure>
 
-<!-- SECTION 2 -->
-<h2 class="section-title">Films de propagande</h2>
+            <figure>
+                <img src="images/disney/disney-comics-stories-july-1942-cover.jpg" alt="Comics Disney 1942">
+                <figcaption>
+                    <strong>Walt Disney’s Comics and Stories</strong> (juillet 1942). Mobilisation populaire.
+                    <div class="tag">Comics · Mobilisation</div>
+                </figcaption>
+            </figure>
 
-<p class="section-intro">
-    Plusieurs courts-métrages Disney sont conçus comme des outils de communication politique. 
-    L’animation permet de transmettre des messages complexes de manière accessible.
-</p>
+        </div>
+    </section>
 
-<ul class="section-list">
-    <li><strong>Education for Death</strong> – L’endoctrinement d’un enfant allemand.</li>
-    <li><strong>Victory Through Air Power</strong> – Influence sur la stratégie militaire américaine.</li>
-    <li><strong>Der Fuehrer's Face</strong> – Satire du régime nazi.</li>
-</ul>
+    <!-- FILMS -->
+    <section class="section">
+        <h2 class="section-title">Films de propagande</h2>
+        <p class="section-intro">
+            Disney produit plusieurs courts-métrages destinés à influencer l’opinion publique et soutenir l’effort de guerre.
+        </p>
 
-<!-- SECTION 3 -->
-<h2 class="section-title">Lecture critique</h2>
+        <ul class="section-list">
+            <li><strong>Education for Death</strong> – Endoctrinement d’un enfant allemand.</li>
+            <li><strong>Victory Through Air Power</strong> – Influence sur la stratégie militaire américaine.</li>
+            <li><strong>Der Fuehrer's Face</strong> – Satire du régime nazi.</li>
+        </ul>
+    </section>
 
-<p class="section-intro">
-    Étudier Disney pendant la guerre, c’est analyser la frontière entre divertissement et propagande. 
-    Les personnages familiers rendent les messages plus acceptables et plus efficaces.
-</p>
+    <!-- LECTURE CRITIQUE -->
+    <section class="section">
+        <h2 class="section-title">Lecture critique</h2>
+        <p class="section-intro">
+            L’animation permet de transmettre des messages politiques de manière accessible, humoristique et mémorable.
+        </p>
 
-<div class="quote-block">
-    « La propagande la plus efficace n’est pas celle qui ressemble à un discours officiel, 
-    mais celle qui se glisse dans les images et les personnages que l’on croit innocents. »
-</div>
+        <div class="quote-block">
+            « La propagande la plus efficace n’est pas celle qui ressemble à un discours officiel,
+            mais celle qui se glisse dans les images et les personnages que l’on croit innocents. »
+        </div>
+    </section>
 
-<!-- SECTION 4 -->
-<h2 class="section-title">Mémoire & représentation</h2>
+    <!-- ⭐ BOUTON RETOUR HISTOIRE & MÉMOIRE -->
+    <a href="histoire-memoire.html" class="menu-button">⬅ Retour à Histoire & Mémoire</a>
 
-<p class="section-intro">
-    Aujourd’hui, ces documents sont étudiés comme des sources historiques. Ils montrent comment la guerre s’invite 
-    dans la culture populaire et influence notre mémoire collective.
-</p>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-line"></div>
+        <p>© 2026 Musée HOP WW2 – Tous droits réservés.</p>
+    </footer>
 
-<!-- RETOUR -->
-<a href="index.html" class="menu-button">⬅ Retour à l'accueil</a>
-
-<footer class="site-footer">
-    <div class="footer-line"></div>
-    <p>© 2026 Musée HOP WW2 – Tous droits réservés.</p>
-</footer>
+</main>
 
 </body>
 </html>
