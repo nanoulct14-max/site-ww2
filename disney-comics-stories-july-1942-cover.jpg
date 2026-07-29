@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Disney et la propagande WW2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            background-color: #0b0c10;
+            color: #e5e5e5;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        }
+        header {
+            background-color: #050608;
+            border-bottom: 1px solid #222;
+        }
+        .hero {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 24px 16px;
+        }
+        .hero-title {
+            font-size: 2.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: #f5f5f5;
+        }
+        .hero-subtitle {
+            margin-top: 8px;
+            font-size: 0.95rem;
+            color: #b0b0b0;
+        }
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px 16px 40px 16px;
+        }
+        .section {
+            border-top: 1px solid #222;
+            margin-top: 24px;
+            padding-top: 20px;
+        }
+        .section-title {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #f0f0f0;
+            margin-bottom: 10px;
+        }
+        .section-intro {
+            font-size: 0.95rem;
+            color: #c4c4c4;
+            margin-bottom: 14px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+        figure {
+            border: 1px solid #222;
+            background-color: #090a0f;
+            padding: 8px;
+            margin: 0;
+        }
+        figure img {
+            width: 100%;
+            display: block;
+        }
+        figcaption {
+            margin-top: 6px;
+            font-size: 0.8rem;
+            color: #c0c0c0;
+        }
+        .tag {
+            margin-top: 4px;
+            font-size: 0.75rem;
+            color: #9a9a9a;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+        .footer-nav {
+            border-top: 1px solid #222;
+            margin-top: 30px;
+            padding-top: 14px;
+            font-size: 0.85rem;
+            color: #9a9a9a;
+            display: flex;
+            justify-content: space-between;
+        }
+        .btn-back {
+            border: 1px solid #444;
+            padding: 6px 10px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #e5e5e5;
+        }
+        @media(max-width:900px){
+            .gallery { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="hero">
+        <div class="hero-title">Disney et la propagande WW2</div>
+        <div class="hero-subtitle">
+            Comment Mickey, Donald et les studios Disney ont été utilisés pour soutenir l’effort de guerre.
+        </div>
+    </div>
+</header>
+
+<main>
+
+    <section class="section">
+        <div class="section-title">Affiches et documents de propagande</div>
+        <p class="section-intro">
+            Les personnages Disney deviennent des outils de communication politique : patriotisme, bonds de défense,
+            anti-nazisme, mobilisation du public américain.
+        </p>
+
+        <div class="gallery">
+
+            <!-- Der Fuehrer's Face -->
+            <figure>
+                <img src="/images/disney/disney-der-fuehrers-face-poster-1943.jpg" alt="Poster Der Fuehrer's Face">
+                <figcaption>
+                    Affiche du film <strong>Der Fuehrer's Face</strong> (1943). Donald Duck dans une satire violente
+                    du régime nazi, utilisée comme propagande anti-totalitaire.
+                    <div class="tag">Anti-nazisme · Cinéma d’animation</div>
+                </figcaption>
+            </figure>
+
+            <!-- Mickey Bonds -->
+            <figure>
+                <img src="/images/disney/disney-mickey-defense-bonds-poster-1942.jpg" alt="Poster Mickey Bonds">
+                <figcaption>
+                    Affiche patriotique avec <strong>Mickey Mouse</strong> encourageant l’achat de <em>Defense Bonds</em>.
+                    Un message direct : soutenir financièrement l’effort de guerre.
+                    <div class="tag">Patriotisme · Bonds de défense</div>
+                </figcaption>
+            </figure>
+
+            <!-- Donald nazi frame -->
+            <figure>
+                <img src="/images/disney/disney-donald-nazi-propaganda-frame.jpg" alt="Donald Duck propagande nazie">
+                <figcaption>
+                    Image de propagande où Donald est confronté à l’iconographie nazie. Illustration de l’endoctrinement
+                    et de la critique du totalitarisme.
+                    <div class="tag">Caricature · Iconographie nazie</div>
+                </figcaption>
+            </figure>
+
+            <!-- Comics 1942 -->
+            <figure>
+                <img src="/images/disney/disney-comics-stories-july-1942-cover.jpg" alt="Disney Comics 1942">
+                <figcaption>
+                    Couverture de <strong>Walt Disney’s Comics and Stories</strong> (juillet 1942). Donald en uniforme,
+                    drapeau américain, mobilisation populaire.
+                    <div class="tag">Comics · Mobilisation patriotique</div>
+                </figcaption>
+            </figure>
+
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-title">Lecture historique</div>
+        <p class="section-intro">
+            Ces documents montrent comment Disney a participé à la construction du patriotisme américain et à la
+            dénonciation des régimes ennemis. L’animation devient un outil politique puissant.
+        </p>
+    </section>
+
+    <div class="footer-nav">
+        <a class="btn-back" href="#">Retour</a>
+        <div>Page Disney WW2 · Musée HOP</div>
+    </div>
+
+</main>
+
+</body>
+</html>
