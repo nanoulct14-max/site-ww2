@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Disney et la propagande WW2</title>
+    <title>Disney et la propagande WW2 · Musée HOP</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
@@ -31,6 +31,13 @@
             font-size: 0.95rem;
             color: #b0b0b0;
         }
+        .hero-meta {
+            margin-top: 10px;
+            font-size: 0.8rem;
+            color: #8c8c8c;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+        }
         main {
             max-width: 1100px;
             margin: 0 auto;
@@ -38,7 +45,7 @@
         }
         .section {
             border-top: 1px solid #222;
-            margin-top: 24px;
+            margin-top: 26px;
             padding-top: 20px;
         }
         .section-title {
@@ -53,10 +60,16 @@
             color: #c4c4c4;
             margin-bottom: 14px;
         }
+        .section-text {
+            font-size: 0.9rem;
+            color: #d0d0d0;
+            line-height: 1.5;
+        }
         .gallery {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 18px;
+            margin-top: 14px;
         }
         figure {
             border: 1px solid #222;
@@ -80,9 +93,22 @@
             text-transform: uppercase;
             letter-spacing: 0.08em;
         }
+        .inline-tag {
+            font-size: 0.75rem;
+            color: #9a9a9a;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+        .quote-block {
+            border-left: 2px solid #444;
+            padding-left: 10px;
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #c8c8c8;
+        }
         .footer-nav {
             border-top: 1px solid #222;
-            margin-top: 30px;
+            margin-top: 32px;
             padding-top: 14px;
             font-size: 0.85rem;
             color: #9a9a9a;
@@ -96,6 +122,7 @@
             text-transform: uppercase;
             letter-spacing: 0.08em;
             color: #e5e5e5;
+            text-decoration: none;
         }
         @media(max-width:900px){
             .gallery { grid-template-columns: 1fr; }
@@ -108,18 +135,42 @@
     <div class="hero">
         <div class="hero-title">Disney et la propagande WW2</div>
         <div class="hero-subtitle">
-            Comment Mickey, Donald et les studios Disney ont été utilisés pour soutenir l’effort de guerre.
+            Comment Mickey, Donald et les studios Disney deviennent des vecteurs de patriotisme, de mobilisation et de critique des régimes totalitaires pendant la Seconde Guerre mondiale.
+        </div>
+        <div class="hero-meta">
+            Propagande · Cinéma d’animation · Culture populaire
         </div>
     </div>
 </header>
 
 <main>
 
+    <!-- Contexte général -->
+    <section class="section">
+        <div class="section-title">Contexte : Disney dans l’effort de guerre</div>
+        <p class="section-intro">
+            Dès l’entrée en guerre des États-Unis, les studios Disney sont sollicités pour produire des films, affiches et
+            supports visuels au service de la propagande. L’animation devient un langage politique.
+        </p>
+        <div class="section-text">
+            Les personnages déjà connus du grand public – <strong>Mickey Mouse</strong>, <strong>Donald Duck</strong>,
+            <strong>Goofy</strong> – sont réutilisés pour porter des messages de :
+            patriotisme, soutien financier à l’effort de guerre, dénonciation du nazisme et mobilisation des civils.
+            <br><br>
+            L’objectif est double :
+            <ul>
+                <li>Informer et convaincre, sans passer par un discours militaire classique.</li>
+                <li>Utiliser l’humour et la caricature pour rendre la propagande plus acceptable et mémorable.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Affiches et documents -->
     <section class="section">
         <div class="section-title">Affiches et documents de propagande</div>
         <p class="section-intro">
-            Les personnages Disney deviennent des outils de communication politique : patriotisme, bonds de défense,
-            anti-nazisme, mobilisation du public américain.
+            Les visuels Disney sont intégrés dans des campagnes officielles : bonds de défense, soutien aux troupes,
+            caricature des régimes ennemis. La culture populaire devient un outil stratégique.
         </p>
 
         <div class="gallery">
@@ -128,28 +179,28 @@
             <figure>
                 <img src="/images/disney/disney-der-fuehrers-face-poster-1943.jpg" alt="Poster Der Fuehrer's Face">
                 <figcaption>
-                    Affiche du film <strong>Der Fuehrer's Face</strong> (1943). Donald Duck dans une satire violente
-                    du régime nazi, utilisée comme propagande anti-totalitaire.
-                    <div class="tag">Anti-nazisme · Cinéma d’animation</div>
+                    Affiche du film <strong>Der Fuehrer's Face</strong> (1943). Donald Duck plongé dans un univers nazi
+                    absurde et oppressant. Le film ridiculise le totalitarisme et sert de propagande anti-nazie.
+                    <div class="tag">Anti-nazisme · Satire politique</div>
                 </figcaption>
             </figure>
 
-            <!-- Mickey Bonds -->
+            <!-- Mickey Defense Bonds -->
             <figure>
-                <img src="/images/disney/disney-mickey-defense-bonds-poster-1942.jpg" alt="Poster Mickey Bonds">
+                <img src="/images/disney/disney-mickey-defense-bonds-poster-1942.jpg" alt="Poster Mickey Defense Bonds">
                 <figcaption>
                     Affiche patriotique avec <strong>Mickey Mouse</strong> encourageant l’achat de <em>Defense Bonds</em>.
-                    Un message direct : soutenir financièrement l’effort de guerre.
+                    Le message est direct : chaque citoyen peut soutenir la guerre par un geste financier.
                     <div class="tag">Patriotisme · Bonds de défense</div>
                 </figcaption>
             </figure>
 
-            <!-- Donald nazi frame -->
+            <!-- Donald et iconographie nazie -->
             <figure>
                 <img src="/images/disney/disney-donald-nazi-propaganda-frame.jpg" alt="Donald Duck propagande nazie">
                 <figcaption>
-                    Image de propagande où Donald est confronté à l’iconographie nazie. Illustration de l’endoctrinement
-                    et de la critique du totalitarisme.
+                    Image où Donald est confronté à l’iconographie nazie : drapeaux, croix gammées, slogans.
+                    L’animation montre l’endoctrinement, la répétition des symboles et la perte de liberté.
                     <div class="tag">Caricature · Iconographie nazie</div>
                 </figcaption>
             </figure>
@@ -159,7 +210,7 @@
                 <img src="/images/disney/disney-comics-stories-july-1942-cover.jpg" alt="Disney Comics 1942">
                 <figcaption>
                     Couverture de <strong>Walt Disney’s Comics and Stories</strong> (juillet 1942). Donald en uniforme,
-                    drapeau américain, mobilisation populaire.
+                    drapeau américain, mise en scène de la mobilisation populaire et de l’unité nationale.
                     <div class="tag">Comics · Mobilisation patriotique</div>
                 </figcaption>
             </figure>
@@ -167,17 +218,68 @@
         </div>
     </section>
 
+    <!-- Films de propagande -->
     <section class="section">
-        <div class="section-title">Lecture historique</div>
+        <div class="section-title">Films de propagande et messages</div>
         <p class="section-intro">
-            Ces documents montrent comment Disney a participé à la construction du patriotisme américain et à la
-            dénonciation des régimes ennemis. L’animation devient un outil politique puissant.
+            Au-delà des affiches, plusieurs courts-métrages Disney sont conçus comme des outils de propagande explicites,
+            destinés à soutenir l’effort de guerre et à orienter l’opinion publique.
         </p>
+        <div class="section-text">
+            Parmi les exemples les plus marquants :
+            <ul>
+                <li><strong>Der Fuehrer's Face</strong> : satire du régime nazi, montrant la vie sous dictature comme un cauchemar.</li>
+                <li><strong>Education for Death</strong> : description de l’endoctrinement d’un enfant allemand, du berceau au champ de bataille.</li>
+                <li><strong>Victory Through Air Power</strong> : plaidoyer pour la puissance aérienne, influençant même certains décideurs militaires.</li>
+            </ul>
+            Ces films combinent humour, caricature et scènes sombres pour rendre la propagande plus efficace, tout en restant
+            accessibles au grand public.
+        </div>
     </section>
 
+    <!-- Lecture critique -->
+    <section class="section">
+        <div class="section-title">Lecture historique et critique</div>
+        <p class="section-intro">
+            Étudier Disney pendant la Seconde Guerre mondiale, c’est analyser la frontière entre divertissement et propagande,
+            entre culture populaire et outil politique.
+        </p>
+        <div class="section-text">
+            Les studios Disney ne sont pas isolés : ils s’inscrivent dans un ensemble plus large de productions culturelles
+            mobilisées par l’État américain. La présence de personnages familiers permet :
+            <ul>
+                <li>De rendre les messages plus acceptables.</li>
+                <li>De toucher un public très large, y compris les enfants.</li>
+                <li>De normaliser certains discours patriotiques et anti-ennemis.</li>
+            </ul>
+            <div class="quote-block">
+                « La propagande la plus efficace n’est pas toujours celle qui ressemble à un discours officiel,
+                mais celle qui se glisse dans les images, les histoires et les personnages que l’on croit innocents. »
+            </div>
+        </div>
+    </section>
+
+    <!-- Métadonnées / mention musée -->
+    <section class="section">
+        <div class="section-title">Disney, mémoire et représentation de la guerre</div>
+        <p class="section-intro">
+            Aujourd’hui, ces documents sont étudiés comme des sources historiques à part entière. Ils témoignent de la manière
+            dont la guerre s’invite dans la culture populaire et façonne notre mémoire collective.
+        </p>
+        <div class="section-text">
+            Au <span class="inline-tag">Musée HOP</span>, cette page s’inscrit dans une réflexion plus large sur :
+            <ul>
+                <li>Les symboles, les images et les récits de la Seconde Guerre mondiale.</li>
+                <li>La façon dont la propagande utilise l’émotion, l’humour et la familiarité.</li>
+                <li>Le rôle des studios, des artistes et des créateurs dans la construction du patriotisme et de la critique des régimes ennemis.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Navigation pied de page -->
     <div class="footer-nav">
         <a class="btn-back" href="#">Retour</a>
-        <div>Page Disney WW2 · Musée HOP</div>
+        <div>Page Disney et propagande WW2 · Musée HOP</div>
     </div>
 
 </main>
