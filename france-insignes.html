@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>France – Insignes WW2</title>
 
-    <!-- STYLES MUSÉE HOP + TEXTE PLUS GRAND -->
+    <!-- STYLES MUSÉE HOP -->
     <link rel="stylesheet" href="style.css?v=3">
     <link rel="stylesheet" href="style-mobile.css?v=3">
 
     <style>
-        /* AGRANDISSEMENT DU TEXTE */
+        /* TEXTE PLUS GRAND */
         body {
             font-size: 20px;
             line-height: 1.6;
@@ -21,13 +21,16 @@
             margin-top: 40px;
         }
 
-        .fiche-block p {
+        .fiche-block p,
+        .fiche-content p {
             font-size: 20px;
         }
 
+        /* PHOTOS CENTRÉES COMME L’AUTRE FICHE */
         .fiche-image {
-            width: 100%;
-            margin: 25px 0;
+            display: block;
+            margin: 30px auto;
+            max-width: 100%;
         }
     </style>
 </head>
@@ -44,7 +47,7 @@
     </nav>
 </header>
 
-<!-- HERO CINÉMATIQUE -->
+<!-- HERO -->
 <section class="hero-section" style="background-image:url('images/france-hero.jpg'); background-position:center;">
     <div class="hero-overlay"></div>
 
@@ -56,9 +59,7 @@
 
 <div class="fiche-content">
 
-    <!-- ========================= -->
-    <!-- INTRODUCTION -->
-    <!-- ========================= -->
+    <!-- INTRO -->
     <div class="fiche-block">
         <h2 class="section-title">Introduction</h2>
         <p>
@@ -72,138 +73,97 @@
             Chaque insigne possède une histoire, une signification et une identité visuelle propre. Certains 
             reprennent des emblèmes anciens (cor de chasse, ancre, grenade), d’autres sont créés durant 
             l’entre‑deux‑guerres ou pendant le conflit. Ils témoignent de la diversité des forces françaises 
-            engagées entre 1939 et 1945, qu’il s’agisse de l’armée d’avant-guerre, de l’armée reconstituée 
-            après 1940, des Forces Françaises Libres ou des unités de la Résistance.
+            engagées entre 1939 et 1945.
         </p>
         <p>
             Cette fiche présente, de manière muséale et structurée, les principaux insignes français de la période 
-            1939–1945, classés par catégories pour faciliter la lecture et la compréhension.
+            1939–1945, classés par catégories pour faciliter la lecture.
         </p>
     </div>
 
-    <!-- ========================= -->
     <!-- 1 — INFANTERIE -->
-    <!-- ========================= -->
     <h2 class="section-title">Infanterie</h2>
     <p>
         L’infanterie constitue le cœur de l’armée française durant la Seconde Guerre mondiale. Ses insignes 
         reprennent des symboles historiques comme le cor de chasse ou la grenade, témoignant de traditions 
         militaires anciennes et profondément ancrées.
     </p>
-
     <img src="images/FRANCE_INFANTERIE_WW2_PLAN_01.jpg" class="fiche-image" alt="Insignes Infanterie WW2">
 
-
-    <!-- ========================= -->
     <!-- 2 — CHASSEURS & ALPINS -->
-    <!-- ========================= -->
     <h2 class="section-title">Chasseurs & Alpins</h2>
     <p>
         Les chasseurs et les troupes alpines sont des unités légères, rapides et spécialisées dans le combat 
         en terrain difficile. Le cor de chasse symbolise leur mobilité et leur esprit de corps.
     </p>
-
     <img src="images/FRANCE_CHASSEURS_ALPINS_WW2_PLAN_02.jpg" class="fiche-image" alt="Insignes Chasseurs Alpins WW2">
 
-
-    <!-- ========================= -->
     <!-- 3 — CAVALERIE & BLINDÉS -->
-    <!-- ========================= -->
     <h2 class="section-title">Cavalerie & Blindés</h2>
     <p>
         Héritière de la cavalerie traditionnelle, la cavalerie blindée adopte de nouveaux insignes durant la 
         période 1939–1945. Ils reflètent la transition entre les unités montées et les régiments mécanisés.
     </p>
-
     <img src="images/FRANCE_CAVALERIE_BLINDES_WW2_PLAN_03.jpg" class="fiche-image" alt="Insignes Cavalerie Blindés WW2">
 
-
-    <!-- ========================= -->
     <!-- 4 — ARTILLERIE -->
-    <!-- ========================= -->
     <h2 class="section-title">Artillerie</h2>
     <p>
         L’artillerie joue un rôle majeur dans les opérations françaises, fournissant appui, défense et 
         puissance de feu. Ses insignes mettent en avant la grenade enflammée ou les canons croisés.
     </p>
-
     <img src="images/FRANCE_ARTILLERIE_WW2_PLAN_04.jpg" class="fiche-image" alt="Insignes Artillerie WW2">
 
-
-    <!-- ========================= -->
     <!-- 5 — GÉNIE -->
-    <!-- ========================= -->
     <h2 class="section-title">Génie</h2>
     <p>
         Le génie militaire regroupe les unités spécialisées dans la construction, la destruction, le 
         franchissement et l’aménagement du terrain. Leurs insignes évoquent la technique et la maîtrise 
         des infrastructures.
     </p>
-
     <img src="images/FRANCE_GENIE_WW2_PLAN_05.jpg" class="fiche-image" alt="Insignes Génie WW2">
 
-
-    <!-- ========================= -->
     <!-- 6 — SERVICES -->
-    <!-- ========================= -->
     <h2 class="section-title">Train – Santé – Intendance – Transmissions</h2>
     <p>
         Ces services assurent le fonctionnement quotidien de l’armée : transport, soins, ravitaillement, 
         communication. Leurs insignes mettent en avant la logistique et la coordination.
     </p>
-
     <img src="images/FRANCE_SERVICES_WW2_PLAN_06.jpg" class="fiche-image" alt="Insignes Services WW2">
 
-
-    <!-- ========================= -->
     <!-- 7 — COLONIALES & LÉGION -->
-    <!-- ========================= -->
     <h2 class="section-title">Troupes Coloniales & Légion Étrangère</h2>
     <p>
         Les troupes coloniales et la Légion étrangère possèdent des insignes parmi les plus emblématiques 
         de l’armée française. Ils reflètent la diversité des origines et la tradition du service outre‑mer.
     </p>
-
     <img src="images/FRANCE_COLONIALES_LEGION_WW2_PLAN_07.jpg" class="fiche-image" alt="Insignes Coloniales Légion WW2">
 
-
-    <!-- ========================= -->
     <!-- 8 — MARINE NATIONALE -->
-    <!-- ========================= -->
     <h2 class="section-title">Marine Nationale</h2>
     <p>
         Les insignes de la Marine nationale mettent en avant l’ancre, symbole universel des forces navales. 
         Ils représentent les équipages et les spécialités maritimes engagées durant la guerre.
     </p>
-
     <img src="images/FRANCE_MARINE_WW2_PLAN_08.jpg" class="fiche-image" alt="Insignes Marine Nationale WW2">
 
-
-    <!-- ========================= -->
     <!-- 9 — ARMÉE DE L’AIR -->
-    <!-- ========================= -->
     <h2 class="section-title">Armée de l’Air</h2>
     <p>
         L’Armée de l’Air adopte des insignes modernes, inspirés de l’aviation naissante de l’entre‑deux‑guerres. 
         Ailes stylisées et emblèmes techniques symbolisent la vitesse et l’innovation.
     </p>
-
     <img src="images/FRANCE_ARMEE_AIR_WW2_PLAN_09.jpg" class="fiche-image" alt="Insignes Armée de l’Air WW2">
 
-
-    <!-- ========================= -->
     <!-- 10 — FFL & RÉSISTANCE -->
-    <!-- ========================= -->
     <h2 class="section-title">Forces Françaises Libres & Résistance</h2>
     <p>
         Les insignes des FFL et de la Résistance incarnent la lutte pour la libération du territoire. Croix de 
         Lorraine et symboles clandestins témoignent du courage des combattants engagés contre l’occupant.
     </p>
-
     <img src="images/FRANCE_FFL_RESISTANCE_WW2_PLAN_10.jpg" class="fiche-image" alt="Insignes FFL Résistance WW2">
 
-
-    <!-- BOUTON RETOUR COLLECTIONS FRANÇAISES -->
+    <!-- RETOUR -->
     <div class="center" style="margin-top:40px; margin-bottom:40px;">
         <a href="france.html" class="menu-button">⬅ Retour aux collections françaises</a>
     </div>
