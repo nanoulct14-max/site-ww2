@@ -7,6 +7,14 @@
     <!-- STYLES MUSÉE HOP -->
     <link rel="stylesheet" href="style.css?v=3">
     <link rel="stylesheet" href="style-mobile.css?v=3">
+
+    <!-- Uniformisation de la taille des paragraphes -->
+    <style>
+        .fiche-content p {
+            font-size: 18px !important;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
 
@@ -109,23 +117,24 @@
          class="fiche-image"
          alt="Couverture du comic Popeye and the Jeep mettant en scène Eugene the Jeep">
 
-    <!-- PARAGRAPHE LIEN ENTRE EUGENE THE JEEP ET LA JEEP MILITAIRE -->
-    <p>
-        Sur l’image, on voit <strong>Eugene the Jeep</strong>, le petit animal jaune magique de l’univers Popeye.
-        Capable de se téléporter et de passer partout, il devient dans les années 1930 un symbole de mobilité
-        totale. Lorsque les soldats américains découvrent la nouvelle <strong>Jeep Willys MB</strong>, un véhicule
-        léger franchissant tous les terrains, ils font immédiatement le parallèle : « elle passe partout comme
-        le Jeep ! ». Ce surnom issu d’un dessin animé deviendra officiellement le nom du véhicule militaire le
-        plus emblématique de la Seconde Guerre mondiale.
-    </p>
+    <!-- PARAGRAPHE AJOUTÉ (MAINTENANT À LA BONNE TAILLE) -->
+    <div class="fiche-block">
+        <p>
+            Sur l’image, on voit <strong>Eugene the Jeep</strong>, le petit animal jaune magique de l’univers Popeye.
+            Capable de se téléporter et de passer partout, il devient dans les années 1930 un symbole de mobilité
+            totale. Lorsque les soldats américains découvrent la nouvelle <strong>Jeep Willys MB</strong>, un véhicule
+            léger franchissant tous les terrains, ils font immédiatement le parallèle : « elle passe partout comme
+            le Jeep ! ». Ce surnom issu d’un dessin animé deviendra officiellement le nom du véhicule militaire le
+            plus emblématique de la Seconde Guerre mondiale.
+        </p>
 
-    <!-- BOUTON VERS L’EXTRAIT DU DESSIN ANIMÉ -->
-    <div style="text-align:center; margin-top:30px;">
-        <a href="https://youtu.be/3xR_EI2wxNk"
-           class="menu-button"
-           target="_blank">
-            ▶ Voir l’extrait Popeye – Eugene the Jeep passe partout
-        </a>
+        <div style="text-align:center; margin-top:30px;">
+            <a href="https://youtu.be/3xR_EI2wxNk"
+               class="menu-button"
+               target="_blank">
+                ▶ Voir l’extrait Popeye – Eugene the Jeep passe partout
+            </a>
+        </div>
     </div>
 
     <!-- JEEP MILITAIRE -->
