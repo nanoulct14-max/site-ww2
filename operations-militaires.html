@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opérations Militaires – Musée HOP WW2</title>
 
-    <!-- STYLES -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=3">
     <link rel="stylesheet" href="style-mobile.css">
 </head>
 
 <body>
 
+<!-- HEADER OFFICIEL -->
 <header>
-    <nav>
-        <a href="index.html">ACCUEIL</a>
-        <a href="collections.html">COLLECTIONS</a>
-        <a href="guides.html">GUIDES</a>
-        <a href="contact.html">CONTACT</a>
-        <a href="mentions.html">MENTIONS LÉGALES</a>
+    <nav style="display:flex; gap:22px; align-items:center; justify-content:center;">
+        <a href="index.html" style="font-size:18px; letter-spacing:0.5px;">MENU</a>
+        <a href="a-propos.html" style="font-size:18px; letter-spacing:0.5px;">À PROPOS</a>
+        <a href="contact.html" style="font-size:18px; letter-spacing:0.5px;">CONTACT</a>
+        <a href="mentions.html" style="font-size:18px; letter-spacing:0.5px;">MENTIONS LÉGALES</a>
+        <a href="presentation.html" style="font-size:18px; letter-spacing:0.5px;">PRÉSENTATION</a>
     </nav>
 </header>
 
-<!-- HERO IDENTIQUE À L’ACCUEIL -->
+<!-- HERO -->
 <section class="hero-section" style="background-image:url('images/hero.jpg');">
     <div class="hero-overlay"></div>
 
@@ -33,6 +33,8 @@
         <h3 class="hero-title-line2">Les grandes actions militaires de la Seconde Guerre mondiale</h3>
     </div>
 </section>
+
+<section class="section">
 
 <!-- DÉBARQUEMENTS -->
 <h2 class="section-title">Débarquements</h2>
@@ -50,8 +52,12 @@
 <a class="operation-link" href="bataille-france.html">Bataille de France</a>
 <a class="operation-link" href="bataille-dunkerque-1940.html">Bataille de Dunkerque (1940)</a>
 <a class="operation-link" href="siege-dunkerque-1944-1945.html">Siège de Dunkerque (1944–1945)</a>
-<a class="operation-link" href="liberation-dunkerque-9mai1945.html">Libération de Dunkerque (9 mai 1945)</a> 
 <a class="operation-link" href="el-alamein.html">Bataille d’El-Alamein</a>
+
+<!-- LIBÉRATIONS -->
+<h2 class="section-title">Libérations</h2>
+<a class="operation-link" href="liberation-paris.html">Libération de Paris (24–25 août 1944)</a>
+<a class="operation-link" href="liberation-dunkerque-9mai1945.html">Libération de Dunkerque (9 mai 1945)</a>
 
 <!-- OPÉRATIONS SPÉCIALES -->
 <h2 class="section-title">Opérations spéciales</h2>
@@ -70,24 +76,20 @@
 <a class="operation-link" href="hambourg.html">Dévastation d’Hambourg</a>
 <a class="operation-link" href="pearl-harbor.html">Attaque de Pearl Harbor</a>
 
-<!-- RETOUR ACCUEIL -->
+<!-- RETOUR -->
 <a href="index.html" class="menu-button">⬅ Retour à l'accueil</a>
 
-<!-- PUB : Bloc après le bouton retour -->
-<div class="pub-block">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-5012296544725855"
-         data-ad-slot="0000000000"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-</div>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+</section>
 
+<!-- FOOTER OFFICIEL -->
 <footer class="site-footer">
     <div class="footer-line"></div>
+
+    <p>
+        <a href="mentions.html" style="color:#777;">Mentions légales</a> • 
+        <a href="politique-confidentialite.html" style="color:#777;">Politique de confidentialité</a>
+    </p>
+
     <p>© 2026 Musée HOP WW2 – Tous droits réservés.</p>
 </footer>
 
