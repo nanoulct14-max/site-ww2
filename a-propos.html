@@ -6,16 +6,88 @@
     <title>À propos – Musée HOP WW2</title>
 
     <!-- STYLES -->
-    <link rel="stylesheet" href="style.css?v=2">
-    <link rel="stylesheet" href="style-mobile.css?v=2">
+    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="style-mobile.css?v=3">
+
+    <style>
+        /* HEADER – liens blancs, gras, soulignés */
+        header {
+            background: #0f0f0f;
+            padding: 35px 5vw;
+            border-bottom: 2px solid #333;
+        }
+
+        .main-nav {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .main-nav a {
+            color: #ffffff;
+            font-size: 26px;          /* PLUS GRAND */
+            font-weight: 700;         /* GRAS */
+            text-decoration: underline; /* SOULIGNÉ */
+            padding-bottom: 5px;
+        }
+
+        /* TITRES PLUS GRANDS */
+        .section-title {
+            font-size: 36px;          /* PLUS GRAND */
+            font-weight: 700;
+            color: #e0e0e0;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        /* TEXTE PLUS LISIBLE */
+        .content-section p {
+            font-size: 22px;          /* PLUS GRAND */
+            line-height: 1.6;
+            color: #d0d0d0;
+            margin-bottom: 25px;
+        }
+
+        /* BOUTON RETOUR */
+        .menu-button {
+            display: block;
+            width: fit-content;
+            margin: 40px auto;
+            padding: 12px 25px;
+            background: #1a1a1a;
+            color: white;
+            font-size: 22px;
+            font-weight: 700;
+            text-decoration: none;
+            border: 2px solid #444;
+        }
+
+        .menu-button:hover {
+            background: #2a2a2a;
+        }
+
+        /* FOOTER */
+        .site-footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #777;
+        }
+
+        .footer-line {
+            width: 80%;
+            height: 2px;
+            background: #333;
+            margin: 0 auto 20px auto;
+        }
+    </style>
 </head>
 
 <body>
 
-    <header>
+<header>
     <nav class="main-nav">
         <a href="index.html">MENU</a>
-        <a href="a-propos.html">À propos</a>
+        <a href="a-propos.html" class="active">À propos</a>
         <a href="contact.html">Contact</a>
         <a href="mentions.html">Mentions légales</a>
     </nav>
@@ -34,31 +106,31 @@
 <section class="content-section">
     <h2 class="section-title">Notre mission</h2>
     <p>
-        Le Musée HOP WW2 est un espace numérique dédié à la préservation, l’étude et la transmission de l’histoire de la Seconde Guerre mondiale. 
+        Le Musée HOP WW2 est un espace numérique dédié à la préservation, l’étude et la transmission de l’histoire de la Seconde Guerre mondiale.
         Notre objectif est de proposer un contenu clair, structuré et accessible, tout en respectant une rigueur historique indispensable.
     </p>
 
     <h2 class="section-title">Une approche muséale moderne</h2>
     <p>
-        Nous adoptons un style muséal sombre premium, inspiré des expositions contemporaines. 
+        Nous adoptons un style muséal sombre premium, inspiré des expositions contemporaines.
         Chaque fiche, chaque page et chaque visuel est pensé pour offrir une expérience immersive, cohérente et respectueuse de la mémoire.
     </p>
 
     <h2 class="section-title">Un travail de recherche continu</h2>
     <p>
-        Le musée s’enrichit régulièrement de nouvelles fiches : navires, insignes, propagande, figures historiques, batailles, documents d’époque. 
+        Le musée s’enrichit régulièrement de nouvelles fiches : navires, insignes, propagande, figures historiques, batailles, documents d’époque.
         Chaque contenu est vérifié, contextualisé et présenté de manière pédagogique pour permettre une compréhension globale du conflit.
     </p>
 
     <h2 class="section-title">Transparence & respect de la mémoire</h2>
     <p>
-        Nous nous engageons à respecter les faits historiques, à éviter toute glorification des régimes totalitaires, 
+        Nous nous engageons à respecter les faits historiques, à éviter toute glorification des régimes totalitaires,
         à mettre en lumière les victimes, les résistants et les témoins, et à présenter les mécanismes politiques, militaires et sociaux du conflit.
     </p>
 
     <h2 class="section-title">Votre participation</h2>
     <p>
-        Le musée évolue grâce aux contributions, aux questions et aux suggestions. 
+        Le musée évolue grâce aux contributions, aux questions et aux suggestions.
         Chaque visite permet d’améliorer les contenus et d’élargir les perspectives.
     </p>
 
