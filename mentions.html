@@ -5,128 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mentions légales – Musée HOP WW2</title>
 
-    <style>
-        body {
-            background: #0d0d0d;
-            color: #d0d0d0;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* HEADER – liens blancs, gras, soulignés */
-        header {
-            background: #0f0f0f;
-            padding: 35px 5vw;
-            border-bottom: 2px solid #333;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 50px;
-        }
-
-        nav a {
-            color: #ffffff;
-            font-size: 28px;
-            font-weight: 700;
-            text-decoration: underline;
-        }
-
-        /* TITRES */
-        .section-title {
-            font-size: 40px;
-            font-weight: 700;
-            color: #e0e0e0;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        /* BLOCS */
-        .fiche-block {
-            width: 80%;
-            margin: auto;
-            margin-bottom: 40px;
-        }
-
-        .fiche-block p {
-            font-size: 22px;
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
-
-        /* FOOTER */
-        footer {
-            text-align: center;
-            padding: 40px 0;
-            color: #777;
-        }
-
-        .footer-line {
-            width: 80%;
-            height: 2px;
-            background: #333;
-            margin: 0 auto 20px auto;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-mobile.css">
 </head>
 
 <body>
 
+<!-- HEADER IDENTIQUE À “À PROPOS” -->
 <header>
-    <nav>
-        <a href="index.html">MENU</a>
-        <a href="a-propos.html">À propos</a>
-        <a href="contact.html">Contact</a>
-        <a href="mentions.html" class="active">Mentions légales</a>
+    <nav style="display:flex; gap:22px; align-items:center;">
+        <a href="index.html" style="font-size:18px; letter-spacing:0.5px;">MENU</a>
+        <a href="a-propos.html" style="font-size:18px; letter-spacing:0.5px;">À PROPOS</a>
+        <a href="contact.html" style="font-size:18px; letter-spacing:0.5px;">CONTACT</a>
+        <a href="mentions.html" style="font-size:18px; letter-spacing:0.5px;" class="active">MENTIONS LÉGALES</a>
+        <a href="presentation.html" style="font-size:18px; letter-spacing:0.5px;">PRÉSENTATION</a>
     </nav>
 </header>
 
-<section class="fiche-block">
+<section class="content-section">
+
     <h2 class="section-title">Éditeur du site</h2>
     <p><strong>Nom :</strong> Musée HOP WW2</p>
     <p><strong>Nature :</strong> Site personnel à vocation historique et éducative</p>
     <p><strong>Responsable de la publication :</strong> Jérémy</p>
-</section>
 
-<section class="fiche-block">
     <h2 class="section-title">Hébergement</h2>
     <p>Ce site est hébergé par GitHub Pages.</p>
     <p><strong>Adresse :</strong> GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA</p>
-</section>
 
-<section class="fiche-block">
     <h2 class="section-title">Propriété intellectuelle</h2>
     <p>
         L’ensemble des contenus (textes, images, fiches, mise en page) est protégé par le droit d’auteur.  
         Toute reproduction, diffusion ou modification sans autorisation est interdite.
     </p>
-</section>
 
-<section class="fiche-block">
     <h2 class="section-title">Données personnelles</h2>
     <p>
         Ce site ne collecte aucune donnée personnelle directement.  
         Les statistiques de visite sont gérées via Google Analytics.
     </p>
-</section>
 
-<section class="fiche-block">
     <h2 class="section-title">Cookies</h2>
     <p>
         Google Analytics peut déposer des cookies de mesure d’audience.  
         Vous pouvez les désactiver via les paramètres de votre navigateur.
     </p>
-</section>
 
-<section class="fiche-block">
     <h2 class="section-title">Contact</h2>
     <p>
         Pour toute demande : via le formulaire de la page <a href="contact.html">Contact</a>.
     </p>
+
 </section>
+
+<a href="index.html" class="menu-button">⬅ Retour à l'accueil</a>
 
 <footer>
     <div class="footer-line"></div>
