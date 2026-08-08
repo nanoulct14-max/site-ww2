@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>À propos – Musée HOP WW2</title>
 
-    <!-- STYLES -->
-    <link rel="stylesheet" href="style.css?v=3">
-    <link rel="stylesheet" href="style-mobile.css?v=3">
-
     <style>
+        body {
+            background: #0d0d0d;
+            color: #d0d0d0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
         /* HEADER – liens blancs, gras, soulignés */
         header {
             background: #0f0f0f;
@@ -17,34 +21,39 @@
             border-bottom: 2px solid #333;
         }
 
-        .main-nav {
+        nav {
             display: flex;
             justify-content: center;
             gap: 50px;
         }
 
-        .main-nav a {
+        nav a {
             color: #ffffff;
-            font-size: 26px;          /* PLUS GRAND */
-            font-weight: 700;         /* GRAS */
+            font-size: 28px;       /* PLUS GRAND */
+            font-weight: 700;      /* GRAS */
             text-decoration: underline; /* SOULIGNÉ */
-            padding-bottom: 5px;
         }
 
-        /* TITRES PLUS GRANDS */
+        /* TITRES */
         .section-title {
-            font-size: 36px;          /* PLUS GRAND */
+            font-size: 40px;       /* PLUS GRAND */
             font-weight: 700;
             color: #e0e0e0;
             margin-top: 40px;
             margin-bottom: 20px;
+            text-align: center;
         }
 
-        /* TEXTE PLUS LISIBLE */
+        /* TEXTE */
+        .content-section {
+            width: 80%;
+            margin: auto;
+            padding-top: 40px;
+        }
+
         .content-section p {
-            font-size: 22px;          /* PLUS GRAND */
+            font-size: 24px;       /* PLUS GRAND */
             line-height: 1.6;
-            color: #d0d0d0;
             margin-bottom: 25px;
         }
 
@@ -67,7 +76,7 @@
         }
 
         /* FOOTER */
-        .site-footer {
+        footer {
             text-align: center;
             padding: 40px 0;
             color: #777;
@@ -85,26 +94,17 @@
 <body>
 
 <header>
-    <nav class="main-nav">
+    <nav>
         <a href="index.html">MENU</a>
-        <a href="a-propos.html" class="active">À propos</a>
+        <a href="a-propos.html">À propos</a>
         <a href="contact.html">Contact</a>
         <a href="mentions.html">Mentions légales</a>
     </nav>
 </header>
 
-<!-- HERO -->
-<section class="hero-section" style="background-image:url('images/hero.jpg');">
-    <div class="hero-overlay"></div>
-    <div class="hero-title-block">
-        <h2 class="hero-title-line1">À PROPOS</h2>
-        <h3 class="hero-title-line2">L’histoire, la mémoire, la transmission</h3>
-    </div>
-</section>
-
-<!-- CONTENU -->
 <section class="content-section">
-    <h2 class="section-title">Notre mission</h2>
+    <h2 class="section-title">À propos du Musée HOP WW2</h2>
+
     <p>
         Le Musée HOP WW2 est un espace numérique dédié à la préservation, l’étude et la transmission de l’histoire de la Seconde Guerre mondiale.
         Notre objectif est de proposer un contenu clair, structuré et accessible, tout en respectant une rigueur historique indispensable.
@@ -140,10 +140,9 @@
     </p>
 </section>
 
-<!-- RETOUR -->
 <a href="index.html" class="menu-button">⬅ Retour à l'accueil</a>
 
-<footer class="site-footer">
+<footer>
     <div class="footer-line"></div>
     <p>© 2026 Musée HOP WW2 – Tous droits réservés.</p>
 </footer>
