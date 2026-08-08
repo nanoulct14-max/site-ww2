@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Philippe Leclerc de Hauteclocque – Musée HOP WW2</title>
+
     <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="style-mobile.css">
 </head>
 
 <body>
 
+<!-- HEADER OFFICIEL -->
 <header>
-    <nav>
-        <a href="index.html">ACCUEIL</a>
-        <a href="collections.html">COLLECTIONS</a>
-        <a href="guides.html">GUIDES</a>
-        <a href="contact.html">CONTACT</a>
-        <a href="mentions.html">MENTIONS LÉGALES</a>
+    <nav style="display:flex; gap:22px; align-items:center; justify-content:center;">
+        <a href="index.html" style="font-size:18px; letter-spacing:0.5px;">MENU</a>
+        <a href="collections.html" style="font-size:18px; letter-spacing:0.5px;">COLLECTIONS</a>
+        <a href="guides.html" style="font-size:18px; letter-spacing:0.5px;">GUIDES</a>
+        <a href="contact.html" style="font-size:18px; letter-spacing:0.5px;">CONTACT</a>
+        <a href="mentions.html" style="font-size:18px; letter-spacing:0.5px;">MENTIONS LÉGALES</a>
     </nav>
 </header>
 
@@ -38,19 +41,37 @@
      class="fiche-image"
      alt="Portrait du général Philippe Leclerc de Hauteclocque">
 
-<!-- INTRODUCTION LONGUE -->
+<!-- INTRODUCTION -->
 <div class="fiche-block">
     <h2 class="section-title">Introduction</h2>
     <p>
-        Philippe François Marie Leclerc de Hauteclocque est l’une des figures militaires les plus emblématiques de la France Libre.
-        Chef de la <strong>2ᵉ Division Blindée</strong>, artisan majeur de la libération de Paris, stratège audacieux et symbole
-        de la résistance française, il incarne la ténacité, le courage et l’esprit de libération qui ont marqué la reconquête
-        du territoire national.
+        Philippe Leclerc de Hauteclocque est l’une des figures les plus emblématiques de la France Libre.
+        Chef de la <strong>2ᵉ Division Blindée</strong>, artisan majeur de la libération de Paris, son nom reste associé
+        au courage, à la détermination et à la reconquête du territoire national.
     </p>
     <p>
-        Son parcours, de l’Afrique à l’Allemagne, est celui d’un chef militaire déterminé, capable de rallier des hommes,
-        de mener des opérations complexes et de porter haut l’honneur de la France dans l’un des conflits les plus violents
-        de l’histoire.
+        Sa carrière militaire, marquée par des opérations audacieuses en Afrique, en Normandie et jusqu’en Allemagne,
+        fait de lui un symbole de la résistance française et de la victoire contre l’occupation.
+    </p>
+</div>
+
+<!-- VIDEO DOCUMENTAIRE -->
+<div class="fiche-block">
+    <h2 class="section-title">Vidéo documentaire</h2>
+
+    <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border:1px solid #333;">
+        <iframe 
+            src="https://www.youtube.com/embed/9z1xREes8mE"
+            title="Leclerc – Libération de Paris"
+            style="position:absolute; top:0; left:0; width:100%; height:100%;"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <p style="margin-top:15px; font-size:18px; color:#ccc;">
+        Séquence historique retraçant l’entrée de la 2ᵉ Division Blindée du général Leclerc dans Paris,
+        les 24 et 25 août 1944, lors de la Libération.
     </p>
 </div>
 
@@ -64,83 +85,65 @@
     <p><strong>Rôle :</strong> Général de la France Libre, commandant de la 2ᵉ DB</p>
 </div>
 
-<!-- PRÉSENTATION LONGUE -->
+<!-- PRÉSENTATION -->
 <div class="fiche-block">
     <h2 class="section-title">Présentation</h2>
     <p>
-        Issu d’une famille aristocratique, Leclerc se distingue très tôt par son sens du devoir et son engagement militaire.
-        Lorsque la France est vaincue en 1940, il refuse la capitulation et rejoint la France Libre. Son énergie, son audace
-        et sa capacité à mener des opérations dans des conditions extrêmes en font rapidement l’un des principaux chefs
-        militaires de De Gaulle.
-    </p>
-    <p>
-        Leclerc est un chef charismatique, proche de ses hommes, capable de décisions rapides et efficaces. Son nom devient
-        synonyme de libération, de mouvement et de victoire.
+        Issu d’une famille aristocratique, Leclerc refuse la défaite de 1940 et rejoint la France Libre.
+        Son audace, son sens du commandement et sa capacité à mener des opérations complexes en font l’un des chefs
+        militaires les plus respectés du mouvement gaulliste.
     </p>
 </div>
 
-<!-- PARCOURS FRANCE LIBRE LONG -->
+<!-- PARCOURS FRANCE LIBRE -->
 <div class="fiche-block">
     <h2 class="section-title">Parcours dans la France Libre</h2>
     <p>
-        Dès 1940, Leclerc rejoint les forces de la France Libre en Afrique. Il mène des opérations audacieuses au Tchad,
-        au Cameroun et en Libye. Son exploit le plus célèbre est la <strong>prise de Koufra</strong> en 1941, où il prononce
-        le fameux serment :
+        Dès 1940, Leclerc mène des opérations audacieuses en Afrique. Son exploit majeur est la <strong>prise de Koufra</strong>
+        en 1941, où il prononce le célèbre serment :
     </p>
-    <p>
-        <em>« Ne déposer les armes que lorsque nos couleurs flotteront sur la cathédrale de Strasbourg. »</em>
-    </p>
-    <p>
-        Ce serment devient un symbole de la reconquête française. Leclerc poursuit ensuite la lutte en Tunisie, puis en
-        Angleterre où il prépare la future 2ᵉ Division Blindée.
-    </p>
+    <p><em>« Ne déposer les armes que lorsque nos couleurs flotteront sur la cathédrale de Strasbourg. »</em></p>
 </div>
 
-<!-- 2e DB LONG -->
+<!-- 2e DB -->
 <div class="fiche-block">
     <h2 class="section-title">La 2ᵉ Division Blindée</h2>
     <p>
-        La <strong>2ᵉ DB</strong> est l’une des unités les plus célèbres de la Seconde Guerre mondiale. Formée en 1943,
-        elle regroupe des soldats venus de tous horizons : résistants, volontaires, anciens coloniaux, marins, aviateurs.
-    </p>
-    <p>
-        Sous le commandement de Leclerc, la division débarque en Normandie en août 1944. Elle avance rapidement vers Paris,
-        libérant les villes sur son passage, notamment Alençon et Argentan.
+        Formée en 1943, la 2ᵉ DB regroupe des volontaires de tous horizons. Sous le commandement de Leclerc,
+        elle débarque en Normandie en août 1944 et avance rapidement vers Paris.
     </p>
 </div>
 
-<!-- LIBÉRATION DE PARIS LONG -->
+<!-- LIBÉRATION DE PARIS -->
 <div class="fiche-block">
     <h2 class="section-title">Libération de Paris</h2>
     <p>
-        Leclerc est l’un des principaux acteurs de la libération de Paris. Le 24 août 1944, ses unités entrent dans la capitale,
-        accueillies par une population en liesse. Le lendemain, il reçoit la reddition du général von Choltitz, commandant
-        allemand de la ville.
-    </p>
-    <p>
-        La 2ᵉ DB joue un rôle décisif dans la sécurisation de la capitale et dans la restauration de l’autorité française.
-        L’image de Leclerc défilant sur les Champs‑Élysées reste l’un des symboles les plus forts de la Libération.
+        Le 24 août 1944, les unités de Leclerc entrent dans Paris. Le 25 août, il reçoit la reddition du général von Choltitz.
+        L’image de Leclerc défilant sur les Champs‑Élysées devient un symbole de la Libération.
     </p>
 </div>
 
-<!-- FIN DE GUERRE LONG -->
+<!-- FIN DE GUERRE -->
 <div class="fiche-block">
     <h2 class="section-title">Fin de guerre et héritage</h2>
     <p>
-        Après la libération de Paris, Leclerc poursuit la lutte jusqu’en Allemagne. Il participe à la libération de Strasbourg,
-        accomplissant ainsi le serment de Koufra. En 1945, il commande les forces françaises en Indochine.
-    </p>
-    <p>
-        Leclerc meurt tragiquement en 1947 dans un accident d’avion. Son nom reste associé à la libération de la France,
-        à la France Libre et à l’esprit de résistance. De nombreuses avenues, monuments et unités militaires portent son nom.
+        Leclerc poursuit la lutte jusqu’en Allemagne, libère Strasbourg et commande ensuite les forces françaises en Indochine.
+        Il meurt en 1947 dans un accident d’avion. Son nom reste associé à la France Libre et à la victoire.
     </p>
 </div>
 
 <!-- RETOUR -->
 <a class="menu-button" href="visages.html">⬅ Retour aux Visages</a>
 
+<!-- FOOTER OFFICIEL -->
 <footer class="site-footer">
     <div class="footer-line"></div>
+
+    <p>
+        <a href="mentions.html" style="color:#777;">Mentions légales</a> • 
+        <a href="politique-confidentialite.html" style="color:#777;">Politique de confidentialité</a>
+    </p>
+
     <p>© 2026 Musée HOP WW2 – Tous droits réservés.</p>
 </footer>
 
