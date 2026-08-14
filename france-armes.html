@@ -5,31 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Armes Françaises – Musée HOP WW2</title>
     <link rel="stylesheet" href="style.css">
-
-    <style>
-        .operation-link {
-            font-size: 26px;
-            font-weight: 600;
-            margin: 18px 0;
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" href="style-mobile.css">
 </head>
 
 <body>
 
+<!-- HEADER OFFICIEL -->
 <header>
-    <nav>
-        <a href="index.html">ACCUEIL</a>
-        <a href="collections.html">COLLECTIONS</a>
-        <a href="guides.html">GUIDES</a>
-        <a href="contact.html">CONTACT</a>
-        <a href="mentions.html">MENTIONS LÉGALES</a>
+    <nav style="display:flex; gap:22px; align-items:center; justify-content:center;">
+        <a href="index.html" style="font-size:18px; letter-spacing:0.5px;">MENU</a>
+        <a href="a-propos.html" style="font-size:18px; letter-spacing:0.5px;">À PROPOS</a>
+        <a href="contact.html" style="font-size:18px; letter-spacing:0.5px;">CONTACT</a>
+        <a href="mentions.html" style="font-size:18px; letter-spacing:0.5px;">MENTIONS LÉGALES</a>
+        <a href="presentation.html" style="font-size:18px; letter-spacing:0.5px;">PRÉSENTATION</a>
     </nav>
 </header>
 
-<!-- HERO IDENTIQUE À FRANCE CASQUES -->
-<section class="hero-section" style="background-image:url('images/france-hero.jpg');">
+<!-- HERO -->
+<section class="hero-section" style="background-image:url('images/france-hero.jpg'); background-position:center;">
     <div class="hero-overlay"></div>
 
     <div class="hero-title-block">
@@ -38,19 +31,19 @@
     </div>
 </section>
 
-<!-- TITRE IDENTIQUE -->
+<!-- TITRE -->
 <h2 class="section-title">Catégories disponibles</h2>
 
- <div class="fiche-content">
+<div class="fiche-content">
 
     <!-- ARMES BLANCHES -->
     <div class="fiche-block">
         <h2 class="section-title">Armes blanches</h2>
         <ul>
-            <li>Baïonnette MAS-36</li>
-            <li>Baïonnette Berthier</li>
-            <li>Poignard de tranchée</li>
-            <li>Couteau de combat</li>
+            <li><a href="france-arme-blanche-bayonette-mas36.html">Baïonnette MAS-36</a></li>
+            <li><a href="france-arme-blanche-bayonette-berthier.html">Baïonnette Berthier</a></li>
+            <li><a href="france-arme-blanche-poignard-tranchee.html">Poignard de tranchée</a></li>
+            <li><a href="france-arme-blanche-couteau-combat.html">Couteau de combat</a></li>
         </ul>
     </div>
 
@@ -58,9 +51,9 @@
     <div class="fiche-block">
         <h2 class="section-title">Fusils</h2>
         <ul>
-            <li>MAS-36</li>
-            <li>Berthier 07/15 – M16</li>
-            <li>Lebel 1886 M93</li>
+            <li><a href="france-fusil-mas36.html">MAS-36</a></li>
+            <li><a href="france-fusil-berthier-m16.html">Berthier 07/15 – M16</a></li>
+            <li><a href="france-fusil-lebel-1886.html">Lebel 1886 M93</a></li>
         </ul>
     </div>
 
@@ -68,7 +61,7 @@
     <div class="fiche-block">
         <h2 class="section-title">Fusils-mitrailleurs</h2>
         <ul>
-            <li>FM 24/29</li>
+            <li><a href="france-fm-2429.html">FM 24/29</a></li>
         </ul>
     </div>
 
@@ -76,8 +69,8 @@
     <div class="fiche-block">
         <h2 class="section-title">Mitrailleuses</h2>
         <ul>
-            <li>MAC 1931</li>
-            <li>Hotchkiss 1914</li>
+            <li><a href="france-mitrailleuse-mac1931.html">MAC 1931</a></li>
+            <li><a href="france-mitrailleuse-hotchkiss1914.html">Hotchkiss 1914</a></li>
         </ul>
     </div>
 
@@ -85,9 +78,9 @@
     <div class="fiche-block">
         <h2 class="section-title">Pistolets & revolvers</h2>
         <ul>
-            <li>Pistolet automatique 1935A</li>
-            <li>Pistolet automatique 1935S</li>
-            <li>Revolver modèle 1892</li>
+            <li><a href="france-pistolet-1935a.html">Pistolet automatique 1935A</a></li>
+            <li><a href="france-pistolet-1935s.html">Pistolet automatique 1935S</a></li>
+            <li><a href="france-revolver-1892.html">Revolver modèle 1892</a></li>
         </ul>
     </div>
 
@@ -95,21 +88,28 @@
     <div class="fiche-block">
         <h2 class="section-title">Armes d’appui</h2>
         <ul>
-            <li>Mortier Brandt 60 mm</li>
-            <li>Mortier Brandt 81 mm</li>
-            <li>Lance-grenades VB</li>
+            <li><a href="france-mortier-brandt60.html">Mortier Brandt 60 mm</a></li>
+            <li><a href="france-mortier-brandt81.html">Mortier Brandt 81 mm</a></li>
+            <li><a href="france-lance-grenades-vb.html">Lance-grenades VB</a></li>
         </ul>
     </div>
 
 </div>
 
-    <!-- BOUTON RETOUR COLLECTIONS FRANÇAISES -->
-<div class="center" style="margin-top:40px; margin-bottom:40px;">
+<!-- BOUTON RETOUR -->
+<div style="text-align:center; margin-top:40px; margin-bottom:40px;">
     <a href="france.html" class="menu-button">⬅ Retour aux collections françaises</a>
 </div>
 
+<!-- FOOTER OFFICIEL -->
 <footer class="site-footer">
     <div class="footer-line"></div>
+
+    <p>
+        <a href="mentions.html" style="color:#777;">Mentions légales</a> • 
+        <a href="politique-confidentialite.html" style="color:#777;">Politique de confidentialité</a>
+    </p>
+
     <p>© 2026 Musée HOP WW2 – Tous droits réservés.</p>
 </footer>
 
