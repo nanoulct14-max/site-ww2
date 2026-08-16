@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casque US Tankiste – WW2</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="style-mobile.css?v=3">
 </head>
 
 <body>
 
+<!-- NOUVEAU HEADER -->
 <header>
-    <nav>
-        <a href="index.html">ACCUEIL</a>
-        <a href="collections.html">COLLECTIONS</a>
-        <a href="guides.html">GUIDES</a>
-        <a href="contact.html">CONTACT</a>
-        <a href="mentions.html">MENTIONS LÉGALES</a>
+    <nav style="display:flex; gap:22px; align-items:center; justify-content:center;">
+        <a href="index.html" style="font-size:18px; letter-spacing:0.5px;">MENU</a>
+        <a href="a-propos.html" style="font-size:18px; letter-spacing:0.5px;">À PROPOS</a>
+        <a href="contact.html" style="font-size:18px; letter-spacing:0.5px;">CONTACT</a>
+        <a href="mentions.html" style="font-size:18px; letter-spacing:0.5px;">MENTIONS LÉGALES</a>
+        <a href="presentation.html" style="font-size:18px; letter-spacing:0.5px;">PRÉSENTATION</a>
     </nav>
 </header>
 
@@ -29,48 +32,53 @@
     </div>
 </section>
 
-<!-- CONTENU -->
 <div class="fiche-content">
 
-    <!-- PHOTO PROFIL -->
-    <img src="images/us_tank_profil.jpg"
-         alt="Casque US Tankiste WW2 – Profil"
-         class="fiche-image"
-         style="box-shadow:0 0 40px rgba(0,0,0,0.6); border-radius:6px;">
-
-    <!-- PHOTO PROFIL AVEC LUNETTES -->
-    <img src="images/us_tank_lunette.jpg"
-         alt="Casque US Tankiste WW2 – Profil avec lunettes"
-         class="fiche-image"
-         style="box-shadow:0 0 40px rgba(0,0,0,0.6); border-radius:6px;">
-
-    <!-- INTRO -->
-    <div class="fiche-block">
+    <!-- INTRODUCTION (sans photo) -->
+    <div class="fiche-block" style="margin-top:40px;">
         <h2 class="section-title">Introduction</h2>
         <p>
-            Le casque US de tankiste, appelé Tank Crew Helmet, est conçu pour protéger les équipages de chars
-            américains durant la Seconde Guerre mondiale. Il est pensé pour résister aux chocs violents à
-            l’intérieur du blindé et pour permettre l’utilisation d’un système radio.
+            Le casque US de tankiste, appelé <strong>Tank Crew Helmet</strong>, est conçu pour protéger les 
+            équipages de chars américains durant la Seconde Guerre mondiale. Il doit résister aux chocs violents 
+            à l’intérieur du blindé, aux vibrations du moteur et aux impacts contre la coque.
         </p>
+        <p>
+            Il est également pensé pour permettre l’utilisation d’un système radio, indispensable pour la 
+            coordination des équipages dans les chars Sherman, Stuart et autres blindés américains.
+        </p>
+    </div>
+
+    <!-- PHOTO 1 -->
+    <div style="text-align:center; margin-bottom:40px;">
+        <img src="images/us_tank_profil.jpg"
+             alt="Casque US Tankiste WW2 – Profil"
+             class="fiche-image"
+             style="box-shadow:0 0 40px rgba(0,0,0,0.6); border-radius:6px;">
     </div>
 
     <!-- BLOC LUNETTES -->
     <div class="fiche-block">
         <h2 class="section-title">Les lunettes du tankiste</h2>
         <p>
-            Sur la photo de profil équipé de lunettes, on voit un élément essentiel du matériel du tankiste américain.
-            Les lunettes protègent les yeux des projections métalliques, de la poussière et des éclats générés par les
-            tirs du canon, les vibrations du moteur ou les chocs contre la coque. Elles sont également indispensables
-            lorsque le tankiste observe le terrain depuis la trappe : elles le protègent du vent, de la fumée, des
-            débris et des gaz irritants. Grâce à elles, le tankiste conserve une visibilité maximale dans un
-            environnement confiné et dangereux.
+            Les lunettes visibles sur la seconde photo sont un élément essentiel du matériel du tankiste. 
+            Elles protègent les yeux des projections métalliques, de la poussière, des éclats et des gaz irritants. 
+            Lorsqu’un tankiste observe le terrain depuis la trappe, elles sont indispensables pour conserver une 
+            visibilité optimale malgré le vent, la fumée et les débris.
         </p>
     </div>
 
-    <!-- BLOC CARACTÉRISTIQUES -->
+    <!-- PHOTO 2 -->
+    <div style="text-align:center; margin-bottom:40px;">
+        <img src="images/us_tank_lunette.jpg"
+             alt="Casque US Tankiste WW2 – Profil avec lunettes"
+             class="fiche-image"
+             style="width:420px; box-shadow:0 0 30px rgba(0,0,0,0.6); border-radius:6px;">
+    </div>
+
+    <!-- CARACTÉRISTIQUES -->
     <div class="fiche-block">
         <h2 class="section-title">Caractéristiques</h2>
-        <ul style="text-align:center;">
+        <ul class="caracteristiques" style="text-align:center;">
             <li>Type : Casque Tank Crew Helmet</li>
             <li>Coque : Fibre + renforts latéraux</li>
             <li>Intérieur : Cuir et rembourrage</li>
@@ -79,25 +87,35 @@
         </ul>
     </div>
 
-    <!-- BLOC HISTOIRE -->
+    <!-- HISTOIRE -->
     <div class="fiche-block">
         <h2 class="section-title">Contexte historique</h2>
         <p>
-            Utilisé dans les chars américains sur tous les fronts, ce casque accompagne les équipages dans les combats
-            mécanisés en Afrique du Nord, en Italie, en Normandie et dans les Ardennes. Il est devenu un symbole des
-            tankistes US de la Seconde Guerre mondiale.
+            Utilisé sur tous les fronts, ce casque accompagne les équipages américains dans les combats 
+            mécanisés en Afrique du Nord, en Italie, en Normandie et dans les Ardennes. 
+        </p>
+        <p>
+            Il est devenu un symbole des tankistes US de la Seconde Guerre mondiale, reconnaissable par sa 
+            forme particulière et ses renforts latéraux.
         </p>
     </div>
 
-    <!-- RETOUR -->
-    <div style="text-align:center;">
+    <!-- BOUTON RETOUR -->
+    <div style="text-align:center; margin-top:40px; margin-bottom:40px;">
         <a href="usa-casques.html" class="menu-button">⬅ Retour à la liste des casques américains</a>
     </div>
 
 </div>
 
+<!-- NOUVEAU FOOTER -->
 <footer class="site-footer">
     <div class="footer-line"></div>
+
+    <p>
+        <a href="mentions.html" style="color:#777;">Mentions légales</a> • 
+        <a href="politique-confidentialite.html" style="color:#777;">Politique de confidentialité</a>
+    </p>
+
     <p>© 2026 Musée HOP WW2 – Tous droits réservés.</p>
 </footer>
 
