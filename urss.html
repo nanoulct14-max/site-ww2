@@ -4,62 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>URSS – Musée HOP WW2</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="style-mobile.css?v=3">
 
     <style>
         .operation-link {
             font-size: 26px;
             font-weight: 600;
+            display: block;
+            margin: 14px 0;
         }
     </style>
 </head>
 
 <body>
 
+<!-- HEADER PREMIUM (identique aux autres pages) -->
 <header>
-    <nav>
-        <a href="index.html">ACCUEIL</a>
-        <a href="collections.html">COLLECTIONS</a>
-        <a href="guides.html">GUIDES</a>
-        <a href="contact.html">CONTACT</a>
-        <a href="mentions.html">MENTIONS LÉGALES</a>
+    <nav style="display:flex; gap:22px; align-items:center; justify-content:center;">
+        <a href="index.html" style="font-size:18px; letter-spacing:0.5px;">MENU</a>
+        <a href="a-propos.html" style="font-size:18px; letter-spacing:0.5px;">À PROPOS</a>
+        <a href="contact.html" style="font-size:18px; letter-spacing:0.5px;">CONTACT</a>
+        <a href="mentions.html" style="font-size:18px; letter-spacing:0.5px;">MENTIONS LÉGALES</a>
+        <a href="presentation.html" style="font-size:18px; letter-spacing:0.5px;">PRÉSENTATION</a>
     </nav>
 </header>
 
 <!-- HERO URSS -->
-<section class="hero-section" style="background-image:url('images/urss.jpg');">
+<section class="hero-section" style="background-image:url('images/urss.jpg'); background-position:center;">
     <div class="hero-overlay"></div>
 
     <div class="hero-title-block">
-        <h2 class="hero-title-line1">
-            URSS<br>1939–1945
-        </h2>
-        <h3 class="hero-title-line2">
-            Uniformes, équipements et matériel militaire soviétique
-        </h3>
+        <h2 class="hero-title-line1">URSS<br>1939–1945</h2>
+        <h3 class="hero-title-line2">Uniformes, équipements et matériel militaire soviétique</h3>
     </div>
 </section>
 
-<h2 class="section-title">Collections soviétiques</h2>
+<div class="fiche-content">
 
-<!-- ⭐ ORDRE IDENTIQUE À LA FRANCE / ALLEMAGNE -->
-<a class="operation-link" href="urss-casques.html">Casques soviétiques</a>
-<a class="operation-link" href="urss-uniformes.html">Uniformes soviétiques</a>
-<a class="operation-link" href="urss-objets.html">Objets militaires soviétiques</a>
-<a class="operation-link" href="urss-armes.html">Armes soviétiques</a>
-<a class="operation-link" href="urss-documents.html">Documents militaires soviétiques</a>
-<a class="operation-link" href="urss-insignes.html">Insignes soviétiques</a>
+    <h2 class="section-title" style="margin-top:40px;">Collections soviétiques</h2>
 
-<!-- ⭐ EXTENSIONS (comme France / Allemagne) -->
-<a class="operation-link" href="urss-vehicules-terrestres.html">Véhicules terrestres soviétiques</a>
-<a class="operation-link" href="urss-aviation.html">Aviation soviétique</a>
-<a class="operation-link" href="urss-flotte-navale.html">Flotte navale soviétique</a>
+    <a class="operation-link" href="urss-casques.html">Casques soviétiques</a>
+    <a class="operation-link" href="urss-uniformes.html">Uniformes soviétiques</a>
+    <a class="operation-link" href="urss-objets.html">Objets militaires soviétiques</a>
+    <a class="operation-link" href="urss-armes.html">Armes soviétiques</a>
+    <a class="operation-link" href="urss-documents.html">Documents militaires soviétiques</a>
+    <a class="operation-link" href="urss-insignes.html">Insignes soviétiques</a>
 
-<!-- ⭐ BOUTON RETOUR ACCUEIL -->
-<a href="index.html" class="menu-button">⬅ Retour à l'accueil</a>
+    <!-- ⭐ Catégories identiques aux autres nations -->
+    <a class="operation-link" href="urss-vehicules-terrestres.html">Véhicules terrestres soviétiques</a>
+    <a class="operation-link" href="urss-aviation.html">Aviation soviétique</a>
+    <a class="operation-link" href="urss-flotte-navale.html">Flotte navale soviétique</a>
 
+    <!-- BOUTON RETOUR -->
+    <div style="text-align:center; margin-top:40px; margin-bottom:40px;">
+        <a href="index.html" class="menu-button">⬅ Retour à l'accueil</a>
+    </div>
+
+</div>
+
+<!-- FOOTER PREMIUM (identique aux autres pages) -->
 <footer class="site-footer">
     <div class="footer-line"></div>
+
+    <p>
+        <a href="mentions.html" style="color:#777;">Mentions légales</a> • 
+        <a href="politique-confidentialite.html" style="color:#777;">Politique de confidentialité</a>
+    </p>
+
     <p>© 2026 Musée HOP WW2 – Tous droits réservés.</p>
 </footer>
 
