@@ -4,61 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>États‑Unis – Musée HOP WW2</title>
-    <link rel="stylesheet" href="style.css">
 
-    <!-- STYLE SPÉCIFIQUE À CETTE PAGE -->
+    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="style-mobile.css?v=3">
+
     <style>
         .operation-link {
             font-size: 26px;
             font-weight: 600;
+            display: block;
+            margin: 14px 0;
         }
     </style>
 </head>
 
 <body>
 
+<!-- NOUVEAU HEADER -->
 <header>
-    <nav>
-        <a href="index.html">ACCUEIL</a>
-        <a href="collections.html">COLLECTIONS</a>
-        <a href="guides.html">GUIDES</a>
-        <a href="contact.html">CONTACT</a>
-        <a href="mentions.html">MENTIONS LÉGALES</a>
+    <nav style="display:flex; gap:22px; align-items:center; justify-content:center;">
+        <a href="index.html" style="font-size:18px; letter-spacing:0.5px;">MENU</a>
+        <a href="a-propos.html" style="font-size:18px; letter-spacing:0.5px;">À PROPOS</a>
+        <a href="contact.html" style="font-size:18px; letter-spacing:0.5px;">CONTACT</a>
+        <a href="mentions.html" style="font-size:18px; letter-spacing:0.5px;">MENTIONS LÉGALES</a>
+        <a href="presentation.html" style="font-size:18px; letter-spacing:0.5px;">PRÉSENTATION</a>
     </nav>
 </header>
 
-<!-- HERO -->
-<section class="hero-section" style="background-image:url('images/usa.jpg');">
+<!-- HERO USA -->
+<section class="hero-section" style="background-image:url('images/usa.jpg'); background-position:center;">
     <div class="hero-overlay"></div>
 
     <div class="hero-title-block">
-        <h2 class="hero-title-line1">
-            ÉTATS‑UNIS<br>1939–1945
-        </h2>
-        <h3 class="hero-title-line2">
-            Uniformes, équipements et matériel militaire américain
-        </h3>
+        <h2 class="hero-title-line1">ÉTATS‑UNIS<br>1939–1945</h2>
+        <h3 class="hero-title-line2">Uniformes, équipements et matériel militaire américain</h3>
     </div>
 </section>
 
-<!-- ITEMS USA -->
-<h2 class="section-title">Collections américaines</h2>
+<!-- CONTENU -->
+<div class="fiche-content">
 
-<a class="operation-link" href="usa-casques.html">Casques américains</a>
-<a class="operation-link" href="usa-uniformes.html">Uniformes américains</a>
-<a class="operation-link" href="usa-objets.html">Objets militaires américains</a>
-<a class="operation-link" href="usa-armes.html">Armes américaines</a>
-<a class="operation-link" href="usa-documents.html">Documents militaires américains</a>
-<a class="operation-link" href="usa-insignes.html">Insignes américains</a>
-<a class="operation-link" href="usa-vehicules-terrestres.html">Véhicules terrestres américaine </a>
-<a class="operation-link" href="usa-aviation.html">Aviation américaine </a>
-<a class="operation-link" href="usa-flotte-navale.html">Flotte navale américaines 
+    <h2 class="section-title" style="margin-top:40px;">Collections américaines</h2>
 
-<!-- ⭐ BOUTON RETOUR ACCUEIL (style muséal sombre, bien placé) -->
-<a href="index.html" class="menu-button">⬅ Retour à l'accueil</a>
+    <a class="operation-link" href="usa-casques.html">Casques américains</a>
+    <a class="operation-link" href="usa-uniformes.html">Uniformes américains</a>
+    <a class="operation-link" href="usa-objets.html">Objets militaires américains</a>
+    <a class="operation-link" href="usa-armes.html">Armes américaines</a>
+    <a class="operation-link" href="usa-documents.html">Documents militaires américains</a>
+    <a class="operation-link" href="usa-insignes.html">Insignes américains</a>
+    <a class="operation-link" href="usa-vehicules-terrestres.html">Véhicules terrestres américains</a>
+    <a class="operation-link" href="usa-aviation.html">Aviation américaine</a>
+    <a class="operation-link" href="usa-flotte-navale.html">Flotte navale américaine</a>
 
+    <!-- BOUTON RETOUR -->
+    <div style="text-align:center; margin-top:40px; margin-bottom:40px;">
+        <a href="index.html" class="menu-button">⬅ Retour à l'accueil</a>
+    </div>
+
+</div>
+
+<!-- NOUVEAU FOOTER -->
 <footer class="site-footer">
     <div class="footer-line"></div>
+
+    <p>
+        <a href="mentions.html" style="color:#777;">Mentions légales</a> • 
+        <a href="politique-confidentialite.html" style="color:#777;">Politique de confidentialité</a>
+    </p>
+
     <p>© 2026 Musée HOP WW2 – Tous droits réservés.</p>
 </footer>
 
