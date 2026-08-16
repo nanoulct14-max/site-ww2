@@ -2,7 +2,6 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Objets militaires soviétiques – Musée HOP WW2</title>
     <link rel="stylesheet" href="style.css">
 
@@ -10,52 +9,74 @@
         .operation-link {
             font-size: 26px;
             font-weight: 600;
+            margin: 18px 0;
+            display: block;
         }
     </style>
 </head>
 
 <body>
 
+<!-- NOUVEAU HEADER -->
 <header>
-    <nav>
-        <a href="index.html">ACCUEIL</a>
-        <a href="collections.html">COLLECTIONS</a>
-        <a href="guides.html">GUIDES</a>
-        <a href="contact.html">CONTACT</a>
-        <a href="mentions.html">MENTIONS LÉGALES</a>
+    <nav style="display:flex; gap:22px; align-items:center; justify-content:center;">
+        <a href="index.html" style="font-size:18px; letter-spacing:0.5px;">MENU</a>
+        <a href="a-propos.html" style="font-size:18px; letter-spacing:0.5px;">À PROPOS</a>
+        <a href="contact.html" style="font-size:18px; letter-spacing:0.5px;">CONTACT</a>
+        <a href="mentions.html" style="font-size:18px; letter-spacing:0.5px;">MENTIONS LÉGALES</a>
+        <a href="presentation.html" style="font-size:18px; letter-spacing:0.5px;">PRÉSENTATION</a>
     </nav>
 </header>
 
-<!-- HERO URSS -->
-<section class="hero-section" style="background-image:url('images/urss.jpg');">
+<!-- HERO URSS OBJETS -->
+<section class="hero-section" style="background-image:url('images/urss.jpg'); background-position:center;">
     <div class="hero-overlay"></div>
 
     <div class="hero-title-block">
-        <h2 class="hero-title-line1">
-            OBJETS MILITAIRES SOVIÉTIQUES<br>1939–1945
-        </h2>
-        <h3 class="hero-title-line2">
-            Équipements, matériel individuel et accessoires de l’Armée rouge
-        </h3>
+        <h2 class="hero-title-line1">Objets militaires soviétiques</h2>
+        <h3 class="hero-title-line2">Équipements & accessoires – 1939–1945</h3>
     </div>
 </section>
 
-<h2 class="section-title">Objets militaires soviétiques</h2>
+<!-- TITRE -->
+<h2 class="section-title">Objets disponibles</h2>
 
-<a class="operation-link" href="objet-soviet-musettes.html">Musette soviétique – Modèle RKKA</a>
-<a class="operation-link" href="objet-soviet-gamelle.html">Gamelle soviétique – Modèle aluminium</a>
-<a class="operation-link" href="objet-soviet-gourde.html">Gourde soviétique – Toile & aluminium</a>
-<a class="operation-link" href="objet-soviet-cartouchieres.html">Cartouchières soviétiques – Mosin / SVT</a>
-<a class="operation-link" href="objet-soviet-masque-gaz.html">Masque à gaz soviétique – GP-5 / ShM-1</a>
-<a class="operation-link" href="objet-soviet-couteau.html">Couteau soviétique – Modèle de campagne</a>
-<a class="operation-link" href="objet-soviet-radio.html">Radio soviétique – Matériel de transmission</a>
-<a class="operation-link" href="objet-soviet-outils.html">Outils militaires soviétiques – Pelle, pioche</a>
+<!-- LISTE PRINCIPALE -->
+<div style="width:90%; max-width:900px; margin:40px auto;">
 
-<!-- ⭐ BOUTON RETOUR -->
-<a href="urss.html" class="menu-button">⬅ Retour à la collection soviétique</a>
+    <!-- ⭐ Objets principaux (même style que FR / USA / DE / UK) -->
+    <a class="operation-link" href="urss-gourde.html">Gourde soviétique</a>
+    <a class="operation-link" href="urss-gamelle.html">Gamelle soviétique</a>
+    <a class="operation-link" href="urss-sac-a-dos.html">Sac à dos soviétique</a>
+    <a class="operation-link" href="urss-masque-a-gaz.html">Masque à gaz soviétique</a>
+    <a class="operation-link" href="urss-carte-militaire.html">Carte militaire soviétique</a>
 
+    <!-- ⭐ OBJETS DIVERS DU SOLDAT -->
+    <h2 class="section-title">Objets divers du soldat</h2>
+    <h3 class="section-subtitle">URSS 1939–1945</h3>
+
+    <a class="operation-link" href="urss-divers-partie1.html">1 – Ce qu’il garde sur lui</a>
+    <a class="operation-link" href="urss-divers-partie2.html">2 – Objets religieux & personnels</a>
+    <a class="operation-link" href="urss-divers-partie3.html">3 – Correspondance & écriture</a>
+    <a class="operation-link" href="urss-divers-partie4.html">4 – Confort, bivouac & nettoyage de l’arme</a>
+    <a class="operation-link" href="urss-divers-partie5.html">5 – Hygiène du soldat</a>
+
+    <!-- RETOUR COLLECTIONS URSS -->
+    <div class="center" style="margin-top:40px; margin-bottom:40px;">
+        <a href="urss.html" class="menu-button">⬅ Retour à la collection soviétique</a>
+    </div>
+
+</div>
+
+<!-- NOUVEAU FOOTER -->
 <footer class="site-footer">
     <div class="footer-line"></div>
+
+    <p>
+        <a href="mentions.html" style="color:#777;">Mentions légales</a> • 
+        <a href="politique-confidentialite.html" style="color:#777;">Politique de confidentialité</a>
+    </p>
+
     <p>© 2026 Musée HOP WW2 – Tous droits réservés.</p>
 </footer>
 
