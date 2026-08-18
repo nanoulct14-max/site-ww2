@@ -3,46 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Armes soviétiques – Musée HOP WW2</title>
+    <title>Armes Soviétiques – Musée HOP WW2</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-mobile.css">
 
+    <!-- Correction couleur liens (sans modifier style.css) -->
     <style>
-        .operation-link {
-            font-size: 26px;
-            font-weight: 600;
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            color: #ffffff !important;
+            text-decoration: none;
         }
     </style>
 </head>
 
 <body>
 
+<!-- HEADER OFFICIEL -->
 <header>
-    <nav>
-        <a href="index.html">ACCUEIL</a>
-        <a href="collections.html">COLLECTIONS</a>
-        <a href="guides.html">GUIDES</a>
-        <a href="contact.html">CONTACT</a>
-        <a href="mentions.html">MENTIONS LÉGALES</a>
+    <nav style="display:flex; gap:22px; align-items:center; justify-content:center;">
+        <a href="index.html" style="font-size:18px; letter-spacing:0.5px;">MENU</a>
+        <a href="a-propos.html" style="font-size:18px; letter-spacing:0.5px;">À PROPOS</a>
+        <a href="contact.html" style="font-size:18px; letter-spacing:0.5px;">CONTACT</a>
+        <a href="mentions.html" style="font-size:18px; letter-spacing:0.5px;">MENTIONS LÉGALES</a>
+        <a href="presentation.html" style="font-size:18px; letter-spacing:0.5px;">PRÉSENTATION</a>
     </nav>
 </header>
 
-<!-- HERO URSS -->
-<section class="hero-section" style="background-image:url('images/urss.jpg');">
+<!-- HERO -->
+<section class="hero-section" style="background-image:url('images/urss-hero.jpg'); background-position:center;">
     <div class="hero-overlay"></div>
 
     <div class="hero-title-block">
-        <h2 class="hero-title-line1">
-            ARMES SOVIÉTIQUES<br>1939–1945
-        </h2>
-        <h3 class="hero-title-line2">
-            Fusils, pistolets, mitraillettes et armement de l’Armée rouge
-        </h3>
+        <h2 class="hero-title-line1">Armes Soviétiques</h2>
+        <h3 class="hero-title-line2">Liste des modèles 1939–1945</h3>
     </div>
 </section>
 
-<h2 class="section-title">Armes soviétiques</h2>
+<!-- TITRE -->
+<h2 class="section-title">Catégories disponibles</h2>
 
-<a class="operation-link" href="arme-mosin-nagant.html">Mosin-Nagant 91/30 – Fusil standard</a>
-<a class="operation-link" href="arme-svt40.html">SVT-40 – Fusil semi-automatique</a>
-<a class="operation-link" href="arme-ppsh41.html">PPSh-41 – Mitraillette emblématique</a>
-<a class="operation-link" href="arme-pps43.html">PPS-43 – Mitrail
+<div class="fiche-content">
+
+    <!-- ARMES BLANCHES -->
+    <div class="fiche-block">
+        <h2 class="section-title">Armes blanches</h2>
+        <ul>
+            <li><a href="urss-arme-blanche-bayonette-mosin.html">Baïonnette Mosin‑Nagant</a></li>
+            <li><a href="urss-arme-blanche-couteau-combat.html">Couteau de combat soviétique</a></li>
+            <li><a href="urss-arme-blanche-poignard.html">Poignard soviétique</a></li>
+        </ul>
+    </div>
+
+    <!-- FUSILS -->
+    <div class="fiche-block">
+        <h2 class="section-title">Fusils</h2>
+        <ul>
+            <li><a href="urss-fusil-mosin-nagant.html">Mosin‑Nagant 91/30</a></li>
+            <li><a href="urss-fusil-svt40.html">Tokarev SVT‑40</a></li>
+            <li><a href="urss-fusil-avt40.html">AVT‑40</a></li>
+        </ul>
+    </div>
+
+    <!-- FUSILS-MITRAILLEURS -->
+    <div class="fiche-block">
+        <h2 class="section-title">Fusils-mitrailleurs</h2>
+        <ul>
+            <li><a href="urss-fm-dp28.html">DP‑28</a></li>
+        </ul>
+    </div>
+
+    <!-- MITRAILLEUSES -->
+    <div class="fiche-block">
+        <h2 class="section-title">Mitrailleuses</h2>
+        <ul>
+            <li><a href="urss-mitrailleuse-maxim.html">PM M1910 Maxim</a></li>
+            <li><a href="urss-mitrailleuse-dshk.html">DShK 12,7 mm</a></li>
+        </ul>
+    </div>
+
+    <!-- PISTOLETS & REVOLVERS -->
+    <div class="fiche-block">
+        <h2 class="section-title">Pistolets & revolvers</h2>
+        <ul>
+            <li><a href="urss-pistolet-tokarev-tt33.html">Tokarev TT‑33</a></li>
+            <li><a href="urss-revolver-nagant-m1895.html">Nagant M1895</a></li>
+            <li><a href="urss-pistolet-pm.html">PM Makarov (service tardif)</a></li>
+        </ul>
+    </div>
+
+    <!-- ARMES D’APPUI -->
+    <div class="fiche-block">
+        <h2 class="section-title">Armes d’appui</h2>
+        <ul>
+            <li><a href="urss-mortier-50mm.html">Mortier 50 mm RM‑38</a></li>
+            <li><a href="urss-mortier-82mm.html">Mortier 82 mm BM‑37</a></li>
+            <li><a href="urss-lance-grenades.html">Lance‑grenades soviétique</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<!-- BOUTON RETOUR -->
+<div style="text-align:center; margin-top:40px; margin-bottom:40px;">
+    <a href="urss.html" class="menu-button">⬅ Retour aux collections soviétiques</a>
+</div>
+
+<!-- FOOTER OFFICIEL -->
+<footer class="site-footer">
+    <div class="footer-line"></div>
+
+    <p>
+        <a href="mentions.html" style="color:#777;">Mentions légales</a> • 
+        <a href="politique-confidentialite.html" style="color:#777;">Politique de confidentialité</a>
+    </p>
+
+    <p>© 2026 Musée HOP WW2 – Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
