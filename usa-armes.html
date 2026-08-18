@@ -2,61 +2,124 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Armes américaines – Musée HOP WW2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armes Américaines – Musée HOP WW2</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-mobile.css">
 
+    <!-- Correction couleur liens (sans modifier style.css) -->
     <style>
-        .operation-link {
-            font-size: 26px;
-            font-weight: 600;
-            margin: 18px 0;
-            display: block;
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+            color: #ffffff !important;
+            text-decoration: none;
         }
     </style>
 </head>
 
 <body>
 
+<!-- HEADER OFFICIEL -->
 <header>
-    <nav>
-        <a href="index.html">ACCUEIL</a>
-        <a href="collections.html">COLLECTIONS</a>
-        <a href="guides.html">GUIDES</a>
-        <a href="contact.html">CONTACT</a>
-        <a href="mentions.html">MENTIONS LÉGALES</a>
+    <nav style="display:flex; gap:22px; align-items:center; justify-content:center;">
+        <a href="index.html" style="font-size:18px; letter-spacing:0.5px;">MENU</a>
+        <a href="a-propos.html" style="font-size:18px; letter-spacing:0.5px;">À PROPOS</a>
+        <a href="contact.html" style="font-size:18px; letter-spacing:0.5px;">CONTACT</a>
+        <a href="mentions.html" style="font-size:18px; letter-spacing:0.5px;">MENTIONS LÉGALES</a>
+        <a href="presentation.html" style="font-size:18px; letter-spacing:0.5px;">PRÉSENTATION</a>
     </nav>
 </header>
 
 <!-- HERO -->
-<section class="hero-section" style="background-image:url('images/usa.jpg'); background-position:center;">
+<section class="hero-section" style="background-image:url('images/usa-hero.jpg'); background-position:center;">
     <div class="hero-overlay"></div>
 
     <div class="hero-title-block">
-        <h2 class="hero-title-line1">Armes américaines</h2>
-        <h3 class="hero-title-line2">Armement individuel – WW2</h3>
+        <h2 class="hero-title-line1">Armes Américaines</h2>
+        <h3 class="hero-title-line2">Liste des modèles 1939–1945</h3>
     </div>
 </section>
 
-<h2 class="section-title">Armes disponibles</h2>
+<!-- TITRE -->
+<h2 class="section-title">Catégories disponibles</h2>
 
-<div style="width:90%; max-width:900px; margin:40px auto;">
+<div class="fiche-content">
 
-    <a class="operation-link" href="us-arme-m1-garand.html">Fusil M1 Garand</a>
-    <a class="operation-link" href="us-arme-m1-carbine.html">Carabine M1</a>
-    <a class="operation-link" href="us-arme-thompson.html">Thompson M1A1</a>
-    <a class="operation-link" href="us-arme-greasegun.html">M3 Grease Gun</a>
-    <a class="operation-link" href="us-arme-1911.html">Pistolet Colt 1911</a>
-    <a class="operation-link" href="us-arme-bar.html">Fusil BAR M1918A2</a>
+    <!-- ARMES BLANCHES -->
+    <div class="fiche-block">
+        <h2 class="section-title">Armes blanches</h2>
+        <ul>
+            <li><a href="usa-arme-blanche-m3.html">Poignard M3</a></li>
+            <li><a href="usa-arme-blanche-baionnette-m1.html">Baïonnette M1 Garand</a></li>
+            <li><a href="usa-arme-blanche-couteau-combat.html">Couteau de combat US</a></li>
+        </ul>
+    </div>
+
+    <!-- FUSILS -->
+    <div class="fiche-block">
+        <h2 class="section-title">Fusils</h2>
+        <ul>
+            <li><a href="usa-fusil-m1-garand.html">M1 Garand</a></li>
+            <li><a href="usa-fusil-springfield-1903.html">Springfield M1903</a></li>
+            <li><a href="usa-fusil-m1-carbine.html">M1 Carbine</a></li>
+        </ul>
+    </div>
+
+    <!-- FUSILS-MITRAILLEURS -->
+    <div class="fiche-block">
+        <h2 class="section-title">Fusils-mitrailleurs</h2>
+        <ul>
+            <li><a href="usa-fm-bar.html">Browning BAR M1918A2</a></li>
+        </ul>
+    </div>
+
+    <!-- MITRAILLEUSES -->
+    <div class="fiche-block">
+        <h2 class="section-title">Mitrailleuses</h2>
+        <ul>
+            <li><a href="usa-mitrailleuse-m1919.html">Browning M1919</a></li>
+            <li><a href="usa-mitrailleuse-m2.html">Browning M2 .50</a></li>
+        </ul>
+    </div>
+
+    <!-- PISTOLETS & REVOLVERS -->
+    <div class="fiche-block">
+        <h2 class="section-title">Pistolets & revolvers</h2>
+        <ul>
+            <li><a href="usa-pistolet-m1911.html">Colt M1911</a></li>
+            <li><a href="usa-revolver-s&w-victory.html">Smith & Wesson Victory</a></li>
+            <li><a href="usa-pistolet-high-standard.html">High Standard HD</a></li>
+        </ul>
+    </div>
+
+    <!-- ARMES D’APPUI -->
+    <div class="fiche-block">
+        <h2 class="section-title">Armes d’appui</h2>
+        <ul>
+            <li><a href="usa-mortier-60mm.html">Mortier 60 mm M2</a></li>
+            <li><a href="usa-mortier-81mm.html">Mortier 81 mm M1</a></li>
+            <li><a href="usa-lance-grenades-m7.html">Lance‑grenades M7</a></li>
+        </ul>
+    </div>
 
 </div>
 
 <!-- BOUTON RETOUR -->
-<div class="center" style="margin-top:40px; margin-bottom:40px;">
-    <a href="us.html" class="menu-button">⬅ Retour aux collections américaines</a>
+<div style="text-align:center; margin-top:40px; margin-bottom:40px;">
+    <a href="usa.html" class="menu-button">⬅ Retour aux collections américaines</a>
 </div>
 
+<!-- FOOTER OFFICIEL -->
 <footer class="site-footer">
     <div class="footer-line"></div>
+
+    <p>
+        <a href="mentions.html" style="color:#777;">Mentions légales</a> • 
+        <a href="politique-confidentialite.html" style="color:#777;">Politique de confidentialité</a>
+    </p>
+
     <p>© 2026 Musée HOP WW2 – Tous droits réservés.</p>
 </footer>
 
