@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nanoulct14-max.github.io/site-ww2/sitemap.xml
