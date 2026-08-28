@@ -1,181 +1,210 @@
-index.html
-presentation.html
-collections.html
-guides.html
-a-propos.html
-contact.html
-mentions.html
-politique-confidentialite.html
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-visages.html
-roosevelt.html
-eisenhower.html
-patton.html
-audie-murphy.html
-giraud.html
-churchill.html
-montgomery.html
-alan_brooke.html
-staline.html
-joukov.html
-lioudmila-pavlichenko.html
-degaulle.html
-leclerc.html
-koenig.html
-emile-muselier.html
-felix-eboue.html
-chaban-delmas.html
-rol-tanguy.html
-mandel.html
-spears.html
-reynaud.html
-hitler.html
-eva-braun.html
-himmler.html
-goering.html
-goebbels.html
-rommel.html
-keitel.html
-jodl.html
-frisius.html
-von-braun.html
-mussolini.html
-ciano.html
-graziani.html
-badoglio.html
-hirohito.html
-tojo.html
-yamamoto.html
-kuribayashi.html
-ushijima.html
-petain.html
-darlan.html
-laval.html
-darnand.html
-bousquet.html
-abbe-bonpain.html
-bidault.html
-jean-moulin.html
-frenay.html
-nancy-wake.html
-lucie-aubrac.html
-brossolette.html
-manouchian.html
-turing.html
-stauffenberg.html
-hannah-szenes.html
-bonnier.html
-anne-frank.html
-lea-enfant-des-dunes-dunkerque-occupation.html
-simone-veil.html
-ginette-kolinka.html
-sophie-scholl.html
-civils-blitz.html
-varsovie.html
+  <!-- MENU PRINCIPAL -->
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/index.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/presentation.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/collections.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/guides.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/a-propos.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/contact.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/mentions.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/politique-confidentialite.html</loc></url>
 
-histoire-memoire.html
-regime-nazi-1933-1945.html
-croix_gammee_origine_detournement.html
-propagande-nazie.html
-allemagne-jo-1936.html
-lois-raciales.html
-jeunesses-hitleriennes.html
-allemagne-1933-1945.html
-gestapo.html
-ss.html
-police-politique.html
-rose-blanche.html
-mort-hitler.html
-shoah.html
-ghettos.html
-deportations.html
-nuit-de-cristal.html
-aktion_t4_euthanasie_forcee.html
-fiche-rafle-billet-vert.html
-fiche-vel-d-hiv.html
-oradour-sur-glane.html
-camp-de-concentration.html
-camps-extermination.html
-fiche-natzweiler-struthof.html
-fiche-nacht-und-nebel.html
-classification-camps.html
-einsatzgruppen.html
-travail-force.html
-dora-mittelbau.html
-france-de-vichy.html
-degaulle_juin_1940.html
-france-libre.html
-collaboration.html
-fnfl.html
-france-libre-vichy.html
-occupation.html
-giraud_colonisation_americaine.html
-resistance-francaise.html
-materiel_resistance.html
-resistance-allemande.html
-operation-walkyrie.html
-operation-foxley-projets-britanniques-neutraliser-hitler.html
-maquisards-vercors.html
-croix-lorraine-victoire.html
-histoire-vache-qui-rit-u96.html
-ligne-maginot.html
-blockhaus-eperlecques.html
-la-coupole.html
-volkswagen_creation_histoire.html
-jeep-vehicule-qui-a-change-la-guerre.html
-disney-propagande-ww2.html
-popeye-propagande-americaine.html
-operation_coca_fanta.html
-billets-drapeau-monnaie-liberation-1944.html
-proces-nuremberg.html
-epuration_1944_hommes_femmes.html
-denazification.html
-crimes-guerre.html
-memoire-shoah.html
-institutions_internationales_1945.html
-mur-de-berlin-1961-1989.html
+  <!-- VISAGES -->
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/visages.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/roosevelt.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/eisenhower.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/patton.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/audie-murphy.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/giraud.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/churchill.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/montgomery.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/alan_brooke.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/staline.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/joukov.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/lioudmila-pavlichenko.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/degaulle.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/leclerc.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/koenig.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/emile-muselier.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/felix-eboue.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/chaban-delmas.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/rol-tanguy.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/mandel.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/spears.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/reynaud.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/hitler.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/eva-braun.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/himmler.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/goering.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/goebbels.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/rommel.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/keitel.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/jodl.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/frisius.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/von-braun.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/mussolini.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/ciano.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/graziani.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/badoglio.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/hirohito.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/tojo.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/yamamoto.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/kuribayashi.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/ushijima.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/petain.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/darlan.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/laval.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/darnand.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/bousquet.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/abbe-bonpain.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/bidault.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/jean-moulin.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/frenay.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/nancy-wake.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/lucie-aubrac.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/brossolette.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/manouchian.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/turing.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/stauffenberg.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/hannah-szenes.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/bonnier.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/anne-frank.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/lea-enfant-des-dunes-dunkerque-occupation.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/simone-veil.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/ginette-kolinka.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/sophie-scholl.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/civils-blitz.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/varsovie.html</loc></url>
 
-operations-militaires.html
-overlord.html
-neptune.html
-torch.html
-avalanche.html
-dragoon.html
-stalingrad.html
-koursk.html
-ardennes.html
-bataille-france.html
-bataille-dunkerque-1940.html
-siege-dunkerque-1944-1945.html
-el-alamein.html
-liberation-paris.html
-liberation-dunkerque-9mai1945.html
-dynamo.html
-operation-bolero.html
-mur-atlantique.html
-fortitude.html
-market-garden.html
-barbarossa.html
-typhon.html
-bagration.html
-operation_titanic.html
-dresde-1945.html
-raid-tokyo.html
-blitz-londres.html
-hambourg.html
-pearl-harbor.html
-v1-bombe-volante.html
-v2-fusee-balistique.html
-eperlecques-coupole.html
-tallboy-bombe-perforante.html
-bombe-disney.html
-grand-slam.html
-flak88.html
-panzerfaust.html
-nebelwerfer.html
-stuka.html
-operation-crossbow.html
-operation-hydra.html
-operation-big-ben.html
-operation-chastise.html
-operation-paperclip.html
+  <!-- HISTOIRE & MÉMOIRE -->
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/histoire-memoire.html</loc></url>
+
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/regime-nazi-1933-1945.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/croix_gammee_origine_detournement.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/propagande-nazie.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/allemagne-jo-1936.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/lois-raciales.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/jeunesses-hitleriennes.html</loc></url>
+
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/allemagne-1933-1945.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/gestapo.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/ss.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/police-politique.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/rose-blanche.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/mort-hitler.html</loc></url>
+
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/shoah.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/ghettos.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/deportations.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/nuit-de-cristal.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/aktion_t4_euthanasie_forcee.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/fiche-rafle-billet-vert.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/fiche-vel-d-hiv.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/oradour-sur-glane.html</loc></url>
+
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/camp-de-concentration.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/camps-extermination.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/fiche-natzweiler-struthof.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/fiche-nacht-und-nebel.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/classification-camps.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/einsatzgruppen.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/travail-force.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/dora-mittelbau.html</loc></url>
+
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/france-de-vichy.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/degaulle_juin_1940.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/france-libre.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/collaboration.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/fnfl.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/france-libre-vichy.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/occupation.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/giraud_colonisation_americaine.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/resistance-francaise.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/materiel_resistance.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/resistance-allemande.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/operation-walkyrie.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/operation-foxley-projets-britanniques-neutraliser-hitler.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/maquisards-vercors.html</loc></url>
+
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/croix-lorraine-victoire.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/histoire-vache-qui-rit-u96.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/ligne-maginot.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/blockhaus-eperlecques.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/la-coupole.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/volkswagen_creation_histoire.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/jeep-vehicule-qui-a-change-la-guerre.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/disney-propagande-ww2.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/popeye-propagande-americaine.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/operation_coca_fanta.html</loc></url>
+
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/billets-drapeau-monnaie-liberation-1944.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/proces-nuremberg.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/epuration_1944_hommes_femmes.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/denazification.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/crimes-guerre.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/memoire-shoah.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/institutions_internationales_1945.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/mur-de-berlin-1961-1989.html</loc></url>
+
+
+  <!-- OPÉRATIONS MILITAIRES -->
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/operations-militaires.html</loc></url>
+
+  <!-- Débarquements -->
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/overlord.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/neptune.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/torch.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/avalanche.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/dragoon.html</loc></url>
+
+  <!-- Grandes batailles -->
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/stalingrad.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/koursk.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/ardennes.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/bataille-france.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/bataille-dunkerque-1940.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/siege-dunkerque-1944-1945.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/el-alamein.html</loc></url>
+
+  <!-- Libérations -->
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/liberation-paris.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/liberation-dunkerque-9mai1945.html</loc></url>
+
+  <!-- Opérations spéciales -->
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/dynamo.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/operation-bolero.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/mur-atlantique.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/fortitude.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/market-garden.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/barbarossa.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/typhon.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/bagration.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/operation_titanic.html</loc></url>
+
+  <!-- Bombardements & raids -->
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/dresde-1945.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/raid-tokyo.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/blitz-londres.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/hambourg.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/pearl-harbor.html</loc></url>
+
+  <!-- Armes puissantes -->
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/v1-bombe-volante.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/v2-fusee-balistique.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/eperlecques-coupole.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/tallboy-bombe-perforante.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/bombe-disney.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/grand-slam.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/flak88.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/panzerfaust.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/nebelwerfer.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/stuka.html</loc></url>
+
+  <!-- Programmes stratégiques -->
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/operation-crossbow.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/operation-hydra.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/operation-big-ben.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/operation-chastise.html</loc></url>
+  <url><loc>https://nanoulct14-max.github.io/site-ww2/operation-paperclip.html</loc></url>
