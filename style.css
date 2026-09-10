@@ -476,3 +476,34 @@ body, h1, h2, h3, .section-title {
         max-width: 100%;
     }
 }
+/* ——— CALIBRATION MOBILE ——— */
+@media (max-width: 900px) {
+    html, body {
+        max-width: 480px;
+        margin: 0 auto;
+    }
+
+    .hero-title-line1 {
+        font-size: 2.6rem !important;
+    }
+
+    .hero-title-line2 {
+        font-size: 1.3rem !important;
+    }
+
+    .section-title {
+        font-size: 2.2rem !important;
+    }
+
+    .fiche-block,
+    .fiche-block p,
+    .fiche-block ul,
+    .fiche-block li {
+        font-size: 1.25rem !important;
+        line-height: 1.8rem !important;
+    }
+
+    .fiche-image {
+        max-width: 100%;
+    }
+}
