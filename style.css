@@ -477,3 +477,10 @@ body, h1, h2, h3, .section-title {
         max-width: 100%;
     }
 }
+@media (max-width: 900px) {
+    html, body {
+        width: 480px;
+        max-width: 480px;
+        margin: 0 auto;
+    }
+}
