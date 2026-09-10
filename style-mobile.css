@@ -8,31 +8,40 @@
         margin: 0 !important;
         padding: 0 !important;
         overflow-x: hidden !important;
+        background: #0f0f0f !important;
     }
 
     /* HEADER */
     header {
+        width: 100% !important;
         max-width: 100% !important;
-        border-radius: 0 !important;
+        margin: 0 auto !important;
         padding: 35px 0 !important;
+        border-radius: 0 !important;
     }
 
     nav {
-        gap: 18px !important;
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
         flex-wrap: wrap !important;
+        gap: 18px !important;
     }
 
     nav a {
         font-size: 1rem !important;
         letter-spacing: 2px !important;
+        margin: 0 6px !important;
     }
 
     /* HERO */
     .hero-section {
+        width: 100% !important;
         height: auto !important;
         padding-top: 140px !important;
         padding-bottom: 100px !important;
         background-size: cover !important;
+        background-position: center !important;
     }
 
     .hero-title-line1 {
@@ -42,20 +51,24 @@
 
     .hero-title-line2 {
         font-size: 1.6rem !important;
+        letter-spacing: 1px !important;
     }
 
     /* TITRES */
     .section-title {
         font-size: 2.6rem !important;
         letter-spacing: 3px !important;
+        margin-top: 40px !important;
+        margin-bottom: 25px !important;
     }
 
     /* BLOCS */
     .fiche-block {
-        max-width: 900px !important;
         width: 95% !important;
+        max-width: 900px !important;
         margin: 30px auto !important;
         padding: 35px !important;
+        border-radius: 6px !important;
     }
 
     .fiche-block p,
@@ -66,39 +79,49 @@
 
     /* IMAGES */
     .fiche-image {
+        width: 100% !important;
         max-width: 100% !important;
         height: auto !important;
+        margin: 20px auto !important;
+        display: block !important;
     }
 
     /* CARTES WW2 */
     .menu-buttons {
-        max-width: 900px !important;
         width: 95% !important;
+        max-width: 900px !important;
+        margin: 40px auto !important;
+        display: grid !important;
         grid-template-columns: 1fr !important;
         gap: 25px !important;
     }
 
     .ww2-fullcard {
         height: 240px !important;
+        background-size: cover !important;
+        background-position: center !important;
     }
 
     .ww2-fullcard span {
         font-size: 1.4rem !important;
+        letter-spacing: 1px !important;
     }
 
     /* BOUTON RETOUR */
     .menu-button {
-        max-width: 900px !important;
         width: 95% !important;
-        font-size: 1.4rem !important;
+        max-width: 900px !important;
         padding: 20px !important;
+        font-size: 1.4rem !important;
+        border-radius: 10px !important;
     }
 
     /* BOUTON BUNKER */
     .wide-thin-button {
-        max-width: 900px !important;
         width: 95% !important;
+        max-width: 900px !important;
         height: 75px !important;
+        margin: 40px auto !important;
     }
 
     .wide-thin-button a {
