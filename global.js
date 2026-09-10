@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    /* Ajout automatique du viewport si absent */
     if (!document.querySelector('meta[name="viewport"]')) {
         const viewport = document.createElement('meta');
         viewport.setAttribute('name', 'viewport');
@@ -8,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.head.appendChild(viewport);
     }
 
-    /* Ajout automatique du style-mobile.css si absent */
     if (!document.querySelector('link[href="style-mobile.css"]')) {
         const mobileCSS = document.createElement('link');
         mobileCSS.rel = "stylesheet";
