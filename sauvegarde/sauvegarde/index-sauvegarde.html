@@ -2,26 +2,47 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MUSÉE HOP WW2</title>
+    <title>Musée HOP WW2</title>
+
+    <!-- Google Analytics (GA4) en priorité -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M0YGR23PJP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-M0YGR23PJP');
+    </script>
+
+    <!-- Icônes -->
+    <link rel="apple-touch-icon" sizes="512x512" href="images/app-icon.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/app-icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- STYLES -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-mobile.css">
+
+    <!-- AdSense en dernier pour ne pas bloquer GA4 -->
+    <script async defer 
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5012296544725855"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <!-- HEADER (menu uniquement) -->
+    <!-- HEADER GLOBAL -->
     <header>
-        <nav>
-            <a href="index.html">ACCUEIL</a>
-            <a href="visages.html">VISAGES</a>
-            <a href="collections.html">COLLECTIONS</a>
-            <a href="guides.html">GUIDES</a>
-            <a href="contact.html">CONTACT</a>
-            <a href="mentions.html">MENTIONS LÉGALES</a>
-        </nav>
+    <nav style="display:flex; gap:22px; align-items:center;">
+        <a href="index.html" style="font-size:18px; letter-spacing:0.5px;">MENU</a>
+        <a href="a-propos.html" style="font-size:18px; letter-spacing:0.5px;">À PROPOS</a>
+        <a href="contact.html" style="font-size:18px; letter-spacing:0.5px;">CONTACT</a>
+        <a href="mentions.html" style="font-size:18px; letter-spacing:0.5px;">MENTIONS LÉGALES</a>
+        <a href="presentation.html" style="font-size:18px; letter-spacing:0.5px;">PRÉSENTATION</a>
+    </nav>
     </header>
 
-    <!-- HERO (nouveau titre principal) -->
+    <!-- HERO PRINCIPAL -->
     <section class="hero-section" style="background-image:url('images/hero.jpg');">
         <div class="hero-overlay"></div>
 
@@ -31,10 +52,37 @@
         </div>
     </section>
 
+    <!-- BLOC YOUTUBE AJOUTÉ (identique à tes fiches) -->
+    <div class="fiche-block">
+        <h2 class="section-title">Chaîne YouTube Musée HOP WW2</h2>
+        <p>
+            Retrouvez les vidéos historiques du Musée HOP WW2 : archives, restaurations,
+            analyses, batailles, objets et documents d’époque.
+        </p>
+
+        <a class="menu-button" 
+           href="https://www.youtube.com/@JeremyLct"
+           target="_blank">
+           ▶ Accéder à ma chaîne YouTube
+        </a>
+    </div>
+
+    <!-- PUB ACCUEIL -->
+    <div class="pub-block">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-5012296544725855"
+             data-ad-slot="0000000000"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+    </div>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
     <!-- CARTES WW2 -->
     <section class="menu-buttons">
 
-        <!-- ⭐ CORRECTION ICI : bon lien vers la page -->
         <a class="ww2-fullcard" href="operations-militaires.html"
            style="background-image:url('images/operations-militaires.jpg');">
             <span>OPÉRATIONS MILITAIRES</span>
@@ -55,7 +103,7 @@
             <span>ROYAUME-UNI</span>
         </a>
 
-        <a class="ww2-fullcard" href="usa.html"
+        <a class="ww2-fullcard" href="us.html"
            style="background-image:url('images/usa.jpg');">
             <span>ÉTATS-UNIS</span>
         </a>
@@ -77,11 +125,18 @@
 
     </section>
 
+    <div class="wide-thin-button">
+        <a href="pourquoi.html">POURQUOI CE MUSÉE</a>
+    </div>
+    
     <!-- FOOTER -->
-    <footer>
-        <div class="footer-line"></div>
-        <p>© 2026 Musée HOP WW2 — Tous droits réservés</p>
-    </footer>
+    <footer class="site-footer">
+    <div class="footer-line"></div>
 
-</body>
-</html>
+    <p>
+        <a href="mentions.html" style="color:#777;">Mentions légales</a> • 
+        <a href="politique-confidentialite.html" style="color:#777;">Politique de confidentialité</a>
+    </p>
+
+    <p>© 2026 Musée HOP WW2 – Tous droits réservés.</p>
+    </footer>
