@@ -366,3 +366,29 @@ body, h1, h2, h3, .section-title {
 .wide-thin-button a:hover {
     background-color: rgba(0,0,0,0.75);
 }
+/* Injection automatique du viewport + style-mobile.css */
+@media all {
+}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+    /* Ajout automatique du viewport */
+    if (!document.querySelector('meta[name="viewport"]')) {
+        const vp = document.createElement('meta');
+        vp.name = "viewport";
+        vp.content = "width=device-width, initial-scale=1.0";
+        document.head.appendChild(vp);
+    }
+
+    /* Ajout automatique du style-mobile.css */
+    if (!document.querySelector('link[href="style-mobile.css"]')) {
+        const cssMobile = document.createElement('link');
+        cssMobile.rel = "stylesheet";
+        cssMobile.href = "style-mobile.css";
+        document.head.appendChild(cssMobile);
+    }
+
+});
+</script>
+<style>
