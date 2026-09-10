@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
 
-    <!-- VIEWPORT MOBILE OBLIGATOIRE -->
+    <!-- VIEWPORT MOBILE -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Musée HOP WW2</title>
 
-    <!-- Google Analytics (GA4) en priorité -->
+    <!-- Google Analytics (GA4) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-M0YGR23PJP"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -27,7 +27,30 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-mobile.css">
 
-    <!-- AdSense en dernier pour ne pas bloquer GA4 -->
+    <!-- Injection automatique pour TOUTES les pages -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+
+        /* Ajout automatique du viewport */
+        if (!document.querySelector('meta[name="viewport"]')) {
+            const vp = document.createElement('meta');
+            vp.name = "viewport";
+            vp.content = "width=device-width, initial-scale=1.0";
+            document.head.appendChild(vp);
+        }
+
+        /* Ajout automatique du style-mobile.css */
+        if (!document.querySelector('link[href="style-mobile.css"]')) {
+            const cssMobile = document.createElement('link');
+            cssMobile.rel = "stylesheet";
+            cssMobile.href = "style-mobile.css";
+            document.head.appendChild(cssMobile);
+        }
+
+    });
+    </script>
+
+    <!-- AdSense -->
     <script async defer 
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5012296544725855"
         crossorigin="anonymous"></script>
@@ -35,7 +58,7 @@
 
 <body>
 
-    <!-- HEADER GLOBAL -->
+    <!-- HEADER -->
     <header>
         <nav style="display:flex; gap:22px; align-items:center;">
             <a href="index.html" style="font-size:18px; letter-spacing:0.5px;">MENU</a>
@@ -46,7 +69,7 @@
         </nav>
     </header>
 
-    <!-- HERO PRINCIPAL -->
+    <!-- HERO -->
     <section class="hero-section" style="background-image:url('images/hero.jpg');">
         <div class="hero-overlay"></div>
 
@@ -71,7 +94,7 @@
         </a>
     </div>
 
-    <!-- PUB ACCUEIL -->
+    <!-- PUB -->
     <div class="pub-block">
         <ins class="adsbygoogle"
              style="display:block"
