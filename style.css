@@ -280,7 +280,7 @@ footer {
 }
 
 /* ----------------------------- */
-/* PAGE CONTACT – STYLE PREMIUM  */
+/* PAGE CONTACT — STYLE PREMIUM */
 /* ----------------------------- */
 
 body, h1, h2, h3, .section-title {
@@ -442,7 +442,7 @@ body, h1, h2, h3, .section-title {
     background-color: rgba(0,0,0,0.75);
 }
 
-/* ——— MODE ORDINATEUR FORCÉ SUR MOBILE ——— */
+/* ——— MODE ORDINATEUR SIMULÉ SUR MOBILE ——— */
 @media (max-width: 900px) {
     html, body {
         width: 480px;
