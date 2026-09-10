@@ -1,1 +1,108 @@
+/* ——— MODE MOBILE IDENTIQUE AU PC ——— */
+@media (max-width: 900px) {
 
+    /* Largeur fluide */
+    html, body {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow-x: hidden !important;
+    }
+
+    /* HEADER */
+    header {
+        max-width: 100% !important;
+        border-radius: 0 !important;
+        padding: 35px 0 !important;
+    }
+
+    nav {
+        gap: 18px !important;
+        flex-wrap: wrap !important;
+    }
+
+    nav a {
+        font-size: 1rem !important;
+        letter-spacing: 2px !important;
+    }
+
+    /* HERO */
+    .hero-section {
+        height: auto !important;
+        padding-top: 140px !important;
+        padding-bottom: 100px !important;
+        background-size: cover !important;
+    }
+
+    .hero-title-line1 {
+        font-size: 3.2rem !important;
+        letter-spacing: 4px !important;
+    }
+
+    .hero-title-line2 {
+        font-size: 1.6rem !important;
+    }
+
+    /* TITRES */
+    .section-title {
+        font-size: 2.6rem !important;
+        letter-spacing: 3px !important;
+    }
+
+    /* BLOCS */
+    .fiche-block {
+        max-width: 900px !important;
+        width: 95% !important;
+        margin: 30px auto !important;
+        padding: 35px !important;
+    }
+
+    .fiche-block p,
+    .fiche-block li {
+        font-size: 1.45rem !important;
+        line-height: 2rem !important;
+    }
+
+    /* IMAGES */
+    .fiche-image {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    /* CARTES WW2 */
+    .menu-buttons {
+        max-width: 900px !important;
+        width: 95% !important;
+        grid-template-columns: 1fr !important;
+        gap: 25px !important;
+    }
+
+    .ww2-fullcard {
+        height: 240px !important;
+    }
+
+    .ww2-fullcard span {
+        font-size: 1.4rem !important;
+    }
+
+    /* BOUTON RETOUR */
+    .menu-button {
+        max-width: 900px !important;
+        width: 95% !important;
+        font-size: 1.4rem !important;
+        padding: 20px !important;
+    }
+
+    /* BOUTON BUNKER */
+    .wide-thin-button {
+        max-width: 900px !important;
+        width: 95% !important;
+        height: 75px !important;
+    }
+
+    .wide-thin-button a {
+        font-size: 1.4rem !important;
+        padding: 12px 40px !important;
+    }
+}
