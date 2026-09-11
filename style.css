@@ -445,3 +445,19 @@ body, h1, h2, h3, .section-title {
 .wide-thin-button a:hover {
     background-color: rgba(0,0,0,0.75);
 }
+/* --- Sous-titres des sections (Commandement américain, britannique, etc.) --- */
+.commandement-title,
+.fiche-subtitle,
+.visage-subtitle,
+h3.commandement-title {
+    text-align: center;
+    font-family: "Cinzel", serif;
+    font-size: 2rem;          /* plus grand */
+    font-weight: 700;         /* gras */
+    color: #ffffff;           /* blanc */
+    letter-spacing: 2px;
+    margin: 40px 0 20px;
+    text-shadow:
+        0 0 8px rgba(0,0,0,0.7),
+        0 0 14px rgba(0,0,0,0.5);
+}
