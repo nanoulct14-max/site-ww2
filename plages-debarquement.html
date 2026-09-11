@@ -2,184 +2,111 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plages du Débarquement – Musée HOP WW2</title>
 
-    <meta name="viewport" content="width=1024">
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style-mobile.css">
+    <link rel="stylesheet" href="style.css?v=3">
 </head>
 
-<body class="dark-body">
+<body>
 
 <!-- HEADER -->
 <header>
-    <nav style="display:flex; gap:22px; align-items:center;">
+    <nav style="display:flex; gap:22px; align-items:center; justify-content:center;">
         <a href="index.html" style="font-size:18px; letter-spacing:0.5px;">MENU</a>
         <a href="operations-militaires.html" style="font-size:18px; letter-spacing:0.5px;">OPÉRATIONS</a>
         <a href="france.html" style="font-size:18px; letter-spacing:0.5px;">FRANCE</a>
     </nav>
 </header>
 
-<!-- HERO GLOBAL -->
+<!-- HERO UNIQUE -->
 <section class="hero-section" style="background-image:url('images/plages-debarquement.jpg');">
     <div class="hero-overlay"></div>
     <div class="hero-title-block">
-        <h2 class="hero-title-line1">Les plages du Débarquement</h2>
+        <h2 class="hero-title-line1">LES PLAGES DU DÉBARQUEMENT</h2>
         <h3 class="hero-title-line2">Utah – Omaha – Gold – Juno – Sword – Pointe du Hoc</h3>
     </div>
 </section>
 
 <!-- INTRO -->
-<section class="fiche-block">
+<div class="fiche-block">
     <h2 class="section-title">Introduction</h2>
     <p>
-        Le 6 juin 1944, les forces alliées lancent l’opération Overlord, la plus grande opération
-        amphibie de l’Histoire. Cinq plages reçoivent des noms de code simples pour faciliter les
-        communications : Utah, Omaha, Gold, Juno et Sword. À ces zones s’ajoute la Pointe du Hoc,
-        objectif crucial confié aux Rangers américains.
+        Le 6 juin 1944, les forces alliées débarquent sur cinq plages de Normandie : Utah, Omaha,
+        Gold, Juno et Sword. À ces zones s’ajoute la Pointe du Hoc, attaquée par les Rangers américains.
+        Chaque plage possède son commandement, ses objectifs et ses pertes.
     </p>
-</section>
-
-<!-- TABLEAU SYNTHÈSE -->
-<section class="fiche-block">
-    <h2 class="section-title">Synthèse des plages</h2>
-    <table class="ww2-table">
-        <thead>
-            <tr>
-                <th>Plage</th>
-                <th>Nation</th>
-                <th>Soldats</th>
-                <th>Morts</th>
-                <th>Libération</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr><td>Utah</td><td>USA</td><td>≈ 23 000</td><td>≈ 200</td><td>≈ 9h30</td></tr>
-            <tr><td>Omaha</td><td>USA</td><td>≈ 34 000</td><td>≈ 2 000–3 000</td><td>≈ 17h00</td></tr>
-            <tr><td>Gold</td><td>UK</td><td>≈ 25 000</td><td>≈ 400</td><td>≈ 13h00</td></tr>
-            <tr><td>Juno</td><td>Canada</td><td>≈ 21 000</td><td>≈ 1 200</td><td>≈ 13h30</td></tr>
-            <tr><td>Sword</td><td>UK + France</td><td>≈ 28 000 + 177</td><td>≈ 630</td><td>≈ 12h00</td></tr>
-        </tbody>
-    </table>
-</section>
+</div>
 
 <!-- UTAH BEACH -->
-<section class="hero-section" style="background-image:url('images/utah.jpg');">
-    <div class="hero-overlay"></div>
-    <div class="hero-title-block">
-        <h2 class="hero-title-line1">Utah Beach</h2>
-        <h3 class="hero-title-line2">Débarquement américain</h3>
-        <p><strong>Chef : Brig. Gen. Theodore Roosevelt Jr.</strong></p>
-    </div>
-</section>
-
-<section class="fiche-block">
+<img src="images/utah.jpg" class="fiche-image" alt="Utah Beach">
+<div class="fiche-block">
     <h2 class="section-title">Utah Beach</h2>
+    <p><strong style="color:white;">Chef : Brig. Gen. Theodore Roosevelt Jr.</strong></p>
     <p>
-        Nom de code américain. La 4e division d’infanterie US débarque, appuyée par les parachutistes
-        des 82e et 101e Airborne. Environ 23 000 soldats débarquent, pour environ 200 morts. Utah est
-        sécurisée vers 9h30, avec une progression rapide vers Sainte-Marie-du-Mont.
+        Débarquement américain. Environ 23 000 soldats. Environ 200 morts. Plage sécurisée vers 9h30.
+        Progression rapide vers Sainte-Marie-du-Mont.
     </p>
-</section>
+</div>
 
 <!-- OMAHA BEACH -->
-<section class="hero-section" style="background-image:url('images/omaha.jpg');">
-    <div class="hero-overlay"></div>
-    <div class="hero-title-block">
-        <h2 class="hero-title-line1">Omaha Beach</h2>
-        <h3 class="hero-title-line2">La plage la plus meurtrière</h3>
-        <p><strong>Chef : Lt. Gen. Omar Bradley (1st US Army)</strong></p>
-    </div>
-</section>
-
-<section class="fiche-block">
+<img src="images/omaha.jpg" class="fiche-image" alt="Omaha Beach">
+<div class="fiche-block">
     <h2 class="section-title">Omaha Beach</h2>
+    <p><strong style="color:white;">Chef : Lt. Gen. Omar Bradley (1st US Army)</strong></p>
     <p>
-        Nom de code américain. La 1re division US (“Big Red One”) et la 29e division débarquent sous
-        un feu extrêmement dense. Environ 34 000 soldats, pour 2 000 à 3 000 morts. La plage n’est
-        sécurisée qu’en fin d’après-midi.
+        La plage la plus meurtrière. 34 000 soldats débarqués. 2 000 à 3 000 morts. Plage sécurisée
+        en fin d’après-midi après des combats extrêmement violents.
     </p>
-</section>
+</div>
 
 <!-- GOLD BEACH -->
-<section class="hero-section" style="background-image:url('images/gold.jpg');">
-    <div class="hero-overlay"></div>
-    <div class="hero-title-block">
-        <h2 class="hero-title-line1">Gold Beach</h2>
-        <h3 class="hero-title-line2">Débarquement britannique</h3>
-        <p><strong>Chef : Lt. Gen. Miles Dempsey (2nd British Army)</strong></p>
-    </div>
-</section>
-
-<section class="fiche-block">
+<img src="images/gold.jpg" class="fiche-image" alt="Gold Beach">
+<div class="fiche-block">
     <h2 class="section-title">Gold Beach</h2>
+    <p><strong style="color:white;">Chef : Lt. Gen. Miles Dempsey (2nd British Army)</strong></p>
     <p>
-        Nom de code britannique. La 50e division UK débarque avec environ 25 000 hommes. Environ 400 morts.
-        La plage est sécurisée vers 13h00, puis progression vers Bayeux.
+        Débarquement britannique. 25 000 soldats. Environ 400 morts. Plage sécurisée vers 13h00.
+        Progression vers Bayeux, première grande ville libérée.
     </p>
-</section>
+</div>
 
 <!-- JUNO BEACH -->
-<section class="hero-section" style="background-image:url('images/juno.jpg');">
-    <div class="hero-overlay"></div>
-    <div class="hero-title-block">
-        <h2 class="hero-title-line1">Juno Beach</h2>
-        <h3 class="hero-title-line2">Débarquement canadien</h3>
-        <p><strong>Chef : Maj. Gen. Rod Keller (3rd Canadian Infantry Division)</strong></p>
-    </div>
-</section>
-
-<section class="fiche-block">
+<img src="images/juno.jpg" class="fiche-image" alt="Juno Beach">
+<div class="fiche-block">
     <h2 class="section-title">Juno Beach</h2>
+    <p><strong style="color:white;">Chef : Maj. Gen. Rod Keller (3rd Canadian Division)</strong></p>
     <p>
-        Nom de code canadien. La 3e division canadienne débarque avec environ 21 000 hommes. Environ
-        1 200 morts et blessés. La plage est sécurisée vers 13h30–14h00.
+        Débarquement canadien. 21 000 soldats. Environ 1 200 morts et blessés. Plage sécurisée
+        vers 13h30–14h00.
     </p>
-</section>
+</div>
 
 <!-- SWORD BEACH -->
-<section class="hero-section" style="background-image:url('images/sword.jpg');">
-    <div class="hero-overlay"></div>
-    <div class="hero-title-block">
-        <h2 class="hero-title-line1">Sword Beach</h2>
-        <h3 class="hero-title-line2">Britanniques & Français</h3>
-        <p><strong>Chef : Maj. Gen. Tom Rennie (3rd British Infantry Division)</strong></p>
-    </div>
-</section>
-
-<section class="fiche-block">
+<img src="images/sword.jpg" class="fiche-image" alt="Sword Beach">
+<div class="fiche-block">
     <h2 class="section-title">Sword Beach</h2>
+    <p><strong style="color:white;">Chef : Maj. Gen. Tom Rennie (3rd British Division)</strong></p>
     <p>
-        Nom de code britannique. 3e division UK + 177 Français du Commando Kieffer. Environ 28 000 soldats,
-        630 morts UK, 10 Français. Plage sécurisée vers 12h00.
+        Britanniques + 177 Français du Commando Kieffer. 28 000 soldats. 630 morts UK, 10 Français.
+        Plage sécurisée vers 12h00.
     </p>
-</section>
+</div>
 
 <!-- POINTE DU HOC -->
-<section class="hero-section" style="background-image:url('images/pointe-du-hoc.jpg');">
-    <div class="hero-overlay"></div>
-    <div class="hero-title-block">
-        <h2 class="hero-title-line1">Pointe du Hoc</h2>
-        <h3 class="hero-title-line2">L’assaut des Rangers</h3>
-        <p><strong>Chef : Lt. Col. James Earl Rudder (2nd Rangers Battalion)</strong></p>
-    </div>
-</section>
-
-<section class="fiche-block">
+<img src="images/pointe-du-hoc.jpg" class="fiche-image" alt="Pointe du Hoc">
+<div class="fiche-block">
     <h2 class="section-title">Pointe du Hoc</h2>
+    <p><strong style="color:white;">Chef : Lt. Col. James Earl Rudder (2nd Rangers Battalion)</strong></p>
     <p>
-        Position stratégique entre Utah et Omaha. Les Rangers du 2nd Battalion escaladent la falaise
-        de 30 mètres à 7h10 sous le feu ennemi. Sur 225 hommes, seuls 90 sont encore en état de combattre
-        en fin de journée. Les canons de 155 mm sont neutralisés, empêchant un bombardement massif des
-        plages américaines. Le site est aujourd’hui l’un des lieux les mieux conservés du front du 6 juin.
+        Position stratégique entre Utah et Omaha. Les Rangers escaladent la falaise de 30 m à 7h10.
+        Sur 225 hommes, seuls 90 restent aptes au combat en fin de journée. Les canons de 155 mm sont
+        neutralisés, empêchant un bombardement massif des plages américaines.
     </p>
-</section>
+</div>
 
 <!-- RETOUR -->
-<div class="wide-thin-button">
-    <a href="operations-militaires.html">← Retour aux opérations militaires</a>
-</div>
+<a href="operations-militaires.html" class="menu-button">⬅ Retour aux opérations militaires</a>
 
 <!-- FOOTER -->
 <footer class="site-footer">
