@@ -516,3 +516,30 @@ h3.commandement-title {
         background-position: center;
     }
 }
+/* --- Cartes WW2 en 2 colonnes partout (PC + mobile) --- */
+.menu-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    width: 1024px;
+    margin: 0 auto;
+}
+
+/* Centrage parfait du texte dans les boutons */
+.ww2-fullcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.ww2-fullcard span {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+    text-shadow: 0 0 8px black;
+}
