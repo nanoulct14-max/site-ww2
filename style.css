@@ -1,18 +1,23 @@
-/* ——— STRUCTURE GLOBALE ——— */
-/* Force toutes les pages à remplir l'écran */
+/* ——— LARGEUR PLEIN ÉCRAN ——— */
+/* Force toutes les pages à utiliser 100% de la largeur du téléphone */
 html, body {
-    width: 100vw !important;      /* largeur exacte de l'écran */
-    max-width: 100vw !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    overflow-x: hidden !important;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
     background: #0f0f0f;
     color: #e5e5e5;
     font-family: system-ui, sans-serif;
 }
 
-/* Contenu figé en 1024 mais adaptable à l'écran */
-section, header, footer, .menu-buttons, .fiche-block {
+/* ——— CONTENU CENTRAL ——— */
+/* Le contenu reste en 1024px mais s'adapte à l'écran */
+section,
+header,
+footer,
+.menu-buttons,
+.fiche-block {
     width: 1024px;
     max-width: 100%;
     margin-left: auto;
@@ -32,12 +37,17 @@ header {
     border-bottom: 2px solid #333;
 }
 
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+}
+
 header nav a {
     font-family: "Cinzel", serif;
     font-size: 18px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    margin: 0 12px;
     text-shadow:
         0 0 4px rgba(255,255,255,0.4),
         0 0 8px rgba(200,200,200,0.25);
@@ -158,6 +168,7 @@ header nav a {
 .menu-button {
     display: block;
     width: 600px;
+    max-width: 100%;
     margin: 40px auto;
     padding: 25px 30px;
     background-color: #1a1a1a;
@@ -173,6 +184,7 @@ header nav a {
 /* ——— BOUTON BUNKER ——— */
 .wide-thin-button {
     width: 900px;
+    max-width: 100%;
     height: 85px;
     margin: 40px auto;
     background-size: cover;
