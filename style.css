@@ -484,3 +484,20 @@ h3.commandement-title {
         margin: 0 auto;
     }
 }
+/* --- Uniformisation mobile en mode PC --- */
+@media screen and (max-width: 1024px) {
+
+    /* Largeur globale identique à l'index PC */
+    body {
+        width: 1024px;
+        margin: 0 auto;
+    }
+
+    /* Header / Hero / Footer = même largeur */
+    header,
+    .hero-section,
+    .site-footer {
+        width: 1024px;
+        margin: 0 auto;
+    }
+}
