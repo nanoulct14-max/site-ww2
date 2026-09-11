@@ -9,6 +9,16 @@ html, body {
     font-family: system-ui, sans-serif;
 }
 
+/* Liens toujours blancs (jamais violet) */
+a,
+a:visited,
+.menu-buttons a,
+.menu-buttons a:visited,
+.ww2-fullcard span,
+.ww2-fullcard:visited span {
+    color: #ffffff !important;
+}
+
 /* ——— HEADER ——— */
 header {
     width: 100%;
@@ -38,7 +48,6 @@ nav a {
     margin: 0 12px;
     text-transform: uppercase;
     transition: 0.3s;
-    color: #f3f0e9;
     text-shadow:
         0 0 4px rgba(255,255,255,0.4),
         0 0 8px rgba(200,200,200,0.25),
@@ -46,7 +55,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffffff;
+    color: #ffffff !important;
     text-shadow:
         0 0 6px rgba(255,255,255,0.6),
         0 0 12px rgba(255,255,255,0.4),
@@ -168,7 +177,6 @@ nav a:hover {
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #ffffff;
     text-shadow:
         0 0 8px rgba(0,0,0,0.9),
         0 0 14px rgba(0,0,0,0.7);
@@ -224,7 +232,7 @@ footer {
     margin: 40px auto;
     padding: 25px 30px;
     background-color: #1a1a1a;
-    color: white;
+    color: white !important;
     text-align: center;
     font-size: 26px;
     font-weight: 600;
@@ -255,7 +263,7 @@ footer {
     font-family: 'Cinzel', serif;
     font-size: 28px;
     letter-spacing: 3px;
-    color: #f3f0e9;
+    color: #f3f0e9 !important;
     text-decoration: none;
     background-color: rgba(0,0,0,0.55);
     padding: 14px 50px;
