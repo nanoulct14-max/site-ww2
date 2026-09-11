@@ -1,4 +1,4 @@
-/* ——— LARGEUR PLEIN ÉCRAN ——— */
+/* ——— 1) LARGEUR PLEIN ÉCRAN ——— */
 /* Force toutes les pages à utiliser 100% de la largeur du téléphone */
 html, body {
     width: 100%;
@@ -11,7 +11,15 @@ html, body {
     font-family: system-ui, sans-serif;
 }
 
-/* ——— CONTENU CENTRAL ——— */
+/* ——— 2) DÉZOOM AUTOMATIQUE DES PAGES INTERNES ——— */
+/* L'accueil reste normal, les autres pages sont dézoomées légèrement */
+body:not(.home) {
+    transform: scale(0.85);      /* dézoom léger */
+    transform-origin: top center;
+    width: 118%;                 /* compense le scale pour garder la largeur */
+}
+
+/* ——— 3) CONTENU CENTRAL ——— */
 /* Le contenu reste en 1024px mais s'adapte à l'écran */
 section,
 header,
