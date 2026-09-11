@@ -1,11 +1,9 @@
-/* ——— DÉZOOM AUTOMATIQUE MOBILE ——— */
-/* Fonctionne sur tous les navigateurs, sans modifier le HTML */
-@media screen and (max-width: 900px) {
-    body {
-        transform: scale(0.50);
-        transform-origin: top center;
-        width: 200%;
-    }
+/* ——— DÉZOOM FORCÉ SANS TOUCHER LE VIEWPORT ——— */
+/* On dézoome le contenu, pas la page */
+body {
+    transform: scale(0.50);
+    transform-origin: top center;
+    width: 200%;
 }
 
 /* ——— GLOBAL ——— */
@@ -19,7 +17,7 @@ html, body {
     font-family: system-ui, sans-serif;
 }
 
-/* Liens toujours blancs (jamais violet) */
+/* Liens toujours blancs */
 a,
 a:visited,
 .menu-buttons a,
@@ -145,7 +143,6 @@ nav a:hover {
 }
 
 /* ——— CARTES WW2 ——— */
-/* 2 colonnes stables, premium, non tassées */
 .menu-buttons {
     width: 1024px;
     margin: 40px auto;
@@ -155,7 +152,6 @@ nav a:hover {
     justify-items: center;
 }
 
-/* Boutons WW2 */
 .ww2-fullcard {
     width: 450px;
     height: 260px;
