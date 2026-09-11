@@ -445,12 +445,12 @@ body, h1, h2, h3, .section-title {
 .wide-thin-button a:hover {
     background-color: rgba(0,0,0,0.75);
 }
-/* ——— MODE PC SUR TÉLÉPHONE ——— */
-@media (max-width: 900px) {
+/* ——— MODE PC SUR TOUT LE SITE ——— */
+@media (max-width: 2000px) {
     html, body {
-        width: 480px;
-        max-width: 480px;
-        margin: 0 auto;
-        overflow-x: hidden;
+        width: 1024px !important;
+        max-width: 1024px !important;
+        margin: 0 auto !important;
+        overflow-x: hidden !important;
     }
 }
