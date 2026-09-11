@@ -1,9 +1,9 @@
 /* ——— DÉZOOM FORCÉ GLOBAL ——— */
-/* Fonctionne même si le viewport bloque le dézoom */
+/* Dézoom léger et propre */
 body {
-    transform: scale(0.50);
+    transform: scale(0.75);
     transform-origin: top center;
-    width: 200%;
+    width: 133%;
 }
 
 /* ——— GLOBAL ——— */
