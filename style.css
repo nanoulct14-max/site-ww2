@@ -126,30 +126,25 @@ nav a:hover {
 }
 
 /* ——— CARTES WW2 ——— */
-/* 2 boutons par ligne — FIXE — identique PC/mobile */
 .menu-buttons {
-    width: 1024px;
+    width: 90%;
+    max-width: 1200px;
     margin: 40px auto;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 colonnes fixes */
-    gap: 35px;
-    justify-items: center; /* centre les cartes */
+    grid-template-columns: repeat(3, 1fr); /* FIXE */
+    gap: 25px;
 }
 
-/* Boutons WW2 */
 .ww2-fullcard {
-    width: 450px; /* largeur fixe premium */
     height: 260px;
     background-size: cover;
     background-position: center;
     border-radius: 6px;
     position: relative;
     overflow: hidden;
-
     display: flex;
-    justify-content: center; /* centre horizontal */
-    align-items: center; /* centre vertical */
-    text-align: center; /* centre le texte */
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
 }
 
@@ -176,7 +171,7 @@ nav a:hover {
 
 /* ——— FICHES ——— */
 .fiche-image {
-    width: 600px !important;
+    width: 600px !important; /* FIXE */
     margin: 25px auto;
     display: block;
     border-radius: 6px;
@@ -220,7 +215,7 @@ footer {
 /* ——— BOUTON RETOUR ——— */
 .menu-button {
     display: block;
-    width: 600px !important;
+    width: 600px !important; /* FIXE */
     margin: 40px auto;
     padding: 25px 30px;
     background-color: #1a1a1a;
@@ -237,7 +232,7 @@ footer {
 
 /* ——— BOUTON BUNKER ——— */
 .wide-thin-button {
-    width: 900px !important;
+    width: 900px !important; /* FIXE */
     height: 85px;
     margin: 40px auto;
     background-image: url('images/fond-bunker.png');
