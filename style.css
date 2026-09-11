@@ -1,28 +1,26 @@
+/* Correction mobile = PC sans rien casser */
+html {
+    overflow-x: hidden;
+}
+
 /* ——— GLOBAL ——— */
-html, body {
-    width: 1024px !important;      /* MOBILE = PC */
-    max-width: 1024px !important;
-    margin: 0 auto !important;
-    overflow-x: hidden !important;
+body {
+    margin: 0;
     background: #0f0f0f;
     color: #e5e5e5;
     font-family: system-ui, sans-serif;
 }
 
-body {
-    margin: 0;
-}
-
 /* ——— HEADER ——— */
 header {
     width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 45px 0;
     display: flex;
     justify-content: center;
     background: #0f0f0f;
+    padding: 45px 0;
     border-bottom: 2px solid #333;
+    max-width: 900px;
+    margin: 0 auto;
     border-radius: 12px;
 }
 
@@ -91,20 +89,25 @@ nav a:hover {
 .hero-title-line2 {
     font-family: "Cinzel", serif;
     font-size: 1.9rem;
+    font-weight: 400;
     margin-top: 18px;
+    letter-spacing: 1px;
     opacity: 0.9;
 }
 
 /* ——— TITRES DE SECTION ——— */
 .section-title {
     font-family: "Cinzel", serif;
-    font-size: 3.2rem;
+    font-size: 3.2rem !important;
     font-weight: 700;
-    letter-spacing: 4px;
+    letter-spacing: 4px !important;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 50px !important;
+    margin-bottom: 30px !important;
     color: #f2f2f2;
+    text-shadow:
+        0 0 10px rgba(255,255,255,0.15),
+        0 0 18px rgba(0,0,0,0.9);
 }
 
 .section-title::after {
@@ -155,6 +158,9 @@ nav a:hover {
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #ffffff;
+    text-shadow:
+        0 0 8px rgba(0,0,0,0.9),
+        0 0 14px rgba(0,0,0,0.7);
 }
 
 /* ——— FICHES ——— */
@@ -175,11 +181,14 @@ nav a:hover {
     position: relative;
     z-index: 2;
     font-family: "Cinzel", serif;
-    font-size: 4.2rem;
+    font-size: 4.2rem !important;
     text-align: center;
     padding-top: 120px;
     color: #f7f4ef;
-    letter-spacing: 3px;
+    letter-spacing: 3px !important;
+    text-shadow:
+        0 0 10px rgba(255,255,255,0.15),
+        0 0 20px rgba(0,0,0,0.9);
 }
 
 .fiche-image {
@@ -192,26 +201,18 @@ nav a:hover {
 }
 
 /* ——— TEXTES DES FICHES ——— */
-.fiche-block {
-    max-width: 900px;
-    margin: 40px auto;
-    background: #111;
-    padding: 40px;
-    border-radius: 6px;
-    color: #ddd;
-    box-shadow: 0 0 20px rgba(0,0,0,0.4);
-}
-
+.fiche-block,
 .fiche-block p,
 .fiche-block ul,
 .fiche-block li {
-    font-size: 1.65rem;
-    line-height: 2.2rem;
+    font-size: 1.65rem !important;
+    line-height: 2.2rem !important;
     color: #e5e5e5;
 }
 
 /* ——— FOOTER ——— */
-.site-footer {
+.site-footer,
+footer {
     background: #0d0d0d;
     text-align: center;
     padding: 40px 0;
@@ -223,6 +224,24 @@ nav a:hover {
     height: 1px;
     background: linear-gradient(to right, transparent, #777, transparent);
     margin: 0 auto 25px;
+}
+
+/* ——— LIENS NACRÉS MUSÉAUX ——— */
+.operation-link {
+    display: block;
+    margin: 14px 0;
+    font-size: 22px;
+    font-family: 'Cinzel', serif;
+    color: #e8e6e3;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.operation-link:hover {
+    color: #ffffff;
+    transform: translateX(6px);
 }
 
 /* ——— BOUTON RETOUR ——— */
@@ -241,9 +260,10 @@ nav a:hover {
     border: 3px solid #d4d4d4;
     box-shadow: 0 0 25px rgba(0,0,0,0.6);
     text-decoration: none;
+    transition: 0.3s ease;
 }
 
-/* ——— BOUTON BUNKER ——— */
+/* --- Bouton bunker élargi --- */
 .wide-thin-button {
     width: 100%;
     max-width: 900px;
@@ -267,5 +287,10 @@ nav a:hover {
     text-decoration: none;
     background-color: rgba(0,0,0,0.55);
     padding: 14px 50px;
+    transition: 0.3s;
     border-radius: 6px;
+}
+
+.wide-thin-button a:hover {
+    background-color: rgba(0,0,0,0.75);
 }
