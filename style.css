@@ -1,5 +1,5 @@
-/* ——— DÉZOOM FORCÉ ——— */
-/* Fonctionne même si le viewport bloque */
+/* ——— DÉZOOM FORCÉ GLOBAL ——— */
+/* Fonctionne même si le viewport bloque le dézoom */
 body {
     transform: scale(0.50);
     transform-origin: top center;
