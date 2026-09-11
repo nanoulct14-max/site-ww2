@@ -461,3 +461,12 @@ h3.commandement-title {
         0 0 8px rgba(0,0,0,0.7),
         0 0 14px rgba(0,0,0,0.5);
 }
+/* --- Alignement mobile en mode PC --- */
+@media screen and (max-width: 1024px) {
+    header,
+    .hero-section,
+    .site-footer {
+        width: 1024px;
+        margin: 0 auto;
+    }
+}
