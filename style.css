@@ -131,14 +131,14 @@ nav a:hover {
     width: 1024px;
     margin: 40px auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* 2 colonnes fixes */
     gap: 35px;
-    justify-items: center;
+    justify-items: center; /* centre les cartes */
 }
 
 /* Boutons WW2 */
 .ww2-fullcard {
-    width: 450px;
+    width: 450px; /* largeur fixe premium */
     height: 260px;
     background-size: cover;
     background-position: center;
@@ -147,9 +147,9 @@ nav a:hover {
     overflow: hidden;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    justify-content: center; /* centre horizontal */
+    align-items: center; /* centre vertical */
+    text-align: center; /* centre le texte */
     text-decoration: none;
 }
 
