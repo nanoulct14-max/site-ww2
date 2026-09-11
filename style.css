@@ -399,3 +399,9 @@ h3.commandement-title {
         margin: 0 auto;
     }
 }
+@media screen and (max-width: 1024px) {
+    body {
+        transform: scale(0.90);
+        transform-origin: top center;
+    }
+}
