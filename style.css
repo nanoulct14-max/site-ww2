@@ -501,3 +501,18 @@ h3.commandement-title {
         margin: 0 auto;
     }
 }
+@media screen and (max-width: 1024px) {
+    .menu-buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        width: 1024px;
+        margin: 0 auto;
+    }
+
+    .ww2-fullcard {
+        height: 260px;
+        background-size: cover;
+        background-position: center;
+    }
+}
