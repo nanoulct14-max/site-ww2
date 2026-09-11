@@ -1,15 +1,14 @@
-/* ——— GLOBAL + DÉZOOM MOBILE ——— */
-/* Force le dézoom automatique sur mobile tout en gardant le site figé en 1024px */
-@viewport {
-    width: 1024px;
-    zoom: 0.5;
+/* ——— DÉZOOM AUTOMATIQUE MOBILE ——— */
+/* Fonctionne sur tous les navigateurs, sans modifier le HTML */
+@media screen and (max-width: 900px) {
+    body {
+        transform: scale(0.50);
+        transform-origin: top center;
+        width: 200%;
+    }
 }
 
-@-webkit-viewport {
-    width: 1024px;
-    zoom: 0.5;
-}
-
+/* ——— GLOBAL ——— */
 html, body {
     width: 1024px !important;
     max-width: 1024px !important;
@@ -146,7 +145,7 @@ nav a:hover {
 }
 
 /* ——— CARTES WW2 ——— */
-/* 2 colonnes stables, non tassées */
+/* 2 colonnes stables, premium, non tassées */
 .menu-buttons {
     width: 1024px;
     margin: 40px auto;
