@@ -3,13 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insignes soviétiques – Musée HOP WW2</title>
-    <link rel="stylesheet" href="style.css">
+    <title>URSS – Attributs et Insignes WW2 | Musée HOP WW2</title>
+
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LB26FYS5CF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-LB26FYS5CF');
+    </script>
+
+    <!-- STYLES MUSÉE HOP -->
+    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="style-mobile.css?v=3">
 
     <style>
-        .operation-link {
-            font-size: 26px;
-            font-weight: 600;
+        body {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        .section-title {
+            font-size: 28px;
+            margin-top: 40px;
+            border-bottom: 2px solid #8b0000;
+            padding-bottom: 5px;
+        }
+
+        .fiche-block p,
+        .fiche-content p {
+            font-size: 20px;
+        }
+
+        .fiche-image {
+            display: block;
+            margin: 30px auto;
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        .center {
+            text-align: center;
         }
     </style>
 </head>
@@ -26,33 +63,74 @@
     </nav>
 </header>
 
-<!-- HERO URSS -->
-<section class="hero-section" style="background-image:url('images/urss.jpg');">
+<!-- HERO -->
+<section class="hero-section" style="background-image:url('images/urss-hero.jpg'); background-position:center;">
     <div class="hero-overlay"></div>
 
     <div class="hero-title-block">
-        <h2 class="hero-title-line1">
-            INSIGNES SOVIÉTIQUES<br>1939–1945
-        </h2>
-        <h3 class="hero-title-line2">
-            Décorations, insignes de grade et emblèmes de l’Armée rouge
-        </h3>
+        <h2 class="hero-title-line1">URSS — ATTRIBUTS ET INSIGNES</h2>
+        <h3 class="hero-title-line2">Grande Guerre Patriotique (1941–1945)</h3>
     </div>
 </section>
 
-<h2 class="section-title">Insignes soviétiques</h2>
+<div class="fiche-content">
 
-<a class="operation-link" href="insigne-soviet-ordre-patriotique.html">Ordre de la Guerre patriotique</a>
-<a class="operation-link" href="insigne-soviet-ordre-lenin.html">Ordre de Lénine</a>
-<a class="operation-link" href="insigne-soviet-ordre-etoile-rouge.html">Ordre de l’Étoile rouge</a>
-<a class="operation-link" href="insigne-soviet-medaille-bravoure.html">Médaille pour bravoure</a>
-<a class="operation-link" href="insigne-soviet-medaille-defense-ville.html">Médailles de défense des villes (Moscou, Stalingrad)</a>
-<a class="operation-link" href="insigne-soviet-grades-epaules.html">Insignes de grade – Pattes d’épaule</a>
-<a class="operation-link" href="insigne-soviet-unités-speciales.html">Insignes d’unités spéciales – Garde, artillerie, blindés</a>
-<a class="operation-link" href="insigne-soviet-propagande.html">Badges et insignes de propagande soviétique</a>
+    <!-- INTRODUCTION GÉNÉRALE -->
+    <div class="fiche-block">
+        <h2 class="section-title">Introduction</h2>
+        <p>
+            Durant la Grande Guerre Patriotique (1941–1945), l’Armée Rouge s’appuie sur un système strict d’attributs militaires pour identifier ses combattants. Contrairement aux écussons en tissu, la tradition soviétique repose sur de véritables insignes métalliques fixés sur les pattes de collet, les pattes d'épaule (<em>pogoni</em>) réintroduites en 1943, ainsi que sur des badges honorifiques portés sur la poitrine.
+        </p>
+    </div>
 
-<!-- ⭐ BOUTON RETOUR -->
-<a href="urss.html" class="menu-button">⬅ Retour à la collection soviétique</a>
+    <!-- 1 — INFANTERIE -->
+    <h2 class="section-title">Infanterie</h2>
+    <p>
+        L’infanterie forme le cœur des forces soviétiques engagées sur le front de l'Est. Ses soldats arborent l’étoile rouge émaillée sur leur coiffure ainsi que les attributs dorés fixés sur les pattes de collet et d'épaule réglementaires.
+    </p>
+    <img src="images/URSS_INFANTERIE_WW2.jpg" class="fiche-image" alt="Vitrine muséographique des attributs de l'Infanterie soviétique">
+
+    <!-- 2 — BLINDÉS -->
+    <h2 class="section-title">Forces Blindées</h2>
+    <p>
+        Fer de lance des grandes contre-offensives, les équipages de chars (T-34, KV-1, IS-2) sont identifiables par le symbole du char miniature. Ces attributs métalliques étaient fièrement portés sur les épaules et collets des blindés soviétiques.
+    </p>
+    <img src="images/URSS_BLINDES_WW2.jpg" class="fiche-image" alt="Vitrine muséographique des attributs des Forces Blindées soviétiques">
+
+    <!-- 3 — AVIATION -->
+    <h2 class="section-title">Aviation Soviétique (VVS)</h2>
+    <p>
+        Les pilotes et techniciens de la VVS portent l'emblème de l'hélice dorée entourée d'ailes stylisées. Leurs pattes d'épaule se distinguent par leur couleur bleu céleste bordée du passepoil réglementaire.
+    </p>
+    <img src="images/URSS_AVIATION_WW2.jpg" class="fiche-image" alt="Vitrine muséographique des attributs de l'Aviation soviétique">
+
+    <!-- 4 — ARTILLERIE -->
+    <h2 class="section-title">Artillerie</h2>
+    <p>
+        Considérée comme la force de frappe majeure de l'Armée Rouge, l'artillerie utilise le symbole historique de deux canons croisés en métal, portés aussi bien par les canonniers que par les unités de lance-roquettes Katyusha.
+    </p>
+    <img src="images/URSS_ARTILLERIE_WW2.jpg" class="fiche-image" alt="Vitrine muséographique des attributs de l'Artillerie soviétique">
+
+    <!-- 5 — GÉNIE ET TRANSMISSIONS -->
+    <h2 class="section-title">Génie & Transmissions</h2>
+    <p>
+        Soutien indispensable du front, les sapeurs et techniciens du génie portent des haches et pelles croisées, tandis que les spécialistes des transmissions arborent l'insigne aux éclairs ailés.
+    </p>
+    <img src="images/URSS_GENIE_WW2.jpg" class="fiche-image" alt="Vitrine muséographique des attributs du Génie et Transmissions soviétiques">
+
+    <!-- 6 — UNITÉS DE LA GARDE -->
+    <h2 class="section-title">Unités de la Garde</h2>
+    <p>
+        Le titre de « Garde » récompensait les unités d'élite s'étant illustrées héroïquement au combat. Les soldats de ces régiments portaient sur la poitrine le célèbre badge métallique émaillé <em>Gvardiya</em> arborant le drapeau rouge.
+    </p>
+    <img src="images/URSS_GARDE_WW2.jpg" class="fiche-image" alt="Vitrine muséographique de l'insigne de la Garde soviétique">
+
+    <!-- RETOUR -->
+    <div class="center" style="margin-top:40px; margin-bottom:40px;">
+        <a href="urss.html" class="menu-button">⬅ Retour aux collections soviétiques</a>
+    </div>
+
+</div>
 
 <footer class="site-footer">
     <div class="footer-line"></div>
